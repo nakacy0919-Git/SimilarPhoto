@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Description Interactive</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* コンテナの設定 */
+        .container {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* 画像の設定 */
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* 枠（ホットスポット）の基本設定 */
+        .hotspot {
+            position: absolute;
+            cursor: pointer;
+            display: none; /* 最初は非表示 */
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hotspot:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        /* 色別の枠設定（位置は%で指定してレスポンシブ対応） */
+        
+        /* 1. 手前の折り紙ツリー群 (赤) */
+        .spot-trees {
+            border: 3px solid #ff4d4d;
+            top: 25%;
+            left: 5%;
+            width: 85%;
+            height: 70%;
+        }
+
+        /* 2. 背景の教室 (青) */
+        .spot-background {
+            border: 3px solid #3498db;
+            top: 0%;
+            left: 0%;
+            width: 55%;
+            height: 35%;
+        }
+
+        /* 3. 窓からの光 (黄色) */
+        .spot-window {
+            border: 3px solid #f1c40f;
+            top: 0%;
+            left: 55%;
+            width: 45%;
+            height: 40%;
+        }
+
+        /* コントロールエリア */
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        /* 説明文表示エリア */
+        #description-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #ccc;
+            max-width: 800px;
+            width: 100%;
+            min-height: 100px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none; /* 最初は非表示 */
+        }
+
+        .desc-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .eng-text {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .jp-text {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Classroom Paper Trees Description</h1>
+    
+    <div class="controls">
+        <button id="toggle-btn" onclick="toggleFrames()">枠を表示 (Show Frames)</button>
+    </div>
+
+    <div class="container">
+        <img src="image.png" alt="Classroom with paper trees" class="main-image">
+        
+        <div class="hotspot spot-trees" onclick="showDescription('trees')"></div>
+        <div class="hotspot spot-background" onclick="showDescription('background')"></div>
+        <div class="hotspot spot-window" onclick="showDescription('window')"></div>
+    </div>
+
+    <div id="description-box">
+        <span class="desc-title" id="desc-title"></span>
+        <div class="eng-text" id="eng-text"></div>
+        <div class="jp-text" id="jp-text"></div>
+    </div>
+
+    <script>
+        // データオブジェクト
+        const contentData = {
+            trees: {
+                title: "Foreground: Paper Trees (手前の紙のツリー)",
+                color: "#ff4d4d",
+                english: "A collection of white, origami-style Christmas trees with intricate folds and star-topped peaks standing on a wooden desk.",
+                japanese: "解説: 机の上に立っている、複雑な折り目と星の頂点を持つ、白い折り紙スタイルのクリスマスツリーのコレクションです。"
+            },
+            background: {
+                title: "Background: Classroom Setting (背景の教室)",
+                color: "#3498db",
+                english: "A blurred background revealing a typical classroom setting, featuring rows of desks, chairs, and a large green chalkboard.",
+                japanese: "解説: 机や椅子の列、大きな緑色の黒板など、典型的な教室の様子がうかがえるぼやけた背景です。"
+            },
+            window: {
+                title: "Lighting: Natural Light (自然光)",
+                color: "#f1c40f",
+                english: "Natural light streams through large windows on the right, casting soft shadows and highlighting the texture of the paper.",
+                japanese: "解説: 右側の大きな窓から自然光が差し込み、柔らかな影を落とし、紙の質感を際立たせています。"
+            }
+        };
+
+        let framesVisible = false;
+
+        // 枠の表示・非表示を切り替える関数
+        function toggleFrames() {
+            const hotspots = document.querySelectorAll('.hotspot');
+            const btn = document.getElementById('toggle-btn');
+            
+            framesVisible = !framesVisible;
+
+            hotspots.forEach(spot => {
+                spot.style.display = framesVisible ? 'block' : 'none';
+            });
+
+            btn.textContent = framesVisible ? '枠を隠す (Hide Frames)' : '枠を表示 (Show Frames)';
+            
+            // 枠を隠したら説明文も隠す
+            if (!framesVisible) {
+                document.getElementById('description-box').style.display = 'none';
+            }
+        }
+
+        // 説明文を表示する関数
+        function showDescription(key) {
+            const data = contentData[key];
+            const box = document.getElementById('description-box');
+            const title = document.getElementById('desc-title');
+            const eng = document.getElementById('eng-text');
+            const jp = document.getElementById('jp-text');
+
+            title.textContent = data.title;
+            title.style.color = data.color; // タイトルを枠の色に合わせる
+            eng.textContent = data.english;
+            jp.textContent = data.japanese;
+            
+            box.style.borderLeftColor = data.color; // 左のボーダー色を変更
+            box.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
