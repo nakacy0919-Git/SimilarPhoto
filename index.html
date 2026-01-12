@@ -6,245 +6,197 @@
     <title>Similar Photo Review</title>
     <style>
         /* =========================================
-           NY Style Design System
+           Design System: Classic & Clear (V4 Base)
            ========================================= */
-        :root {
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-main: #212529;
-            --text-sub: #6c757d;
-            --accent-color: #000000; /* NY Style Black */
-            --highlight: #e9ecef;
+        body { 
+            font-family: "Helvetica Neue", Arial, sans-serif; 
+            background: #f4f7f6; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px; 
+            color: #333; 
         }
 
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* --- Header Section --- */
+        /* --- Header & Title --- */
         header {
             width: 100%;
             max-width: 800px;
-            padding: 40px 20px 20px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .title-image {
             max-width: 100%;
             height: auto;
-            max-height: 150px; /* タイトル画像の高さ制限 */
+            max-height: 120px;
             display: block;
-            margin: 0 auto 20px;
-            object-fit: contain;
+            margin: 0 auto 10px;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        /* --- Educational Rationale (Methodology) --- */
-        .methodology-box {
-            background: #fff;
-            border-left: 5px solid var(--accent-color);
-            padding: 20px 30px;
-            margin-bottom: 50px;
-            max-width: 760px;
-            width: 90%;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .methodology-title {
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: var(--text-sub);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .methodology-text {
-            font-size: 0.95rem;
-            color: #444;
-            margin: 0;
-        }
-
-        /* --- Gallery Layout (Vertical Scroll) --- */
-        .gallery-container {
-            width: 100%;
+        /* --- Collapsible Methodology Section --- */
+        .method-toggle-container {
+            text-align: right;
             max-width: 800px;
-            padding: 0 20px 60px;
+            width: 100%;
+            margin-bottom: 10px;
         }
 
-        /* Individual Card */
-        .photo-card {
-            background: var(--card-bg);
-            border: 1px solid #e0e0e0;
-            margin-bottom: 60px; /* カード間の余白 */
-            border-radius: 0; /* NYスタイルらしく角をシャープに */
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease;
-        }
-
-        .photo-card:hover {
-            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-        }
-
-        /* Card Header (No. & Button) */
-        .card-header {
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #f0f0f0;
-            background: #fff;
-        }
-
-        .image-number {
-            font-size: 1.2rem;
-            font-weight: 800;
-            color: var(--accent-color);
-            font-family: 'Courier New', Courier, monospace; /* 少しタイプライター風に */
-        }
-
-        /* Toggle Button */
-        .toggle-btn {
+        .method-btn {
             background: transparent;
-            border: 1px solid var(--accent-color);
-            color: var(--accent-color);
-            padding: 6px 16px;
+            border: none;
+            color: #888;
             font-size: 0.85rem;
-            font-weight: 600;
             cursor: pointer;
-            transition: all 0.2s;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            text-decoration: underline;
+            padding: 5px;
         }
+        .method-btn:hover { color: #555; }
 
-        .toggle-btn:hover {
-            background: var(--accent-color);
-            color: #fff;
-        }
-
-        .toggle-btn.active-btn {
-            background: var(--accent-color);
-            color: #fff;
-        }
-
-        /* Image Area */
-        .image-area {
-            position: relative;
-            width: 100%;
-            background: #eee;
-        }
-
-        .main-image {
-            width: 100%;
-            display: block;
-            height: auto;
-        }
-
-        /* Hotspots */
-        .hotspot {
-            position: absolute;
-            cursor: pointer;
-            border: 3px solid; 
-            background: rgba(255,255,255,0.1);
-            transition: 0.3s;
+        .methodology-box {
             display: none; /* デフォルト非表示 */
-            box-sizing: border-box;
-        }
-        .hotspot:hover {
-            background: rgba(255,255,255,0.2);
-            box-shadow: 0 0 15px rgba(255,255,255,0.9);
-        }
-
-        /* Description Box (Inside Card) */
-        .desc-box {
-            padding: 30px;
             background: #fff;
-            display: none; /* クリックされるまで非表示 */
-            border-top: 2px solid #000;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #4a90e2;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
             animation: fadeIn 0.3s ease;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 
-        .desc-title {
-            font-size: 1.4rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            display: block;
-        }
+        .method-text { font-size: 0.95rem; color: #555; line-height: 1.6; margin: 0; }
 
-        .eng-text {
-            font-size: 1.15rem;
-            margin-bottom: 8px;
-            color: #000;
-            font-weight: 500;
+        /* --- Category Tabs --- */
+        .genre-tabs { 
+            display: flex; 
+            gap: 8px; 
+            margin-bottom: 15px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            max-width: 850px;
         }
-
-        .jp-text {
+        .genre-btn { 
+            padding: 8px 16px; 
+            border: 1px solid #ddd; 
+            background: white; 
+            color: #666; 
+            border-radius: 20px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: 0.2s;
             font-size: 0.9rem;
-            color: #777;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .genre-btn:hover { background: #eef5ff; color: #4a90e2; }
+        .genre-btn.active { 
+            background: #4a90e2; 
+            color: white; 
+            border-color: #4a90e2; 
+            box-shadow: 0 2px 5px rgba(74, 144, 226, 0.3); 
         }
 
-        /* Learning Grid */
-        .learning-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        /* --- Main Content Area --- */
+        .container { 
+            position: relative; 
+            max-width: 800px; 
+            width: 100%; 
+            margin: 0 auto 20px; 
+            background: #ddd; /* 画像読み込み前の背景 */
+            border-radius: 8px;
+            min-height: 300px;
+        }
+        .main-image { 
+            width: 100%; 
+            display: block; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+
+        /* --- Navigation Controls --- */
+        .nav-controls { 
+            display: flex; 
+            gap: 15px; 
+            margin-bottom: 10px; 
+            align-items: center; 
+            max-width: 800px;
+            width: 100%;
+        }
+        .nav-btn { 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            background: #555; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: 0.2s;
+        }
+        .nav-btn:hover { background: #333; }
+        .nav-btn:disabled { background: #ccc; cursor: not-allowed; }
+        .frame-toggle {
+            background: #2ecc71; 
+            margin-left: auto;
+        }
+        .frame-toggle:hover { background: #27ae60; }
+
+        /* --- Hotspots (Frames) --- */
+        .hotspot { 
+            position: absolute; 
+            cursor: pointer; 
+            border: 3px solid; 
+            background: rgba(255,255,255,0.1); 
+            transition: 0.3s; 
+            border-radius: 4px; 
+            display: none; 
+        }
+        .hotspot:hover { 
+            background: rgba(255,255,255,0.3); 
+            box-shadow: 0 0 15px rgba(255,255,255,0.8); 
+            transform: scale(1.02); 
+        }
+
+        /* --- Description Box --- */
+        #desc-box { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            width: 100%; 
+            max-width: 800px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+            display: none; 
+            border-left: 8px solid #ccc; 
+            margin-bottom: 50px; 
+            box-sizing: border-box;
+        }
+        .desc-title { 
+            font-weight: 800; 
+            font-size: 1.5em; 
+            display: block; 
+            margin-bottom: 10px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 10px;
         }
         
-        @media (max-width: 600px) {
-            .learning-grid { grid-template-columns: 1fr; }
-            h1 { font-size: 1.8rem; }
-        }
+        .eng-text { font-size: 1.2em; color: #222; margin-bottom: 8px; line-height: 1.6; }
+        .jp-text { font-size: 0.95em; color: #666; margin-bottom: 20px; }
 
-        .learn-item h4 {
-            margin: 0 0 8px 0;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            color: #999;
-            letter-spacing: 1.5px;
+        .learning-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            border-top: 1px dashed #ddd; 
+            padding-top: 20px; 
         }
-
-        .learn-item ul {
-            margin: 0;
-            padding-left: 18px;
-            font-size: 0.9rem;
-            color: #444;
-        }
+        @media (max-width: 600px) { .learning-grid { grid-template-columns: 1fr; } }
         
-        .learn-item li { margin-bottom: 4px; }
-
-        /* Footer */
-        footer {
-            margin-top: auto;
-            padding: 20px;
-            color: #999;
-            font-size: 0.8rem;
-            text-align: center;
-        }
+        .learn-item h4 { margin: 0 0 5px 0; font-size: 0.85em; text-transform: uppercase; color: #999; letter-spacing: 1px; }
+        .learn-item ul { margin: 0; padding-left: 20px; color: #444; }
+        .learn-item li { margin-bottom: 4px; font-size: 0.95em; }
 
     </style>
 </head>
@@ -252,36 +204,70 @@
 
     <header>
         <img src="title.png" alt="Similar Photo Review" class="title-image">
-        <h1 style="display:none;">Similar Photo Review</h1>
-        
-        <div class="methodology-box">
-            <span class="methodology-title">Why This Method Works</span>
-            <p class="methodology-text">
-                正確な描写力は、会話力の要です。「Similar Photo」は、見たものを正確に言語化し、相手に伝える力を養います。
-                視覚情報と言語を結びつけるこのプロセスは、記憶に定着しやすく、実践的なコミュニケーション能力を高める非常に効果的な学習法です。
-                <br><br>
-                <small style="color:#777">※ Accurate image description is key to fluency. This visual-verbal connection enhances memory retention.</small>
-            </p>
-        </div>
     </header>
 
-    <div class="gallery-container" id="gallery-root">
+    <div class="method-toggle-container">
+        <button class="method-btn" onclick="toggleMethod()">ⓘ About This Method</button>
+    </div>
+
+    <div id="method-box" class="methodology-box">
+        <p class="method-text">
+            <strong>Why This Method Works:</strong><br>
+            正確な描写力は、会話力の要です。「Similar Photo」は、見たものを正確に言語化し、相手に伝える力を養います。
+            視覚情報と言語を結びつけるこのプロセスは、記憶に定着しやすく、実践的なコミュニケーション能力を高める非常に効果的な学習法です。
+        </p>
+    </div>
+
+    <div class="genre-tabs">
+        <button class="genre-btn active" onclick="filterGenre(0)">000 Series</button>
+        <button class="genre-btn" onclick="filterGenre(1)">100 Series</button>
+        <button class="genre-btn" onclick="filterGenre(2)">200 Series</button>
+        <button class="genre-btn" onclick="filterGenre(3)">300 Series</button>
+        <button class="genre-btn" onclick="filterGenre(4)">400 Series</button>
+        <button class="genre-btn" onclick="filterGenre(5)">500 Series</button>
+    </div>
+
+    <div class="nav-controls">
+        <button class="nav-btn" onclick="changePage(-1)">&#10094; Prev</button>
+        <span id="page-indicator" style="font-weight:bold; font-size:1.1em; padding:0 10px;">0 / 0</span>
+        <button class="nav-btn" onclick="changePage(1)">Next &#10095;</button>
+        <button class="nav-btn frame-toggle" onclick="toggleFrames()">枠を表示 / 非表示</button>
+    </div>
+
+    <div class="container" id="image-container">
+        <img id="current-image" src="" class="main-image">
         </div>
 
-    <footer>
-        &copy; 2026 Similar Photo Review Project. Designed for Active Learners.
-    </footer>
+    <div id="desc-box">
+        <span class="desc-title" id="d-title"></span>
+        
+        <div class="text-section">
+            <div id="d-eng" class="eng-text"></div>
+            <div id="d-jp" class="jp-text"></div>
+        </div>
+
+        <div class="learning-grid">
+            <div class="learn-item"><h4 style="color:#e67e22">Vocabulary</h4><ul id="list-vocab"></ul></div>
+            <div class="learn-item"><h4 style="color:#2980b9">Idioms</h4><ul id="list-idiom"></ul></div>
+            <div class="learn-item"><h4 style="color:#27ae60">Synonyms</h4><ul id="list-synonym"></ul></div>
+            <div class="learn-item"><h4>Grammar</h4><div id="text-grammar" style="font-size:0.95em; color:#444;"></div></div>
+        </div>
+    </div>
 
     <script>
-        // ============================================
-        // ★教材データエリア
-        // ============================================
+        // ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+        // 【編集エリア】ファイル名はすべて .png に設定しています
+        // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+        
         const galleryData = [
+            // ============================================
+            // 000 Series (000-099)
+            // ============================================
             {
-                imageFile: "001.jpg", 
+                imageFile: "001.png", 
                 spots: [
                     {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#000",
+                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#3498db",
                         title: "Center: A Pair of Penguins",
                         eng: "Two penguins are standing side by side in the central cubby.",
                         jp: "中央の小部屋に2羽のペンギンが並んで立っています。",
@@ -291,7 +277,7 @@
                         grammar: "位置を表す前置詞 'in' と、状態を表す現在進行形 'are standing' の組み合わせです。"
                     },
                     {
-                        top: "69%", left: "3%", width: "28%", height: "28%", color: "#000",
+                        top: "69%", left: "3%", width: "28%", height: "28%", color: "#e67e22",
                         title: "Bottom-Left: A Solitary Rabbit",
                         eng: "A brown rabbit sits alone in the bottom-left section.",
                         jp: "茶色のウサギが左下の区画に一匹で座っています。",
@@ -303,10 +289,10 @@
                 ]
             },
             {
-                imageFile: "002.jpg", 
+                imageFile: "002.png", 
                 spots: [
                     {
-                        top: "36%", left: "3%", width: "28%", height: "28%", color: "#000",
+                        top: "36%", left: "3%", width: "28%", height: "28%", color: "#95a5a6",
                         title: "Left: A Koala",
                         eng: "A grey koala is sitting to the left of the penguins.",
                         jp: "灰色のコアラがペンギンの左側に座っています。",
@@ -316,7 +302,7 @@
                         grammar: "相対的な位置関係を示す 'to the left of' がポイントです。"
                     },
                     {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#000",
+                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#3498db",
                         title: "Center: Sandwiched Penguins",
                         eng: "The penguin pair is sandwiched between the koala and the dog.",
                         jp: "ペンギンのペアは、コアラと犬の間に挟まれています。",
@@ -326,7 +312,7 @@
                         grammar: "受動態 'is sandwiched' を使い、挟まれている状態を強調しています。"
                     },
                     {
-                        top: "36%", left: "69%", width: "28%", height: "28%", color: "#000",
+                        top: "36%", left: "69%", width: "28%", height: "28%", color: "#f1c40f",
                         title: "Right: A Golden Retriever",
                         eng: "A happy-looking dog sits on the far right side of the middle row.",
                         jp: "幸せそうな犬が、中段の右端に座っています。",
@@ -338,10 +324,10 @@
                 ]
             },
             {
-                imageFile: "003.jpg", 
+                imageFile: "003.png", 
                 spots: [
                     {
-                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#000",
+                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#e67e22",
                         title: "Top-Left: An Orange Tabby",
                         eng: "An orange tabby cat is sitting in the top-left compartment.",
                         jp: "オレンジ色のトラ猫が左上の区画に座っています。",
@@ -351,7 +337,7 @@
                         grammar: "場所を特定する 'top-left' という表現です。"
                     },
                     {
-                        top: "3%", left: "36%", width: "28%", height: "28%", color: "#000",
+                        top: "3%", left: "36%", width: "28%", height: "28%", color: "#2c3e50",
                         title: "Top-Center: A Zebra",
                         eng: "A zebra stands next to the cat in the top row.",
                         jp: "最上段で、シマウマが猫の隣に立っています。",
@@ -361,7 +347,7 @@
                         grammar: "動詞 'stands' と場所 'next to' の組み合わせ。"
                     },
                     {
-                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#000",
+                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#e74c3c",
                         title: "Bottom-Right: Diagonal Position",
                         eng: "The rabbit is placed in the bottom-right corner, far away from the others.",
                         jp: "ウサギは右下の隅に配置され、他の動物からは離れています。",
@@ -373,10 +359,10 @@
                 ]
             },
             {
-                imageFile: "004.jpg", 
+                imageFile: "004.png", 
                 spots: [
                     {
-                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#000",
+                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#2c3e50",
                         title: "Start: Top-Left",
                         eng: "The zebra starts the diagonal line from the top-left corner.",
                         jp: "シマウマが左上の隅から斜めのラインを始めています。",
@@ -386,7 +372,7 @@
                         grammar: "能動態の 'starts' を使い、シマウマが列の始点であることを示しています。"
                     },
                     {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#000",
+                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#e67e22",
                         title: "Middle: Center Spot",
                         eng: "The cat occupies the exact center of the grid.",
                         jp: "猫がグリッドのちょうど中心を占めています。",
@@ -396,7 +382,7 @@
                         grammar: "動詞 'occupy' は空間や地位を占める際によく使われます。"
                     },
                     {
-                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#000",
+                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#e74c3c",
                         title: "End: Bottom-Right",
                         eng: "The rabbit completes the diagonal alignment in the bottom-right.",
                         jp: "ウサギが右下で斜めの配置を完成させています。",
@@ -408,10 +394,10 @@
                 ]
             },
             {
-                imageFile: "005.jpg", 
+                imageFile: "005.png", 
                 spots: [
                     {
-                        top: "20%", left: "5%", width: "30%", height: "60%", color: "#000",
+                        top: "20%", left: "5%", width: "30%", height: "60%", color: "#c0392b",
                         title: "Two Bottles of Cola",
                         eng: "There are two identical bottles of zero-sugar cola on the left.",
                         jp: "左側に、ゼロシュガーコーラの全く同じボトルが2本あります。",
@@ -421,7 +407,7 @@
                         grammar: "存在を表す 'There are' 構文です。"
                     },
                     {
-                        top: "20%", left: "37%", width: "30%", height: "60%", color: "#000",
+                        top: "20%", left: "37%", width: "30%", height: "60%", color: "#27ae60",
                         title: "Tea Selection",
                         eng: "In the middle, we see a variety of teas: citrus green tea and milk tea.",
                         jp: "中央には、シークヮーサー緑茶やミルクティーなど、様々な紅茶が見られます。",
@@ -431,7 +417,7 @@
                         grammar: "名詞の列挙（A and B）を使っています。"
                     },
                     {
-                        top: "20%", left: "68%", width: "30%", height: "60%", color: "#000",
+                        top: "20%", left: "68%", width: "30%", height: "60%", color: "#2c3e50",
                         title: "Black Coffee",
                         eng: "Two bottles of black coffee are lined up on the right side.",
                         jp: "右側にはブラックコーヒーのボトルが2本並んでいます。",
@@ -443,10 +429,10 @@
                 ]
             },
             {
-                imageFile: "006.jpg", 
+                imageFile: "006.png", 
                 spots: [
                     {
-                        top: "20%", left: "18%", width: "15%", height: "60%", color: "#000",
+                        top: "20%", left: "18%", width: "15%", height: "60%", color: "#3498db",
                         title: "Sports Drink",
                         eng: "The blue bottle is a sports drink, designed for hydration.",
                         jp: "青いボトルはスポーツドリンクで、水分補給のために作られています。",
@@ -456,7 +442,7 @@
                         grammar: "過去分詞 'designed' が形容詞的に修飾しています。"
                     },
                     {
-                        top: "30%", left: "82%", width: "15%", height: "50%", color: "#000",
+                        top: "30%", left: "82%", width: "15%", height: "50%", color: "#f1c40f",
                         title: "Energy Drink",
                         eng: "The small red and yellow can on the far right is an energy drink.",
                         jp: "右端にある赤と黄色の小さな缶はエナジードリンクです。",
@@ -466,7 +452,7 @@
                         grammar: "長い主語 'The...can' に対する動詞 'is' です。"
                     },
                     {
-                        top: "75%", left: "5%", width: "90%", height: "15%", color: "#000",
+                        top: "75%", left: "5%", width: "90%", height: "15%", color: "#2ecc71",
                         title: "Price Tags",
                         eng: "The prices range from 140 yen to 180 yen.",
                         jp: "価格は140円から180円の範囲です。",
@@ -479,120 +465,110 @@
             }
         ];
 
-        // ============================================
-        // ★システムレンダリング（触らなくてOK）
-        // ============================================
-        
-        const galleryRoot = document.getElementById('gallery-root');
+        // ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+        // 【システムエリア】（触らなくてOK）
+        // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
-        // すべての画像を縦に生成して並べる
-        galleryData.forEach((data, index) => {
-            
-            // ファイル番号を抽出 (例: 001.jpg -> No. 001)
-            const match = data.imageFile.match(/(\d+)/);
-            const numStr = match ? match[1] : "---";
-            const uniqueID = `card-${index}`;
+        let currentList = [];
+        let currentIndex = 0;
+        let framesVisible = false;
+        let currentGenre = 0;
 
-            // カードのHTML構造を作成
-            const card = document.createElement('article');
-            card.className = 'photo-card';
-            card.innerHTML = `
-                <div class="card-header">
-                    <span class="image-number">No. ${numStr}</span>
-                    <button class="toggle-btn" onclick="toggleLocalFrames('${uniqueID}', this)">
-                        Show Frames
-                    </button>
-                </div>
-                
-                <div class="image-area" id="${uniqueID}-area">
-                    <img src="${data.imageFile}" class="main-image" alt="Image ${numStr}">
-                    </div>
+        window.onload = function() {
+            filterGenre(0);
+        };
 
-                <div class="desc-box" id="${uniqueID}-desc">
-                    <span class="desc-title">Title Here</span>
-                    <div class="eng-text">English text here...</div>
-                    <div class="jp-text">Japanese translation...</div>
-                    
-                    <div class="learning-grid">
-                        <div class="learn-item">
-                            <h4>Vocabulary</h4>
-                            <ul class="l-vocab"></ul>
-                        </div>
-                        <div class="learn-item">
-                            <h4>Idioms</h4>
-                            <ul class="l-idiom"></ul>
-                        </div>
-                        <div class="learn-item">
-                            <h4>Synonyms</h4>
-                            <ul class="l-synonym"></ul>
-                        </div>
-                        <div class="learn-item">
-                            <h4>Grammar</h4>
-                            <div class="l-grammar" style="font-size:0.9rem; color:#444;"></div>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            // ホットスポットの生成
-            const imgArea = card.querySelector('.image-area');
-            data.spots.forEach(spot => {
-                const div = document.createElement('div');
-                div.className = 'hotspot';
-                Object.assign(div.style, { 
-                    top: spot.top, left: spot.left, 
-                    width: spot.width, height: spot.height, 
-                    borderColor: spot.color 
-                });
-                
-                // クリック時の動作（このカード内の説明ボックスだけを更新）
-                div.onclick = (e) => { 
-                    e.stopPropagation(); 
-                    updateCardDescription(uniqueID, spot); 
-                };
-                imgArea.appendChild(div);
-            });
-
-            galleryRoot.appendChild(card);
-        });
-
-        // --- 機能関数 ---
-
-        // 枠の表示切り替え（ローカル制御）
-        function toggleLocalFrames(cardID, btn) {
-            const area = document.getElementById(`${cardID}-area`);
-            const spots = area.querySelectorAll('.hotspot');
-            const descBox = document.getElementById(`${cardID}-desc`);
-            
-            let isHidden = spots[0].style.display === 'none' || spots[0].style.display === '';
-            
-            spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
-            
-            if (isHidden) {
-                btn.textContent = "Hide Frames";
-                btn.classList.add('active-btn');
+        // 説明文の表示切り替え
+        function toggleMethod() {
+            const box = document.getElementById('method-box');
+            if (box.style.display === 'block') {
+                box.style.display = 'none';
             } else {
-                btn.textContent = "Show Frames";
-                btn.classList.remove('active-btn');
-                descBox.style.display = 'none'; // 枠を隠したら説明も隠す
+                box.style.display = 'block';
             }
         }
 
-        // 説明文の更新（ローカル制御）
-        function updateCardDescription(cardID, data) {
-            const box = document.getElementById(`${cardID}-desc`);
+        // ジャンル切り替え機能
+        function filterGenre(hundredsDigit) {
+            currentGenre = hundredsDigit;
+            
+            document.querySelectorAll('.genre-btn').forEach((btn, idx) => {
+                if(idx === hundredsDigit) btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+
+            currentList = galleryData.filter(item => {
+                const match = item.imageFile.match(/(\d+)/);
+                const num = match ? parseInt(match[1], 10) : 0;
+                return Math.floor(num / 100) === hundredsDigit;
+            });
+
+            if (currentList.length === 0) {
+                document.getElementById('image-container').innerHTML = '<p style="padding:40px; text-align:center; color:#888;">No images in this category yet.</p>';
+                document.getElementById('desc-box').style.display = 'none';
+                document.getElementById('page-indicator').textContent = "0 / 0";
+                // ボタン類を無効化
+                document.querySelector('.nav-btn[onclick="changePage(-1)"]').disabled = true;
+                document.querySelector('.nav-btn[onclick="changePage(1)"]').disabled = true;
+                return;
+            } else {
+                // ボタン有効化
+                document.querySelector('.nav-btn[onclick="changePage(-1)"]').disabled = false;
+                document.querySelector('.nav-btn[onclick="changePage(1)"]').disabled = false;
+            }
+
+            currentIndex = 0;
+            loadPage(currentIndex);
+        }
+
+        function loadPage(index) {
+            if (index < 0) index = 0;
+            if (index >= currentList.length) index = currentList.length - 1;
+            currentIndex = index;
+
+            const data = currentList[currentIndex];
+            const container = document.getElementById('image-container');
+            
+            // 枠が消えるのでクリア
+            container.innerHTML = `<img id="current-image" src="${data.imageFile}" class="main-image">`;
+            
+            document.getElementById('desc-box').style.display = 'none';
+            framesVisible = false;
+
+            // 枠生成
+            data.spots.forEach(spot => {
+                const div = document.createElement('div');
+                div.className = 'hotspot';
+                Object.assign(div.style, { top: spot.top, left: spot.left, width: spot.width, height: spot.height, borderColor: spot.color });
+                div.onclick = (e) => { e.stopPropagation(); showText(spot); };
+                container.appendChild(div);
+            });
+
+            document.getElementById('page-indicator').textContent = `${currentIndex + 1} / ${currentList.length}`;
+        }
+
+        function changePage(d) {
+            if (currentList.length > 0) loadPage(currentIndex + d);
+        }
+
+        function toggleFrames() {
+            framesVisible = !framesVisible;
+            document.querySelectorAll('.hotspot').forEach(s => s.style.display = framesVisible ? 'block' : 'none');
+            if(!framesVisible) document.getElementById('desc-box').style.display = 'none';
+        }
+
+        function showText(data) {
+            const box = document.getElementById('desc-box');
             box.style.display = 'block';
-            box.style.borderTopColor = data.color;
+            box.style.borderLeftColor = data.color;
+            
+            document.getElementById('d-title').textContent = data.title;
+            document.getElementById('d-title').style.color = data.color;
+            document.getElementById('d-eng').textContent = data.eng;
+            document.getElementById('d-jp').textContent = data.jp;
 
-            // テキスト流し込み
-            box.querySelector('.desc-title').textContent = data.title;
-            box.querySelector('.desc-title').style.color = data.color;
-            box.querySelector('.eng-text').textContent = data.eng;
-            box.querySelector('.jp-text').textContent = data.jp;
-
-            // リスト生成ヘルパー
-            const fillList = (selector, items) => {
-                const ul = box.querySelector(selector);
+            const makeList = (id, items) => {
+                const ul = document.getElementById(id);
                 ul.innerHTML = '';
                 if(items && items.length > 0) {
                     items.forEach(txt => {
@@ -600,21 +576,15 @@
                         li.textContent = txt;
                         ul.appendChild(li);
                     });
-                } else {
-                    ul.innerHTML = '<li>-</li>';
                 }
             };
 
-            fillList('.l-vocab', data.vocab);
-            fillList('.l-idiom', data.idioms);
-            fillList('.l-synonym', data.synonyms);
+            makeList('list-vocab', data.vocab);
+            makeList('list-idiom', data.idioms);
+            makeList('list-synonym', data.synonyms);
             
-            box.querySelector('.l-grammar').textContent = data.grammar || "-";
-
-            // スクロール位置の微調整（説明が見切れないように）
-            // box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            document.getElementById('text-grammar').textContent = data.grammar || "";
         }
-
     </script>
 </body>
 </html>
