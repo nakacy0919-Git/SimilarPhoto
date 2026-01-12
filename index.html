@@ -6,20 +6,33 @@
     <title>Similar Photos Review</title>
     <style>
         /* =========================================
-           Base Design
+           1. 背景グラデーションアニメーションの追加
            ========================================= */
-        body { 
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-            background: #f8f9fa; 
-            color: #333; 
-            margin: 0; 
-            padding: 20px; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            /* 既存の単色背景を削除し、グラデーションを設定 */
+            /* background: #f8f9fa; */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite; /* 15秒かけて変化し続ける */
+            
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* 画面全体を覆うように設定 */
         }
 
-        /* --- Header Section (Left Image + Right Text) --- */
+        /* グラデーションの動きを定義 */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- Header Section --- */
         header {
             display: flex;
             align-items: center;
@@ -29,21 +42,24 @@
             width: 100%;
             max-width: 800px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(0,0,0,0.1); /* 区切り線を少し透明に */
         }
 
         .title-image {
-            height: 60px; /* 小さく設定 */
+            height: 60px;
             width: auto;
             object-fit: contain;
+            /* タイトル画像にも少し影をつけて浮き上がらせる */
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
         }
 
         h1 {
             font-size: 2rem;
             margin: 0;
-            color: #2c3e50;
+            color: #fff; /* 背景に合わせて文字色を白に変更 */
             text-transform: uppercase;
             letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* 文字が見やすいように影を追加 */
         }
 
         /* --- Methodology Toggle --- */
@@ -56,19 +72,22 @@
         .method-btn {
             background: none;
             border: none;
-            color: #7f8c8d;
+            color: rgba(255,255,255,0.8); /* ボタンの色を調整 */
             cursor: pointer;
             font-size: 0.9rem;
             text-decoration: underline;
         }
+        .method-btn:hover { color: #fff; }
+
         .methodology-box {
             display: none;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.95); /* 少し透過させる */
             padding: 20px;
             max-width: 800px;
             border-left: 4px solid #3498db;
             margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px; /* 角丸を追加 */
             animation: fadeIn 0.3s ease;
         }
         @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
@@ -85,40 +104,42 @@
         }
         .genre-btn {
             padding: 8px 16px;
-            background: #fff;
-            border: 1px solid #bdc3c7;
+            background: rgba(255, 255, 255, 0.8); /* ボタンを半透明に */
+            border: none; /* 枠線を削除 */
             border-radius: 20px;
             cursor: pointer;
-            color: #7f8c8d;
+            color: #555;
             font-weight: bold;
             transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .genre-btn:hover { background: #ecf0f1; }
+        .genre-btn:hover { background: #fff; }
         .genre-btn.active {
             background: #2c3e50;
             color: #fff;
-            border-color: #2c3e50;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
-        /* --- Gallery List Area (Vertical Scroll) --- */
+        /* --- Gallery List Area --- */
         #gallery-list {
             width: 100%;
             max-width: 800px;
             display: flex;
             flex-direction: column;
-            gap: 40px; /* 画像ごとの間隔 */
+            gap: 40px;
+            padding-bottom: 40px;
         }
 
         /* --- Individual Photo Card --- */
         .photo-card {
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 12px; /* 角丸を強く */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 影を強調 */
             overflow: hidden;
-            border: 1px solid #eee;
+            border: none; /* 枠線を削除 */
         }
 
-        /* Card Header: No. & Button */
+        /* Card Header */
         .card-header {
             padding: 15px 20px;
             display: flex;
@@ -144,7 +165,7 @@
             transition: 0.2s;
         }
         .toggle-frame-btn:hover { background: #219150; }
-        .toggle-frame-btn.active { background: #e74c3c; } /* 押したときの色 */
+        .toggle-frame-btn.active { background: #e74c3c; }
 
         /* Image Area */
         .image-wrapper {
@@ -164,23 +185,65 @@
             border: 3px solid;
             background: rgba(255,255,255,0.1);
             border-radius: 4px;
-            display: none; /* デフォルト非表示 */
+            display: none;
             transition: 0.2s;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3); /* 枠が見やすいように影追加 */
         }
         .hotspot:hover {
             background: rgba(255,255,255,0.3);
-            box-shadow: 0 0 10px rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(255,255,255,0.8);
         }
 
         /* Description Box */
         .desc-box {
             padding: 25px;
             display: none;
-            border-top: 2px solid #ddd;
+            border-top: 3px solid #ddd; /* 線の太さを変更 */
             background: #fff;
         }
         .desc-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; display: block; }
-        .eng-text { font-size: 1.1rem; margin-bottom: 5px; color: #222; }
+
+        /* =========================================
+           2. 読み上げボタンのスタイル追加
+           ========================================= */
+        .speak-container {
+            display: flex;
+            align-items: flex-start; /* 上揃え */
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+        .eng-text {
+            font-size: 1.1rem;
+            color: #222;
+            flex-grow: 1; /* テキストがスペースを埋める */
+            line-height: 1.4;
+        }
+        .speak-btn {
+            background: none;
+            border: 2px solid #eee;
+            color: #2c3e50;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 8px;
+            border-radius: 50%;
+            transition: all 0.2s;
+            flex-shrink: 0; /* ボタンが潰れないように */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .speak-btn:hover {
+            background-color: #2c3e50;
+            color: #fff;
+            border-color: #2c3e50;
+        }
+        .speak-btn:active {
+            transform: scale(0.95);
+        }
+        /* ========================================= */
+
         .jp-text { font-size: 0.9rem; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
 
         /* Learning Grid */
@@ -196,7 +259,7 @@
 <body>
 
     <header>
-        <img src="title.png" alt="Icon" class="title-image">
+        <img src="title.png" alt="App Icon" class="title-image" onerror="this.style.display='none'">
         <h1>Similar Photos Review</h1>
     </header>
 
@@ -445,15 +508,13 @@
             renderCategory(0);
         };
 
-        // カテゴリーレンダリング（縦スクロールリスト生成）
+        // カテゴリーレンダリング
         function renderCategory(hundredsDigit) {
-            // ボタンのアクティブ化
             document.querySelectorAll('.genre-btn').forEach((btn, idx) => {
                 if(idx === hundredsDigit) btn.classList.add('active');
                 else btn.classList.remove('active');
             });
 
-            // データフィルタリング
             const list = galleryData.filter(item => {
                 const match = item.imageFile.match(/(\d+)/);
                 const num = match ? parseInt(match[1], 10) : 0;
@@ -461,22 +522,21 @@
             });
 
             const container = document.getElementById('gallery-list');
-            container.innerHTML = ''; // リセット
+            container.innerHTML = '';
 
             if (list.length === 0) {
-                container.innerHTML = '<p style="text-align:center; color:#999; padding:40px;">No images in this series yet.</p>';
+                container.innerHTML = '<p style="text-align:center; color:rgba(255,255,255,0.7); padding:40px;">No images in this series yet.</p>';
                 return;
             }
 
-            // カード生成ループ
             list.forEach((data, index) => {
                 const match = data.imageFile.match(/(\d+)/);
                 const fileNum = match ? match[1] : "---";
                 const cardID = `card-${index}`;
 
-                // カード作成
                 const article = document.createElement('article');
                 article.className = 'photo-card';
+                // ★★★ 修正: 説明ボックス内に読み上げボタンを追加 ★★★
                 article.innerHTML = `
                     <div class="card-header">
                         <span class="card-number">No. ${fileNum}</span>
@@ -485,11 +545,16 @@
                         </button>
                     </div>
                     <div class="image-wrapper" id="${cardID}-wrapper">
-                        <img src="${data.imageFile}" class="main-image">
-                        </div>
+                        <img src="${data.imageFile}" class="main-image" alt="Gallery Image ${fileNum}">
+                    </div>
                     <div class="desc-box" id="${cardID}-desc">
                         <span class="desc-title">Title</span>
-                        <div class="eng-text">English...</div>
+                        
+                        <div class="speak-container">
+                            <div class="eng-text">English...</div>
+                            <button class="speak-btn" aria-label="Read aloud" title="Read aloud">🔊</button>
+                        </div>
+
                         <div class="jp-text">Japanese...</div>
                         <div class="learning-grid">
                             <div class="learn-item"><h4>Vocabulary</h4><ul class="l-vocab"></ul></div>
@@ -499,8 +564,8 @@
                         </div>
                     </div>
                 `;
+                // ★★★ ここまで ★★★
 
-                // ホットスポット追加
                 const wrapper = article.querySelector('.image-wrapper');
                 data.spots.forEach(spot => {
                     const div = document.createElement('div');
@@ -510,8 +575,6 @@
                         width: spot.width, height: spot.height, 
                         borderColor: spot.color 
                     });
-                    
-                    // クリックイベント
                     div.onclick = (e) => {
                         e.stopPropagation();
                         updateDescription(cardID, spot);
@@ -530,7 +593,6 @@
             const descBox = document.getElementById(`${cardID}-desc`);
 
             let isHidden = (spots[0].style.display === 'none' || spots[0].style.display === '');
-
             spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
 
             if (isHidden) {
@@ -539,8 +601,28 @@
             } else {
                 btn.textContent = "Show Frames";
                 btn.classList.remove('active');
-                descBox.style.display = 'none'; // 説明も隠す
+                descBox.style.display = 'none';
             }
+        }
+
+        // ★★★ 追加: テキスト読み上げ関数 (Web Speech API) ★★★
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel(); // 現在の読み上げをキャンセル
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US'; // 英語（アメリカ）に設定
+                utterance.rate = 1.0;     // 標準速度
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Sorry, your browser does not support text-to-speech.");
+            }
+        }
+
+        // ★★★ 追加: データから日本語訳「(...)」を除去するヘルパー関数 ★★★
+        function cleanText(textArray) {
+            if (!textArray || textArray.length === 0) return "";
+            // 各項目から (...) を空文字に置換し、カンマで連結
+            return textArray.map(item => item.replace(/\s*\(.*?\)/g, '')).join(", ");
         }
 
         // 個別カードの説明更新
@@ -555,7 +637,26 @@
             box.querySelector('.jp-text').textContent = data.jp;
             box.querySelector('.l-grammar').textContent = data.grammar || "";
 
-            // リスト作成ヘルパー
+            // ★★★ 追加: 読み上げボタンにイベントを設定 ★★★
+            const speakBtn = box.querySelector('.speak-btn');
+            // ボタンをクローンして既存のイベントリスナーをリセット
+            const newSpeakBtn = speakBtn.cloneNode(true);
+            speakBtn.parentNode.replaceChild(newSpeakBtn, speakBtn);
+
+            newSpeakBtn.onclick = () => {
+                // 読み上げるテキストを構築（英文 + Vocabulary + Idioms）
+                let textToRead = data.eng;
+                
+                const cleanVocab = cleanText(data.vocab);
+                if (cleanVocab) textToRead += ". Vocabulary: " + cleanVocab + ".";
+                
+                const cleanIdioms = cleanText(data.idioms);
+                if (cleanIdioms) textToRead += " Idioms: " + cleanIdioms + ".";
+
+                speakText(textToRead);
+            };
+            // ★★★ ここまで ★★★
+
             const fillList = (cls, items) => {
                 const ul = box.querySelector(cls);
                 ul.innerHTML = '';
