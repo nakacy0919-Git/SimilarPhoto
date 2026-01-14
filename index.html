@@ -10,11 +10,9 @@
            ========================================= */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            /* 背景を非常に薄いパステル調のグラデーションに変更 */
             background: linear-gradient(-45deg, #fdfbfb, #ebedee, #f3e7e9, #e3eeff);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
-            
             color: #333;
             margin: 0;
             padding: 20px;
@@ -23,7 +21,6 @@
             align-items: center;
             min-height: 100vh;
         }
-
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -41,230 +38,112 @@
             max-width: 800px;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: relative;
         }
-
         .title-image {
             height: 60px;
             width: auto;
             object-fit: contain;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
         }
-
         h1 {
             font-size: 2rem;
             margin: 0;
-            color: #555; /* 背景が明るいので文字色を少し濃く */
+            color: #555;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* --- Methodology Toggle --- */
-        .method-toggle-container {
+        /* --- Language Switcher & Method Toggle --- */
+        .top-controls {
             width: 100%;
             max-width: 800px;
-            text-align: right;
+            display: flex;
+            justify-content: space-between; /* 左に言語、右にAbout */
+            align-items: center;
             margin-bottom: 10px;
         }
-        .method-btn {
-            background: none;
-            border: none;
-            color: #777;
-            cursor: pointer;
-            font-size: 0.9rem;
-            text-decoration: underline;
-        }
-        .method-btn:hover { color: #333; }
 
+        .lang-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            border-radius: 4px;
+            color: #777;
+            transition: 0.2s;
+        }
+        .lang-btn.active {
+            background: #2c3e50;
+            color: #fff;
+            border-color: #2c3e50;
+        }
+
+        .method-btn { background: none; border: none; color: #777; cursor: pointer; font-size: 0.9rem; text-decoration: underline; }
+        .method-btn:hover { color: #333; }
+        
         .methodology-box {
-            display: none;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            max-width: 800px;
-            border-left: 4px solid #3498db;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            animation: fadeIn 0.3s ease;
+            display: none; background: rgba(255, 255, 255, 0.9); padding: 20px; max-width: 800px;
+            border-left: 4px solid #3498db; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px; animation: fadeIn 0.3s ease;
         }
         @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
 
         /* --- Category Tabs --- */
-        .genre-tabs {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 30px;
-            width: 100%;
-            max-width: 800px;
-        }
+        .genre-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; width: 100%; max-width: 800px; }
         .genre-btn {
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(0,0,0,0.05);
-            border-radius: 20px;
-            cursor: pointer;
-            color: #555;
-            font-weight: bold;
-            transition: 0.2s;
+            padding: 8px 16px; background: rgba(255, 255, 255, 0.6); border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 20px; cursor: pointer; color: #555; font-weight: bold; transition: 0.2s;
         }
         .genre-btn:hover { background: #fff; }
-        .genre-btn.active {
-            background: #2c3e50;
-            color: #fff;
-            border-color: #2c3e50;
-            box-shadow: 0 2px 10px rgba(44, 62, 80, 0.2);
-        }
+        .genre-btn.active { background: #2c3e50; color: #fff; border-color: #2c3e50; box-shadow: 0 2px 10px rgba(44, 62, 80, 0.2); }
 
-        /* --- Gallery List Area --- */
-        #gallery-list {
-            width: 100%;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding-bottom: 40px;
-        }
-
-        /* --- Individual Photo Card --- */
-        .photo-card {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            overflow: hidden;
-        }
-
-        .card-header {
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #fdfdfd;
-            border-bottom: 1px solid #eee;
-        }
-        .card-number {
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: #2c3e50;
-        }
+        /* --- Gallery List --- */
+        #gallery-list { width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 40px; padding-bottom: 40px; }
+        
+        /* --- Card Styles --- */
+        .photo-card { background: #fff; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); overflow: hidden; }
+        .card-header { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; background: #fdfdfd; border-bottom: 1px solid #eee; }
+        .card-number { font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
         .toggle-frame-btn {
-            padding: 6px 12px;
-            background: #27ae60;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            transition: 0.2s;
+            padding: 6px 12px; background: #27ae60; color: white; border: none; border-radius: 4px;
+            cursor: pointer; font-size: 0.85rem; transition: 0.2s;
         }
         .toggle-frame-btn:hover { background: #219150; }
         .toggle-frame-btn.active { background: #e74c3c; }
 
-        .image-wrapper {
-            position: relative;
-            width: 100%;
-            background: #f4f4f4;
-        }
-        .main-image {
-            width: 100%;
-            display: block;
-        }
-
+        .image-wrapper { position: relative; width: 100%; background: #f4f4f4; }
+        .main-image { width: 100%; display: block; }
         .hotspot {
-            position: absolute;
-            cursor: pointer;
-            border: 3px solid;
-            background: rgba(255,255,255,0.1);
-            border-radius: 4px;
-            display: none;
-            transition: 0.2s;
-            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            position: absolute; cursor: pointer; border: 3px solid; background: rgba(255,255,255,0.1);
+            border-radius: 4px; display: none; transition: 0.2s; box-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
-        .hotspot:hover {
-            background: rgba(255,255,255,0.3);
-            box-shadow: 0 0 15px rgba(255,255,255,0.8);
-        }
+        .hotspot:hover { background: rgba(255,255,255,0.3); box-shadow: 0 0 15px rgba(255,255,255,0.8); }
 
-        /* Description Box */
-        .desc-box {
-            padding: 25px;
-            display: none;
-            border-top: 3px solid #ddd;
-            background: #fff;
-        }
+        .desc-box { padding: 25px; display: none; border-top: 3px solid #ddd; background: #fff; }
         .desc-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; display: block; }
 
-        /* --- Audio Button Styles --- */
+        /* Audio Button */
         .speak-btn {
-            background: none;
-            border: 1px solid #eee;
-            color: #2c3e50;
-            cursor: pointer;
-            font-size: 1rem;
-            padding: 4px;
-            border-radius: 50%;
-            transition: all 0.2s;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-            margin-left: 8px; /* 文字との間隔 */
-            vertical-align: middle;
+            background: none; border: 1px solid #eee; color: #2c3e50; cursor: pointer; font-size: 1rem;
+            padding: 4px; border-radius: 50%; transition: all 0.2s; display: inline-flex;
+            align-items: center; justify-content: center; width: 30px; height: 30px; margin-left: 8px; vertical-align: middle;
         }
-        .speak-btn:hover {
-            background-color: #2c3e50;
-            color: #fff;
-            border-color: #2c3e50;
-        }
+        .speak-btn:hover { background-color: #2c3e50; color: #fff; border-color: #2c3e50; }
         .speak-btn:active { transform: scale(0.9); }
-
-        /* Main English Text Layout */
-        .eng-row {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 5px;
-        }
-        .eng-text {
-            font-size: 1.1rem;
-            color: #222;
-            line-height: 1.4;
-            flex-grow: 1;
-        }
-
-        .jp-text { font-size: 0.9rem; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
-
-        /* Learning Grid */
-        .learning-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 600px) { .learning-grid { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } h1 { font-size: 1.5rem; } }
-        
-        .learn-item h4 { 
-            margin: 0 0 5px 0; 
-            font-size: 0.8rem; 
-            color: #95a5a6; 
-            text-transform: uppercase; 
-            display: flex;
-            align-items: center; /* ボタンと揃える */
-        }
-        .learn-item ul { margin: 0; padding-left: 20px; font-size: 0.9rem; }
-        .learn-item li { margin-bottom: 3px; }
-
-        /* ミニ再生ボタン（リスト用） */
-        .mini-speak-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            color: #bdc3c7;
-            margin-left: 5px;
-            padding: 0;
-            line-height: 1;
-        }
+        .mini-speak-btn { background: none; border: none; cursor: pointer; font-size: 1rem; color: #bdc3c7; margin-left: 5px; padding: 0; line-height: 1; }
         .mini-speak-btn:hover { color: #2c3e50; }
 
+        .eng-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 5px; }
+        .eng-text { font-size: 1.1rem; color: #222; line-height: 1.4; flex-grow: 1; }
+        .jp-text { font-size: 0.9rem; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+
+        .learning-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .learning-grid { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } h1 { font-size: 1.5rem; } }
+        .learn-item h4 { margin: 0 0 5px 0; font-size: 0.8rem; color: #95a5a6; text-transform: uppercase; display: flex; align-items: center; }
+        .learn-item ul { margin: 0; padding-left: 20px; font-size: 0.9rem; }
+        .learn-item li { margin-bottom: 3px; }
     </style>
 </head>
 <body>
@@ -274,15 +153,29 @@
         <h1>Similar Photos Review</h1>
     </header>
 
-    <div class="method-toggle-container">
-        <button class="method-btn" onclick="toggleMethod()">ⓘ About This Method</button>
+    <div class="top-controls">
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-en" onclick="changeLanguage('en')">English</button>
+            <button class="lang-btn" id="btn-jp" onclick="changeLanguage('jp')">日本語</button>
+        </div>
+        <button class="method-btn" onclick="toggleMethod()" id="lbl-about-btn">ⓘ About This Method</button>
     </div>
+
     <div id="method-box" class="methodology-box">
-        <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;">
-            <strong>Why This Method Works:</strong><br>
-            正確な描写力は、会話力の要です。「Similar Photos Review」は、見たものを正確に言語化し、相手に伝える力を養います。
-            視覚情報と言語を結びつけるこのプロセスは、記憶に定着しやすく、実践的なコミュニケーション能力を高める非常に効果的な学習法です。
-        </p>
+        <div id="about-content-en">
+            <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;">
+                <strong>Why This Method Works:</strong><br>
+                Accurate description skills are the key to conversation. "Similar Photos Review" helps you verbalize exactly what you see.
+                Linking visual information with language helps memory retention and is a highly effective way to improve practical communication skills.
+            </p>
+        </div>
+        <div id="about-content-jp" style="display:none;">
+            <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;">
+                <strong>なぜこの方法が効果的なのか：</strong><br>
+                正確な描写力は、会話力の要です。「Similar Photos Review」は、見たものを正確に言語化し、相手に伝える力を養います。
+                視覚情報と言語を結びつけるこのプロセスは、記憶に定着しやすく、実践的なコミュニケーション能力を高める非常に効果的な学習法です。
+            </p>
+        </div>
     </div>
 
     <div class="genre-tabs">
@@ -292,553 +185,105 @@
         <button class="genre-btn" onclick="renderCategory(3)">300 Series</button>
         <button class="genre-btn" onclick="renderCategory(4)">400 Series</button>
         <button class="genre-btn" onclick="renderCategory(5)">500 Series</button>
+        <button class="genre-btn" onclick="renderCategory(6)">600 Series</button>
+        <button class="genre-btn" onclick="renderCategory(7)">700 Series</button>
+        <button class="genre-btn" onclick="renderCategory(8)">800 Series</button>
+        <button class="genre-btn" onclick="renderCategory(9)">900 Series</button>
+        <button class="genre-btn" onclick="renderCategory(10)">1000 Series</button>
     </div>
 
-    <div id="gallery-list">
-        </div>
+    <div id="gallery-list"></div>
 
     <script>
-        // ============================================
-        // ★データエリア (Data)
-        // ============================================
-        const galleryData = [
-            {
-                imageFile: "001.png", 
-                spots: [
-                    {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#3498db",
-                        title: "Center: A Pair of Penguins",
-                        eng: "Two penguins are standing side by side in the central cubby.",
-                        jp: "中央の小部屋に2羽のペンギンが並んで立っています。",
-                        vocab: ["cubby (棚の区画)", "side by side (並んで)", "central (中央の)"],
-                        idioms: ["stick together (一緒にいる)"],
-                        synonyms: ["duo (pair)"],
-                        grammar: "位置を表す前置詞 'in' と、状態を表す現在進行形 'are standing' の組み合わせです。"
-                    },
-                    {
-                        top: "69%", left: "3%", width: "28%", height: "28%", color: "#e67e22",
-                        title: "Bottom-Left: A Solitary Rabbit",
-                        eng: "A brown rabbit sits alone in the bottom-left section.",
-                        jp: "茶色のウサギが左下の区画に一匹で座っています。",
-                        vocab: ["solitary (単独の)", "section (区画)", "bottom-left (左下)"],
-                        idioms: ["lone wolf (一匹狼)"],
-                        synonyms: ["alone (solitary)"],
-                        grammar: "場所を指す副詞句 'in the bottom-left section' が文末に来ています。"
-                    }
-                ]
-            },
-            {
-                imageFile: "002.png", 
-                spots: [
-                    {
-                        top: "36%", left: "3%", width: "28%", height: "28%", color: "#95a5a6",
-                        title: "Left: A Koala",
-                        eng: "A grey koala is sitting to the left of the penguins.",
-                        jp: "灰色のコアラがペンギンの左側に座っています。",
-                        vocab: ["to the left of (～の左側に)", "grey (灰色の)"],
-                        idioms: ["sit tight (じっとしている)"],
-                        synonyms: ["beside (next to)"],
-                        grammar: "相対的な位置関係を示す 'to the left of' がポイントです。"
-                    },
-                    {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#3498db",
-                        title: "Center: Sandwiched Penguins",
-                        eng: "The penguin pair is sandwiched between the koala and the dog.",
-                        jp: "ペンギンのペアは、コアラと犬の間に挟まれています。",
-                        vocab: ["sandwiched (挟まれた)", "between (～の間)"],
-                        idioms: ["caught in the middle (板挟みになる)"],
-                        synonyms: ["surrounded (enclosed)"],
-                        grammar: "受動態 'is sandwiched' を使い、挟まれている状態を強調しています。"
-                    },
-                    {
-                        top: "36%", left: "69%", width: "28%", height: "28%", color: "#f1c40f",
-                        title: "Right: A Golden Retriever",
-                        eng: "A happy-looking dog sits on the far right side of the middle row.",
-                        jp: "幸せそうな犬が、中段の右端に座っています。",
-                        vocab: ["middle row (中段)", "far right (右端)"],
-                        idioms: ["man's best friend (犬)"],
-                        synonyms: ["canine (dog)"],
-                        grammar: "複合形容詞 'happy-looking' が名詞 dog を修飾しています。"
-                    }
-                ]
-            },
-            {
-                imageFile: "003.png", 
-                spots: [
-                    {
-                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#e67e22",
-                        title: "Top-Left: An Orange Tabby",
-                        eng: "An orange tabby cat is sitting in the top-left compartment.",
-                        jp: "オレンジ色のトラ猫が左上の区画に座っています。",
-                        vocab: ["tabby (トラ猫)", "compartment (仕切り)"],
-                        idioms: ["cat nap (うたた寝)"],
-                        synonyms: ["feline (cat)"],
-                        grammar: "場所を特定する 'top-left' という表現です。"
-                    },
-                    {
-                        top: "3%", left: "36%", width: "28%", height: "28%", color: "#2c3e50",
-                        title: "Top-Center: A Zebra",
-                        eng: "A zebra stands next to the cat in the top row.",
-                        jp: "最上段で、シマウマが猫の隣に立っています。",
-                        vocab: ["top row (最上段)", "next to (～の隣に)"],
-                        idioms: ["change one's stripes (性根を変える)"],
-                        synonyms: ["adjacent (next to)"],
-                        grammar: "動詞 'stands' と場所 'next to' の組み合わせ。"
-                    },
-                    {
-                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#e74c3c",
-                        title: "Bottom-Right: Diagonal Position",
-                        eng: "The rabbit is placed in the bottom-right corner, far away from the others.",
-                        jp: "ウサギは右下の隅に配置され、他の動物からは離れています。",
-                        vocab: ["corner (隅)", "far away (遠く離れて)"],
-                        idioms: ["miles away (心ここにあらず)"],
-                        synonyms: ["distant (far)"],
-                        grammar: "受動態 'is placed' が使われています。"
-                    }
-                ]
-            },
-            {
-                imageFile: "004.png", 
-                spots: [
-                    {
-                        top: "3%", left: "3%", width: "28%", height: "28%", color: "#2c3e50",
-                        title: "Start: Top-Left",
-                        eng: "The zebra starts the diagonal line from the top-left corner.",
-                        jp: "シマウマが左上の隅から斜めのラインを始めています。",
-                        vocab: ["diagonal (斜めの)", "line (線)"],
-                        idioms: ["start off (始める)"],
-                        synonyms: ["begin (start)"],
-                        grammar: "能動態の 'starts' を使い、シマウマが列の始点であることを示しています。"
-                    },
-                    {
-                        top: "36%", left: "36%", width: "28%", height: "28%", color: "#e67e22",
-                        title: "Middle: Center Spot",
-                        eng: "The cat occupies the exact center of the grid.",
-                        jp: "猫がグリッドのちょうど中心を占めています。",
-                        vocab: ["occupy (占める)", "exact (正確な)", "grid (格子)"],
-                        idioms: ["dead center (ど真ん中)"],
-                        synonyms: ["inhabit (occupy)"],
-                        grammar: "動詞 'occupy' は空間や地位を占める際によく使われます。"
-                    },
-                    {
-                        top: "69%", left: "69%", width: "28%", height: "28%", color: "#e74c3c",
-                        title: "End: Bottom-Right",
-                        eng: "The rabbit completes the diagonal alignment in the bottom-right.",
-                        jp: "ウサギが右下で斜めの配置を完成させています。",
-                        vocab: ["complete (完成させる)", "alignment (整列)"],
-                        idioms: ["tie up loose ends (仕上げる)"],
-                        synonyms: ["finish (complete)"],
-                        grammar: "主語(Rabbit) + 動詞(completes) + 目的語(alignment) です。"
-                    }
-                ]
-            },
-            {
-                imageFile: "005.png", 
-                spots: [
-                    {
-                        top: "20%", left: "5%", width: "30%", height: "60%", color: "#c0392b",
-                        title: "Two Bottles of Cola",
-                        eng: "There are two identical bottles of zero-sugar cola on the left.",
-                        jp: "左側に、ゼロシュガーコーラの全く同じボトルが2本あります。",
-                        vocab: ["identical (全く同じ)", "zero-sugar (無糖)"],
-                        idioms: ["seeing double (二重に見える)"],
-                        synonyms: ["duplicate (copy)"],
-                        grammar: "存在を表す 'There are' 構文です。"
-                    },
-                    {
-                        top: "20%", left: "37%", width: "30%", height: "60%", color: "#27ae60",
-                        title: "Tea Selection",
-                        eng: "In the middle, we see a variety of teas: citrus green tea and milk tea.",
-                        jp: "中央には、シークヮーサー緑茶やミルクティーなど、様々な紅茶が見られます。",
-                        vocab: ["variety (種類)", "citrus (柑橘類)"],
-                        idioms: ["cup of tea (好み)"],
-                        synonyms: ["assortment (variety)"],
-                        grammar: "名詞の列挙（A and B）を使っています。"
-                    },
-                    {
-                        top: "20%", left: "68%", width: "30%", height: "60%", color: "#2c3e50",
-                        title: "Black Coffee",
-                        eng: "Two bottles of black coffee are lined up on the right side.",
-                        jp: "右側にはブラックコーヒーのボトルが2本並んでいます。",
-                        vocab: ["line up (並ぶ)", "black coffee (ブラック)"],
-                        idioms: ["wake up call (警鐘/目覚め)"],
-                        synonyms: ["align (line up)"],
-                        grammar: "受動態 'are lined up' で「並べられている」状態を表します。"
-                    }
-                ]
-            },
-            {
-                imageFile: "006.png", 
-                spots: [
-                    {
-                        top: "10%", left: "20%", width: "15%", height: "60%", color: "#3498db",
-                        title: "Sports Drink",
-                        eng: "The blue bottle is a sports drink, designed for hydration.",
-                        jp: "青いボトルはスポーツドリンクで、水分補給のために作られています。",
-                        vocab: ["hydration (水分補給)", "design (設計する)"],
-                        idioms: ["quench one's thirst (渇きを癒やす)"],
-                        synonyms: ["beverage (drink)"],
-                        grammar: "過去分詞 'designed' が形容詞的に修飾しています。"
-                    },
-                    {
-                        top: "25%", left: "75%", width: "15%", height: "50%", color: "#f1c40f",
-                        title: "Energy Drink",
-                        eng: "The small red and yellow can on the far right is an energy drink.",
-                        jp: "右端にある赤と黄色の小さな缶はエナジードリンクです。",
-                        vocab: ["energy drink (エナジードリンク)", "can (缶)"],
-                        idioms: ["boost of energy (元気が出る)"],
-                        synonyms: ["stimulant (energy booster)"],
-                        grammar: "長い主語 'The...can' に対する動詞 'is' です。"
-                    },
-                    {
-                        top: "75%", left: "5%", width: "90%", height: "15%", color: "#2ecc71",
-                        title: "Price Tags",
-                        eng: "The prices range from 140 yen to 180 yen.",
-                        jp: "価格は140円から180円の範囲です。",
-                        vocab: ["range (範囲に及ぶ)", "price tag (値札)"],
-                        idioms: ["bang for your buck (コスパが良い)"],
-                        synonyms: ["cost (price)"],
-                        grammar: "動詞 'range' を使い、'from A to B' で範囲を示しています。"
-                    }
-                ]
-            },
-            {
-                imageFile: "007.png",
-                spots: [
-                    {
-                        top: "20%", left: "8%", width: "14%", height: "50%", color: "#2ecc71",
-                        title: "Green Tea Bottle",
-                        eng: "A bottle of authentic green tea sits on the far left, promising a rich and savory flavor.",
-                        jp: "本格的な緑茶のボトルが左端にあり、豊かで旨みのある味わいを約束しています。",
-                        vocab: ["authentic (本格的な)", "savory (旨みのある)", "promise (予感させる)"],
-                        idioms: ["turn over a new leaf (心機一転する)"],
-                        synonyms: ["genuine (authentic)"],
-                        grammar: "現在分詞構文 'promising...' が、ボトルの見た目がもたらす期待感を説明しています。"
-                    },
-                    {
-                        top: "20%", left: "37%", width: "14%", height: "50%", color: "#9b59b6",
-                        title: "Royal Milk Tea",
-                        eng: "The royal milk tea features a blue and white label, suggesting a creamy and elegant taste.",
-                        jp: "ロイヤルミルクティーは青と白のラベルが特徴で、クリーミーで上品な味を連想させます。",
-                        vocab: ["feature (特徴とする)", "elegant (上品な)", "suggest (示唆する)"],
-                        idioms: ["cream of the crop (最高傑作)"],
-                        synonyms: ["luxurious (elegant)"],
-                        grammar: "動詞 'features' と現在分詞 'suggesting' を組み合わせた表現です。"
-                    },
-                    {
-                        top: "32%", left: "80%", width: "12%", height: "35%", color: "#f1c40f",
-                        title: "Golden Can Coffee",
-                        eng: "A small golden can of sweetened coffee is located on the far right, priced the lowest at 120 yen.",
-                        jp: "右端には微糖コーヒーの小さな金の缶があり、120円という最も安い価格設定になっています。",
-                        vocab: ["sweetened (加糖の)", "priced (価格設定された)", "lowest (最も低い)"],
-                        idioms: ["good things come in small packages (良品は小型)"],
-                        synonyms: ["sugary (sweetened)"],
-                        grammar: "過去分詞 'priced' が主語の状態を補足説明しています。"
-                    }
-                ]
-            },
-            {
-                imageFile: "501.png",
-                spots: [
-                    {
-                        top: "5%", left: "5%", width: "28%", height: "80%", color: "#e67e22",
-                        title: "Boasting Ability",
-                        eng: "The boy is confidently telling his friend that he can play the guitar very well.",
-                        jp: "男の子は友達に、自分はギターをとても上手に弾けると自信満々に話しています。",
-                        vocab: ["confidently (自信を持って)", "boast (自慢する)", "skill (技術)"],
-                        idioms: ["show off (見せびらかす)"],
-                        synonyms: ["capable of", "able to"],
-                        grammar: "Model 'can' expresses ability or capacity."
-                    },
-                    {
-                        top: "5%", left: "53%", width: "28%", height: "80%", color: "#2980b9",
-                        title: "Listening Friend",
-                        eng: "The girl is listening to him, perhaps wondering if his story is actually true.",
-                        jp: "女の子は彼の話を聞いていますが、その話が本当に本当なのか疑問に思っているかもしれません。",
-                        vocab: ["wonder (〜かなと思う)", "actually (実際に)", "doubt (疑う)"],
-                        idioms: ["listen to (〜に耳を傾ける)"],
-                        synonyms: ["hearing", "paying attention"],
-                        grammar: "Present continuous tense for ongoing action."
-                    },
-                    {
-                        top: "18%", left: "28%", width: "20%", height: "30%", color: "#f1c40f",
-                        title: "Musical Topic",
-                        eng: "A guitar icon appears in a speech bubble, showing exactly what they are discussing.",
-                        jp: "ギターのアイコンが吹き出しに表示されており、彼らがまさに何を議論しているかを示しています。",
-                        vocab: ["speech bubble (吹き出し)", "discuss (議論する)", "appear (現れる)"],
-                        idioms: ["topic of conversation (話題)"],
-                        synonyms: ["chatting about", "talking about"],
-                        grammar: "Subject 'icon' + verb 'appears'."
-                    }
-                ]
-            },
-            {
-                imageFile: "502.png",
-                spots: [
-                    {
-                        top: "5%", left: "5%", width: "90%", height: "30%", color: "#f39c12",
-                        title: "Intense Heat",
-                        eng: "The sun is beating down on her, making it a very hot day for exercise.",
-                        jp: "太陽が照りつけており、運動するにはとても暑い日になっています。",
-                        vocab: ["beat down (照りつける)", "intense (強烈な)", "exercise (運動)"],
-                        idioms: ["scortching hot (焼けつくように暑い)"],
-                        synonyms: ["sunny", "sweltering"],
-                        grammar: "Cause and effect implied by the setting."
-                    },
-                    {
-                        top: "60%", left: "20%", width: "20%", height: "30%", color: "#3498db",
-                        title: "Recommendation",
-                        eng: "Since she is sweating profusely, she should drink more water to stay hydrated.",
-                        jp: "彼女は大量に汗をかいているので、水分補給のために水をもっと飲むべきです。",
-                        vocab: ["profusely (大量に)", "hydrated (水分補給された)", "sweat (汗をかく)"],
-                        idioms: ["stay hydrated (水分を保つ)"],
-                        synonyms: ["ought to", "had better"],
-                        grammar: "Modal 'should' is used for advice or recommendation."
-                    },
-                    {
-                        top: "5%", left: "30%", width: "40%", height: "90%", color: "#e74c3c",
-                        title: "Physical Effort",
-                        eng: "She looks exhausted but continues to run along the track despite the heat.",
-                        jp: "彼女は疲れ切っているように見えますが、暑さにもかかわらずトラックを走り続けています。",
-                        vocab: ["exhausted (疲れ切った)", "track (走路)", "despite (〜にもかかわらず)"],
-                        idioms: ["push through (やり抜く)"],
-                        synonyms: ["tired", "worn out"],
-                        grammar: "Contrast with 'despite'."
-                    }
-                ]
-            },
-            {
-                imageFile: "503.png",
-                spots: [
-                    {
-                        top: "3%", left: "18%", width: "70%", height: "95%", color: "#95a5a6",
-                        title: "Logical Deduction",
-                        eng: "She is caught in a downpour without an umbrella, so she must be cold and wet.",
-                        jp: "彼女は傘を持たずに土砂降りに遭ってしまったので、寒くて濡れているに違いありません。",
-                        vocab: ["downpour (土砂降り)", "caught (捕まる/遭う)", "umbrella (傘)"],
-                        idioms: ["soaked to the bone (ずぶ濡れになる)"],
-                        synonyms: ["freezing", "drenched"],
-                        grammar: "Modal 'must' indicates strong probability or logical deduction."
-                    },
-                    {
-                        top: "5%", left: "28%", width: "35%", height: "45%", color: "#e67e22",
-                        title: "Distress",
-                        eng: "She holds her hand to her head, looking stressed about the sudden bad weather.",
-                        jp: "彼女は頭に手を当て、突然の悪天候にストレスを感じているように見えます。",
-                        vocab: ["distress (苦悩)", "sudden (突然の)", "weather (天気)"],
-                        idioms: ["stressed out (ストレスが溜まる)"],
-                        synonyms: ["upset", "worried"],
-                        grammar: "Participle phrase 'looking stressed'."
-                    },
-                    {
-                        top: "18%", left: "3%", width: "90%", height: "30%", color: "#2c3e50",
-                        title: "Background Context",
-                        eng: "A train passes in the background, suggesting she might be commuting to or from school.",
-                        jp: "背景を電車が通過しており、彼女が通学中か帰宅中である可能性を示唆しています。",
-                        vocab: ["commute (通学/通勤する)", "suggest (示唆する)", "background (背景)"],
-                        idioms: ["on the way (途中で)"],
-                        synonyms: ["traveling", "going"],
-                        grammar: "'Might be' indicates possibility."
-                    }
-                ]
-            },
-            {
-                imageFile: "504.png",
-                spots: [
-                    {
-                        top: "25%", left: "45%", width: "10%", height: "10%", color: "#e67e22",
-                        title: "Future Possibility",
-                        eng: "She is standing comfortably now, but she may sit down soon if a seat becomes available.",
-                        jp: "彼女は今は快適そうに立っていますが、席が空けばすぐに座るかもしれません。",
-                        vocab: ["available (利用可能な)", "comfortably (快適に)", "seat (座席)"],
-                        idioms: ["open up (空く/利用可能になる)"],
-                        synonyms: ["might", "could"],
-                        grammar: "Modal 'may' expresses a future possibility."
-                    },
-                    {
-                        top: "40%", left: "10%", width: "10%", height: "10%", color: "#7f8c8d",
-                        title: "Surrounding Passengers",
-                        eng: "An elderly man is sitting quietly to her left, gazing forward.",
-                        jp: "彼女の左側には年配の男性が静かに座り、前を見つめています。",
-                        vocab: ["elderly (年配の)", "gaze (じっと見る)", "quietly (静かに)"],
-                        idioms: ["keep to oneself (他人と関わらずにいる)"],
-                        synonyms: ["senior", "old man"],
-                        grammar: "Present participle 'gazing' describes the man."
-                    },
-                    {
-                        top: "30%", left: "85%", width: "10%", height: "10%", color: "#27ae60",
-                        title: "Public Transport",
-                        eng: "The bus interior looks relatively full with various passengers traveling together.",
-                        jp: "バスの車内は比較的混んでおり、様々な乗客が一緒に移動しています。",
-                        vocab: ["interior (内部)", "relatively (比較的)", "passenger (乗客)"],
-                        idioms: ["rush hour (ラッシュアワー)"],
-                        synonyms: ["crowded", "occupied"],
-                        grammar: "Subject 'interior' + linking verb 'looks'."
-                    }
-                ]
-            },
-            {
-                imageFile: "505.png",
-                spots: [
-                    {
-                        top: "55%", left: "38%", width: "10%", height: "10%", color: "#34495e",
-                        title: "Distracted Walking",
-                        eng: "She is staring at her smartphone while walking down the street.",
-                        jp: "彼女は通りを歩きながら、スマートフォンを見つめています。",
-                        vocab: ["stare (じっと見る)", "distracted (気が散っている)", "smartphone (スマホ)"],
-                        idioms: ["glued to (〜に釘付けになる)"],
-                        synonyms: ["looking at", "watching"],
-                        grammar: "Conjunction 'while' connects two simultaneous actions."
-                    },
-                    {
-                        top: "20%", left: "50%", width: "10%", height: "10%", color: "#c0392b",
-                        title: "Strong Advice",
-                        eng: "It is dangerous to not look ahead; she had better watch where she's going.",
-                        jp: "前を見ないのは危険です。彼女は自分の行き先に注意したほうが身のためです。",
-                        vocab: ["dangerous (危険な)", "ahead (前方に)", "watch (注意する)"],
-                        idioms: ["watch out (気をつける)"],
-                        synonyms: ["ought to", "should"],
-                        grammar: "'Had better' implies a negative consequence if the advice is ignored."
-                    },
-                    {
-                        top: "30%", left: "85%", width: "10%", height: "10%", color: "#f39c12",
-                        title: "Obstacles",
-                        eng: "There is a lamppost and a curb nearby that she might accidentally trip over.",
-                        jp: "近くに街灯や縁石があり、彼女はうっかりつまずいてしまうかもしれません。",
-                        vocab: ["obstacle (障害物)", "accidentally (うっかり)", "trip (つまずく)"],
-                        idioms: ["run into (ぶつかる)"],
-                        synonyms: ["hazard", "barrier"],
-                        grammar: "Modal 'might' suggests a possible risk."
-                    }
-                ]
-            },
-            {
-                imageFile: "506.png",
-                spots: [
-                    {
-                        top: "20%", left: "50%", width: "10%", height: "10%", color: "#ecf0f1",
-                        title: "Waiting Patiently",
-                        eng: "The elderly woman is sitting alone on the bench and she may be waiting for someone.",
-                        jp: "その年配の女性はベンチに一人で座っており、誰かを待っているのかもしれません。",
-                        vocab: ["patiently (根気よく)", "alone (一人で)", "bench (ベンチ)"],
-                        idioms: ["wait for (〜を待つ)"],
-                        synonyms: ["expecting", "anticipating"],
-                        grammar: "'May be waiting' is the continuous form of the modal, expressing possible ongoing action."
-                    },
-                    {
-                        top: "50%", left: "50%", width: "10%", height: "10%", color: "#d35400",
-                        title: "Peaceful Atmosphere",
-                        eng: "She has a gentle smile on her face, suggesting she is enjoying the pleasant weather.",
-                        jp: "彼女は穏やかな笑みを浮かべており、心地よい天気を楽しんでいるようです。",
-                        vocab: ["gentle (穏やかな)", "pleasant (心地よい)", "atmosphere (雰囲気)"],
-                        idioms: ["wear a smile (笑みを浮かべる)"],
-                        synonyms: ["calm", "serene"],
-                        grammar: "Participle phrase 'suggesting...' explains the smile."
-                    },
-                    {
-                        top: "10%", left: "10%", width: "10%", height: "10%", color: "#27ae60",
-                        title: "Park Setting",
-                        eng: "Green trees and a house in the background indicate a quiet residential park.",
-                        jp: "背景の緑の木々と家は、ここが静かな住宅街の公園であることを示しています。",
-                        vocab: ["residential (住宅の)", "indicate (示す)", "background (背景)"],
-                        idioms: ["peace and quiet (平穏)"],
-                        synonyms: ["location", "scene"],
-                        grammar: "Subject 'trees and house' takes plural verb 'indicate'."
-                    }
-                ]
-            },
-            {
-                imageFile: "507.png",
-                spots: [
-                    {
-                        top: "20%", left: "50%", width: "10%", height: "10%", color: "#2c3e50",
-                        title: "Urgent Obligation",
-                        eng: "He looks very serious because he has to get to school soon.",
-                        jp: "彼はもうすぐ学校に着かなければならないので、とても真剣な表情をしています。",
-                        vocab: ["serious (真剣な)", "urgent (緊急の)", "obligation (義務)"],
-                        idioms: ["on time (時間通りに)"],
-                        synonyms: ["must", "needs to"],
-                        grammar: "'Has to' expresses external obligation or necessity."
-                    },
-                    {
-                        top: "60%", left: "40%", width: "10%", height: "10%", color: "#e74c3c",
-                        title: "Rapid Movement",
-                        eng: "He is leaning forward on his bike, pedaling hard to increase his speed.",
-                        jp: "彼は自転車で前傾姿勢を取り、スピードを上げるために一生懸命ペダルを漕いでいます。",
-                        vocab: ["lean (傾く)", "pedal (ペダルを漕ぐ)", "increase (増やす)"],
-                        idioms: ["in a rush (急いでいる)"],
-                        synonyms: ["speeding", "racing"],
-                        grammar: "Using 'to' infinitive (to increase) to show purpose."
-                    },
-                    {
-                        top: "10%", left: "45%", width: "10%", height: "10%", color: "#95a5a6",
-                        title: "Safety Gear",
-                        eng: "Even though he is in a hurry, he is wearing a helmet for safety.",
-                        jp: "彼は急いでいますが、安全のためにヘルメットを着用しています。",
-                        vocab: ["safety (安全)", "gear (装備)", "helmet (ヘルメット)"],
-                        idioms: ["better safe than sorry (転ばぬ先の杖)"],
-                        synonyms: ["protection", "security"],
-                        grammar: "Conjunction 'even though' introduces a concession."
-                    }
-                ]
-            },
-            {
-                imageFile: "508.png",
-                spots: [
-                    {
-                        top: "50%", left: "30%", width: "10%", height: "10%", color: "#2980b9",
-                        title: "Speculation on Activity",
-                        eng: "She is reading a thick book and she could be working on a project.",
-                        jp: "彼女は分厚い本を読んでおり、何かのプロジェクトに取り組んでいる可能性があります。",
-                        vocab: ["thick (分厚い)", "project (課題/計画)", "speculation (推測)"],
-                        idioms: ["work on (取り組む)"],
-                        synonyms: ["studying", "researching"],
-                        grammar: "'Could be working' expresses a possibility about a current continuous action."
-                    },
-                    {
-                        top: "25%", left: "45%", width: "10%", height: "10%", color: "#34495e",
-                        title: "Focus",
-                        eng: "She is wearing glasses and looks completely absorbed in her research.",
-                        jp: "彼女は眼鏡をかけており、完全に研究に没頭しているように見えます。",
-                        vocab: ["absorbed (没頭した)", "research (研究)", "glasses (眼鏡)"],
-                        idioms: ["lost in thought (物思いにふける)"],
-                        synonyms: ["focused", "engrossed"],
-                        grammar: "Adjective 'absorbed' describes her state."
-                    },
-                    {
-                        top: "30%", left: "85%", width: "10%", height: "10%", color: "#7f8c8d",
-                        title: "Study Partner",
-                        eng: "Another student is sitting behind her, also reading quietly.",
-                        jp: "彼女の後ろには別の生徒が座っており、同じく静かに本を読んでいます。",
-                        vocab: ["partner (パートナー)", "quietly (静かに)", "behind (後ろに)"],
-                        idioms: ["hit the books (猛勉強する)"],
-                        synonyms: ["classmate", "peer"],
-                        grammar: "Adverb 'also' adds information about the second subject."
-                    }
-                ]
-            }
-        ];
+        // データの受け皿
+        window.galleryData = [];
+    </script>
+    
+    <script src="data/series_000.js"></script>
+    <script src="data/series_100.js"></script>
+    <script src="data/series_200.js"></script>
+    <script src="data/series_300.js"></script>
+    <script src="data/series_400.js"></script>
+    <script src="data/series_500.js"></script>
+    <script src="data/series_600.js"></script>
+    <script src="data/series_700.js"></script>
+    <script src="data/series_800.js"></script>
+    <script src="data/series_900.js"></script>
+    <script src="data/series_1000.js"></script>
 
-        // ============================================
-        // ★Logic
-        // ============================================
+    <script>
+        // 言語設定（デフォルト英語）
+        let currentLang = 'en';
+
+        // UIテキスト辞書
+        const UI_TEXT = {
+            en: {
+                showFrame: "Show Frames",
+                hideFrame: "Hide Frames",
+                vocab: "Vocabulary",
+                idioms: "Idioms",
+                synonyms: "Synonyms",
+                grammar: "Grammar",
+                aboutBtn: "ⓘ About This Method"
+            },
+            jp: {
+                showFrame: "枠を表示",
+                hideFrame: "枠を隠す",
+                vocab: "単語",
+                idioms: "熟語",
+                synonyms: "類義語",
+                grammar: "文法",
+                aboutBtn: "ⓘ このメソッドについて"
+            }
+        };
+
+        // 現在選択中のカテゴリー（言語切り替え時に再描画するため記憶）
+        let currentCategoryIndex = 0;
 
         function toggleMethod() {
             const box = document.getElementById('method-box');
             box.style.display = (box.style.display === 'block') ? 'none' : 'block';
         }
 
+        function changeLanguage(lang) {
+            currentLang = lang;
+            
+            // ボタンの見た目切り替え
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-jp').classList.toggle('active', lang === 'jp');
+
+            // Aboutボタンのテキスト更新
+            document.getElementById('lbl-about-btn').textContent = UI_TEXT[lang].aboutBtn;
+
+            // Aboutボックスの中身切り替え
+            if(lang === 'en') {
+                document.getElementById('about-content-en').style.display = 'block';
+                document.getElementById('about-content-jp').style.display = 'none';
+            } else {
+                document.getElementById('about-content-en').style.display = 'none';
+                document.getElementById('about-content-jp').style.display = 'block';
+            }
+
+            // 現在のカテゴリーを再描画して、ボタン等の言語を更新
+            renderCategory(currentCategoryIndex);
+        }
+
         window.onload = function() {
-            renderCategory(0);
+            // データ読み込みを少し待ってから描画
+            setTimeout(() => renderCategory(0), 100); 
         };
 
         function renderCategory(hundredsDigit) {
+            currentCategoryIndex = hundredsDigit; // 記憶
+
+            // タブのアクティブ化
             document.querySelectorAll('.genre-btn').forEach((btn, idx) => {
                 if(idx === hundredsDigit) btn.classList.add('active');
                 else btn.classList.remove('active');
             });
 
-            const list = galleryData.filter(item => {
+            // データのフィルタリング
+            const list = window.galleryData.filter(item => {
                 const match = item.imageFile.match(/(\d+)/);
                 const num = match ? parseInt(match[1], 10) : 0;
                 return Math.floor(num / 100) === hundredsDigit;
@@ -852,20 +297,29 @@
                 return;
             }
 
+            // 画像番号順にソート
+            list.sort((a, b) => {
+                const numA = parseInt(a.imageFile.match(/(\d+)/)[1], 10);
+                const numB = parseInt(b.imageFile.match(/(\d+)/)[1], 10);
+                return numA - numB;
+            });
+
+            // テキスト辞書取得
+            const txt = UI_TEXT[currentLang];
+
             list.forEach((data, index) => {
                 const match = data.imageFile.match(/(\d+)/);
                 const fileNum = match ? match[1] : "---";
-                const cardID = `card-${index}`;
+                const cardID = `card-${fileNum}`;
 
                 const article = document.createElement('article');
                 article.className = 'photo-card';
                 
+                // カード生成 (言語設定を反映)
                 article.innerHTML = `
                     <div class="card-header">
                         <span class="card-number">No. ${fileNum}</span>
-                        <button class="toggle-frame-btn" onclick="toggleLocalFrames('${cardID}', this)">
-                            Show Frames
-                        </button>
+                        <button class="toggle-frame-btn" onclick="toggleLocalFrames('${cardID}', this)">${txt.showFrame}</button>
                     </div>
                     <div class="image-wrapper" id="${cardID}-wrapper">
                         <img src="${data.imageFile}" class="main-image" alt="Gallery Image">
@@ -882,19 +336,19 @@
 
                         <div class="learning-grid">
                             <div class="learn-item">
-                                <h4>Vocabulary <button class="mini-speak-btn vocab-speak" title="Read Vocabulary">🔊</button></h4>
+                                <h4>${txt.vocab} <button class="mini-speak-btn vocab-speak">🔊</button></h4>
                                 <ul class="l-vocab"></ul>
                             </div>
                             <div class="learn-item">
-                                <h4>Idioms <button class="mini-speak-btn idiom-speak" title="Read Idioms">🔊</button></h4>
+                                <h4>${txt.idioms} <button class="mini-speak-btn idiom-speak">🔊</button></h4>
                                 <ul class="l-idiom"></ul>
                             </div>
                             <div class="learn-item">
-                                <h4>Synonyms <button class="mini-speak-btn synonym-speak" title="Read Synonyms">🔊</button></h4>
+                                <h4>${txt.synonyms} <button class="mini-speak-btn synonym-speak">🔊</button></h4>
                                 <ul class="l-synonym"></ul>
                             </div>
                             <div class="learn-item">
-                                <h4>Grammar</h4>
+                                <h4>${txt.grammar}</h4>
                                 <div class="l-grammar" style="font-size:0.9rem; color:#444;"></div>
                             </div>
                         </div>
@@ -905,18 +359,10 @@
                 data.spots.forEach(spot => {
                     const div = document.createElement('div');
                     div.className = 'hotspot';
-                    Object.assign(div.style, { 
-                        top: spot.top, left: spot.left, 
-                        width: spot.width, height: spot.height, 
-                        borderColor: spot.color 
-                    });
-                    div.onclick = (e) => {
-                        e.stopPropagation();
-                        updateDescription(cardID, spot);
-                    };
+                    Object.assign(div.style, { top: spot.top, left: spot.left, width: spot.width, height: spot.height, borderColor: spot.color });
+                    div.onclick = (e) => { e.stopPropagation(); updateDescription(cardID, spot); };
                     wrapper.appendChild(div);
                 });
-
                 container.appendChild(article);
             });
         }
@@ -925,121 +371,56 @@
             const wrapper = document.getElementById(`${cardID}-wrapper`);
             const spots = wrapper.querySelectorAll('.hotspot');
             const descBox = document.getElementById(`${cardID}-desc`);
+            const txt = UI_TEXT[currentLang]; // 言語取得
 
             let isHidden = (spots[0].style.display === 'none' || spots[0].style.display === '');
             spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
 
-            if (isHidden) {
-                btn.textContent = "Hide Frames";
-                btn.classList.add('active');
-            } else {
-                btn.textContent = "Show Frames";
-                btn.classList.remove('active');
-                descBox.style.display = 'none';
+            if (isHidden) { 
+                btn.textContent = txt.hideFrame; 
+                btn.classList.add('active'); 
+            } else { 
+                btn.textContent = txt.showFrame; 
+                btn.classList.remove('active'); 
+                descBox.style.display = 'none'; 
             }
         }
 
-        // 音声合成関数
         function speakText(text) {
             if ('speechSynthesis' in window) {
                 speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = 'en-US';
-                utterance.rate = 1.0;
+                utterance.lang = 'en-US'; utterance.rate = 1.0;
                 speechSynthesis.speak(utterance);
             }
         }
 
-        // テキスト整形（日本語除去）
-        function cleanText(textArray) {
-            if (!textArray || textArray.length === 0) return "";
-            // 配列内の各文字列から (...) を削除し、カンマ区切りで結合
-            return textArray.map(item => item.replace(/\s*\(.*?\)/g, '')).join(", ");
-        }
+        function cleanText(textArray) { return (!textArray || textArray.length === 0) ? "" : textArray.map(item => item.replace(/\s*\(.*?\)/g, '')).join(", "); }
 
         function updateDescription(cardID, data) {
             const box = document.getElementById(`${cardID}-desc`);
-            box.style.display = 'block';
-            box.style.borderTopColor = data.color;
-
-            // タイトルと本文
-            const titleEl = box.querySelector('.desc-title');
-            titleEl.textContent = data.title;
-            titleEl.style.color = data.color;
-
+            box.style.display = 'block'; box.style.borderTopColor = data.color;
+            box.querySelector('.desc-title').textContent = data.title;
+            box.querySelector('.desc-title').style.color = data.color;
             box.querySelector('.eng-text').textContent = data.eng;
             box.querySelector('.jp-text').textContent = data.jp;
             box.querySelector('.l-grammar').textContent = data.grammar || "";
-
-            // リスト生成ヘルパー
-            const fillList = (cls, items) => {
-                const ul = box.querySelector(cls);
-                ul.innerHTML = '';
-                if(items && items.length > 0) {
-                    items.forEach(txt => {
-                        const li = document.createElement('li');
-                        li.textContent = txt;
-                        ul.appendChild(li);
-                    });
-                } else {
-                    // 空の場合は "None" 等を表示してもよいが今回は空欄
-                }
-            };
-            fillList('.l-vocab', data.vocab);
-            fillList('.l-idiom', data.idioms);
-            fillList('.l-synonym', data.synonyms);
-
-            // ------------------------------------------
-            // ★ 各ボタンに音声読み上げイベントを設定 ★
-            // ------------------------------------------
             
-            // 1. Main English Button
-            const mainBtn = box.querySelector('.main-speak');
-            const newMainBtn = mainBtn.cloneNode(true); // イベントリセット
-            mainBtn.parentNode.replaceChild(newMainBtn, mainBtn);
-            newMainBtn.onclick = () => speakText(data.eng);
+            const fillList = (cls, items) => {
+                const ul = box.querySelector(cls); ul.innerHTML = '';
+                if(items) items.forEach(txt => { const li = document.createElement('li'); li.textContent = txt; ul.appendChild(li); });
+            };
+            fillList('.l-vocab', data.vocab); fillList('.l-idiom', data.idioms); fillList('.l-synonym', data.synonyms);
 
-            // 2. Vocabulary Button
-            const vocabBtn = box.querySelector('.vocab-speak');
-            const newVocabBtn = vocabBtn.cloneNode(true);
-            vocabBtn.parentNode.replaceChild(newVocabBtn, vocabBtn);
-            // データがあれば読み上げ、なければ何もしない
-            if (data.vocab && data.vocab.length > 0) {
-                newVocabBtn.style.display = 'inline-block';
-                newVocabBtn.onclick = () => speakText(cleanText(data.vocab));
-            } else {
-                newVocabBtn.style.display = 'none';
-            }
-
-            // 3. Idioms Button
-            const idiomBtn = box.querySelector('.idiom-speak');
-            const newIdiomBtn = idiomBtn.cloneNode(true);
-            idiomBtn.parentNode.replaceChild(newIdiomBtn, idiomBtn);
-            if (data.idioms && data.idioms.length > 0) {
-                newIdiomBtn.style.display = 'inline-block';
-                newIdiomBtn.onclick = () => speakText(cleanText(data.idioms));
-            } else {
-                newIdiomBtn.style.display = 'none';
-            }
-
-            // 4. Synonyms Button
-            const synonymBtn = box.querySelector('.synonym-speak');
-            const newSynonymBtn = synonymBtn.cloneNode(true);
-            synonymBtn.parentNode.replaceChild(newSynonymBtn, synonymBtn);
-            if (data.synonyms && data.synonyms.length > 0) {
-                newSynonymBtn.style.display = 'inline-block';
-                newSynonymBtn.onclick = () => speakText(cleanText(data.synonyms));
-            } else {
-                newSynonymBtn.style.display = 'none';
-            }
+            const setupSpeak = (sel, txt) => {
+                const btn = box.querySelector(sel); const newBtn = btn.cloneNode(true); btn.parentNode.replaceChild(newBtn, btn);
+                if(txt && txt.length > 0) { newBtn.style.display = 'inline-block'; newBtn.onclick = () => speakText(txt); } else { newBtn.style.display = 'none'; }
+            };
+            setupSpeak('.main-speak', data.eng);
+            setupSpeak('.vocab-speak', cleanText(data.vocab));
+            setupSpeak('.idiom-speak', cleanText(data.idioms));
+            setupSpeak('.synonym-speak', cleanText(data.synonyms));
         }
-
     </script>
 </body>
-
 </html>
-
-
-
-
-
