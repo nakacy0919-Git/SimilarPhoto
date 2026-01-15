@@ -59,7 +59,7 @@
             width: 100%;
             max-width: 800px;
             display: flex;
-            justify-content: space-between; /* 左に言語、右にAbout */
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
         }
@@ -166,14 +166,12 @@
             <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;">
                 <strong>Why This Method Works:</strong><br>
                 Accurate description skills are the key to conversation. "Similar Photos Review" helps you verbalize exactly what you see.
-                Linking visual information with language helps memory retention and is a highly effective way to improve practical communication skills.
             </p>
         </div>
         <div id="about-content-jp" style="display:none;">
             <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;">
                 <strong>なぜこの方法が効果的なのか：</strong><br>
                 正確な描写力は、会話力の要です。「Similar Photos Review」は、見たものを正確に言語化し、相手に伝える力を養います。
-                視覚情報と言語を結びつけるこのプロセスは、記憶に定着しやすく、実践的なコミュニケーション能力を高める非常に効果的な学習法です。
             </p>
         </div>
     </div>
@@ -190,13 +188,12 @@
         <button class="genre-btn" onclick="renderCategory(8)">800 Series</button>
         <button class="genre-btn" onclick="renderCategory(9)">900 Series</button>
         <button class="genre-btn" onclick="renderCategory(10)">1000 Series</button>
-        <button class="genre-btn" onclick="renderCategory(10)">CNN Series</button>
+        <button class="genre-btn" onclick="renderCategory('cnn')">CNN</button>
     </div>
 
     <div id="gallery-list"></div>
 
     <script>
-        // データの受け皿
         window.galleryData = [];
     </script>
     
@@ -211,35 +208,17 @@
     <script src="data/series_800.js"></script>
     <script src="data/series_900.js"></script>
     <script src="data/series_1000.js"></script>
-    <script src="data/series_CNN.js"></script>
+    <script src="data/series_cnn.js"></script>
 
     <script>
-        // 言語設定（デフォルト英語）
         let currentLang = 'en';
 
-        // UIテキスト辞書
         const UI_TEXT = {
-            en: {
-                showFrame: "Show Frames",
-                hideFrame: "Hide Frames",
-                vocab: "Vocabulary",
-                idioms: "Idioms",
-                synonyms: "Synonyms",
-                grammar: "Grammar",
-                aboutBtn: "ⓘ About This Method"
-            },
-            jp: {
-                showFrame: "枠を表示",
-                hideFrame: "枠を隠す",
-                vocab: "単語",
-                idioms: "熟語",
-                synonyms: "類義語",
-                grammar: "文法",
-                aboutBtn: "ⓘ このメソッドについて"
-            }
+            en: { showFrame: "Show Frames", hideFrame: "Hide Frames", vocab: "Vocabulary", idioms: "Idioms", synonyms: "Synonyms", grammar: "Grammar", aboutBtn: "ⓘ About This Method" },
+            jp: { showFrame: "枠を表示", hideFrame: "枠を隠す", vocab: "単語", idioms: "熟語", synonyms: "類義語", grammar: "文法", aboutBtn: "ⓘ このメソッドについて" }
         };
 
-        // 現在選択中のカテゴリー（言語切り替え時に再描画するため記憶）
+        // 初期値は0番台
         let currentCategoryIndex = 0;
 
         function toggleMethod() {
@@ -249,15 +228,10 @@
 
         function changeLanguage(lang) {
             currentLang = lang;
-            
-            // ボタンの見た目切り替え
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-jp').classList.toggle('active', lang === 'jp');
-
-            // Aboutボタンのテキスト更新
             document.getElementById('lbl-about-btn').textContent = UI_TEXT[lang].aboutBtn;
 
-            // Aboutボックスの中身切り替え
             if(lang === 'en') {
                 document.getElementById('about-content-en').style.display = 'block';
                 document.getElementById('about-content-jp').style.display = 'none';
@@ -265,30 +239,45 @@
                 document.getElementById('about-content-en').style.display = 'none';
                 document.getElementById('about-content-jp').style.display = 'block';
             }
-
-            // 現在のカテゴリーを再描画して、ボタン等の言語を更新
             renderCategory(currentCategoryIndex);
         }
 
         window.onload = function() {
-            // データ読み込みを少し待ってから描画
             setTimeout(() => renderCategory(0), 100); 
         };
 
-        function renderCategory(hundredsDigit) {
-            currentCategoryIndex = hundredsDigit; // 記憶
+        // ★ カテゴリー表示関数（数値と文字列の両方に対応）
+        function renderCategory(category) {
+            currentCategoryIndex = category;
 
-            // タブのアクティブ化
-            document.querySelectorAll('.genre-btn').forEach((btn, idx) => {
-                if(idx === hundredsDigit) btn.classList.add('active');
+            // ボタンのアクティブ化ロジック
+            document.querySelectorAll('.genre-btn').forEach(btn => {
+                // onclick属性の文字列から引数を抽出して比較
+                // 例: "renderCategory('cnn')" -> "cnn", "renderCategory(0)" -> "0"
+                const onclickVal = btn.getAttribute('onclick');
+                let btnArg = onclickVal.match(/renderCategory\(([^)]+)\)/)[1].replace(/['"]/g, '');
+                
+                // 数字の場合は型を合わせる
+                if (!isNaN(btnArg)) {
+                    btnArg = parseInt(btnArg, 10);
+                }
+
+                if(btnArg === category) btn.classList.add('active');
                 else btn.classList.remove('active');
             });
 
             // データのフィルタリング
             const list = window.galleryData.filter(item => {
+                // ★ CNNの場合の特別処理
+                if (category === 'cnn') {
+                    // ファイル名に 'cnn' が含まれるものを抽出 (大小文字区別なし)
+                    return item.imageFile.toLowerCase().includes('cnn');
+                }
+
+                // 通常の番号シリーズ (000, 100...)
                 const match = item.imageFile.match(/(\d+)/);
                 const num = match ? parseInt(match[1], 10) : 0;
-                return Math.floor(num / 100) === hundredsDigit;
+                return Math.floor(num / 100) === category;
             });
 
             const container = document.getElementById('gallery-list');
@@ -299,25 +288,27 @@
                 return;
             }
 
-            // 画像番号順にソート
+            // ソート（番号順）
             list.sort((a, b) => {
-                const numA = parseInt(a.imageFile.match(/(\d+)/)[1], 10);
-                const numB = parseInt(b.imageFile.match(/(\d+)/)[1], 10);
+                const matchA = a.imageFile.match(/(\d+)/);
+                const matchB = b.imageFile.match(/(\d+)/);
+                const numA = matchA ? parseInt(matchA[1], 10) : 0;
+                const numB = matchB ? parseInt(matchB[1], 10) : 0;
                 return numA - numB;
             });
 
-            // テキスト辞書取得
             const txt = UI_TEXT[currentLang];
 
-            list.forEach((data, index) => {
+            list.forEach((data) => {
+                // ファイル名から番号またはIDを抽出して表示用に使う
+                // CNNなどの場合はファイル名をそのまま出す等の工夫も可能
                 const match = data.imageFile.match(/(\d+)/);
-                const fileNum = match ? match[1] : "---";
+                const fileNum = match ? match[1] : data.imageFile.split('.')[0]; 
                 const cardID = `card-${fileNum}`;
 
                 const article = document.createElement('article');
                 article.className = 'photo-card';
                 
-                // カード生成 (言語設定を反映)
                 article.innerHTML = `
                     <div class="card-header">
                         <span class="card-number">No. ${fileNum}</span>
@@ -328,14 +319,11 @@
                     </div>
                     <div class="desc-box" id="${cardID}-desc">
                         <span class="desc-title">Title</span>
-                        
                         <div class="eng-row">
                             <div class="eng-text"></div>
                             <button class="speak-btn main-speak" title="Read English">🔊</button>
                         </div>
-
                         <div class="jp-text"></div>
-
                         <div class="learning-grid">
                             <div class="learn-item">
                                 <h4>${txt.vocab} <button class="mini-speak-btn vocab-speak">🔊</button></h4>
@@ -373,7 +361,7 @@
             const wrapper = document.getElementById(`${cardID}-wrapper`);
             const spots = wrapper.querySelectorAll('.hotspot');
             const descBox = document.getElementById(`${cardID}-desc`);
-            const txt = UI_TEXT[currentLang]; // 言語取得
+            const txt = UI_TEXT[currentLang];
 
             let isHidden = (spots[0].style.display === 'none' || spots[0].style.display === '');
             spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
@@ -425,5 +413,4 @@
         }
     </script>
 </body>
-
 </html>
