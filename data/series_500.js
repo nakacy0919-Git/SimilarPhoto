@@ -136,7 +136,7 @@ window.galleryData.push(
                 grammar: "Present participle 'gazing' describes the man."
             },
             {
-                top: "3%", left: "3%", width: "95%", height: "95%", color: "#27ae60",
+                top: "50%", left: "3%", width: "30%", height: "95%", color: "#27ae60",
                 title: "Public Transport",
                 eng: "The bus interior looks relatively full with various passengers traveling together.",
                 jp: "バスの車内は比較的混んでおり、様々な乗客が一緒に移動しています。",
