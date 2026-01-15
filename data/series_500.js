@@ -186,7 +186,7 @@ window.galleryData.push(
         imageFile: "506.png",
         spots: [
             {
-                top: "20%", left: "50%", width: "10%", height: "10%", color: "#ecf0f1",
+                top: "5%", left: "45%", width: "20%", height: "80%", color: "#2263e6",
                 title: "Waiting Patiently",
                 eng: "The elderly woman is sitting alone on the bench and she may be waiting for someone.",
                 jp: "その年配の女性はベンチに一人で座っており、誰かを待っているのかもしれません。",
@@ -196,7 +196,7 @@ window.galleryData.push(
                 grammar: "'May be waiting' is the continuous form of the modal, expressing possible ongoing action."
             },
             {
-                top: "50%", left: "50%", width: "10%", height: "10%", color: "#d35400",
+                top: "3%", left: "45%", width: "20%", height: "90%", color: "#d35400",
                 title: "Peaceful Atmosphere",
                 eng: "She has a gentle smile on her face, suggesting she is enjoying the pleasant weather.",
                 jp: "彼女は穏やかな笑みを浮かべており、心地よい天気を楽しんでいるようです。",
