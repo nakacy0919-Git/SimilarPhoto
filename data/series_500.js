@@ -151,7 +151,7 @@ window.galleryData.push(
         imageFile: "505.png",
         spots: [
             {
-                top: "55%", left: "38%", width: "10%", height: "10%", color: "#34495e",
+                top: "15%", left: "30%", width: "30%", height: "50%", color: "#34495e",
                 title: "Distracted Walking",
                 eng: "She is staring at her smartphone while walking down the street.",
                 jp: "彼女は通りを歩きながら、スマートフォンを見つめています。",
@@ -161,7 +161,7 @@ window.galleryData.push(
                 grammar: "Conjunction 'while' connects two simultaneous actions."
             },
             {
-                top: "20%", left: "50%", width: "10%", height: "10%", color: "#c0392b",
+                top: "5%", left: "40%", width: "30%", height: "70%", color: "#c0392b",
                 title: "Strong Advice",
                 eng: "It is dangerous to not look ahead; she had better watch where she's going.",
                 jp: "前を見ないのは危険です。彼女は自分の行き先に注意したほうが身のためです。",
@@ -171,7 +171,7 @@ window.galleryData.push(
                 grammar: "'Had better' implies a negative consequence if the advice is ignored."
             },
             {
-                top: "30%", left: "85%", width: "10%", height: "10%", color: "#f39c12",
+                top: "80%", left: "3%", width: "20%", height: "20%", color: "#f39c12",
                 title: "Obstacles",
                 eng: "There is a lamppost and a curb nearby that she might accidentally trip over.",
                 jp: "近くに街灯や縁石があり、彼女はうっかりつまずいてしまうかもしれません。",
