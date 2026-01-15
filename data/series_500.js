@@ -116,7 +116,7 @@ window.galleryData.push(
         imageFile: "504.png",
         spots: [
             {
-                top: "25%", left: "45%", width: "10%", height: "10%", color: "#e67e22",
+                top: "3%", left: "25%", width: "30%", height: "80%", color: "#e67e22",
                 title: "Future Possibility",
                 eng: "She is standing comfortably now, but she may sit down soon if a seat becomes available.",
                 jp: "彼女は今は快適そうに立っていますが、席が空けばすぐに座るかもしれません。",
@@ -126,7 +126,7 @@ window.galleryData.push(
                 grammar: "Modal 'may' expresses a future possibility."
             },
             {
-                top: "40%", left: "10%", width: "10%", height: "10%", color: "#7f8c8d",
+                top: "30%", left: "5%", width: "15%", height: "40%", color: "#7f8c8d",
                 title: "Surrounding Passengers",
                 eng: "An elderly man is sitting quietly to her left, gazing forward.",
                 jp: "彼女の左側には年配の男性が静かに座り、前を見つめています。",
