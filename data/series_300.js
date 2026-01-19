@@ -1,5 +1,9 @@
-// Series 300 Data - Daily Life & Sports
+// Initialize galleryData
 window.galleryData = window.galleryData || [];
+
+// ---------------------------------------------------------
+// Series 300: Daily Life & Sports (301-310)
+// ---------------------------------------------------------
 
 // Image 301: Woman reading in cafe (Blue book)
 window.galleryData.push({
@@ -97,7 +101,7 @@ window.galleryData.push({
             vocab: ["aggressively (果敢に)", "possession (所有・支配)", "opponent (相手)"],
             idioms: ["give it one's all (全力を尽くす)"],
             synonyms: ["competing", "struggling"],
-            grammar: "Multiple verbs (running and fighting) can be connected with 'and' in the continuous form."
+            grammar: "進行形では、running and fighting のように複数の動詞を and で繋げて並列できます。"
         },
         {
             top: "60%", left: "35%", width: "15%", height: "25%", color: "#8e44ad",
@@ -270,7 +274,7 @@ window.galleryData.push({
             eng: "A colorful kite is flying in the sky, taking advantage of the windy weather.",
             jp: "風の強い天候を利用して、カラフルな凧が空を飛んでいます。",
             vocab: ["kite (凧)", "breeze (そよ風)", "soar (舞い上がる)"],
-            idioms: ["go fly a kite (あっちへ行け（追放の意）/文字通り凧揚げをする)"],
+            idioms: ["go fly a kite (あっちへ行け)"],
             synonyms: ["hovering", "gliding"],
             grammar: "taking advantage of は「〜を利用して」という熟語の分詞構文です。"
         },
@@ -364,12 +368,17 @@ window.galleryData.push({
             eng: "A tall umpire chair is standing empty on the side of the clay court.",
             jp: "高い審判台が、クレーコートの脇に誰もいない状態で立っています。",
             vocab: ["umpire (審判)", "clay court (クレーコート)", "vacant (空いている)"],
-            idioms: ["sit on the fence (形勢をうかがう/中立を守る)"],
+            idioms: ["sit on the fence (形勢をうかがう)"],
             synonyms: ["looming", "positioned"],
             grammar: "is standing empty は「空の状態で立っている」という補語を伴う表現です。"
         }
     ]
 });
+
+// ---------------------------------------------------------
+// Series 310 (continued): Sick & Health (311-312)
+// ---------------------------------------------------------
+
 // Image 311: Woman sick at home (Coughing)
 window.galleryData.push({
     imageFile: "311.png",
@@ -443,12 +452,12 @@ window.galleryData.push({
         }
     ]
 });
-// Series 313-320 Data (Daily Life & School Activities)
-window.galleryData = window.galleryData || [];
 
 // ---------------------------------------------------------
-// 313.png: Cooking Breakfast (Red Apron / Spices)
+// Series 313-320: Daily Life & School Activities
 // ---------------------------------------------------------
+
+// Image 313: Cooking Breakfast (Red Apron / Spices)
 window.galleryData.push({
     imageFile: "313.png",
     spots: [
@@ -458,9 +467,9 @@ window.galleryData.push({
             eng: "The man is carefully shaking spices into the frying pan to add more flavor to the dish he is cooking.",
             jp: "男性は料理に風味を加えるために、フライパンにスパイスを慎重に振っています。",
             vocab: ["shake (振る)", "flavor (風味)", "carefully (慎重に)"],
-            idioms: ["spice things up (趣を添える/面白くする)"],
+            idioms: ["spice things up (趣を添える)"],
             synonyms: ["seasoning", "sprinkling"],
-            grammar: "Present Continuous: is shaking (動作の進行)"
+            grammar: "現在進行形 (is shaking) は、今まさに行われている動作を表します。"
         },
         {
             top: "40%", left: "53%", width: "20%", height: "35%", color: "#d35400",
@@ -470,7 +479,7 @@ window.galleryData.push({
             vocab: ["checkered (チェック柄の)", "protect (守る)", "dirty (汚い)"],
             idioms: ["dress the part (それにふさわしい服装をする)"],
             synonyms: ["smock", "protective clothing"],
-            grammar: "Infinitive of purpose: to protect (～するために)"
+            grammar: "不定詞の副詞的用法 (to protect) で、「～するために」という目的を表しています。"
         },
         {
             top: "10%", left: "28%", width: "12%", height: "18%", color: "#3498db",
@@ -480,14 +489,12 @@ window.galleryData.push({
             vocab: ["indicate (指し示す)", "common (一般的な)", "wall (壁)"],
             idioms: ["bright and early (朝早くに)"],
             synonyms: ["show", "display"],
-            grammar: "Relative Clause: which is... (前の文の内容を補足)"
+            grammar: "関係代名詞 which は前の文の内容全体（8時であること）を受けて、補足説明をしています。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 314.png: Cooking Breakfast (Blue Apron / Stirring)
-// ---------------------------------------------------------
+// Image 314: Cooking Breakfast (Blue Apron / Stirring)
 window.galleryData.push({
     imageFile: "314.png",
     spots: [
@@ -499,7 +506,7 @@ window.galleryData.push({
             vocab: ["spatula (へら)", "stir (かき混ぜる)", "evenly (均等に)"],
             idioms: ["stir up (感情などをかき立てる)"],
             synonyms: ["mix", "blend"],
-            grammar: "So that clause: so that they cook (～するように)"
+            grammar: "so that 構文は「～するように」という目的を表します。"
         },
         {
             top: "40%", left: "53%", width: "20%", height: "35%", color: "#2980b9",
@@ -507,9 +514,9 @@ window.galleryData.push({
             eng: "In this picture, the man has chosen to wear a blue striped apron instead of the red one.",
             jp: "この写真では、男性は赤色のものの代わりに青いストライプのエプロンを着ることを選んでいます。",
             vocab: ["striped (縞模様の)", "instead of (～の代わりに)", "choose (選ぶ)"],
-            idioms: ["wear the pants (主導権を握る ※家事文脈での皮肉)"],
+            idioms: ["wear the pants (主導権を握る)"],
             synonyms: ["patterned", "lined"],
-            grammar: "Present Perfect: has chosen (完了・結果)"
+            grammar: "現在完了形 (has chosen) を使うことで、過去の選択が現在に続いている（今エプロンをしている）ことを表します。"
         },
         {
             top: "10%", left: "80%", width: "15%", height: "20%", color: "#f1c40f",
@@ -519,14 +526,12 @@ window.galleryData.push({
             vocab: ["stream (流れ込む)", "cheerful (陽気な)", "atmosphere (雰囲気)"],
             idioms: ["rise and shine (起きて活動する時間だ)"],
             synonyms: ["beaming", "shining"],
-            grammar: "Participle phrase: creating a... (～を作り出しながら)"
+            grammar: "creating 以下は分詞構文で、主文の状況に付随する結果や様子を説明しています。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 315.png: Watching TV (Night / News)
-// ---------------------------------------------------------
+// Image 315: Watching TV (Night / News)
 window.galleryData.push({
     imageFile: "315.png",
     spots: [
@@ -538,7 +543,7 @@ window.galleryData.push({
             vocab: ["reporter (記者/キャスター)", "serious (真面目な)", "broadcast (放送)"],
             idioms: ["break the news (ニュースを伝える)"],
             synonyms: ["program", "show"],
-            grammar: "Looks like + Noun phrase: looks like a... (～のように見える)"
+            grammar: "looks like + 名詞句 で「～のように見える」という推量を表します。"
         },
         {
             top: "10%", left: "60%", width: "35%", height: "25%", color: "#2c3e50",
@@ -548,7 +553,7 @@ window.galleryData.push({
             vocab: ["dark (暗い)", "city lights (街の明かり)", "behind (後ろに)"],
             idioms: ["call it a night (今夜はここまでにしよう)"],
             synonyms: ["evening", "dusk"],
-            grammar: "Modal verb of ability: can see (見ることができる)"
+            grammar: "助動詞 can を使うことで、知覚が可能であることを表現しています。"
         },
         {
             top: "50%", left: "45%", width: "50%", height: "40%", color: "#e67e22",
@@ -558,14 +563,12 @@ window.galleryData.push({
             vocab: ["attentively (注意深く)", "sofa (ソファ)", "together (一緒に)"],
             idioms: ["all ears (熱心に聞く)"],
             synonyms: ["couch", "relaxing"],
-            grammar: "Adverb usage: listening attentively (動詞を修飾)"
+            grammar: "副詞 attentively が動詞 listening を修飾し、どのように聞いているかを詳しく説明しています。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 316.png: Watching TV (Day / Cartoon)
-// ---------------------------------------------------------
+// Image 316: Watching TV (Day / Cartoon)
 window.galleryData.push({
     imageFile: "316.png",
     spots: [
@@ -577,7 +580,7 @@ window.galleryData.push({
             vocab: ["animated (アニメの)", "entertaining (面白い)", "feature (特集する/登場させる)"],
             idioms: ["glued to the screen (画面に釘付けになる)"],
             synonyms: ["animation", "show"],
-            grammar: "Relative Clause: which seems... (前の文全体を受ける)"
+            grammar: "関係代名詞 which の非制限用法で、前の文の内容全体を先行詞として説明を加えています。"
         },
         {
             top: "30%", left: "55%", width: "35%", height: "35%", color: "#f39c12",
@@ -587,7 +590,7 @@ window.galleryData.push({
             vocab: ["smile (笑顔)", "laugh (笑う)", "scene (場面)"],
             idioms: ["crack up (大笑いする)"],
             synonyms: ["giggle", "chuckle"],
-            grammar: "Preposition phrase: on their face (顔に)"
+            grammar: "前置詞 on は表面への接触を表し、「顔に（浮かべて）」という意味になります。"
         },
         {
             top: "10%", left: "75%", width: "20%", height: "30%", color: "#f1c40f",
@@ -597,14 +600,12 @@ window.galleryData.push({
             vocab: ["daylight (日光)", "fill (満たす)", "suggest (示唆する)"],
             idioms: ["couch potato (テレビばかり見ている人)"],
             synonyms: ["sunshine", "brightness"],
-            grammar: "Unlike + Noun: Unlike the previous image (～とは違って)"
+            grammar: "前置詞 unlike は「～とは違って」という意味で、対比を表すのに便利です。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 317.png: Classroom Cleaning (Sunny / Erasing)
-// ---------------------------------------------------------
+// Image 317: Classroom Cleaning (Sunny / Erasing)
 window.galleryData.push({
     imageFile: "317.png",
     spots: [
@@ -614,9 +615,9 @@ window.galleryData.push({
             eng: "A student is using a chalkboard eraser to wipe away the words 'Test tomorrow' from the blackboard.",
             jp: "生徒が黒板消しを使って、黒板から「Test tomorrow」という文字を消しています。",
             vocab: ["eraser (黒板消し/消しゴム)", "wipe away (拭き取る)", "blackboard (黒板)"],
-            idioms: ["wipe the slate clean (過去を帳消しにする/一新する)"],
+            idioms: ["wipe the slate clean (過去を帳消しにする)"],
             synonyms: ["remove", "clean"],
-            grammar: "Present Continuous: is using (現在の動作)"
+            grammar: "現在進行形 (is using) で、今まさに行っている動作を描写しています。"
         },
         {
             top: "45%", left: "63%", width: "15%", height: "45%", color: "#e67e22",
@@ -626,7 +627,7 @@ window.galleryData.push({
             vocab: ["broom (ほうき)", "sweep (掃く)", "diligently (熱心に)"],
             idioms: ["clean sweep (圧勝する/一掃する)"],
             synonyms: ["brushing", "tidying"],
-            grammar: "Conjunction 'and': holding... and sweeping (動作の並列)"
+            grammar: "接続詞 and が2つの現在分詞 (holding と sweeping) を繋ぎ、動作の同時進行を表しています。"
         },
         {
             top: "5%", left: "80%", width: "18%", height: "25%", color: "#f1c40f",
@@ -636,14 +637,12 @@ window.galleryData.push({
             vocab: ["shine (輝く)", "energetic (活気のある)", "warm (暖かい)"],
             idioms: ["make hay while the sun shines (好機を逃すな)"],
             synonyms: ["sunny", "bright"],
-            grammar: "Causative Make: making the classroom look (～に見させる)"
+            grammar: "使役動詞 make + O + 原形不定詞 (look) で「Oを～の状態にさせる」という意味になります。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 318.png: Classroom Cleaning (Cloudy / Mopping)
-// ---------------------------------------------------------
+// Image 318: Classroom Cleaning (Cloudy / Mopping)
 window.galleryData.push({
     imageFile: "318.png",
     spots: [
@@ -655,7 +654,7 @@ window.galleryData.push({
             vocab: ["ledge (棚/出っ張り)", "dust (ほこり/粉)", "bottom (底/下部)"],
             idioms: ["nitty-gritty (核心/基本的事実)"],
             synonyms: ["rail", "shelf"],
-            grammar: "Preposition: with an eraser (手段を表すwith)"
+            grammar: "前置詞 with は「～を使って」という道具や手段を表します。"
         },
         {
             top: "40%", left: "72%", width: "15%", height: "50%", color: "#3498db",
@@ -665,24 +664,22 @@ window.galleryData.push({
             vocab: ["mop (モップ)", "back and forth (行ったり来たり)", "push (押す)"],
             idioms: ["clean up one's act (行いを改める)"],
             synonyms: ["swabbing", "washing"],
-            grammar: "Participial Phrase: pushing it... (付帯状況)"
+            grammar: "pushing 以下は分詞構文で、「～しながら」という付帯状況を表しています。"
         },
         {
             top: "5%", left: "55%", width: "40%", height: "25%", color: "#95a5a6",
             title: "Gloomy Weather",
             eng: "Outside the large windows, the sky is grey and cloudy, which creates a rather gloomy atmosphere.",
             jp: "大きな窓の外は空が灰色で曇っており、かなりどんよりとした雰囲気を作り出しています。",
-            vocab: ["grey (灰色)", "gloomy (どんよりした/憂鬱な)", "rather (かなり)"],
+            vocab: ["grey (灰色)", "gloomy (どんよりした)", "rather (かなり)"],
             idioms: ["under the weather (具合が悪い)"],
             synonyms: ["overcast", "cloudy"],
-            grammar: "Relative Clause: which creates... (前の文全体を修飾)"
+            grammar: "関係代名詞 which が前の文全体（天気が悪いこと）を受け、その結果どうなっているかを説明しています。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 319.png: Art Class (Abstract / Rainy)
-// ---------------------------------------------------------
+// Image 319: Art Class (Abstract / Rainy)
 window.galleryData.push({
     imageFile: "319.png",
     spots: [
@@ -691,10 +688,10 @@ window.galleryData.push({
             title: "Abstract Art",
             eng: "The boy is working on an abstract painting, using many different colors and random shapes.",
             jp: "男の子は、多くの異なる色や不規則な形を使って、抽象画に取り組んでいます。",
-            vocab: ["abstract (抽象的な)", "random (不規則な/無作為な)", "shape (形)"],
+            vocab: ["abstract (抽象的な)", "random (不規則な)", "shape (形)"],
             idioms: ["paint a picture (状況を説明する/描写する)"],
             synonyms: ["artistic", "creative"],
-            grammar: "Present Continuous: is working on (取り組んでいる)"
+            grammar: "work on は「～に取り組む」という句動詞で、進行形で作業中の様子を表します。"
         },
         {
             top: "40%", left: "78%", width: "12%", height: "20%", color: "#e74c3c",
@@ -704,7 +701,7 @@ window.galleryData.push({
             vocab: ["vase (花瓶)", "copy (模写する/真似る)", "object (物体)"],
             idioms: ["picture perfect (完璧な/絵に描いたような)"],
             synonyms: ["sketching", "drawing"],
-            grammar: "Participle phrase: placed in front of her (過去分詞による後置修飾)"
+            grammar: "過去分詞 placed が形容詞的に object を後ろから修飾し、「置かれた」という意味になります。"
         },
         {
             top: "5%", left: "58%", width: "40%", height: "25%", color: "#34495e",
@@ -714,14 +711,12 @@ window.galleryData.push({
             vocab: ["suitable (適した)", "indoor (屋内の)", "cover (覆う)"],
             idioms: ["rain on someone's parade (人の楽しみを台無しにする)"],
             synonyms: ["stormy", "bad weather"],
-            grammar: "Adjective phrase: suitable for... (前の文を補足)"
+            grammar: "形容詞句 suitable for... が前の文の内容（天気）を受けて、それが何に適しているかを説明しています。"
         }
     ]
 });
 
-// ---------------------------------------------------------
-// 320.png: Art Class (Landscape / Sunny)
-// ---------------------------------------------------------
+// Image 320: Art Class (Landscape / Sunny)
 window.galleryData.push({
     imageFile: "320.png",
     spots: [
@@ -733,7 +728,7 @@ window.galleryData.push({
             vocab: ["landscape (風景)", "peaceful (平和な)", "field (野原)"],
             idioms: ["broad strokes (大まかな説明/概略)"],
             synonyms: ["scenery", "view"],
-            grammar: "Prepositional phrase: On his canvas (場所の強調)"
+            grammar: "場所を表す前置詞句 On his canvas を文頭に置くことで、描いている場所を強調しています。"
         },
         {
             top: "40%", left: "63%", width: "15%", height: "20%", color: "#e74c3c",
@@ -743,7 +738,7 @@ window.galleryData.push({
             vocab: ["focus (集中する)", "round (丸い)", "single (たった一つの)"],
             idioms: ["the apple of one's eye (非常に愛しいもの)"],
             synonyms: ["fruit", "red apple"],
-            grammar: "Gerund phrase: focusing on... (付帯状況)"
+            grammar: "focusing on は分詞構文で、主動作に伴う状況（～に集中しながら）を表しています。"
         },
         {
             top: "5%", left: "80%", width: "18%", height: "25%", color: "#f39c12",
@@ -753,7 +748,7 @@ window.galleryData.push({
             vocab: ["provide (提供する)", "excellent (素晴らしい)", "natural light (自然光)"],
             idioms: ["soak up the sun (日光浴をする)"],
             synonyms: ["illumination", "sunlight"],
-            grammar: "Present Participle: providing (結果・付帯状況を表す)"
+            grammar: "現在分詞 providing は、前の文（太陽が輝いている）の結果として何が起きているかを説明しています。"
         }
     ]
 });
