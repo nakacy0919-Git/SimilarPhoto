@@ -61,7 +61,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .lang-btn {
@@ -89,6 +89,47 @@
             border-radius: 8px; animation: fadeIn 0.3s ease;
         }
         @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
+
+        /* --- Search Box (New Feature) --- */
+        .search-area {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .search-input {
+            padding: 10px 15px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            width: 200px;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .search-input:focus {
+            border-color: #3498db;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+        }
+        .search-btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .search-btn:hover {
+            background: #2980b9;
+        }
+        .search-btn:active {
+            transform: scale(0.98);
+        }
 
         /* --- Category Tabs --- */
         .genre-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; width: 100%; max-width: 800px; }
@@ -176,6 +217,11 @@
         </div>
     </div>
 
+    <div class="search-area">
+        <input type="number" id="img-search-input" class="search-input" placeholder="No. (e.g. 123)" onkeypress="handleEnter(event)">
+        <button class="search-btn" id="btn-search" onclick="performSearch()">Search</button>
+    </div>
+
     <div class="genre-tabs">
         <button class="genre-btn active" onclick="renderCategory(0)">000 Series</button>
         <button class="genre-btn" onclick="renderCategory(1)">100 Series</button>
@@ -214,11 +260,10 @@
         let currentLang = 'en';
 
         const UI_TEXT = {
-            en: { showFrame: "Show Frames", hideFrame: "Hide Frames", vocab: "Vocabulary", idioms: "Idioms", synonyms: "Synonyms", grammar: "Grammar", aboutBtn: "ⓘ About This Method" },
-            jp: { showFrame: "枠を表示", hideFrame: "枠を隠す", vocab: "単語", idioms: "熟語", synonyms: "類義語", grammar: "文法", aboutBtn: "ⓘ このメソッドについて" }
+            en: { showFrame: "Show Frames", hideFrame: "Hide Frames", vocab: "Vocabulary", idioms: "Idioms", synonyms: "Synonyms", grammar: "Grammar", aboutBtn: "ⓘ About This Method", searchPlaceholder: "No. (e.g. 123)", searchBtn: "Search", noResult: "No matching image found." },
+            jp: { showFrame: "枠を表示", hideFrame: "枠を隠す", vocab: "単語", idioms: "熟語", synonyms: "類義語", grammar: "文法", aboutBtn: "ⓘ このメソッドについて", searchPlaceholder: "番号 (例: 123)", searchBtn: "検索", noResult: "該当する画像が見つかりません。" }
         };
 
-        // 初期値は0番台
         let currentCategoryIndex = 0;
 
         function toggleMethod() {
@@ -231,6 +276,10 @@
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-jp').classList.toggle('active', lang === 'jp');
             document.getElementById('lbl-about-btn').textContent = UI_TEXT[lang].aboutBtn;
+            
+            // 検索エリアの言語切り替え
+            document.getElementById('img-search-input').placeholder = UI_TEXT[lang].searchPlaceholder;
+            document.getElementById('btn-search').textContent = UI_TEXT[lang].searchBtn;
 
             if(lang === 'en') {
                 document.getElementById('about-content-en').style.display = 'block';
@@ -239,28 +288,65 @@
                 document.getElementById('about-content-en').style.display = 'none';
                 document.getElementById('about-content-jp').style.display = 'block';
             }
-            renderCategory(currentCategoryIndex);
+            
+            // 現在のリストを再描画（言語反映のため）
+            // 検索結果が表示されている場合は、カテゴリーリロードではなく現在のDOMの言語だけ変えるのが理想だが、
+            // 簡易的にカテゴリー再描画、もしくは検索状態なら何もしないなどの制御が必要。
+            // ここではシンプルに、現在のカテゴリーを再描画します。
+            // もし検索直後なら、もう一度検索を実行する動きが良いでしょう。
+            const searchVal = document.getElementById('img-search-input').value;
+            if(searchVal) {
+                performSearch();
+            } else {
+                renderCategory(currentCategoryIndex);
+            }
         }
 
         window.onload = function() {
             setTimeout(() => renderCategory(0), 100); 
         };
 
-        // ★ カテゴリー表示関数（数値と文字列の両方に対応）
+        // Enterキーで検索実行
+        function handleEnter(e) {
+            if(e.key === 'Enter') performSearch();
+        }
+
+        // ★ 検索実行関数
+        function performSearch() {
+            const inputVal = document.getElementById('img-search-input').value;
+            if (!inputVal) return;
+
+            // 半角数字としてパース
+            const targetNum = parseInt(inputVal, 10);
+            if (isNaN(targetNum)) return;
+
+            // タブの選択状態を解除
+            document.querySelectorAll('.genre-btn').forEach(btn => btn.classList.remove('active'));
+
+            // データをフィルタリング（完全一致のみ）
+            const list = window.galleryData.filter(item => {
+                const match = item.imageFile.match(/(\d+)/);
+                const num = match ? parseInt(match[1], 10) : -1;
+                // 画像ファイル名に含まれる数字と、入力された数字が一致するか
+                return num === targetNum;
+            });
+
+            // 描画実行
+            renderGalleryList(list);
+        }
+
+        // ★ カテゴリー選択関数
         function renderCategory(category) {
             currentCategoryIndex = category;
+            
+            // 検索ボックスをクリア
+            document.getElementById('img-search-input').value = '';
 
-            // ボタンのアクティブ化ロジック
+            // ボタンのアクティブ化
             document.querySelectorAll('.genre-btn').forEach(btn => {
-                // onclick属性の文字列から引数を抽出して比較
-                // 例: "renderCategory('cnn')" -> "cnn", "renderCategory(0)" -> "0"
                 const onclickVal = btn.getAttribute('onclick');
                 let btnArg = onclickVal.match(/renderCategory\(([^)]+)\)/)[1].replace(/['"]/g, '');
-                
-                // 数字の場合は型を合わせる
-                if (!isNaN(btnArg)) {
-                    btnArg = parseInt(btnArg, 10);
-                }
+                if (!isNaN(btnArg)) btnArg = parseInt(btnArg, 10);
 
                 if(btnArg === category) btn.classList.add('active');
                 else btn.classList.remove('active');
@@ -268,27 +354,15 @@
 
             // データのフィルタリング
             const list = window.galleryData.filter(item => {
-                // ★ CNNの場合の特別処理
                 if (category === 'cnn') {
-                    // ファイル名に 'cnn' が含まれるものを抽出 (大小文字区別なし)
                     return item.imageFile.toLowerCase().includes('cnn');
                 }
-
-                // 通常の番号シリーズ (000, 100...)
                 const match = item.imageFile.match(/(\d+)/);
                 const num = match ? parseInt(match[1], 10) : 0;
                 return Math.floor(num / 100) === category;
             });
 
-            const container = document.getElementById('gallery-list');
-            container.innerHTML = '';
-
-            if (list.length === 0) {
-                container.innerHTML = '<p style="text-align:center; color:#999; padding:40px;">No images in this series yet.</p>';
-                return;
-            }
-
-            // ソート（番号順）
+            // ソート
             list.sort((a, b) => {
                 const matchA = a.imageFile.match(/(\d+)/);
                 const matchB = b.imageFile.match(/(\d+)/);
@@ -297,11 +371,21 @@
                 return numA - numB;
             });
 
+            renderGalleryList(list);
+        }
+
+        // ★ 共通描画関数 (DOM生成)
+        function renderGalleryList(list) {
+            const container = document.getElementById('gallery-list');
+            container.innerHTML = '';
             const txt = UI_TEXT[currentLang];
 
+            if (list.length === 0) {
+                container.innerHTML = `<p style="text-align:center; color:#999; padding:40px;">${txt.noResult}</p>`;
+                return;
+            }
+
             list.forEach((data) => {
-                // ファイル名から番号またはIDを抽出して表示用に使う
-                // CNNなどの場合はファイル名をそのまま出す等の工夫も可能
                 const match = data.imageFile.match(/(\d+)/);
                 const fileNum = match ? match[1] : data.imageFile.split('.')[0]; 
                 const cardID = `card-${fileNum}`;
@@ -362,6 +446,9 @@
             const spots = wrapper.querySelectorAll('.hotspot');
             const descBox = document.getElementById(`${cardID}-desc`);
             const txt = UI_TEXT[currentLang];
+
+            // ホットスポットが1つもない場合の安全策
+            if (spots.length === 0) return;
 
             let isHidden = (spots[0].style.display === 'none' || spots[0].style.display === '');
             spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
