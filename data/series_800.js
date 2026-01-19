@@ -145,7 +145,7 @@ window.galleryData.push({
             grammar: "関係代名詞 'who' を使い、男性の直前の行動（注文した）を説明しています。"
         },
         {
-            top: "10%", left: "37%", width: "20%", height: "30%", color: "#f1c40f",
+            top: "10%", left: "10%", width: "40%", height: "35%", color: "#f1c40f",
             title: "Busy Street",
             eng: "The yellow cabs which are passing by outside indicate that this is New York City.",
             jp: "外を通り過ぎる黄色いタクシーは、ここがニューヨーク市であることを示しています。",
