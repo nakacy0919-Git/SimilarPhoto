@@ -334,9 +334,8 @@ window.galleryData.push(
                 grammar: "'wish + would' は、他者や物事の変化に対する願望（～してくれればいいのに）を表します。"
             }
         ]
-    }
-);
-// 910.png: Boring Party (It's high time)
+    },
+    // 910.png: Boring Party (It's high time)
     {
         imageFile: "910.png",
         series: "900",
