@@ -8,7 +8,7 @@ window.galleryData = window.galleryData || [];
 // 配列にデータを追加
 window.galleryData.push(
     {
-        imageFile: "501.png",
+        imageFile: "501.webp",
         spots: [
             {
                 top: "5%", left: "5%", width: "28%", height: "80%", color: "#e67e22",
@@ -43,7 +43,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "502.png",
+        imageFile: "502.webp",
         spots: [
             {
                 top: "5%", left: "5%", width: "90%", height: "30%", color: "#f39c12",
@@ -78,7 +78,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "503.png",
+        imageFile: "503.webp",
         spots: [
             {
                 top: "3%", left: "18%", width: "70%", height: "95%", color: "#95a5a6",
@@ -113,7 +113,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "504.png",
+        imageFile: "504.webp",
         spots: [
             {
                 top: "3%", left: "25%", width: "30%", height: "80%", color: "#e67e22",
@@ -148,7 +148,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "505.png",
+        imageFile: "505.webp",
         spots: [
             {
                 top: "15%", left: "30%", width: "30%", height: "50%", color: "#34495e",
@@ -183,7 +183,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "506.png",
+        imageFile: "506.webp",
         spots: [
             {
                 top: "5%", left: "45%", width: "20%", height: "80%", color: "#2263e6",
@@ -218,7 +218,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "507.png",
+        imageFile: "507.webp",
         spots: [
             {
                 top: "20%", left: "50%", width: "10%", height: "10%", color: "#2c3e50",
@@ -253,7 +253,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "508.png",
+        imageFile: "508.webp",
         spots: [
             {
                 top: "50%", left: "30%", width: "10%", height: "10%", color: "#2980b9",
