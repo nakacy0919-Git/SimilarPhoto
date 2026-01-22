@@ -9,7 +9,7 @@ window.galleryData = window.galleryData || [];
 // --------------------------------------------
 window.galleryData.push(
     {
-        imageFile: "001.png",
+        imageFile: "001.webp",
         series: "000",
         spots: [
             {
@@ -35,7 +35,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "002.png",
+        imageFile: "002.webp",
         series: "000",
         spots: [
             {
@@ -71,7 +71,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "003.png",
+        imageFile: "003.webp",
         series: "000",
         spots: [
             {
@@ -107,7 +107,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "004.png",
+        imageFile: "004.webp",
         series: "000",
         spots: [
             {
@@ -143,7 +143,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "005.png",
+        imageFile: "005.webp",
         series: "000",
         spots: [
             {
@@ -179,7 +179,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "006.png",
+        imageFile: "006.webp",
         series: "000",
         spots: [
             {
@@ -215,7 +215,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "007.png",
+        imageFile: "007.webp",
         series: "000",
         spots: [
             {
@@ -256,9 +256,9 @@ window.galleryData.push(
 // Added Data (008 - 023)
 // --------------------------------------------
 window.galleryData.push(
-    // 008.png: Cat on table, Dog under table
+    // 008.webp: Cat on table, Dog under table
     {
-        imageFile: "008.png",
+        imageFile: "008.webp",
         series: "000",
         spots: [
             {
@@ -293,9 +293,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 009.png: Calico cat, Bulldog
+    // 009.webp: Calico cat, Bulldog
     {
-        imageFile: "009.png",
+        imageFile: "009.webp",
         series: "000",
         spots: [
             {
@@ -330,9 +330,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 010.png: Boy behind sofa, Girl in front
+    // 010.webp: Boy behind sofa, Girl in front
     {
-        imageFile: "010.png",
+        imageFile: "010.webp",
         series: "000",
         spots: [
             {
@@ -367,9 +367,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 011.png: Boy behind sofa (visible), Girl with doll
+    // 011.webp: Boy behind sofa (visible), Girl with doll
     {
-        imageFile: "011.png",
+        imageFile: "011.webp",
         series: "000",
         spots: [
             {
@@ -404,9 +404,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 012.png: Wire basket, Rotten bananas
+    // 012.webp: Wire basket, Rotten bananas
     {
-        imageFile: "012.png",
+        imageFile: "012.webp",
         series: "000",
         spots: [
             {
@@ -441,9 +441,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 013.png: Wicker basket, Fresh bananas
+    // 013.webp: Wicker basket, Fresh bananas
     {
-        imageFile: "013.png",
+        imageFile: "013.webp",
         series: "000",
         spots: [
             {
@@ -478,9 +478,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 014.png: Soccer ball, Boxes, Bear
+    // 014.webp: Soccer ball, Boxes, Bear
     {
-        imageFile: "014.png",
+        imageFile: "014.webp",
         series: "000",
         spots: [
             {
@@ -515,9 +515,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 015.png: Cuckoo clock, Cacti
+    // 015.webp: Cuckoo clock, Cacti
     {
-        imageFile: "015.png",
+        imageFile: "015.webp",
         series: "000",
         spots: [
             {
@@ -552,9 +552,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 016.png: Red clock, Plant, Sunset
+    // 016.webp: Red clock, Plant, Sunset
     {
-        imageFile: "016.png",
+        imageFile: "016.webp",
         series: "000",
         spots: [
             {
@@ -589,9 +589,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 017.png: Classroom Map, Backpack
+    // 017.webp: Classroom Map, Backpack
     {
-        imageFile: "017.png",
+        imageFile: "017.webp",
         series: "000",
         spots: [
             {
@@ -626,9 +626,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 018.png: Laptop on desk, Book under desk (Daytime)
+    // 018.webp: Laptop on desk, Book under desk (Daytime)
     {
-        imageFile: "018.png",
+        imageFile: "018.webp",
         series: "000",
         spots: [
             {
@@ -663,9 +663,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 019.png: Laptop on desk, Books under desk (Nighttime)
+    // 019.webp: Laptop on desk, Books under desk (Nighttime)
     {
-        imageFile: "019.png",
+        imageFile: "019.webp",
         series: "000",
         spots: [
             {
@@ -700,9 +700,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 020.png: Birdcage on tree, Cat under tree (Sunset)
+    // 020.webp: Birdcage on tree, Cat under tree (Sunset)
     {
-        imageFile: "020.png",
+        imageFile: "020.webp",
         series: "000",
         spots: [
             {
@@ -737,9 +737,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 021.png: Birdcage on tree, Sleeping cat (Daytime)
+    // 021.webp: Birdcage on tree, Sleeping cat (Daytime)
     {
-        imageFile: "021.png",
+        imageFile: "021.webp",
         series: "000",
         spots: [
             {
@@ -774,9 +774,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 022.png: Bedroom, Sneakers under bed, T-shirts
+    // 022.webp: Bedroom, Sneakers under bed, T-shirts
     {
-        imageFile: "022.png",
+        imageFile: "022.webp",
         series: "000",
         spots: [
             {
@@ -811,9 +811,9 @@ window.galleryData.push(
             }
         ]
     },
-    // 023.png: Bedroom, Rain boots, Winter clothes
+    // 023.webp: Bedroom, Rain boots, Winter clothes
     {
-        imageFile: "023.png",
+        imageFile: "023.webp",
         series: "000",
         spots: [
             {
