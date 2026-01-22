@@ -2,10 +2,10 @@
 window.galleryData = window.galleryData || [];
 
 // -----------------------------------------------------------------------------
-// 804.png: Paris Cafe (Waiter serving croissant)
+// 804.webp: Paris Cafe (Waiter serving croissant)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "804.png",
+    imageFile: "804.webp",
     spots: [
         {
             top: "28%", left: "58%", width: "22%", height: "55%", color: "#e67e22",
@@ -41,10 +41,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 807.png: Nepal/India Temple (Applying Tika)
+// 807.webp: Nepal/India Temple (Applying Tika)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "807.png",
+    imageFile: "807.webp",
     spots: [
         {
             top: "30%", left: "50%", width: "40%", height: "65%", color: "#c0392b",
@@ -80,10 +80,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 805.png: Japanese Tea Ceremony
+// 805.webp: Japanese Tea Ceremony
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "805.png",
+    imageFile: "805.webp",
     spots: [
         {
             top: "18%", left: "58%", width: "30%", height: "65%", color: "#27ae60",
@@ -119,10 +119,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 801.png: NYC Coffee Shop
+// 801.webp: NYC Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "801.png",
+    imageFile: "801.webp",
     spots: [
         {
             top: "20%", left: "55%", width: "35%", height: "70%", color: "#d35400",
@@ -158,10 +158,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 806.png: Middle Eastern Souk
+// 806.webp: Middle Eastern Souk
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "806.png",
+    imageFile: "806.webp",
     spots: [
         {
             top: "18%", left: "32%", width: "38%", height: "80%", color: "#e74c3c",
@@ -197,10 +197,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 802.png: Vancouver Coffee Shop
+// 802.webp: Vancouver Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "802.png",
+    imageFile: "802.webp",
     spots: [
         {
             top: "20%", left: "58%", width: "30%", height: "60%", color: "#d35400",
@@ -236,10 +236,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 808.png: Peru/Machu Picchu
+// 808.webp: Peru/Machu Picchu
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "808.png",
+    imageFile: "808.webp",
     spots: [
         {
             top: "35%", left: "62%", width: "35%", height: "65%", color: "#e74c3c",
@@ -275,10 +275,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// 803.png: Tokyo Coffee Shop
+// 803.webp: Tokyo Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "803.png",
+    imageFile: "803.webp",
     spots: [
         {
             top: "25%", left: "55%", width: "30%", height: "70%", color: "#8e44ad",
