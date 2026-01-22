@@ -842,7 +842,7 @@ window.galleryData.push({
 
 // 723.webp - Mt. Fuji Presentation (Experience)
 window.galleryData.push({
-    imageFile: "723.png",
+    imageFile: "723.webp",
     series: "700",
     spots: [
         {
@@ -880,7 +880,7 @@ window.galleryData.push({
 
 // 724.webp - Hiker Presentation (Experience)
 window.galleryData.push({
-    imageFile: "724.png",
+    imageFile: "724.webp",
     series: "700",
     spots: [
         {
@@ -918,7 +918,7 @@ window.galleryData.push({
 
 // 725.webp - Concert Finished (Result)
 window.galleryData.push({
-    imageFile: "725.png",
+    imageFile: "725.webp",
     series: "700",
     spots: [
         {
@@ -956,7 +956,7 @@ window.galleryData.push({
 
 // 726.webp - Concert Pack Up (Result)
 window.galleryData.push({
-    imageFile: "726.png",
+    imageFile: "726.webp",
     series: "700",
     spots: [
         {
@@ -994,7 +994,7 @@ window.galleryData.push({
 
 // 727.webp - Movie Started (Result)
 window.galleryData.push({
-    imageFile: "727.png",
+    imageFile: "727.webp",
     series: "700",
     spots: [
         {
@@ -1032,7 +1032,7 @@ window.galleryData.push({
 
 // 728.webp - Senior Couple Movie (Result)
 window.galleryData.push({
-    imageFile: "728.png",
+    imageFile: "728.webp",
     series: "700",
     spots: [
         {
@@ -1070,7 +1070,7 @@ window.galleryData.push({
 
 // 729.webp - Missed Train (Boy) (Result)
 window.galleryData.push({
-    imageFile: "729.png",
+    imageFile: "729.webp",
     series: "700",
     spots: [
         {
@@ -1108,7 +1108,7 @@ window.galleryData.push({
 
 // 730.webp - Missed Train (Girl) (Result)
 window.galleryData.push({
-    imageFile: "730.png",
+    imageFile: "730.webp",
     series: "700",
     spots: [
         {
@@ -1146,7 +1146,7 @@ window.galleryData.push({
 
 // 731.webp - Sold Out Bread (Man) (Result)
 window.galleryData.push({
-    imageFile: "731.png",
+    imageFile: "731.webp",
     series: "700",
     spots: [
         {
@@ -1184,7 +1184,7 @@ window.galleryData.push({
 
 // 732.webp - Sold Out Bread (Boy) (Result)
 window.galleryData.push({
-    imageFile: "732.png",
+    imageFile: "732.webp",
     series: "700",
     spots: [
         {
