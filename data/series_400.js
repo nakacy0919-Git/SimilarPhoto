@@ -1,9 +1,9 @@
 // Series 4 Data
 window.galleryData = window.galleryData || [];
 
-// Image: 401.png (Two Girls Comparison)
+// Image: 401.webp (Two Girls Comparison)
 window.galleryData.push({
-    imageFile: "401.png",
+    imageFile: "401.webp",
     spots: [
         {
             top: "20%", left: "25%", width: "22%", height: "75%", color: "#34495e",
@@ -38,9 +38,9 @@ window.galleryData.push({
     ]
 });
 
-// Image: 402.png (Anime Boy and Girl)
+// Image: 402.webp (Anime Boy and Girl)
 window.galleryData.push({
-    imageFile: "402.png",
+    imageFile: "402.webp",
     spots: [
         {
             top: "10%", left: "33%", width: "16%", height: "85%", color: "#2980b9",
@@ -75,9 +75,9 @@ window.galleryData.push({
     ]
 });
 
-// Image: 403.png (Sad Boy and Happy Girl)
+// Image: 403.webp (Sad Boy and Happy Girl)
 window.galleryData.push({
-    imageFile: "403.png",
+    imageFile: "403.webp",
     spots: [
         {
             top: "15%", left: "5%", width: "35%", height: "85%", color: "#5dade2",
@@ -112,9 +112,9 @@ window.galleryData.push({
     ]
 });
 
-// Image: 404.png (Classroom Scene)
+// Image: 404.webp (Classroom Scene)
 window.galleryData.push({
-    imageFile: "404.png",
+    imageFile: "404.webp",
     spots: [
         {
             top: "15%", left: "38%", width: "24%", height: "80%", color: "#3498db",
@@ -149,9 +149,9 @@ window.galleryData.push({
     ]
 });
 
-// Image: 405.png (Tutoring / Conversation)
+// Image: 405.webp (Tutoring / Conversation)
 window.galleryData.push({
-    imageFile: "405.png",
+    imageFile: "405.webp",
     spots: [
         {
             top: "18%", left: "10%", width: "40%", height: "70%", color: "#e74c3c",
@@ -186,9 +186,9 @@ window.galleryData.push({
     ]
 });
 
-// Image: 406.png (Elephant Infographic)
+// Image: 406.webp (Elephant Infographic)
 window.galleryData.push({
-    imageFile: "406.png",
+    imageFile: "406.webp",
     spots: [
         {
             top: "15%", left: "5%", width: "45%", height: "80%", color: "#7f8c8d",
