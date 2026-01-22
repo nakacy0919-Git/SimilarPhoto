@@ -2,9 +2,9 @@
 window.galleryData = window.galleryData || [];
 
 window.galleryData.push(
-    // 901.web: Proposal (Walking on air)
+    // 901.webp: Proposal (Walking on air)
     {
-        imageFile: "901.web",
+        imageFile: "901.webp",
         series: "900",
         spots: [
             {
