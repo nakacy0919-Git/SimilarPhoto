@@ -2,10 +2,10 @@
 window.galleryData = window.galleryData || [];
 
 // -----------------------------------------------------------------------------
-// Image: 201.png (Boy with bike and dog)
+// Image: 201.webp (Boy with bike and dog)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "201.png",
+    imageFile: "201.webp",
     series: "200",
     spots: [
         {
@@ -42,10 +42,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// Image: 202.png (Boy laughing with bike in park)
+// Image: 202.webp (Boy laughing with bike in park)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "202.png",
+    imageFile: "202.webp",
     series: "200",
     spots: [
         {
@@ -82,10 +82,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// Image: 203.png (Boy juggling soccer ball)
+// Image: 203.webp (Boy juggling soccer ball)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "203.png",
+    imageFile: "203.webp",
     series: "200",
     spots: [
         {
@@ -122,10 +122,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// Image: 204.png (Boy walking with soccer ball at sunset)
+// Image: 204.webp (Boy walking with soccer ball at sunset)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "204.png",
+    imageFile: "204.webp",
     series: "200",
     spots: [
         {
@@ -162,10 +162,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// Image: 205.png (Woman picking apples)
+// Image: 205.webp (Woman picking apples)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "205.png",
+    imageFile: "205.webp",
     series: "200",
     spots: [
         {
@@ -202,10 +202,10 @@ window.galleryData.push({
 });
 
 // -----------------------------------------------------------------------------
-// Image: 206.png (Woman paying at register)
+// Image: 206.webp (Woman paying at register)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "206.png",
+    imageFile: "206.webp",
     series: "200",
     spots: [
         {
