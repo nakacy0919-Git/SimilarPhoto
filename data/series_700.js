@@ -1,9 +1,9 @@
 // Series 700 Data - Present Perfect (Experience, Change, Continuation)
 window.galleryData = window.galleryData || [];
 
-// 701.png - Clean Room (Completion/Result)
+// 701.webp - Clean Room (Completion/Result)
 window.galleryData.push({
-    imageFile: "701.png",
+    imageFile: "701.webp",
     series: "700",
     spots: [
         {
@@ -39,9 +39,9 @@ window.galleryData.push({
     ]
 });
 
-// 702.png - Clean Room with Cloth (Completion/Evidence)
+// 702.webp - Clean Room with Cloth (Completion/Evidence)
 window.galleryData.push({
-    imageFile: "702.png",
+    imageFile: "702.webp",
     series: "700",
     spots: [
         {
@@ -77,9 +77,9 @@ window.galleryData.push({
     ]
 });
 
-// 703.png - Kyoto Experience (Experience)
+// 703.webp - Kyoto Experience (Experience)
 window.galleryData.push({
-    imageFile: "703.png",
+    imageFile: "703.webp",
     series: "700",
     spots: [
         {
@@ -115,9 +115,9 @@ window.galleryData.push({
     ]
 });
 
-// 704.png - London Experience (Experience)
+// 704.webp - London Experience (Experience)
 window.galleryData.push({
-    imageFile: "704.png",
+    imageFile: "704.webp",
     series: "700",
     spots: [
         {
@@ -153,9 +153,9 @@ window.galleryData.push({
     ]
 });
 
-// 705.png - Dog Photo Boy (Continuation)
+// 705.webp - Dog Photo Boy (Continuation)
 window.galleryData.push({
-    imageFile: "705.png",
+    imageFile: "705.webp",
     series: "700",
     spots: [
         {
@@ -191,9 +191,9 @@ window.galleryData.push({
     ]
 });
 
-// 706.png - Dog Photo Girl (Continuation)
+// 706.webp - Dog Photo Girl (Continuation)
 window.galleryData.push({
-    imageFile: "706.png",
+    imageFile: "706.webp",
     series: "700",
     spots: [
         {
@@ -229,9 +229,9 @@ window.galleryData.push({
     ]
 });
 
-// 707.png - Tokyo Living (Continuation)
+// 707.webp - Tokyo Living (Continuation)
 window.galleryData.push({
-    imageFile: "707.png",
+    imageFile: "707.webp",
     series: "700",
     spots: [
         {
@@ -267,9 +267,9 @@ window.galleryData.push({
     ]
 });
 
-// 708.png - Shibuya Crossing (Experience/Continuation)
+// 708.webp - Shibuya Crossing (Experience/Continuation)
 window.galleryData.push({
-    imageFile: "708.png",
+    imageFile: "708.webp",
     series: "700",
     spots: [
         {
@@ -305,9 +305,9 @@ window.galleryData.push({
     ]
 });
 
-// 709.png - Game Boy (Completion)
+// 709.webp - Game Boy (Completion)
 window.galleryData.push({
-    imageFile: "709.png",
+    imageFile: "709.webp",
     series: "700",
     spots: [
         {
@@ -343,9 +343,9 @@ window.galleryData.push({
     ]
 });
 
-// 710.png - Comic Boy (Completion)
+// 710.webp - Comic Boy (Completion)
 window.galleryData.push({
-    imageFile: "710.png",
+    imageFile: "710.webp",
     series: "700",
     spots: [
         {
@@ -382,9 +382,9 @@ window.galleryData.push({
 });
 // Series 700 Data - Continued (711-720)
 
-// 711.png - Lost Keys (Outside)
+// 711.webp - Lost Keys (Outside)
 window.galleryData.push({
-    imageFile: "711.png",
+    imageFile: "711.webp",
     series: "700",
     spots: [
         {
@@ -420,9 +420,9 @@ window.galleryData.push({
     ]
 });
 
-// 712.png - Lost Keys (Inside/Coat)
+// 712.webp - Lost Keys (Inside/Coat)
 window.galleryData.push({
-    imageFile: "712.png",
+    imageFile: "712.webp",
     series: "700",
     spots: [
         {
@@ -458,9 +458,9 @@ window.galleryData.push({
     ]
 });
 
-// 713.png - Sushi Experience (Girl)
+// 713.webp - Sushi Experience (Girl)
 window.galleryData.push({
-    imageFile: "713.png",
+    imageFile: "713.webp",
     series: "700",
     spots: [
         {
@@ -496,9 +496,9 @@ window.galleryData.push({
     ]
 });
 
-// 714.png - Sushi Experience (Grandma)
+// 714.webp - Sushi Experience (Grandma)
 window.galleryData.push({
-    imageFile: "714.png",
+    imageFile: "714.webp",
     series: "700",
     spots: [
         {
@@ -534,9 +534,9 @@ window.galleryData.push({
     ]
 });
 
-// 715.png - Sci-Fi Movie (Boy)
+// 715.webp - Sci-Fi Movie (Boy)
 window.galleryData.push({
-    imageFile: "715.png",
+    imageFile: "715.webp",
     series: "700",
     spots: [
         {
@@ -572,9 +572,9 @@ window.galleryData.push({
     ]
 });
 
-// 716.png - Sci-Fi Movie (Grandpa)
+// 716.webp - Sci-Fi Movie (Grandpa)
 window.galleryData.push({
-    imageFile: "716.png",
+    imageFile: "716.webp",
     series: "700",
     spots: [
         {
@@ -610,9 +610,9 @@ window.galleryData.push({
     ]
 });
 
-// 717.png - Read Book (Man)
+// 717.webp - Read Book (Man)
 window.galleryData.push({
-    imageFile: "717.png",
+    imageFile: "717.webp",
     series: "700",
     spots: [
         {
@@ -648,9 +648,9 @@ window.galleryData.push({
     ]
 });
 
-// 718.png - Read Book (Woman)
+// 718.webp - Read Book (Woman)
 window.galleryData.push({
-    imageFile: "718.png",
+    imageFile: "718.webp",
     series: "700",
     spots: [
         {
@@ -686,9 +686,9 @@ window.galleryData.push({
     ]
 });
 
-// 719.png - Haircut (Mirror)
+// 719.webp - Haircut (Mirror)
 window.galleryData.push({
-    imageFile: "719.png",
+    imageFile: "719.webp",
     series: "700",
     spots: [
         {
@@ -724,9 +724,9 @@ window.galleryData.push({
     ]
 });
 
-// 720.png - Haircut (School)
+// 720.webp - Haircut (School)
 window.galleryData.push({
-    imageFile: "720.png",
+    imageFile: "720.webp",
     series: "700",
     spots: [
         {
@@ -763,9 +763,9 @@ window.galleryData.push({
 });
 // Series 700 Data - Continued (721-722)
 
-// 721.png - Broken Leg (Home)
+// 721.webp - Broken Leg (Home)
 window.galleryData.push({
-    imageFile: "721.png",
+    imageFile: "721.webp",
     series: "700",
     spots: [
         {
@@ -801,9 +801,9 @@ window.galleryData.push({
     ]
 });
 
-// 722.png - Broken Leg (School)
+// 722.webp - Broken Leg (School)
 window.galleryData.push({
-    imageFile: "722.png",
+    imageFile: "722.webp",
     series: "700",
     spots: [
         {
