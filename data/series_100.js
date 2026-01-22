@@ -1,10 +1,10 @@
 // Series 100 Data
 window.galleryData = window.galleryData || [];
 
-// Image 1: 103.png - Station to Hospital Route
+// Image 1: 103.webp - Station to Hospital Route
 window.galleryData.push(
     {
-        imageFile: "103.png",
+        imageFile: "103.webp",
         spots: [
             {
                 top: "52%", left: "68%", width: "25%", height: "25%", color: "#3498db",
@@ -40,10 +40,10 @@ window.galleryData.push(
     }
 );
 
-// Image 2: 102.png - Arriving at the Hospital
+// Image 2: 102.webp - Arriving at the Hospital
 window.galleryData.push(
     {
-        imageFile: "102.png",
+        imageFile: "102.webp",
         spots: [
             {
                 top: "8%", left: "42%", width: "20%", height: "20%", color: "#e67e22",
@@ -79,10 +79,10 @@ window.galleryData.push(
     }
 );
 
-// Image 3: 101.png - Pinpointing the Location
+// Image 3: 101.webp - Pinpointing the Location
 window.galleryData.push(
     {
-        imageFile: "101.png",
+        imageFile: "101.webp",
         spots: [
             {
                 top: "28%", left: "80%", width: "12%", height: "20%", color: "#e74c3c",
@@ -102,7 +102,7 @@ window.galleryData.push(
                 vocab: ["display (表示する)", "background (背景)", "easy (簡単な)"],
                 idioms: ["black and white (文書化された/白黒はっきりした)"],
                 synonyms: ["shown", "exhibited"],
-                grammar: "受動態 (is displayed) が使われており、ラベルがどのように提示されているかに焦点を当てています。"
+                grammar: "受動態 (is displayed) が使われており、ラベルがどのように提示されているかを客観的に説明しています。"
             },
             {
                 top: "46%", left: "38%", width: "55%", height: "5%", color: "#f1c40f",
