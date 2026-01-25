@@ -1836,3 +1836,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 237: Looking Forward to Traveling (Camera)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "237.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Looking Forward to Using",
+            eng: "She is looking forward to using her new camera.",
+            jp: "彼女は新しいカメラを使うことを楽しみにしています。",
+            vocab: ["look forward to (楽しみにする)", "use (使う)", "new (新しい)"],
+            idioms: ["can't wait to (～するのが待ちきれない)"],
+            synonyms: ["anticipate", "expect"],
+            grammar: "動名詞 (to using): look forward toのtoは前置詞なので、動詞はing形になります。"
+        },
+        {
+            top: "55%", left: "35%", width: "25%", height: "30%", color: "#3498db",
+            title: "Camera to Take",
+            eng: "She bought a high-quality camera to take beautiful photos.",
+            jp: "彼女は美しい写真を撮るために高品質なカメラを買いました。",
+            vocab: ["high-quality (高品質な)", "take photos (写真を撮る)", "beautiful (美しい)"],
+            idioms: ["capture a moment (瞬間を捉える)"],
+            synonyms: ["purchase", "buy"],
+            grammar: "不定詞の副詞的用法 (to take): カメラを買った目的を表しています。"
+        },
+        {
+            top: "20%", left: "25%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Happy to Hold",
+            eng: "She looks happy to hold the professional device.",
+            jp: "彼女はプロ仕様の機器を手にできて嬉しそうです。",
+            vocab: ["hold (持つ)", "professional (プロの)", "device (機器)"],
+            idioms: ["in one's hands (手の中に)"],
+            synonyms: ["glad", "delighted"],
+            grammar: "不定詞の副詞的用法 (happy to hold): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 238: Looking Forward to Traveling (Packing)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "238.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "10%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Looking Forward to Visiting",
+            eng: "She is looking forward to visiting famous sightseeing spots.",
+            jp: "彼女は有名な観光地を訪れるのを楽しみにしています。",
+            vocab: ["visit (訪れる)", "sightseeing (観光)", "spot (場所)"],
+            idioms: ["look forward to (楽しみに待つ)"],
+            synonyms: ["await", "hope for"],
+            grammar: "動名詞 (to visiting): 前置詞toの後ろなので動名詞を使います。"
+        },
+        {
+            top: "40%", left: "55%", width: "20%", height: "20%", color: "#3498db",
+            title: "Guidebook to Read",
+            eng: "She is reading a guidebook to plan her trip.",
+            jp: "彼女は旅行の計画を立てるためにガイドブックを読んでいます。",
+            vocab: ["guidebook (ガイドブック)", "plan (計画する)", "trip (旅行)"],
+            idioms: ["make a plan (計画を立てる)"],
+            synonyms: ["read", "study"],
+            grammar: "不定詞の副詞的用法 (to plan): 本を読む目的を表しています。"
+        },
+        {
+            top: "70%", left: "30%", width: "40%", height: "25%", color: "#9b59b6",
+            title: "Clothes to Pack",
+            eng: "There are many clothes to pack in the suitcase.",
+            jp: "スーツケースに詰めるべき服がたくさんあります。",
+            vocab: ["clothes (服)", "pack (詰める)", "suitcase (スーツケース)"],
+            idioms: ["pack up (荷造りする)"],
+            synonyms: ["garments", "outfits"],
+            grammar: "不定詞の形容詞的用法 (clothes to pack): 「詰めるための服」と名詞を修飾します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 239: Likes Studying (Online)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "239.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Likes Studying",
+            eng: "She likes studying English online with a native teacher.",
+            jp: "彼女はネイティブの先生とオンラインで英語を勉強するのが好きです。",
+            vocab: ["like (好きである)", "online (オンラインで)", "native (ネイティブの)"],
+            idioms: ["take a lesson (レッスンを受ける)"],
+            synonyms: ["enjoy", "prefer"],
+            grammar: "動名詞 (likes studying): 「～すること（学習）が好き」という表現です。"
+        },
+        {
+            top: "55%", left: "60%", width: "35%", height: "40%", color: "#3498db",
+            title: "Computer to Learn",
+            eng: "She uses a computer to learn foreign languages.",
+            jp: "彼女は外国語を学ぶためにコンピュータを使っています。",
+            vocab: ["use (使う)", "learn (学ぶ)", "foreign (外国の)"],
+            idioms: ["log on (ログインする)"],
+            synonyms: ["utilize", "employ"],
+            grammar: "不定詞の副詞的用法 (to learn): コンピュータを使う目的を表します。"
+        },
+        {
+            top: "30%", left: "25%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Happy to Talk",
+            eng: "She looks happy to talk to her teacher.",
+            jp: "彼女は先生と話せて嬉しそうです。",
+            vocab: ["talk (話す)", "teacher (先生)", "look (見える)"],
+            idioms: ["have a conversation (会話をする)"],
+            synonyms: ["glad", "cheerful"],
+            grammar: "不定詞の副詞的用法 (happy to talk): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 240: Likes Studying (Tablet)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "240.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "10%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Likes Listening",
+            eng: "She likes listening to English audiobooks on her tablet.",
+            jp: "彼女はタブレットで英語のオーディオブックを聴くのが好きです。",
+            vocab: ["listen to (～を聴く)", "audiobook (オーディオブック)", "tablet (タブレット)"],
+            idioms: ["tune in (聴く／合わせる)"],
+            synonyms: ["enjoy", "love"],
+            grammar: "動名詞 (likes listening): likeの目的語として動名詞を使っています。"
+        },
+        {
+            top: "65%", left: "40%", width: "25%", height: "30%", color: "#3498db",
+            title: "Tool to Study",
+            eng: "The tablet is a useful tool to study anywhere.",
+            jp: "タブレットはどこでも勉強するための便利な道具です。",
+            vocab: ["useful (便利な)", "tool (道具)", "anywhere (どこでも)"],
+            idioms: ["come in handy (役に立つ)"],
+            synonyms: ["device", "gadget"],
+            grammar: "不定詞の形容詞的用法 (tool to study): 「勉強するための道具」と名詞を修飾します。"
+        },
+        {
+            top: "30%", left: "65%", width: "10%", height: "20%", color: "#9b59b6",
+            title: "Wearing to Hear",
+            eng: "She is wearing earphones to hear the pronunciation clearly.",
+            jp: "彼女は発音をはっきりと聞くためにイヤホンをつけています。",
+            vocab: ["wear (身につける)", "pronunciation (発音)", "clearly (はっきりと)"],
+            idioms: ["put on (身につける)"],
+            synonyms: ["hear", "listen"],
+            grammar: "不定詞の副詞的用法 (to hear): イヤホンをつける目的を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 241: Good at Cooking (Group)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "241.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "60%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Good at Cooking",
+            eng: "He is very good at cooking fish dishes.",
+            jp: "彼は魚料理を作るのがとても得意です。",
+            vocab: ["good at (～が得意だ)", "cook (料理する)", "dish (料理／皿)"],
+            idioms: ["have skills (スキルがある)"],
+            synonyms: ["skilled", "proficient"],
+            grammar: "動名詞 (at cooking): good at + -ing の形です。"
+        },
+        {
+            top: "70%", left: "35%", width: "30%", height: "25%", color: "#3498db",
+            title: "Using to Cut",
+            eng: "He is using a sharp knife to cut the salmon fillets.",
+            jp: "彼はサーモンの切り身を切るために鋭いナイフを使っています。",
+            vocab: ["sharp (鋭い)", "knife (ナイフ)", "fillet (切り身)"],
+            idioms: ["slice up (切り分ける)"],
+            synonyms: ["cut", "carve"],
+            grammar: "不定詞の副詞的用法 (to cut): ナイフを使う目的を表します。"
+        },
+        {
+            top: "30%", left: "80%", width: "20%", height: "40%", color: "#9b59b6",
+            title: "Learning to Cook",
+            eng: "The students are watching him to learn how to cook.",
+            jp: "生徒たちは料理の仕方を学ぶために彼を見ています。",
+            vocab: ["watch (見る)", "learn (学ぶ)", "how to (～の仕方)"],
+            idioms: ["pay attention (注目する)"],
+            synonyms: ["observe", "study"],
+            grammar: "不定詞の副詞的用法 (to learn): 見ている目的を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 242: Good at Cooking (Solo)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "242.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Good at Tossing",
+            eng: "He is good at tossing vegetables in the frying pan.",
+            jp: "彼はフライパンで野菜をあおる（放り投げる）のが得意です。",
+            vocab: ["toss (放り投げる／あおる)", "vegetable (野菜)", "frying pan (フライパン)"],
+            idioms: ["show off (披露する)"],
+            synonyms: ["flip", "mix"],
+            grammar: "動名詞 (at tossing): 前置詞atの後ろなので動名詞を使います。"
+        },
+        {
+            top: "60%", left: "55%", width: "25%", height: "25%", color: "#3498db",
+            title: "Vegetables to Eat",
+            eng: "He is frying colorful vegetables to eat for lunch.",
+            jp: "彼は昼食に食べるために色とりどりの野菜を炒めています。",
+            vocab: ["fry (炒める)", "colorful (色とりどりの)", "lunch (昼食)"],
+            idioms: ["whip up (手早く作る)"],
+            synonyms: ["cook", "sauté"],
+            grammar: "不定詞の形容詞的用法 (vegetables to eat): 「食べるための野菜」と修飾しています。"
+        },
+        {
+            top: "20%", left: "35%", width: "15%", height: "15%", color: "#9b59b6",
+            title: "Happy to Cook",
+            eng: "He looks happy to cook in his clean kitchen.",
+            jp: "彼はきれいなキッチンで料理ができて嬉しそうです。",
+            vocab: ["clean (清潔な)", "kitchen (キッチン)", "happy (嬉しい)"],
+            idioms: ["feel at home (くつろぐ)"],
+            synonyms: ["pleased", "content"],
+            grammar: "不定詞の副詞的用法 (happy to cook): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 243: Thank You for Waiting (Clinic)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "243.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "30%", height: "20%", color: "#e67e22",
+            title: "Thank You for Waiting",
+            eng: "Thank you for waiting for a long time.",
+            jp: "長い間お待ちいただき、ありがとうございます。",
+            vocab: ["wait (待つ)", "long time (長い間)", "thank (感謝する)"],
+            idioms: ["apologize for (～を詫びる)"],
+            synonyms: ["grateful", "appreciate"],
+            grammar: "動名詞 (for waiting): Thank you for + -ing は感謝の定番フレーズです。"
+        },
+        {
+            top: "55%", left: "60%", width: "20%", height: "20%", color: "#3498db",
+            title: "Glad to Meet",
+            eng: "The doctor is glad to meet the patient.",
+            jp: "医師は患者に会えて嬉しく思っています。",
+            vocab: ["doctor (医師)", "patient (患者)", "glad (嬉しい)"],
+            idioms: ["shake hands (握手する)"],
+            synonyms: ["happy", "pleased"],
+            grammar: "不定詞の副詞的用法 (glad to meet): 感情の原因を表します。"
+        },
+        {
+            top: "35%", left: "30%", width: "20%", height: "40%", color: "#9b59b6",
+            title: "Came to See",
+            eng: "The elderly man came to see the doctor about his health.",
+            jp: "その年配の男性は健康について医師に診てもらうために来ました。",
+            vocab: ["elderly (年配の)", "health (健康)", "come (来る)"],
+            idioms: ["see a doctor (医者に診てもらう)"],
+            synonyms: ["visit", "consult"],
+            grammar: "不定詞の副詞的用法 (to see): 来院の目的を表しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 244: Thank You for Waiting (Station)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "244.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "30%", height: "20%", color: "#e67e22",
+            title: "Thank You for Waiting",
+            eng: "Thank you for waiting for me at the station.",
+            jp: "駅で私を待っていてくれてありがとう。",
+            vocab: ["station (駅)", "wait (待つ)", "me (私を)"],
+            idioms: ["pick up (迎えに来る)"],
+            synonyms: ["thankful", "grateful"],
+            grammar: "動名詞 (for waiting): 感謝の理由を前置詞for + 動名詞で表します。"
+        },
+        {
+            top: "50%", left: "70%", width: "15%", height: "20%", color: "#3498db",
+            title: "Checking to See",
+            eng: "He is checking his watch to see the time.",
+            jp: "彼は時間を確認するために時計を見ています。",
+            vocab: ["check (確認する)", "watch (腕時計)", "time (時間)"],
+            idioms: ["on time (時間通りに)"],
+            synonyms: ["look at", "examine"],
+            grammar: "不定詞の副詞的用法 (to see): 時計を見る目的を表します。"
+        },
+        {
+            top: "55%", left: "20%", width: "25%", height: "40%", color: "#9b59b6",
+            title: "Running to Meet",
+            eng: "She is running to meet him as soon as possible.",
+            jp: "彼女はできるだけ早く彼に会うために走っています。",
+            vocab: ["run (走る)", "meet (会う)", "possible (可能な)"],
+            idioms: ["as soon as possible (できるだけ早く)"],
+            synonyms: ["rush", "hurry"],
+            grammar: "不定詞の副詞的用法 (to meet): 走っている目的を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 245: Thinking About Joining (Soccer)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "245.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Thinking About Joining",
+            eng: "I am thinking about joining the soccer club.",
+            jp: "私はサッカー部に入ろうかと考えています。",
+            vocab: ["think about (～について考える)", "join (入る／参加する)", "club (部活／クラブ)"],
+            idioms: ["make up one's mind (決心する)"],
+            synonyms: ["consider", "contemplate"],
+            grammar: "動名詞 (about joining): 前置詞aboutの後ろなので動名詞を使います。"
+        },
+        {
+            top: "55%", left: "60%", width: "30%", height: "30%", color: "#3498db",
+            title: "Playing to Win",
+            eng: "The members are playing hard to win the next match.",
+            jp: "部員たちは次の試合に勝つために一生懸命プレーしています。",
+            vocab: ["member (部員／メンバー)", "win (勝つ)", "match (試合)"],
+            idioms: ["do one's best (全力を尽くす)"],
+            synonyms: ["practice", "compete"],
+            grammar: "不定詞の副詞的用法 (to win): プレーする目的を表します。"
+        },
+        {
+            top: "40%", left: "15%", width: "20%", height: "40%", color: "#9b59b6",
+            title: "Watching to Decide",
+            eng: "He is watching the practice to decide whether to join.",
+            jp: "彼は入部するかどうか決めるために練習を見ています。",
+            vocab: ["decide (決める)", "whether (～かどうか)", "practice (練習)"],
+            idioms: ["look on (傍観する)"],
+            synonyms: ["observe", "inspect"],
+            grammar: "不定詞の副詞的用法 (to decide): 見ている目的を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 246: Thinking About Joining (Music)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "246.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "30%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Thinking About Joining",
+            eng: "He is thinking about joining the brass band club.",
+            jp: "彼は吹奏楽部に入ろうかと考えています。",
+            vocab: ["brass band (吹奏楽)", "join (入る)", "club (部活)"],
+            idioms: ["give it a thought (考えてみる)"],
+            synonyms: ["considering", "planning"],
+            grammar: "動名詞 (about joining): 前置詞aboutの目的語として動名詞を使います。"
+        },
+        {
+            top: "50%", left: "45%", width: "15%", height: "25%", color: "#3498db",
+            title: "Instrument to Play",
+            eng: "He wants to find an instrument to play.",
+            jp: "彼は演奏するための楽器を見つけたいと思っています。",
+            vocab: ["find (見つける)", "instrument (楽器)", "play (演奏する)"],
+            idioms: ["pick out (選ぶ)"],
+            synonyms: ["musical instrument", "tool"],
+            grammar: "不定詞の形容詞的用法 (instrument to play): 「演奏するための楽器」と修飾しています。"
+        },
+        {
+            top: "70%", left: "70%", width: "25%", height: "30%", color: "#9b59b6",
+            title: "Hesitating to Open",
+            eng: "He is hesitating to open the door and enter.",
+            jp: "彼はドアを開けて中に入るのをためらっています。",
+            vocab: ["hesitate (ためらう)", "open (開ける)", "enter (入る)"],
+            idioms: ["shy away (尻込みする)"],
+            synonyms: ["pause", "waver"],
+            grammar: "不定詞 (hesitating to open): hesitateは不定詞を伴い「～するのをためらう」となります。"
+        }
+    ]
+});
