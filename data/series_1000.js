@@ -756,3 +756,242 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 1021: Labor Shortage & Aging Workforce
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1021.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "15%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Declining Birth Rate",
+            eng: "The birth rate is declining sharply; consequently, the future workforce is shrinking.",
+            jp: "出生率が急激に低下しており、その結果、将来の労働力は縮小しています。",
+            vocab: ["declining (低下している)", "workforce (労働力)", "shrink (縮小する)"],
+            idioms: ["birth rate (出生率)"],
+            synonyms: ["decreasing", "dropping"],
+            grammar: "接続副詞 consequently: 出生率低下（原因）と労働力減少（結果）の因果関係を示します。"
+        },
+        {
+            top: "55%", left: "20%", width: "30%", height: "40%", color: "#e67e22",
+            title: "Elderly Workers",
+            eng: "There are few young applicants. Therefore, companies hire older workers.",
+            jp: "若い応募者がほとんどいません。したがって、企業は高齢の労働者を雇います。",
+            vocab: ["applicant (応募者)", "hire (雇う)", "elderly (高齢の)"],
+            idioms: ["help wanted (求人中)"],
+            synonyms: ["employ", "recruit"],
+            grammar: "接続副詞 Therefore: 若者不足（状況）と高齢者雇用（結果）を論理的につなぎます。"
+        },
+        {
+            top: "40%", left: "50%", width: "15%", height: "15%", color: "#3498db",
+            title: "Labor Shortage",
+            eng: "Construction sites need workers because there is a serious labor shortage.",
+            jp: "深刻な人手不足のため、建設現場は労働者を必要としています。",
+            vocab: ["construction (建設)", "serious (深刻な)", "shortage (不足)"],
+            idioms: ["labor shortage (人手不足)"],
+            synonyms: ["lack", "scarcity"],
+            grammar: "接続詞 because: 労働者が必要な理由（人手不足）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1022: Aging Society Burden
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1022.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Population Pyramid",
+            eng: "The chart shows an inverted pyramid because the elderly population is growing.",
+            jp: "高齢者人口が増加しているため、図は逆ピラミッドを示しています。",
+            vocab: ["chart (図／グラフ)", "inverted (逆の／反転した)", "population (人口)"],
+            idioms: ["aging society (高齢化社会)"],
+            synonyms: ["diagram", "graph"],
+            grammar: "接続詞 because: 図の形状の理由（高齢化）を説明します。"
+        },
+        {
+            top: "55%", left: "5%", width: "45%", height: "40%", color: "#e67e22",
+            title: "Burden on Youth",
+            eng: "Fewer young people exist. However, they must support many elderly people.",
+            jp: "若者はより少数しか存在しません。しかしながら、彼らは多くの高齢者を支えなければなりません。",
+            vocab: ["exist (存在する)", "support (支える)", "fewer (より少ない)"],
+            idioms: ["bear the burden (負担を負う)"],
+            synonyms: ["sustain", "help"],
+            grammar: "接続副詞 However: 若者が少ないという事実と、負担が大きいという現実を対比させます。"
+        },
+        {
+            top: "20%", left: "5%", width: "40%", height: "30%", color: "#3498db",
+            title: "Social Imbalance",
+            eng: "The balance is lost due to the rapid aging of society.",
+            jp: "社会の急速な高齢化が原因で、バランスが失われています。",
+            vocab: ["balance (バランス)", "rapid (急速な)", "aging (高齢化／加齢)"],
+            idioms: ["due to (～のために)"],
+            synonyms: ["caused by", "owing to"],
+            grammar: "前置詞句 due to: バランス崩壊の原因（急速な高齢化）を導きます。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1023: Work-Life Balance Issues
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1023.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Difficulty of Parenting",
+            eng: "Working while raising a child is hard; therefore, many women are exhausted.",
+            jp: "育児をしながら働くことは大変であり、それゆえに多くの女性が疲弊しています。",
+            vocab: ["raise (育てる)", "exhausted (疲れ切った)", "hard (大変な)"],
+            idioms: ["work-life balance (ワークライフバランス)"],
+            synonyms: ["difficult", "tough"],
+            grammar: "接続副詞 therefore: 両立の難しさ（原因）と疲労（結果）をつなぎます。"
+        },
+        {
+            top: "60%", left: "5%", width: "25%", height: "35%", color: "#e67e22",
+            title: "Aging Town",
+            eng: "Young people moved to cities. Consequently, only the elderly remain here.",
+            jp: "若者たちは都市へ移り住みました。その結果、ここには高齢者だけが残っています。",
+            vocab: ["move (引っ越す)", "city (都市)", "remain (残る)"],
+            idioms: ["move away (去る)"],
+            synonyms: ["stay", "reside"],
+            grammar: "接続副詞 Consequently: 人口流出（原因）と高齢化（結果）の因果関係を示します。"
+        },
+        {
+            top: "35%", left: "25%", width: "20%", height: "25%", color: "#3498db",
+            title: "Economic Decline",
+            eng: "Shops are closed because there are not enough customers.",
+            jp: "十分な客がいないため、店は閉まっています。",
+            vocab: ["closed (閉まった)", "customer (客)", "enough (十分な)"],
+            idioms: ["shut down (閉店する)"],
+            synonyms: ["client", "shopper"],
+            grammar: "接続詞 because: 閉店の理由（客不足）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1024: Economic Hardship
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1024.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Financial Pressure",
+            eng: "Bills are piling up; therefore, the couple looks very worried.",
+            jp: "請求書が積み重なっており、それゆえに夫婦はとても心配そうです。",
+            vocab: ["pile up (積み重なる)", "couple (夫婦／カップル)", "worried (心配して)"],
+            idioms: ["make ends meet (家計をやりくりする)"],
+            synonyms: ["anxious", "concerned"],
+            grammar: "接続副詞 therefore: 請求書の増加（原因）と心配（結果）をつなぎます。"
+        },
+        {
+            top: "65%", left: "65%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Neglected Park",
+            eng: "The slide is rusty and dangerous because the city lacks funds.",
+            jp: "市に資金がないため、滑り台は錆びついていて危険です。",
+            vocab: ["rusty (錆びた)", "dangerous (危険な)", "fund (資金)"],
+            idioms: ["lack of (～の不足)"],
+            synonyms: ["unsafe", "hazardous"],
+            grammar: "接続詞 because: インフラ荒廃の理由（資金不足）を説明します。"
+        },
+        {
+            top: "40%", left: "5%", width: "45%", height: "50%", color: "#3498db",
+            title: "Old Infrastructure",
+            eng: "The swings are broken. As a result, children cannot play here.",
+            jp: "ブランコは壊れています。その結果、子供たちはここで遊ぶことができません。",
+            vocab: ["swing (ブランコ)", "broken (壊れた)", "play (遊ぶ)"],
+            idioms: ["as a result (その結果)"],
+            synonyms: ["damaged", "ruined"],
+            grammar: "接続詞句 As a result: 設備の破損（原因）と遊べない状況（結果）を示します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1025: Distracted Walking (Smombie)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1025.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Focused on Screen",
+            eng: "He is glued to his screen; consequently, he is unaware of his surroundings.",
+            jp: "彼は画面に釘付けになっており、その結果、周囲に気づいていません。",
+            vocab: ["glued (接着された／釘付けの)", "unaware (気づかない)", "surroundings (周囲)"],
+            idioms: ["pay attention (注意を払う)"],
+            synonyms: ["distracted", "oblivious"],
+            grammar: "接続副詞 consequently: 画面への集中（原因）と注意散漫（結果）をつなぎます。"
+        },
+        {
+            top: "30%", left: "35%", width: "15%", height: "30%", color: "#e67e22",
+            title: "Accident Happens",
+            eng: "He bumped into the pole because he was looking down at his phone.",
+            jp: "スマホを見下ろしていたため、彼は柱にぶつかりました。",
+            vocab: ["bump into (ぶつかる)", "pole (柱)", "look down (見下ろす)"],
+            idioms: ["watch out (気をつける)"],
+            synonyms: ["hit", "collide"],
+            grammar: "接続詞 because: 事故の理由（スマホを見ていた）を説明します。"
+        },
+        {
+            top: "10%", left: "5%", width: "20%", height: "30%", color: "#3498db",
+            title: "Safety Risk",
+            eng: "The traffic light is red. However, he continues walking forward.",
+            jp: "信号は赤です。しかしながら、彼は前に歩き続けています。",
+            vocab: ["traffic light (信号機)", "continue (続ける)", "forward (前方へ)"],
+            idioms: ["walk into traffic (車道に飛び出す)"],
+            synonyms: ["proceed", "go on"],
+            grammar: "接続副詞 However: 「赤信号」という停止すべき状況と「歩く」という行動の矛盾を強調します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1026: Digital Addiction in Family
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1026.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "5%", left: "55%", width: "40%", height: "45%", color: "#e74c3c",
+            title: "Social Media Addiction",
+            eng: "They check social media constantly; therefore, real-life interaction is lost.",
+            jp: "彼らは絶えずSNSをチェックしており、それゆえに実生活での交流が失われています。",
+            vocab: ["constantly (絶えず)", "interaction (交流)", "lost (失われた)"],
+            idioms: ["face-to-face (対面の)"],
+            synonyms: ["communication", "contact"],
+            grammar: "接続副詞 therefore: スマホ依存（原因）と交流の喪失（結果）をつなぎます。"
+        },
+        {
+            top: "50%", left: "25%", width: "50%", height: "25%", color: "#e67e22",
+            title: "Silent Dinner",
+            eng: "Everyone is looking at a smartphone. As a result, the dinner table is silent.",
+            jp: "全員がスマートフォンを見ています。その結果、食卓は静まり返っています。",
+            vocab: ["silent (静かな)", "everyone (全員)", "dinner table (食卓)"],
+            idioms: ["as a result (その結果)"],
+            synonyms: ["quiet", "still"],
+            grammar: "接続詞句 As a result: 全員の行動（スマホ凝視）が招いた結果（沈黙）を示します。"
+        },
+        {
+            top: "80%", left: "70%", width: "25%", height: "15%", color: "#3498db",
+            title: "Neglected Fun",
+            eng: "The board game is abandoned on the floor because gadgets are more addictive.",
+            jp: "電子機器の方が中毒性が高いため、ボードゲームは床に放置されています。",
+            vocab: ["abandoned (放置された)", "gadget (電子機器)", "addictive (中毒性のある)"],
+            idioms: ["give up (あきらめる／やめる)"],
+            synonyms: ["left", "discarded"],
+            grammar: "接続詞 because: 遊びが放置されている理由（デジタル機器の魅力）を説明します。"
+        }
+    ]
+});
