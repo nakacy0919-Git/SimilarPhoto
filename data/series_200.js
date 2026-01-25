@@ -639,3 +639,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 207: Reading on Tablet
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "207.webp",
+    series: "200",
+    spots: [
+        {
+            top: "20%", left: "45%", width: "40%", height: "40%", color: "#e67e22",
+            title: "Enjoy Reading",
+            eng: "She enjoys reading e-books on her tablet near the window.",
+            jp: "彼女は窓辺でタブレットを使って電子書籍を読むことを楽しんでいます。",
+            vocab: ["enjoy (楽しむ)", "e-book (電子書籍)", "tablet (タブレット)"],
+            idioms: ["pass the time (時間をつぶす)"],
+            synonyms: ["like", "love"],
+            grammar: "動名詞 (enjoy reading): enjoyの目的語には必ず動名詞を使います。"
+        },
+        {
+            top: "55%", left: "45%", width: "35%", height: "25%", color: "#3498db",
+            title: "Convenient to Carry",
+            eng: "Tablets are light and convenient to carry anywhere.",
+            jp: "タブレットは軽くて、どこへ運ぶのにも便利です。",
+            vocab: ["convenient (便利な)", "carry (運ぶ)", "anywhere (どこでも)"],
+            idioms: ["on the go (出先で)"],
+            synonyms: ["handy", "portable"],
+            grammar: "不定詞の副詞的用法 (convenient to carry): 形容詞convenientを修飾し「～するのに便利」と説明します。"
+        },
+        {
+            top: "10%", left: "10%", width: "25%", height: "80%", color: "#9b59b6",
+            title: "Place to Relax",
+            eng: "The window seat is the perfect place to relax comfortably.",
+            jp: "窓際の席は、快適にリラックスするための完璧な場所です。",
+            vocab: ["perfect (完璧な)", "relax (リラックスする)", "comfortably (快適に)"],
+            idioms: ["take it easy (気楽にする)"],
+            synonyms: ["spot", "location"],
+            grammar: "不定詞の形容詞的用法 (place to relax): 「リラックスするための場所」と名詞を修飾します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 208: Reading Comics
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "208.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "60%", width: "30%", height: "35%", color: "#e67e22",
+            title: "Love Reading",
+            eng: "She loves reading comics in the quiet library.",
+            jp: "彼女は静かな図書館で漫画を読むのが大好きです。",
+            vocab: ["love (大好きである)", "comic (漫画)", "library (図書館)"],
+            idioms: ["be into (～にハマっている)"],
+            synonyms: ["adore", "enjoy"],
+            grammar: "動名詞 (loves reading): loveの後は動名詞も不定詞も使えますが、ここでは習慣的な好みを表します。"
+        },
+        {
+            top: "35%", left: "45%", width: "15%", height: "25%", color: "#3498db",
+            title: "Fun to Read",
+            eng: "This comic book is very fun to read.",
+            jp: "この漫画本は読むのがとても楽しいです。",
+            vocab: ["fun (楽しい)", "read (読む)", "book (本)"],
+            idioms: ["have fun (楽しむ)"],
+            synonyms: ["entertaining", "amusing"],
+            grammar: "不定詞の副詞的用法 (fun to read): 形容詞funを修飾し「～するのが楽しい」となります。"
+        },
+        {
+            top: "10%", left: "5%", width: "25%", height: "80%", color: "#9b59b6",
+            title: "Books to Borrow",
+            eng: "There are many interesting books to borrow on the shelves.",
+            jp: "棚には借りるための興味深い本がたくさんあります。",
+            vocab: ["borrow (借りる)", "shelf (棚)", "interesting (興味深い)"],
+            idioms: ["check out (貸出図書を借りる)"],
+            synonyms: ["rent", "loan"],
+            grammar: "不定詞の形容詞的用法 (books to borrow): 「借りるべき本／借りられる本」という意味です。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 209: Roasting Chicken
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "209.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "30%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Love Roasting",
+            eng: "She loves roasting chicken for her family's dinner.",
+            jp: "彼女は家族の夕食のためにチキンを焼くのが大好きです。",
+            vocab: ["roast (ローストする／焼く)", "chicken (鶏肉)", "dinner (夕食)"],
+            idioms: ["home-cooked meal (家庭料理)"],
+            synonyms: ["bake", "cook"],
+            grammar: "動名詞 (loves roasting): 「～すること（調理）が好き」という表現です。"
+        },
+        {
+            top: "60%", left: "60%", width: "25%", height: "20%", color: "#3498db",
+            title: "Ready to Eat",
+            eng: "The chicken looks golden and ready to eat.",
+            jp: "チキンは黄金色に見え、食べる準備ができています。",
+            vocab: ["golden (黄金色の)", "ready (準備ができた)", "eat (食べる)"],
+            idioms: ["ready to go (準備完了)"],
+            synonyms: ["prepared", "done"],
+            grammar: "不定詞 (ready to eat): 形容詞readyに続き、「～する準備ができている」となります。"
+        },
+        {
+            top: "55%", left: "45%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Gloves to Protect",
+            eng: "She uses oven mitts to protect her hands from the heat.",
+            jp: "彼女は熱から手を守るためにオーブンミトンを使っています。",
+            vocab: ["mitts (ミトン／手袋)", "protect (守る)", "heat (熱)"],
+            idioms: ["watch out for (～に気をつける)"],
+            synonyms: ["gloves", "shield"],
+            grammar: "不定詞の副詞的用法 (to protect): 道具を使う目的（守るため）を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 210: Cooking Healthy Food
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "210.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "30%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Like Cooking",
+            eng: "I like cooking healthy food for my children.",
+            jp: "私は子供たちのために健康的な料理を作るのが好きです。",
+            vocab: ["healthy (健康的な)", "cook (料理する)", "children (子供たち)"],
+            idioms: ["good for you (体に良い)"],
+            synonyms: ["prepare", "make"],
+            grammar: "動名詞 (like cooking): likeの後に動名詞を置き、趣味や嗜好を表します。"
+        },
+        {
+            top: "80%", left: "30%", width: "30%", height: "20%", color: "#3498db",
+            title: "Cutting Vegetables",
+            eng: "She is busy cutting vegetables to make a salad.",
+            jp: "彼女はサラダを作るために野菜を切るのに忙しいです。",
+            vocab: ["busy (忙しい)", "cut (切る)", "vegetable (野菜)"],
+            idioms: ["be busy -ing (～するのに忙しい)"],
+            synonyms: ["chop", "slice"],
+            grammar: "不定詞の副詞的用法 (to make): 野菜を切る目的を表しています。"
+        },
+        {
+            top: "40%", left: "65%", width: "30%", height: "30%", color: "#9b59b6",
+            title: "Waiting to Eat",
+            eng: "The family is sitting at the table waiting to eat.",
+            jp: "家族は食べるのを待ちながらテーブルに着いています。",
+            vocab: ["wait (待つ)", "sit (座る)", "table (テーブル)"],
+            idioms: ["look forward to (～を楽しみにする)"],
+            synonyms: ["expecting", "anticipating"],
+            grammar: "不定詞 (waiting to eat): waitの後に不定詞を続け、「～するのを待つ」となります。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 211: Soccer Ball Control
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "211.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "70%", width: "25%", height: "30%", color: "#e67e22",
+            title: "Good at Controlling",
+            eng: "He is good at controlling the ball with his feet.",
+            jp: "彼は足でボールをコントロールするのが得意です。",
+            vocab: ["good at (～が得意だ)", "control (コントロールする)", "feet (足)"],
+            idioms: ["have a knack for (～の才能がある)"],
+            synonyms: ["skillful", "talented"],
+            grammar: "動名詞 (at controlling): 前置詞atの後ろなので動名詞を使います。"
+        },
+        {
+            top: "35%", left: "40%", width: "20%", height: "20%", color: "#3498db",
+            title: "Practice to Improve",
+            eng: "He practices every day to improve his soccer skills.",
+            jp: "彼はサッカースキルを向上させるために毎日練習しています。",
+            vocab: ["practice (練習する)", "improve (向上させる)", "skill (技術)"],
+            idioms: ["work on (取り組む)"],
+            synonyms: ["train", "develop"],
+            grammar: "不定詞の副詞的用法 (to improve): 練習する目的を表します。"
+        },
+        {
+            top: "20%", left: "5%", width: "25%", height: "40%", color: "#9b59b6",
+            title: "Watching Him Play",
+            eng: "His teammates enjoy watching him play tricks.",
+            jp: "チームメイトたちは彼が技を披露するのを見て楽しんでいます。",
+            vocab: ["teammate (チームメイト)", "watch (見る)", "trick (技／トリック)"],
+            idioms: ["show off (見せびらかす)"],
+            synonyms: ["observe", "look at"],
+            grammar: "動名詞 (enjoy watching): enjoyの目的語として動名詞が使われています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 212: Soccer Dribbling
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "212.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "45%", width: "20%", height: "30%", color: "#e67e22",
+            title: "Good at Dribbling",
+            eng: "I am good at dribbling past other players.",
+            jp: "私は他の選手をドリブルで抜くのが得意です。",
+            vocab: ["dribble (ドリブルする)", "past (～を通り越して)", "player (選手)"],
+            idioms: ["get past (追い抜く)"],
+            synonyms: ["proficient", "adept"],
+            grammar: "動名詞 (good at dribbling): 得意なことを表す定番表現です。"
+        },
+        {
+            top: "15%", left: "65%", width: "20%", height: "30%", color: "#3498db",
+            title: "Trying to Defend",
+            eng: "The defender is trying to stop him from scoring.",
+            jp: "ディフェンダーは彼が得点するのを阻止しようとしています。",
+            vocab: ["try (試みる／しようとする)", "stop (止める)", "score (得点する)"],
+            idioms: ["block the way (道をふさぐ)"],
+            synonyms: ["attempt", "defend"],
+            grammar: "不定詞 (trying to stop): 「～しようと努力する」という進行中の動作です。"
+        },
+        {
+            top: "20%", left: "85%", width: "10%", height: "30%", color: "#9b59b6",
+            title: "Happy to See",
+            eng: "The coach looks happy to see the team practicing hard.",
+            jp: "コーチはチームが一生懸命練習しているのを見て嬉しそうです。",
+            vocab: ["coach (コーチ)", "hard (一生懸命)", "practice (練習する)"],
+            idioms: ["proud of (～を誇りに思う)"],
+            synonyms: ["glad", "pleased"],
+            grammar: "不定詞の副詞的用法 (happy to see): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 213: Visiting Kyoto (Old Man)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "213.webp",
+    series: "200",
+    spots: [
+        {
+            top: "25%", left: "75%", width: "25%", height: "40%", color: "#e67e22",
+            title: "Like Visiting",
+            eng: "He likes visiting Kyoto to see the autumn leaves.",
+            jp: "彼は紅葉を見るために京都を訪れるのが好きです。",
+            vocab: ["autumn leaves (紅葉)", "visit (訪れる)", "see (見る)"],
+            idioms: ["fall foliage (紅葉)"],
+            synonyms: ["enjoy", "prefer"],
+            grammar: "動名詞 (likes visiting) と 不定詞 (to see) の組み合わせです。"
+        },
+        {
+            top: "55%", left: "5%", width: "40%", height: "40%", color: "#3498db",
+            title: "Beautiful to Look At",
+            eng: "The colorful trees are very beautiful to look at.",
+            jp: "色とりどりの木々は、眺めるのにとても美しいです。",
+            vocab: ["colorful (色とりどりの)", "tree (木)", "look at (見る)"],
+            idioms: ["breathtaking (息をのむような)"],
+            synonyms: ["lovely", "gorgeous"],
+            grammar: "不定詞の副詞的用法 (beautiful to look at): 形容詞を修飾する用法です。"
+        },
+        {
+            top: "25%", left: "45%", width: "30%", height: "30%", color: "#9b59b6",
+            title: "Place to Go",
+            eng: "This temple is a famous place to go for sightseeing.",
+            jp: "このお寺は観光に行くのに有名な場所です。",
+            vocab: ["temple (寺)", "sightseeing (観光)", "famous (有名な)"],
+            idioms: ["tourist spot (観光地)"],
+            synonyms: ["destination", "site"],
+            grammar: "不定詞の形容詞的用法 (place to go): 「行くべき場所／行くための場所」という意味です。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 214: Visiting Kyoto (Torii Gates)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "214.webp",
+    series: "200",
+    spots: [
+        {
+            top: "25%", left: "40%", width: "20%", height: "40%", color: "#e67e22",
+            title: "Enjoy Walking",
+            eng: "He enjoys walking through the tunnel of red gates.",
+            jp: "彼は赤い鳥居のトンネルを歩くことを楽しんでいます。",
+            vocab: ["walk (歩く)", "tunnel (トンネル)", "gate (門／鳥居)"],
+            idioms: ["stroll through (散策する)"],
+            synonyms: ["wander", "hike"],
+            grammar: "動名詞 (enjoy walking): enjoyの後は必ず動名詞です。"
+        },
+        {
+            top: "10%", left: "65%", width: "30%", height: "80%", color: "#3498db",
+            title: "Amazing to See",
+            eng: "The long path of gates is amazing to see.",
+            jp: "長く続く鳥居の道は、見るのに素晴らしいものです。",
+            vocab: ["amazing (素晴らしい)", "path (小道)", "long (長い)"],
+            idioms: ["sight to behold (見るべき光景)"],
+            synonyms: ["impressive", "stunning"],
+            grammar: "不定詞の副詞的用法 (amazing to see): 形容詞amazingを修飾しています。"
+        },
+        {
+            top: "55%", left: "45%", width: "10%", height: "40%", color: "#9b59b6",
+            title: "Here to Travel",
+            eng: "He came here to travel and experience Japanese culture.",
+            jp: "彼は日本文化を体験し旅行するためにここに来ました。",
+            vocab: ["experience (体験する)", "culture (文化)", "travel (旅行する)"],
+            idioms: ["take a trip (旅行する)"],
+            synonyms: ["visit", "explore"],
+            grammar: "不定詞の副詞的用法 (to travel): 来た目的を表しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 215: Video Games with Friends
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "215.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "25%", width: "50%", height: "20%", color: "#e67e22",
+            title: "Enjoy Spending Time",
+            eng: "I enjoy spending time playing video games with my friends.",
+            jp: "私は友達とテレビゲームをして過ごすのが楽しいです。",
+            vocab: ["spend time (時間を過ごす)", "video game (テレビゲーム)", "friend (友達)"],
+            idioms: ["hang out (遊ぶ／たむろする)"],
+            synonyms: ["have fun", "socialize"],
+            grammar: "動名詞 (enjoy spending): enjoy + -ing の基本形です。"
+        },
+        {
+            top: "50%", left: "15%", width: "70%", height: "30%", color: "#3498db",
+            title: "Excited to Win",
+            eng: "They are excited to win the match against each other.",
+            jp: "彼らはお互いの試合に勝つことに興奮しています。",
+            vocab: ["excited (興奮した)", "win (勝つ)", "match (試合)"],
+            idioms: ["beat someone (誰かを負かす)"],
+            synonyms: ["thrilled", "eager"],
+            grammar: "不定詞の副詞的用法 (excited to win): 感情の原因を表します。"
+        },
+        {
+            top: "75%", left: "30%", width: "40%", height: "15%", color: "#9b59b6",
+            title: "Snacks to Eat",
+            eng: "There are chips and drinks ready to eat on the table.",
+            jp: "テーブルには食べるためのチップスと飲み物が用意されています。",
+            vocab: ["chips (チップス)", "drink (飲み物)", "table (テーブル)"],
+            idioms: ["snack on (つまむ)"],
+            synonyms: ["refreshments", "food"],
+            grammar: "不定詞 (ready to eat): 準備完了の状態を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 216: Coffee with Friends
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "216.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "20%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Enjoy Talking",
+            eng: "I enjoy talking with my friends at a cafe.",
+            jp: "私はカフェで友達と話すのが楽しいです。",
+            vocab: ["talk (話す)", "cafe (カフェ)", "friend (友達)"],
+            idioms: ["catch up (近況報告をする)"],
+            synonyms: ["chat", "converse"],
+            grammar: "動名詞 (enjoy talking): 会話を楽しむことを表します。"
+        },
+        {
+            top: "55%", left: "40%", width: "20%", height: "20%", color: "#3498db",
+            title: "Happy to Meet",
+            eng: "They look very happy to meet after a long time.",
+            jp: "彼らは久しぶりに会えてとても嬉しそうです。",
+            vocab: ["meet (会う)", "long time (長い間)", "happy (嬉しい)"],
+            idioms: ["long time no see (久しぶり)"],
+            synonyms: ["glad", "delighted"],
+            grammar: "不定詞の副詞的用法 (happy to meet): 感情の原因を表します。"
+        },
+        {
+            top: "70%", left: "40%", width: "20%", height: "15%", color: "#9b59b6",
+            title: "Something to Drink",
+            eng: "It is nice to have something warm to drink.",
+            jp: "何か温かい飲み物を飲むのはいいことです。",
+            vocab: ["warm (温かい)", "drink (飲む)", "something (何か)"],
+            idioms: ["have a drink (一杯飲む)"],
+            synonyms: ["beverage", "liquid"],
+            grammar: "不定詞の形容詞的用法 (something to drink): 「飲むための何か」と代名詞を修飾します。"
+        }
+    ]
+});
