@@ -2235,3 +2235,322 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 247: Tennis Invitation (Classroom)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "247.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "60%", width: "35%", height: "25%", color: "#e67e22",
+            title: "How About Playing",
+            eng: "How about playing tennis after school today?",
+            jp: "今日の放課後、テニスをするのはどうですか？",
+            vocab: ["how about (～はどうですか)", "play tennis (テニスをする)", "after school (放課後)"],
+            idioms: ["Why not? (～しませんか？)"],
+            synonyms: ["suggest", "propose"],
+            grammar: "動名詞 (How about playing): 前置詞aboutの後ろなので動名詞を使います。提案の定番表現です。"
+        },
+        {
+            top: "20%", left: "35%", width: "20%", height: "40%", color: "#3498db",
+            title: "Holding a Racket",
+            eng: "He is holding a racket to show his interest.",
+            jp: "彼は興味を示すためにラケットを持っています。",
+            vocab: ["hold (持つ)", "racket (ラケット)", "interest (興味)"],
+            idioms: ["show interest (興味を示す)"],
+            synonyms: ["grip", "grasp"],
+            grammar: "不定詞の副詞的用法 (to show): ラケットを持っている目的を表します。"
+        },
+        {
+            top: "55%", left: "15%", width: "25%", height: "40%", color: "#9b59b6",
+            title: "Ready to Listen",
+            eng: "His friend turns around to listen to the suggestion.",
+            jp: "友人は提案を聞くために振り向いています。",
+            vocab: ["turn around (振り向く)", "listen (聞く)", "suggestion (提案)"],
+            idioms: ["pay attention (注目する)"],
+            synonyms: ["hear", "respond"],
+            grammar: "不定詞の副詞的用法 (to listen): 振り向いた目的を表しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 248: Tennis Invitation (Park)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "248.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "60%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Suggestion to Play",
+            eng: "How about playing tennis in this nice weather?",
+            jp: "このいい天気の中、テニスをするのはどう？",
+            vocab: ["weather (天気)", "nice (良い)", "play (遊ぶ／する)"],
+            idioms: ["sunny day (晴れた日)"],
+            synonyms: ["climate", "conditions"],
+            grammar: "動名詞 (How about playing): 勧誘や提案を表すフレーズです。"
+        },
+        {
+            top: "50%", left: "25%", width: "50%", height: "30%", color: "#3498db",
+            title: "Sitting to Talk",
+            eng: "They are sitting on the bench to talk about their plans.",
+            jp: "彼らは計画について話すためにベンチに座っています。",
+            vocab: ["sit (座る)", "talk (話す)", "plan (計画)"],
+            idioms: ["have a chat (おしゃべりする)"],
+            synonyms: ["discuss", "converse"],
+            grammar: "不定詞の副詞的用法 (to talk): 座っている目的を表します。"
+        },
+        {
+            top: "10%", left: "10%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Good Day to Play",
+            eng: "It is a perfect day to play sports outside.",
+            jp: "外でスポーツをするのに完璧な日です。",
+            vocab: ["perfect (完璧な)", "outside (外で)", "sports (スポーツ)"],
+            idioms: ["ideal for (～に理想的な)"],
+            synonyms: ["great", "excellent"],
+            grammar: "不定詞の形容詞的用法 (day to play): 「スポーツをするための日」と修飾しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 249: Watching Movies (Home)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "249.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "25%", width: "45%", height: "25%", color: "#e67e22",
+            title: "Like Watching",
+            eng: "I like watching movies with my friends at home.",
+            jp: "私は家で友達と一緒に映画を見るのが好きです。",
+            vocab: ["watch (見る)", "movie (映画)", "home (家)"],
+            idioms: ["movie night (映画鑑賞会)"],
+            synonyms: ["enjoy", "love"],
+            grammar: "動名詞 (like watching): likeの目的語として動名詞を使っています。"
+        },
+        {
+            top: "55%", left: "35%", width: "15%", height: "20%", color: "#3498db",
+            title: "Popcorn to Eat",
+            eng: "They have a bucket of popcorn to eat during the film.",
+            jp: "彼女たちは映画の間に食べるためのポップコーンのバケツを持っています。",
+            vocab: ["bucket (バケツ)", "popcorn (ポップコーン)", "film (映画)"],
+            idioms: ["snack on (～をつまむ)"],
+            synonyms: ["container", "tub"],
+            grammar: "不定詞の形容詞的用法 (popcorn to eat): 「食べるためのポップコーン」という意味です。"
+        },
+        {
+            top: "40%", left: "25%", width: "15%", height: "20%", color: "#9b59b6",
+            title: "Scared to Look",
+            eng: "She seems scared to look at the screen.",
+            jp: "彼女は画面を見るのを怖がっているようです。",
+            vocab: ["scared (怖がって)", "look at (見る)", "screen (画面)"],
+            idioms: ["cover one's eyes (目を覆う)"],
+            synonyms: ["afraid", "frightened"],
+            grammar: "不定詞の副詞的用法 (scared to look): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 250: Watching Movies (Cinema)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "250.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "35%", height: "30%", color: "#e67e22",
+            title: "Likes Watching",
+            eng: "She likes watching 3D movies at the theater.",
+            jp: "彼女は映画館で3D映画を見るのが好きです。",
+            vocab: ["theater (劇場／映画館)", "watch (見る)", "movie (映画)"],
+            idioms: ["go to the movies (映画に行く)"],
+            synonyms: ["cinema", "film"],
+            grammar: "動名詞 (likes watching): 趣味や好みを表す表現です。"
+        },
+        {
+            top: "30%", left: "15%", width: "15%", height: "10%", color: "#3498db",
+            title: "Glasses to See",
+            eng: "She wears special glasses to see the 3D effects.",
+            jp: "彼女は3D効果を見るために特別なメガネをかけています。",
+            vocab: ["glasses (メガネ)", "effect (効果)", "special (特別な)"],
+            idioms: ["put on (身につける)"],
+            synonyms: ["wear", "use"],
+            grammar: "不定詞の副詞的用法 (to see): メガネをかける目的を表します。"
+        },
+        {
+            top: "60%", left: "25%", width: "20%", height: "25%", color: "#9b59b6",
+            title: "Enjoy Eating",
+            eng: "She enjoys eating popcorn while watching.",
+            jp: "彼女は見ながらポップコーンを食べるのを楽しんでいます。",
+            vocab: ["enjoy (楽しむ)", "eat (食べる)", "while (～の間)"],
+            idioms: ["have a snack (軽食をとる)"],
+            synonyms: ["relish", "savor"],
+            grammar: "動名詞 (enjoys eating): enjoyの後は必ず動名詞を使います。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 251: Remembering Grandparents (Album)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "251.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "50%", width: "45%", height: "30%", color: "#e67e22",
+            title: "Remember Visiting",
+            eng: "I remember visiting my grandparents every summer.",
+            jp: "私は毎年夏に祖父母を訪ねたことを覚えています。",
+            vocab: ["remember (覚えている)", "visit (訪れる)", "grandparents (祖父母)"],
+            idioms: ["look back (振り返る)"],
+            synonyms: ["recall", "recollect"],
+            grammar: "動名詞 (remember visiting): 「（過去に）～したことを覚えている」という表現です。"
+        },
+        {
+            top: "60%", left: "20%", width: "30%", height: "30%", color: "#3498db",
+            title: "Photo to Remind",
+            eng: "She looks at the photo to remind herself of happy days.",
+            jp: "彼女は幸せな日々を思い出すために写真を見ています。",
+            vocab: ["remind (思い出させる)", "photo (写真)", "happy (幸せな)"],
+            idioms: ["bring back memories (思い出を蘇らせる)"],
+            synonyms: ["picture", "image"],
+            grammar: "不定詞の副詞的用法 (to remind): 写真を見る目的を表します。"
+        },
+        {
+            top: "20%", left: "15%", width: "25%", height: "30%", color: "#9b59b6",
+            title: "Happy to Remember",
+            eng: "She feels happy to remember her childhood.",
+            jp: "彼女は子供時代を思い出して幸せな気分になります。",
+            vocab: ["childhood (子供時代)", "feel (感じる)", "remember (思い出す)"],
+            idioms: ["good old days (古き良き時代)"],
+            synonyms: ["glad", "nostalgic"],
+            grammar: "不定詞の副詞的用法 (happy to remember): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 252: Remembering Grandparents (Cooking)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "252.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "10%", width: "35%", height: "30%", color: "#e67e22",
+            title: "Remember Making",
+            eng: "I remember making dumplings with my grandmother.",
+            jp: "私は祖母と一緒に餃子を作ったことを覚えています。",
+            vocab: ["make (作る)", "dumpling (餃子／団子)", "grandmother (祖母)"],
+            idioms: ["hand-made (手作りの)"],
+            synonyms: ["cook", "prepare"],
+            grammar: "動名詞 (remember making): 過去の体験を回想しています。"
+        },
+        {
+            top: "65%", left: "35%", width: "25%", height: "25%", color: "#3498db",
+            title: "Fun to Cook",
+            eng: "It was always fun to cook together in the kitchen.",
+            jp: "キッチンで一緒に料理をするのはいつも楽しかったです。",
+            vocab: ["fun (楽しい)", "cook (料理する)", "together (一緒に)"],
+            idioms: ["have a good time (楽しい時を過ごす)"],
+            synonyms: ["enjoyable", "pleasant"],
+            grammar: "不定詞の名詞的用法 (to cook): 形式主語Itに対する真主語です。"
+        },
+        {
+            top: "20%", left: "65%", width: "25%", height: "30%", color: "#9b59b6",
+            title: "Happy to Teach",
+            eng: "The grandmother looks happy to teach her granddaughter.",
+            jp: "祖母は孫娘に教えることができて嬉しそうです。",
+            vocab: ["teach (教える)", "granddaughter (孫娘)", "happy (嬉しい)"],
+            idioms: ["pass on (伝える／継承する)"],
+            synonyms: ["instruct", "show"],
+            grammar: "不定詞の副詞的用法 (happy to teach): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 253: Playing in Tree
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "253.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "60%", width: "35%", height: "30%", color: "#e67e22",
+            title: "Remember Playing",
+            eng: "I remember playing with my friends in the big tree.",
+            jp: "私は大きな木で友達と遊んだことを覚えています。",
+            vocab: ["play (遊ぶ)", "tree (木)", "big (大きな)"],
+            idioms: ["climb a tree (木に登る)"],
+            synonyms: ["recall", "think back"],
+            grammar: "動名詞 (remember playing): 過去の遊びを思い出しています。"
+        },
+        {
+            top: "55%", left: "40%", width: "30%", height: "20%", color: "#3498db",
+            title: "Sitting to Chat",
+            eng: "We liked sitting on the branch to chat.",
+            jp: "私たちはおしゃべりするために枝に座るのが好きでした。",
+            vocab: ["branch (枝)", "chat (おしゃべりする)", "sit (座る)"],
+            idioms: ["hang out (遊ぶ／たむろする)"],
+            synonyms: ["talk", "converse"],
+            grammar: "不定詞の副詞的用法 (to chat): 座る目的を表します。"
+        },
+        {
+            top: "20%", left: "10%", width: "20%", height: "30%", color: "#9b59b6",
+            title: "Excited to Climb",
+            eng: "We were always excited to climb higher.",
+            jp: "私たちはいつも、より高く登ることにワクワクしていました。",
+            vocab: ["climb (登る)", "higher (より高く)", "always (いつも)"],
+            idioms: ["reach the top (頂上に達する)"],
+            synonyms: ["thrilled", "eager"],
+            grammar: "不定詞の副詞的用法 (excited to climb): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 254: Playing in Mud
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "254.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "10%", width: "35%", height: "30%", color: "#e67e22",
+            title: "Remember Playing",
+            eng: "I remember playing with mud in the sandbox.",
+            jp: "私は砂場で泥遊びをしたことを覚えています。",
+            vocab: ["mud (泥)", "sandbox (砂場)", "remember (覚えている)"],
+            idioms: ["get dirty (汚れる)"],
+            synonyms: ["soil", "earth"],
+            grammar: "動名詞 (remember playing): 過去の行為（遊んだこと）を指します。"
+        },
+        {
+            top: "60%", left: "40%", width: "25%", height: "25%", color: "#3498db",
+            title: "Using Hands to Make",
+            eng: "We used our hands to make mud cakes.",
+            jp: "私たちは泥団子を作るために手を使いました。",
+            vocab: ["use (使う)", "hand (手)", "cake (ケーキ／団子)"],
+            idioms: ["make a mess (散らかす／汚す)"],
+            synonyms: ["create", "form"],
+            grammar: "不定詞の副詞的用法 (to make): 手を使う目的を表します。"
+        },
+        {
+            top: "40%", left: "75%", width: "20%", height: "30%", color: "#9b59b6",
+            title: "Fun to Get Dirty",
+            eng: "It was fun to get dirty without worrying.",
+            jp: "心配せずに汚れるのは楽しかったです。",
+            vocab: ["dirty (汚い)", "worry (心配する)", "without (～なしで)"],
+            idioms: ["carefree (心配のない)"],
+            synonyms: ["messy", "unclean"],
+            grammar: "不定詞の名詞的用法 (to get dirty): 形式主語Itに対する真主語です。"
+        }
+    ]
+});
