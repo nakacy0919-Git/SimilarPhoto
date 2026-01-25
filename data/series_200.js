@@ -1437,3 +1437,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 227: Poor at Drawing (Stick Figure)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "227.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "60%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Poor at Drawing",
+            eng: "He is poor at drawing pictures compared to others.",
+            jp: "彼は他の人と比べて絵を描くのが苦手です。",
+            vocab: ["poor at (～が苦手だ)", "draw (描く)", "compare (比べる)"],
+            idioms: ["be bad at (～が下手だ)"],
+            synonyms: ["unskilled", "clumsy"],
+            grammar: "動名詞 (at drawing): 前置詞atの後ろなので、動詞はing形（動名詞）になります。"
+        },
+        {
+            top: "40%", left: "15%", width: "25%", height: "40%", color: "#3498db",
+            title: "Simple Drawing",
+            eng: "It is easy to draw a simple stick figure.",
+            jp: "単純な棒人間を描くのは簡単です。",
+            vocab: ["simple (単純な)", "stick figure (棒人間)", "easy (簡単な)"],
+            idioms: ["piece of cake (朝飯前)"],
+            synonyms: ["basic", "uncomplicated"],
+            grammar: "不定詞の副詞的用法 (easy to draw): 形容詞easyを修飾し「～するのは簡単」となります。"
+        },
+        {
+            top: "35%", left: "65%", width: "30%", height: "30%", color: "#9b59b6",
+            title: "Embarrassed Feeling",
+            eng: "He feels embarrassed to show his art to his friends.",
+            jp: "彼は友達に自分の絵を見せるのが恥ずかしいと感じています。",
+            vocab: ["embarrassed (恥ずかしい)", "show (見せる)", "art (芸術／絵)"],
+            idioms: ["feel shy (恥ずかしがる)"],
+            synonyms: ["ashamed", "awkward"],
+            grammar: "不定詞の副詞的用法 (embarrassed to show): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 228: Poor at Drawing (Comparison)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "228.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Comparison of Skill",
+            eng: "He admits being poor at drawing realistic portraits.",
+            jp: "彼は写実的な肖像画を描くのが苦手であることを認めています。",
+            vocab: ["admit (認める)", "realistic (写実的な)", "portrait (肖像画)"],
+            idioms: ["face the facts (事実を受け入れる)"],
+            synonyms: ["accept", "confess"],
+            grammar: "動名詞 (at drawing): 前置詞atの目的語として動名詞が使われています。"
+        },
+        {
+            top: "35%", left: "75%", width: "20%", height: "40%", color: "#3498db",
+            title: "Good at Painting",
+            eng: "The girl is very good at painting beautiful faces.",
+            jp: "その少女は美しい顔を描くのがとても得意です。",
+            vocab: ["good at (～が得意だ)", "paint (描く／塗る)", "beautiful (美しい)"],
+            idioms: ["have a talent for (～の才能がある)"],
+            synonyms: ["skilled", "talented"],
+            grammar: "動名詞 (at painting): good at + -ing で「～するのが得意」という重要表現です。"
+        },
+        {
+            top: "50%", left: "5%", width: "30%", height: "40%", color: "#9b59b6",
+            title: "Trying to Improve",
+            eng: "He is trying to improve, but it is difficult.",
+            jp: "彼は上達しようとしていますが、それは難しいことです。",
+            vocab: ["improve (上達する)", "difficult (難しい)", "try (試みる)"],
+            idioms: ["get better (良くなる)"],
+            synonyms: ["hard", "challenging"],
+            grammar: "不定詞 (trying to improve): 「～しようと努力する」という動作を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 229: Finished Homework (Library)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "229.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "40%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Finished Doing",
+            eng: "He finished doing his homework before his classmates.",
+            jp: "彼はクラスメートより先に宿題をやり終えました。",
+            vocab: ["finish (終える)", "classmate (クラスメート)", "before (～より先に)"],
+            idioms: ["get done (終わらせる)"],
+            synonyms: ["complete", "conclude"],
+            grammar: "動名詞 (finished doing): finishは目的語に必ず動名詞をとる動詞です（メガフェプス）。"
+        },
+        {
+            top: "75%", left: "25%", width: "30%", height: "20%", color: "#3498db",
+            title: "Closing the Book",
+            eng: "He is happy to close the heavy textbook.",
+            jp: "彼は重い教科書を閉じることができて嬉しそうです。",
+            vocab: ["close (閉じる)", "heavy (重い)", "textbook (教科書)"],
+            idioms: ["wrap up (切り上げる／終える)"],
+            synonyms: ["shut", "seal"],
+            grammar: "不定詞の副詞的用法 (happy to close): 感情の原因を表します。"
+        },
+        {
+            top: "30%", left: "15%", width: "25%", height: "25%", color: "#9b59b6",
+            title: "Relieved Smile",
+            eng: "He smiles because he has finished studying.",
+            jp: "彼は勉強し終えたので微笑んでいます。",
+            vocab: ["smile (微笑む)", "study (勉強する)", "because (～なので)"],
+            idioms: ["feel relieved (ほっとする)"],
+            synonyms: ["grin", "beam"],
+            grammar: "現在完了形 + 動名詞 (has finished studying): 「勉強し終えたところだ（完了）」を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 230: Finished Homework (Art)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "230.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "50%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Finished Painting",
+            eng: "I finished doing my art homework just now.",
+            jp: "私はたった今、美術の宿題をやり終えました。",
+            vocab: ["art (美術)", "homework (宿題)", "just now (たった今)"],
+            idioms: ["be done with (～を終えている)"],
+            synonyms: ["complete", "finish up"],
+            grammar: "動名詞 (finished doing): finishの目的語は動名詞のみです。"
+        },
+        {
+            top: "35%", left: "65%", width: "25%", height: "45%", color: "#3498db",
+            title: "Tree Picture",
+            eng: "It was fun to paint the green tree.",
+            jp: "緑の木を描くのは楽しかったです。",
+            vocab: ["paint (描く)", "green (緑の)", "tree (木)"],
+            idioms: ["have fun (楽しむ)"],
+            synonyms: ["enjoyable", "pleasant"],
+            grammar: "不定詞の名詞的用法 (to paint): 形式主語Itに対する真主語になっています。"
+        },
+        {
+            top: "60%", left: "40%", width: "15%", height: "20%", color: "#9b59b6",
+            title: "Cleaning Hands",
+            eng: "He stopped painting to clean his dirty hands.",
+            jp: "彼は汚れた手をきれいにするために描くのをやめました。",
+            vocab: ["clean (きれいにする)", "dirty (汚れた)", "hand (手)"],
+            idioms: ["wipe off (拭き取る)"],
+            synonyms: ["wash", "scrub"],
+            grammar: "不定詞の副詞的用法 (to clean): 「～するために（手を止めた）」という目的を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 231: Stopped Talking (Strict Teacher)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "231.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "25%", width: "50%", height: "20%", color: "#e67e22",
+            title: "Stopped Talking",
+            eng: "They stopped talking immediately when the strict teacher entered.",
+            jp: "厳しい先生が入ってくると、彼らはすぐに話すのをやめました。",
+            vocab: ["immediately (すぐに)", "strict (厳しい)", "enter (入る)"],
+            idioms: ["shut up (黙る - 口語)"],
+            synonyms: ["cease", "halt"],
+            grammar: "動名詞 (stopped talking): stop -ing は「～するのをやめる（中断する）」という意味です。"
+        },
+        {
+            top: "35%", left: "10%", width: "25%", height: "25%", color: "#3498db",
+            title: "Secret Whisper",
+            eng: "They were enjoying whispering before she came in.",
+            jp: "彼女が入ってくる前、彼らはひそひそ話を楽しんでいました。",
+            vocab: ["whisper (ささやく)", "enjoy (楽しむ)", "before (～の前に)"],
+            idioms: ["keep it down (静かにする)"],
+            synonyms: ["murmur", "mutter"],
+            grammar: "動名詞 (enjoying whispering): enjoyの目的語として動名詞が使われています。"
+        },
+        {
+            top: "20%", left: "75%", width: "20%", height: "40%", color: "#9b59b6",
+            title: "Scary Atmosphere",
+            eng: "Everyone is afraid of making the teacher angry.",
+            jp: "みんな先生を怒らせることを恐れています。",
+            vocab: ["afraid (恐れて)", "angry (怒って)", "everyone (みんな)"],
+            idioms: ["walk on eggshells (慎重に振る舞う)"],
+            synonyms: ["scared", "fearful"],
+            grammar: "動名詞 (afraid of making): ofの後ろなので動名詞を使います。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 232: Stopped Talking (Nice Teacher)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "232.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "25%", width: "50%", height: "20%", color: "#e67e22",
+            title: "Silence the Room",
+            eng: "The students stopped talking to listen to the teacher.",
+            jp: "生徒たちは先生の話を聞くために話すのをやめました。",
+            vocab: ["student (生徒)", "listen (聞く)", "room (部屋)"],
+            idioms: ["pay attention (注目する)"],
+            synonyms: ["quiet down", "hush"],
+            grammar: "動名詞 (stopped talking) と 不定詞 (to listen) の組み合わせです。"
+        },
+        {
+            top: "40%", left: "50%", width: "20%", height: "40%", color: "#3498db",
+            title: "Surprised Reaction",
+            eng: "He looks surprised to see the teacher enter suddenly.",
+            jp: "彼は先生が突然入ってくるのを見て驚いているようです。",
+            vocab: ["surprised (驚いた)", "suddenly (突然)", "enter (入る)"],
+            idioms: ["caught off guard (不意を突かれる)"],
+            synonyms: ["shocked", "startled"],
+            grammar: "不定詞の副詞的用法 (surprised to see): 感情の原因を表します。"
+        },
+        {
+            top: "30%", left: "75%", width: "20%", height: "60%", color: "#9b59b6",
+            title: "Ready to Start",
+            eng: "The teacher came in to start the lesson.",
+            jp: "先生は授業を始めるために中に入ってきました。",
+            vocab: ["start (始める)", "lesson (授業)", "come in (入る)"],
+            idioms: ["get started (始める)"],
+            synonyms: ["begin", "commence"],
+            grammar: "不定詞の副詞的用法 (to start): 動作の目的を表しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 233: Thank You (Dishes)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "233.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "30%", height: "20%", color: "#e67e22",
+            title: "Thank You for Helping",
+            eng: "Thank you for helping me with the dishes.",
+            jp: "お皿洗いを手伝ってくれてありがとう。",
+            vocab: ["thank (感謝する)", "help (手伝う)", "dishes (皿洗い)"],
+            idioms: ["give a hand (手を貸す)"],
+            synonyms: ["appreciate", "grateful"],
+            grammar: "動名詞 (for helping): 前置詞forの後ろなので動名詞を使います。"
+        },
+        {
+            top: "60%", left: "60%", width: "35%", height: "35%", color: "#3498db",
+            title: "Washing Dishes",
+            eng: "She finished washing the plates and is drying them now.",
+            jp: "彼女はお皿を洗い終えて、今はそれを乾かしています。",
+            vocab: ["wash (洗う)", "dry (乾かす)", "plate (皿)"],
+            idioms: ["do the dishes (皿洗いをする)"],
+            synonyms: ["clean", "rinse"],
+            grammar: "動名詞 (finished washing): finish + -ing の形です。"
+        },
+        {
+            top: "30%", left: "15%", width: "25%", height: "30%", color: "#9b59b6",
+            title: "Glad to Assist",
+            eng: "The daughter is glad to assist her mother in the kitchen.",
+            jp: "娘はキッチンで母親を手伝うことができて嬉しく思っています。",
+            vocab: ["glad (嬉しい)", "assist (手伝う)", "kitchen (キッチン)"],
+            idioms: ["help out (手助けする)"],
+            synonyms: ["happy", "pleased"],
+            grammar: "不定詞の副詞的用法 (glad to assist): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 234: Thank You (Moving)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "234.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "35%", width: "30%", height: "20%", color: "#e67e22",
+            title: "Appreciate Helping",
+            eng: "Thank you for helping me carry this heavy box.",
+            jp: "この重い箱を運ぶのを手伝ってくれてありがとう。",
+            vocab: ["carry (運ぶ)", "heavy (重い)", "box (箱)"],
+            idioms: ["thanks a lot (どうもありがとう)"],
+            synonyms: ["transport", "lift"],
+            grammar: "動名詞 (for helping): 感謝の対象（理由）を前置詞for + 動名詞で表します。"
+        },
+        {
+            top: "60%", left: "20%", width: "30%", height: "30%", color: "#3498db",
+            title: "Kindness to Open",
+            eng: "It was kind of him to open the door for her.",
+            jp: "彼女のためにドアを開けてくれるとは、彼は親切でした。",
+            vocab: ["kind (親切な)", "open (開ける)", "door (ドア)"],
+            idioms: ["hold the door (ドアを押さえておく)"],
+            synonyms: ["nice", "thoughtful"],
+            grammar: "不定詞の意味上の主語 (kind of him to open): 人の性質を表す形容詞の後ろで使われます。"
+        },
+        {
+            top: "35%", left: "60%", width: "30%", height: "40%", color: "#9b59b6",
+            title: "Happy to Receive",
+            eng: "She is happy to receive help from her neighbor.",
+            jp: "彼女は隣人から助けを得られて嬉しく思っています。",
+            vocab: ["receive (受け取る)", "neighbor (隣人)", "help (助け)"],
+            idioms: ["lend a hand (手を貸す)"],
+            synonyms: ["glad", "delighted"],
+            grammar: "不定詞の副詞的用法 (happy to receive): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 235: Afraid of Mistakes (Basketball)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "235.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "60%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Afraid of Making",
+            eng: "I am afraid of making mistakes during the important game.",
+            jp: "私は大事な試合中にミスをするのを恐れています。",
+            vocab: ["afraid (恐れて)", "mistake (ミス／間違い)", "game (試合)"],
+            idioms: ["mess up (しくじる)"],
+            synonyms: ["scared", "nervous"],
+            grammar: "動名詞 (of making): afraid ofのofは前置詞なので、動名詞が続きます。"
+        },
+        {
+            top: "65%", left: "35%", width: "30%", height: "30%", color: "#3498db",
+            title: "Pressure to Win",
+            eng: "He feels pressure to win for his teammates.",
+            jp: "彼はチームメートのために勝たなければというプレッシャーを感じています。",
+            vocab: ["pressure (プレッシャー)", "win (勝つ)", "teammate (チームメート)"],
+            idioms: ["under pressure (プレッシャーを感じて)"],
+            synonyms: ["stress", "tension"],
+            grammar: "不定詞の形容詞的用法 (pressure to win): 「勝つためのプレッシャー／勝つべき重圧」となります。"
+        },
+        {
+            top: "20%", left: "5%", width: "20%", height: "40%", color: "#9b59b6",
+            title: "Worried to Watch",
+            eng: "His friend looks worried to watch him shaking.",
+            jp: "友人は彼が震えているのを見て心配そうです。",
+            vocab: ["worried (心配して)", "watch (見る)", "shake (震える)"],
+            idioms: ["nervous wreck (極度に緊張している人)"],
+            synonyms: ["concerned", "anxious"],
+            grammar: "不定詞の副詞的用法 (worried to watch): 感情（心配）の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 236: Afraid of Mistakes (Speech)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "236.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "10%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Fear of Speaking",
+            eng: "I am afraid of making mistakes in front of the audience.",
+            jp: "私は聴衆の前で間違いを犯すことを恐れています。",
+            vocab: ["audience (聴衆)", "mistake (間違い)", "front (前)"],
+            idioms: ["in front of (～の前で)"],
+            synonyms: ["crowd", "listeners"],
+            grammar: "動名詞 (afraid of making): of + -ing の形です。"
+        },
+        {
+            top: "50%", left: "45%", width: "25%", height: "40%", color: "#3498db",
+            title: "Trying to Speak",
+            eng: "He is trying to speak, but his voice is shaking.",
+            jp: "彼は話そうとしていますが、声が震えています。",
+            vocab: ["speak (話す)", "voice (声)", "shake (震える)"],
+            idioms: ["speak up (大きな声で話す)"],
+            synonyms: ["talk", "utter"],
+            grammar: "不定詞 (trying to speak): 「～しようと試みる」という動作です。"
+        },
+        {
+            top: "55%", left: "75%", width: "20%", height: "30%", color: "#9b59b6",
+            title: "Waiting to Hear",
+            eng: "The people are waiting to hear his speech silently.",
+            jp: "人々は静かに彼のスピーチを聞くのを待っています。",
+            vocab: ["wait (待つ)", "hear (聞く)", "silently (静かに)"],
+            idioms: ["hold one's breath (息をのむ／固唾をのむ)"],
+            synonyms: ["listen", "attend"],
+            grammar: "不定詞 (waiting to hear): wait + to do で「～するのを待つ」となります。"
+        }
+    ]
+});
