@@ -357,3 +357,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 1010: Landslide due to Climate Change
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1010.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "45%", color: "#e74c3c",
+            title: "Global Warming",
+            eng: "Global temperatures are rising; consequently, extreme weather events occur frequently.",
+            jp: "地球の気温が上昇しており、その結果、異常気象が頻繁に発生しています。",
+            vocab: ["temperature (気温)", "extreme (極端な)", "frequently (頻繁に)"],
+            idioms: ["occur (発生する)"],
+            synonyms: ["happen", "take place"],
+            grammar: "接続副詞 consequently: 「その結果として」という因果関係を示します。"
+        },
+        {
+            top: "60%", left: "30%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Melting Permafrost",
+            eng: "The permafrost melts because the earth is getting warmer.",
+            jp: "地球が温暖化しているため、永久凍土が溶けています。",
+            vocab: ["permafrost (永久凍土)", "melt (溶ける)", "earth (地球)"],
+            idioms: ["get warmer (暖かくなる)"],
+            synonyms: ["thaw", "dissolve"],
+            grammar: "接続詞 because: 現象（融解）の直接的な理由（温暖化）を説明します。"
+        },
+        {
+            top: "50%", left: "5%", width: "30%", height: "40%", color: "#3498db",
+            title: "Landslide Damage",
+            eng: "The ground became loose. As a result, the house is sliding down the hill.",
+            jp: "地盤が緩みました。その結果、家が丘を滑り落ちています。",
+            vocab: ["loose (緩い)", "slide (滑る)", "hill (丘)"],
+            idioms: ["as a result (その結果)"],
+            synonyms: ["collapse", "fall"],
+            grammar: "接続詞句 As a result: 地盤の緩み（原因）による悲劇的な結果（地滑り）を導きます。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1011: Food Waste at Buffet
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1011.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "5%", left: "55%", width: "40%", height: "45%", color: "#e74c3c",
+            title: "Taking Too Much",
+            eng: "He took too much food because his eyes were bigger than his stomach.",
+            jp: "彼は食べきれないほどの量を取りました。なぜなら食欲が旺盛すぎたからです。",
+            vocab: ["stomach (胃)", "too much (多すぎる)", "food (食べ物)"],
+            idioms: ["eyes are bigger than one's stomach (食べきれないほど欲張る)"],
+            synonyms: ["greedy", "excessive"],
+            grammar: "接続詞 because: 行動（取りすぎ）の理由（欲張り）を説明します。"
+        },
+        {
+            top: "70%", left: "35%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Leftovers",
+            eng: "He cannot eat everything; therefore, the leftover food becomes waste.",
+            jp: "彼は全てを食べることができず、それゆえに残った食べ物はゴミになります。",
+            vocab: ["leftover (食べ残しの)", "waste (ゴミ／無駄)", "eat (食べる)"],
+            idioms: ["throw away (捨てる)"],
+            synonyms: ["garbage", "trash"],
+            grammar: "接続副詞 therefore: 食べきれない（原因）と廃棄（結果）をつなぎます。"
+        },
+        {
+            top: "40%", left: "10%", width: "30%", height: "40%", color: "#3498db",
+            title: "Food Loss Issue",
+            eng: "This behavior causes food loss. However, many people still do it.",
+            jp: "この行動は食品ロスを引き起こします。しかしながら、多くの人が未だにそれを行っています。",
+            vocab: ["behavior (行動)", "loss (損失)", "still (まだ)"],
+            idioms: ["food loss (食品ロス)"],
+            synonyms: ["waste", "squander"],
+            grammar: "接続副詞 However: 問題であるという事実と、それが続いている現実を対比（逆説）させます。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1012: Ugly Vegetables (Food Loss)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1012.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "5%", left: "55%", width: "40%", height: "45%", color: "#e74c3c",
+            title: "Consumer Choice",
+            eng: "She chooses only perfect vegetables; consequently, imperfect ones are left behind.",
+            jp: "彼女は完璧な野菜だけを選び、その結果、不完全なものは残されます。",
+            vocab: ["choose (選ぶ)", "perfect (完璧な)", "imperfect (不完全な)"],
+            idioms: ["leave behind (置き去りにする)"],
+            synonyms: ["select", "pick"],
+            grammar: "接続副詞 consequently: 選別（行動）と売れ残り（結果）の因果関係を示します。"
+        },
+        {
+            top: "60%", left: "5%", width: "40%", height: "35%", color: "#e67e22",
+            title: "Discarded Produce",
+            eng: "These vegetables are discarded due to their odd shapes.",
+            jp: "これらの野菜は、その奇妙な形のせいで廃棄されます。",
+            vocab: ["discard (廃棄する)", "odd (奇妙な)", "shape (形)"],
+            idioms: ["due to (～のために)"],
+            synonyms: ["throw out", "reject"],
+            grammar: "前置詞句 due to: 廃棄の理由（形）をフォーマルに説明します。"
+        },
+        {
+            top: "65%", left: "55%", width: "35%", height: "30%", color: "#3498db",
+            title: "Edible but Wasted",
+            eng: "They are nutritious and tasty. However, they are treated as trash.",
+            jp: "それらは栄養があり美味しいです。しかしながら、ゴミとして扱われます。",
+            vocab: ["nutritious (栄養のある)", "tasty (美味しい)", "treat (扱う)"],
+            idioms: ["treat as (～として扱う)"],
+            synonyms: ["edible", "good"],
+            grammar: "接続副詞 However: 「品質は良い」が「捨てられる」という矛盾（逆説）を強調します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1013: Fossil Fuel Dependency
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1013.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "5%", left: "55%", width: "40%", height: "45%", color: "#e74c3c",
+            title: "Extraction",
+            eng: "Oil is extracted from the earth; therefore, natural resources deplete.",
+            jp: "石油は地球から採掘され、それゆえに天然資源は枯渇します。",
+            vocab: ["extract (抽出する／掘り出す)", "resource (資源)", "deplete (枯渇させる)"],
+            idioms: ["run out (使い果たす)"],
+            synonyms: ["remove", "draw out"],
+            grammar: "接続副詞 therefore: 採掘（原因）と枯渇（結果）の論理的帰結を示します。"
+        },
+        {
+            top: "20%", left: "75%", width: "20%", height: "20%", color: "#e67e22",
+            title: "Transportation",
+            eng: "Fuel is transported by trucks. As a result, carbon footprint increases.",
+            jp: "燃料はトラックで輸送されます。その結果、二酸化炭素排出量（カーボンフットプリント）が増加します。",
+            vocab: ["transport (輸送する)", "truck (トラック)", "increase (増加する)"],
+            idioms: ["carbon footprint (二酸化炭素排出量)"],
+            synonyms: ["carry", "move"],
+            grammar: "接続詞句 As a result: 輸送プロセスが環境負荷につながることを説明します。"
+        },
+        {
+            top: "50%", left: "20%", width: "40%", height: "45%", color: "#3498db",
+            title: "Consumption",
+            eng: "Drivers fill up their cars with gas because they rely on fossil fuels.",
+            jp: "ドライバーは化石燃料に依存しているため、車にガソリンを満たします。",
+            vocab: ["fill up (満タンにする)", "rely on (依存する)", "gas (ガソリン)"],
+            idioms: ["fossil fuel (化石燃料)"],
+            synonyms: ["depend on", "trust"],
+            grammar: "接続詞 because: 給油する行動の背景にある理由（依存）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1014: Energy Crisis & Heating
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1014.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "55%", left: "25%", width: "20%", height: "40%", color: "#e74c3c",
+            title: "Need for Heat",
+            eng: "It is freezing cold inside. Therefore, they use a kerosene heater.",
+            jp: "室内は凍えるほど寒いです。したがって、彼らは石油ストーブを使っています。",
+            vocab: ["freezing (凍えるような)", "heater (暖房器具)", "kerosene (灯油)"],
+            idioms: ["keep warm (暖を取る)"],
+            synonyms: ["stove", "radiator"],
+            grammar: "接続副詞 Therefore: 寒さ（原因）と暖房の使用（結果）をつなぎます。"
+        },
+        {
+            top: "15%", left: "65%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Fuel Supply",
+            eng: "They pour fuel carefully because it is a precious resource for winter.",
+            jp: "冬にとって貴重な資源なので、彼らは慎重に燃料を注ぎます。",
+            vocab: ["pour (注ぐ)", "carefully (慎重に)", "precious (貴重な)"],
+            idioms: ["run low (残り少なくなる)"],
+            synonyms: ["valuable", "important"],
+            grammar: "接続詞 because: 慎重に行動する理由（資源の重要性）を説明します。"
+        },
+        {
+            top: "40%", left: "5%", width: "25%", height: "50%", color: "#3498db",
+            title: "Vulnerable Situation",
+            eng: "The family huddles together due to the lack of central heating.",
+            jp: "セントラルヒーティングがないため、家族は身を寄せ合っています。",
+            vocab: ["huddle (身を寄せ合う)", "lack (欠如)", "central heating (全館暖房)"],
+            idioms: ["due to (～のために)"],
+            synonyms: ["gather", "crowd"],
+            grammar: "前置詞句 due to: 密集する理由（設備の欠如）を示します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1015: Overtourism
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1015.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "15%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Mass Tourism",
+            eng: "Many tour buses arrive at once; consequently, the site becomes overcrowded.",
+            jp: "多くの観光バスが一度に到着し、その結果、敷地は大混雑となります。",
+            vocab: ["arrive (到着する)", "site (場所／遺跡)", "overcrowded (超満員の)"],
+            idioms: ["at once (一度に)"],
+            synonyms: ["congested", "packed"],
+            grammar: "接続副詞 consequently: バスの到着（原因）と混雑（結果）の因果関係を示します。"
+        },
+        {
+            top: "55%", left: "40%", width: "20%", height: "40%", color: "#e67e22",
+            title: "Obsession with Photos",
+            eng: "Tourists focus on taking selfies. As a result, they ignore the history.",
+            jp: "観光客は自撮りに集中しています。その結果、彼らは歴史を無視しています。",
+            vocab: ["focus on (～に集中する)", "ignore (無視する)", "history (歴史)"],
+            idioms: ["take a selfie (自撮りをする)"],
+            synonyms: ["neglect", "disregard"],
+            grammar: "接続詞句 As a result: 写真撮影への没頭がもたらす弊害（歴史軽視）を述べます。"
+        },
+        {
+            top: "60%", left: "5%", width: "25%", height: "40%", color: "#3498db",
+            title: "Blocked View",
+            eng: "People cannot see the monument because of the wall of smartphones.",
+            jp: "スマートフォンの壁のせいで、人々は記念碑を見ることができません。",
+            vocab: ["monument (記念碑)", "wall (壁)", "smartphone (スマートフォン)"],
+            idioms: ["because of (～のせいで)"],
+            synonyms: ["view", "sight"],
+            grammar: "前置詞句 because of: 見えないという状況の原因（スマホの壁）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1016: Ride-hailing & Congestion
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1016.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Digital Demand",
+            eng: "Everyone uses ride-hailing apps; therefore, many cars gather here.",
+            jp: "誰もが配車アプリを使っており、それゆえに多くの車がここに集まっています。",
+            vocab: ["ride-hailing (配車サービス)", "app (アプリ)", "gather (集まる)"],
+            idioms: ["pick up (迎えに来る)"],
+            synonyms: ["collect", "assemble"],
+            grammar: "接続副詞 therefore: アプリの普及（原因）と車の集中（結果）をつなぎます。"
+        },
+        {
+            top: "60%", left: "30%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Traffic Jam",
+            eng: "The street is narrow. However, too many taxis are trying to enter.",
+            jp: "通りは狭いです。しかしながら、あまりにも多くのタクシーが入ろうとしています。",
+            vocab: ["narrow (狭い)", "enter (入る)", "taxi (タクシー)"],
+            idioms: ["too many (多すぎる)"],
+            synonyms: ["tight", "cramped"],
+            grammar: "接続副詞 However: 「狭い」という状況と「多くの車が入る」という行動の対立を示します。"
+        },
+        {
+            top: "55%", left: "60%", width: "20%", height: "40%", color: "#3498db",
+            title: "Waiting Passengers",
+            eng: "People are waiting on the street because their rides haven't arrived yet.",
+            jp: "迎えの車がまだ到着していないため、人々は通りで待っています。",
+            vocab: ["wait (待つ)", "arrive (到着する)", "yet (まだ)"],
+            idioms: ["look for (探す)"],
+            synonyms: ["expect", "anticipate"],
+            grammar: "接続詞 because: 路上待機の理由（未到着）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1017: Social Media vs Nature
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1017.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Virtual vs Reality",
+            eng: "The photo looks peaceful; however, the reality is chaotic and crowded.",
+            jp: "写真は平和に見えますが、現実は無秩序で混雑しています。",
+            vocab: ["peaceful (平和な)", "reality (現実)", "chaotic (無秩序な)"],
+            idioms: ["look like (～のように見える)"],
+            synonyms: ["calm", "serene"],
+            grammar: "接続副詞 however: 写真の印象と現実の状況を対比させます。"
+        },
+        {
+            top: "65%", left: "40%", width: "55%", height: "20%", color: "#e67e22",
+            title: "Breaking Rules",
+            eng: "There is a warning tape. Nevertheless, people enter the field.",
+            jp: "警告テープがあります。それにもかかわらず、人々は畑に入ります。",
+            vocab: ["warning (警告)", "tape (テープ)", "enter (入る)"],
+            idioms: ["do not enter (立入禁止)"],
+            synonyms: ["nonetheless", "even so"],
+            grammar: "接続副詞 Nevertheless: 「禁止されている」にもかかわらず「入る」という強い逆説を表します。"
+        },
+        {
+            top: "70%", left: "5%", width: "25%", height: "30%", color: "#3498db",
+            title: "Environmental Damage",
+            eng: "Flowers are trampled because tourists prioritize their photos.",
+            jp: "観光客が写真を優先するため、花が踏みつけられています。",
+            vocab: ["trample (踏みつける)", "prioritize (優先する)", "flower (花)"],
+            idioms: ["take priority (優先される)"],
+            synonyms: ["crush", "damage"],
+            grammar: "接続詞 because: 自然破壊（結果）の理由（写真優先）を説明します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1019: Inflation (Logistics & Food Price)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1019.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Rising Fuel Costs",
+            eng: "Gas prices soared; consequently, the cost of transportation increased.",
+            jp: "ガソリン価格が高騰し、その結果、輸送コストが増加しました。",
+            vocab: ["soar (高騰する)", "cost (費用)", "transportation (輸送)"],
+            idioms: ["go up (上がる)"],
+            synonyms: ["rise", "skyrocket"],
+            grammar: "接続副詞 consequently: 燃料費高騰（原因）と輸送費増（結果）をつなぎます。"
+        },
+        {
+            top: "55%", left: "5%", width: "35%", height: "40%", color: "#e67e22",
+            title: "Expensive Food",
+            eng: "The price of meat is high because of the expensive shipping.",
+            jp: "輸送費が高いため、肉の価格が高いです。",
+            vocab: ["price (価格)", "meat (肉)", "shipping (配送)"],
+            idioms: ["because of (～のために)"],
+            synonyms: ["expensive", "costly"],
+            grammar: "前置詞句 because of: 商品価格上昇の原因（輸送費）を導きます。"
+        },
+        {
+            top: "25%", left: "30%", width: "20%", height: "30%", color: "#3498db",
+            title: "Consumer Reaction",
+            eng: "She hesitates to buy the meat. Therefore, sales might drop.",
+            jp: "彼女は肉を買うのをためらっています。したがって、売り上げは落ちるかもしれません。",
+            vocab: ["hesitate (ためらう)", "sales (売上)", "drop (落ちる)"],
+            idioms: ["think twice (よく考える／ためらう)"],
+            synonyms: ["pause", "waver"],
+            grammar: "接続副詞 Therefore: 消費者の心理（ためらい）から予測される結果（売上減）を示します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 1020: Inflation (Restaurant Prices)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "1020.webp",
+    series: "1000",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "40%", color: "#e74c3c",
+            title: "Cost of Ingredients",
+            eng: "Ingredient costs went up. As a result, the restaurant raised menu prices.",
+            jp: "材料費が上がりました。その結果、レストランはメニューの価格を上げました。",
+            vocab: ["ingredient (材料)", "raise (上げる)", "menu (メニュー)"],
+            idioms: ["go up (上がる)"],
+            synonyms: ["increase", "hike"],
+            grammar: "接続詞句 As a result: 原価上昇（原因）と値上げ（結果）の因果関係を説明します。"
+        },
+        {
+            top: "45%", left: "25%", width: "25%", height: "40%", color: "#e67e22",
+            title: "Customer's Budget",
+            eng: "The prices are too high; therefore, he cannot order a full meal.",
+            jp: "価格が高すぎるため、彼はきちんとした食事を注文できません。",
+            vocab: ["order (注文する)", "meal (食事)", "high (高い)"],
+            idioms: ["afford (余裕がある)"],
+            synonyms: ["expensive", "steep"],
+            grammar: "接続副詞 therefore: 高価格（原因）と注文できない（結果）をつなぎます。"
+        },
+        {
+            top: "70%", left: "50%", width: "15%", height: "20%", color: "#3498db",
+            title: "Budget Choice",
+            eng: "He orders only water because it is the cheapest option.",
+            jp: "それが最も安い選択肢なので、彼は水だけを注文します。",
+            vocab: ["cheap (安い)", "option (選択肢)", "water (水)"],
+            idioms: ["cut back on (～を削減する)"],
+            synonyms: ["inexpensive", "low-cost"],
+            grammar: "接続詞 because: 水だけ頼むという行動の理由（安さ）を説明します。"
+        }
+    ]
+});
