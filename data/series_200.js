@@ -1038,3 +1038,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// Image 217: Man Wanting to Quit Smoking
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "217.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "55%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Want to Stop",
+            eng: "He seriously wants to stop smoking for his health.",
+            jp: "彼は健康のために真剣にタバコをやめたいと思っています。",
+            vocab: ["seriously (真剣に)", "stop (やめる)", "health (健康)"],
+            idioms: ["give up (あきらめる／やめる)"],
+            synonyms: ["quit", "cease"],
+            grammar: "不定詞の名詞的用法 (want to stop): wantの目的語として「～すること（やめること）」が入ります。"
+        },
+        {
+            top: "80%", left: "40%", width: "20%", height: "15%", color: "#3498db",
+            title: "Thinking of Quitting",
+            eng: "He is thinking of quitting the bad habit right now.",
+            jp: "彼は今まさに、その悪い習慣をやめようと考えています。",
+            vocab: ["think of (～しようかと考える)", "quit (やめる)", "habit (習慣)"],
+            idioms: ["kick the habit (習慣を断ち切る)"],
+            synonyms: ["considering", "planning"],
+            grammar: "動名詞 (thinking of quitting): 前置詞ofの後ろなので動名詞quittingを使います。"
+        },
+        {
+            top: "30%", left: "45%", width: "25%", height: "30%", color: "#9b59b6",
+            title: "Hard to Do",
+            eng: "It feels hard to make a big change in life.",
+            jp: "人生で大きな変化を起こすことは難しいと感じられます。",
+            vocab: ["hard (難しい)", "change (変化)", "life (人生)"],
+            idioms: ["turn over a new leaf (心機一転する)"],
+            synonyms: ["difficult", "tough"],
+            grammar: "不定詞の副詞的用法 (hard to make): 形容詞hardを修飾し「～するのが難しい」となります。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 218: Doctor's Advice
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "218.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "35%", width: "30%", height: "25%", color: "#e67e22",
+            title: "Advice to Follow",
+            eng: "The doctor gave him advice to improve his lifestyle.",
+            jp: "医師は彼に生活習慣を改善するためのアドバイスをしました。",
+            vocab: ["advice (助言)", "improve (改善する)", "lifestyle (生活習慣)"],
+            idioms: ["follow advice (アドバイスに従う)"],
+            synonyms: ["suggestion", "tip"],
+            grammar: "不定詞の形容詞的用法 (advice to improve): 「改善するためのアドバイス」と名詞を修飾します。"
+        },
+        {
+            top: "50%", left: "50%", width: "20%", height: "30%", color: "#3498db",
+            title: "Warning to Stop",
+            eng: "He shows a sign to warn the patient about smoking risks.",
+            jp: "彼は喫煙のリスクについて患者に警告するために看板を見せています。",
+            vocab: ["warn (警告する)", "patient (患者)", "risk (リスク)"],
+            idioms: ["watch out (気をつける)"],
+            synonyms: ["alert", "caution"],
+            grammar: "不定詞の副詞的用法 (to warn): 看板を見せる目的（警告するため）を表します。"
+        },
+        {
+            top: "25%", left: "15%", width: "30%", height: "40%", color: "#9b59b6",
+            title: "Decided to Listen",
+            eng: "The man decided to listen to the doctor's words.",
+            jp: "その男性は医師の言葉に耳を傾けることに決めました。",
+            vocab: ["decide (決める)", "listen (聞く)", "word (言葉)"],
+            idioms: ["make a decision (決断する)"],
+            synonyms: ["choose", "resolve"],
+            grammar: "不定詞の名詞的用法 (decided to listen): decideの目的語として「～すること」を使います。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 219: Start Cleaning (Boy)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "219.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "15%", width: "40%", height: "25%", color: "#e67e22",
+            title: "Start Cleaning",
+            eng: "He decided to start cleaning his messy room today.",
+            jp: "彼は今日、散らかった部屋の掃除を始めることにしました。",
+            vocab: ["messy (散らかった)", "room (部屋)", "today (今日)"],
+            idioms: ["clean up (片付ける)"],
+            synonyms: ["begin", "commence"],
+            grammar: "動名詞 (start cleaning): startの後は動名詞も不定詞も使えますが、行為の開始を強調しています。"
+        },
+        {
+            top: "40%", left: "55%", width: "30%", height: "40%", color: "#3498db",
+            title: "Ready to Work",
+            eng: "He is rolling up his sleeves to get ready to work.",
+            jp: "彼は作業の準備をするために袖をまくり上げています。",
+            vocab: ["roll up (まくり上げる)", "sleeve (袖)", "work (作業する)"],
+            idioms: ["get ready (準備する)"],
+            synonyms: ["prepare", "arrange"],
+            grammar: "不定詞の副詞的用法 (to get ready): 袖をまくる目的を表しています。"
+        },
+        {
+            top: "75%", left: "10%", width: "80%", height: "20%", color: "#9b59b6",
+            title: "Things to Organize",
+            eng: "There are many things to organize on the desk.",
+            jp: "机の上には整理すべきものがたくさんあります。",
+            vocab: ["organize (整理する)", "desk (机)", "many (多くの)"],
+            idioms: ["sort out (整理する／分類する)"],
+            synonyms: ["arrange", "order"],
+            grammar: "不定詞の形容詞的用法 (things to organize): 「整理するためのもの／整理すべきもの」という意味です。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 220: Vacuuming (Boy)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "220.webp",
+    series: "200",
+    spots: [
+        {
+            top: "50%", left: "60%", width: "30%", height: "40%", color: "#e67e22",
+            title: "Trying to Clean",
+            eng: "He is trying to clean the carpet with a vacuum cleaner.",
+            jp: "彼は掃除機でカーペットを掃除しようとしています。",
+            vocab: ["try (試みる／しようとする)", "carpet (カーペット)", "vacuum cleaner (掃除機)"],
+            idioms: ["give it a try (やってみる)"],
+            synonyms: ["attempt", "endeavor"],
+            grammar: "不定詞 (trying to clean): 「～しようと努力している」という進行中の動作です。"
+        },
+        {
+            top: "15%", left: "60%", width: "20%", height: "20%", color: "#3498db",
+            title: "Tired of Doing",
+            eng: "The boy looks a bit tired of doing the housework.",
+            jp: "少年は家事をすることに少し疲れているように見えます。",
+            vocab: ["tired (疲れた)", "housework (家事)", "bit (少し)"],
+            idioms: ["fed up with (～にうんざりしている)"],
+            synonyms: ["weary", "exhausted"],
+            grammar: "動名詞 (tired of doing): 前置詞ofの後ろなので動名詞を使います。"
+        },
+        {
+            top: "60%", left: "10%", width: "30%", height: "30%", color: "#9b59b6",
+            title: "Need to Tidy",
+            eng: "He needs to tidy up the toys scattered on the floor.",
+            jp: "彼は床に散らばったおもちゃを片付ける必要があります。",
+            vocab: ["tidy up (片付ける)", "toy (おもちゃ)", "scattered (散らばった)"],
+            idioms: ["pick up (拾う／片付ける)"],
+            synonyms: ["require", "must"],
+            grammar: "不定詞の名詞的用法 (need to tidy): needの目的語として「～すること（片付け）が必要」となります。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 221: Looking Forward (Texting)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "221.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Look Forward to Seeing",
+            eng: "I am looking forward to seeing you this weekend.",
+            jp: "今週末、あなたに会えるのを楽しみにしています。",
+            vocab: ["look forward to (～を楽しみに待つ)", "weekend (週末)", "see (会う)"],
+            idioms: ["can't wait (待ちきれない)"],
+            synonyms: ["anticipate", "expect"],
+            grammar: "動名詞 (to seeing): look forward toのtoは前置詞なので、後ろには必ず動名詞が来ます。"
+        },
+        {
+            top: "55%", left: "30%", width: "20%", height: "20%", color: "#3498db",
+            title: "Happy to Receive",
+            eng: "She seems happy to receive a message from her friend.",
+            jp: "彼女は友人からのメッセージを受け取って嬉しそうです。",
+            vocab: ["receive (受け取る)", "message (メッセージ)", "friend (友人)"],
+            idioms: ["hear from (～から連絡をもらう)"],
+            synonyms: ["glad", "pleased"],
+            grammar: "不定詞の副詞的用法 (happy to receive): 感情の原因を表します。"
+        },
+        {
+            top: "60%", left: "60%", width: "30%", height: "30%", color: "#9b59b6",
+            title: "Waiting to Meet",
+            eng: "She is sitting on the sofa waiting to meet someone special.",
+            jp: "彼女は特別な誰かに会うのを待ちながらソファに座っています。",
+            vocab: ["wait (待つ)", "meet (会う)", "special (特別な)"],
+            idioms: ["sit back (くつろいで座る)"],
+            synonyms: ["staying", "expecting"],
+            grammar: "不定詞 (waiting to meet): waitの後に不定詞を続け、目的や期待を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 222: Welcome at Airport
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "222.webp",
+    series: "200",
+    spots: [
+        {
+            top: "15%", left: "55%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Looking Forward to Seeing",
+            eng: "She was looking forward to seeing her family at the airport.",
+            jp: "彼女は空港で家族に会えるのを楽しみにしていました。",
+            vocab: ["airport (空港)", "family (家族)", "see (会う)"],
+            idioms: ["look forward to (楽しみにする)"],
+            synonyms: ["await", "hope for"],
+            grammar: "動名詞 (to seeing): 前置詞toの後ろなので、動名詞seeingを使います。"
+        },
+        {
+            top: "55%", left: "35%", width: "20%", height: "15%", color: "#3498db",
+            title: "Sign to Welcome",
+            eng: "She is holding a sign to welcome the visitor.",
+            jp: "彼女は来客を歓迎するためにサインを持っています。",
+            vocab: ["hold (持つ)", "welcome (歓迎する)", "visitor (来客)"],
+            idioms: ["greet (出迎える)"],
+            synonyms: ["board", "placard"],
+            grammar: "不定詞の副詞的用法 (to welcome): サインを持つ目的を表しています。"
+        },
+        {
+            top: "25%", left: "25%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Excited to Meet",
+            eng: "The woman looks excited to meet the person arriving.",
+            jp: "その女性は到着する人に会うことにワクワクしているようです。",
+            vocab: ["excited (興奮した)", "arrive (到着する)", "person (人)"],
+            idioms: ["thrilled to (～してゾクゾクするほど嬉しい)"],
+            synonyms: ["eager", "happy"],
+            grammar: "不定詞の副詞的用法 (excited to meet): 感情の原因を表します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 223: Tired of Shopping
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "223.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Tired of Walking",
+            eng: "I am tired of walking around the city all day.",
+            jp: "一日中街を歩き回って、私は歩くことに疲れました。",
+            vocab: ["tired (疲れた)", "walk (歩く)", "around (あちこち)"],
+            idioms: ["worn out (疲れ果てた)"],
+            synonyms: ["exhausted", "fatigued"],
+            grammar: "動名詞 (tired of walking): 前置詞ofの後ろなので動名詞を使います。"
+        },
+        {
+            top: "60%", left: "35%", width: "30%", height: "30%", color: "#3498db",
+            title: "Sit to Rest",
+            eng: "He sat on the bench to rest for a while.",
+            jp: "彼は少しの間休むためにベンチに座りました。",
+            vocab: ["bench (ベンチ)", "rest (休む)", "while (少しの間)"],
+            idioms: ["take a break (休憩する)"],
+            synonyms: ["relax", "pause"],
+            grammar: "不定詞の副詞的用法 (to rest): 座った目的（休むため）を表します。"
+        },
+        {
+            top: "70%", left: "10%", width: "20%", height: "25%", color: "#9b59b6",
+            title: "Want to Go Home",
+            eng: "With so many bags, he just wants to go home.",
+            jp: "これほどたくさんの袋を持って、彼はただ家に帰りたいと思っています。",
+            vocab: ["bag (袋／バッグ)", "just (ただ)", "home (家へ)"],
+            idioms: ["call it a day (切り上げる)"],
+            synonyms: ["desire", "wish"],
+            grammar: "不定詞の名詞的用法 (want to go): wantの目的語として使われています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 224: Tired of Hiking
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "224.webp",
+    series: "200",
+    spots: [
+        {
+            top: "10%", left: "55%", width: "35%", height: "25%", color: "#e67e22",
+            title: "Tired of Climbing",
+            eng: "He is tired of climbing up the steep mountain path.",
+            jp: "彼は険しい山道を登ることに疲れています。",
+            vocab: ["climb (登る)", "steep (険しい)", "path (道)"],
+            idioms: ["out of breath (息切れして)"],
+            synonyms: ["walking", "hiking"],
+            grammar: "動名詞 (tired of climbing): tired of + doing で「～することに疲れた／飽きた」となります。"
+        },
+        {
+            top: "60%", left: "25%", width: "25%", height: "30%", color: "#3498db",
+            title: "Stop to Rest",
+            eng: "He stopped to take a short break on a rock.",
+            jp: "彼は岩の上で短い休憩を取るために立ち止まりました。",
+            vocab: ["stop (立ち止まる)", "break (休憩)", "rock (岩)"],
+            idioms: ["catch one's breath (息を整える)"],
+            synonyms: ["pause", "halt"],
+            grammar: "不定詞の副詞的用法 (to take): 立ち止まった目的を表します。"
+        },
+        {
+            top: "50%", left: "70%", width: "25%", height: "20%", color: "#9b59b6",
+            title: "Hard to Continue",
+            eng: "It seems hard to continue without some water.",
+            jp: "水なしで続けるのは難しそうです。",
+            vocab: ["continue (続ける)", "without (～なしで)", "water (水)"],
+            idioms: ["keep going (進み続ける)"],
+            synonyms: ["difficult", "tough"],
+            grammar: "不定詞の副詞的用法 (hard to continue): 形容詞hardを修飾しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 225: Interested in Speaking (Group)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "225.webp",
+    series: "200",
+    spots: [
+        {
+            top: "5%", left: "15%", width: "45%", height: "25%", color: "#e67e22",
+            title: "Interested in Speaking",
+            eng: "I am interested in speaking English with people from different countries.",
+            jp: "私は様々な国の人たちと英語を話すことに興味があります。",
+            vocab: ["interested (興味がある)", "speak (話す)", "different (異なる)"],
+            idioms: ["chat with (～とおしゃべりする)"],
+            synonyms: ["keen on", "fond of"],
+            grammar: "動名詞 (interested in speaking): inは前置詞なので、後ろは動名詞になります。"
+        },
+        {
+            top: "55%", left: "45%", width: "15%", height: "25%", color: "#3498db",
+            title: "Happy to Talk",
+            eng: "She looks happy to talk with her new friends.",
+            jp: "彼女は新しい友達と話せて嬉しそうです。",
+            vocab: ["talk (話す)", "new (新しい)", "friend (友達)"],
+            idioms: ["make friends (友達を作る)"],
+            synonyms: ["glad", "joyful"],
+            grammar: "不定詞の副詞的用法 (happy to talk): 感情の原因を表します。"
+        },
+        {
+            top: "70%", left: "70%", width: "25%", height: "20%", color: "#9b59b6",
+            title: "Chance to Practice",
+            eng: "This lunch is a good chance to practice English.",
+            jp: "このランチは英語を練習する良い機会です。",
+            vocab: ["chance (機会／チャンス)", "practice (練習する)", "lunch (ランチ)"],
+            idioms: ["take the opportunity (機会を利用する)"],
+            synonyms: ["opportunity", "time"],
+            grammar: "不定詞の形容詞的用法 (chance to practice): 「練習するための機会」と名詞を修飾します。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// Image 226: Interested in Speaking (Street)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "226.webp",
+    series: "200",
+    spots: [
+        {
+            top: "5%", left: "10%", width: "45%", height: "25%", color: "#e67e22",
+            title: "Interested in Helping",
+            eng: "She is interested in helping tourists find their way.",
+            jp: "彼女は観光客が道を見つけるのを手助けすることに興味があります。",
+            vocab: ["help (助ける)", "tourist (観光客)", "find (見つける)"],
+            idioms: ["give a hand (手を貸す)"],
+            synonyms: ["assist", "guide"],
+            grammar: "動名詞 (interested in helping): 前置詞inの後ろなので動名詞を使います。"
+        },
+        {
+            top: "40%", left: "20%", width: "25%", height: "40%", color: "#3498db",
+            title: "Trying to Explain",
+            eng: "She is trying to explain the directions clearly.",
+            jp: "彼女は道順をはっきりと説明しようとしています。",
+            vocab: ["explain (説明する)", "direction (道順／方向)", "clearly (はっきりと)"],
+            idioms: ["point out (指し示す)"],
+            synonyms: ["describe", "clarify"],
+            grammar: "不定詞 (trying to explain): 「～しようと試みる」という動作です。"
+        },
+        {
+            top: "55%", left: "60%", width: "20%", height: "20%", color: "#9b59b6",
+            title: "Glad to Guide",
+            eng: "It is nice to be able to guide visitors.",
+            jp: "訪問者を案内できるのは素敵なことです。",
+            vocab: ["guide (案内する)", "visitor (訪問者)", "nice (素敵な)"],
+            idioms: ["show around (案内して回る)"],
+            synonyms: ["lead", "direct"],
+            grammar: "不定詞の名詞的用法 (to be able to guide): 形式主語Itに対する真主語として使われています。"
+        }
+    ]
+});
