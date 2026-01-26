@@ -926,3 +926,162 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// 525.webp: Sleep Habits (Night owl vs Early bird)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "525.webp",
+    series: "500",
+    spots: [
+        {
+            top: "45%", left: "15%", width: "30%", height: "45%", color: "#2c3e50",
+            title: "Bad Habits",
+            eng: "He used to stay up late looking at his smartphone, so he would often feel exhausted.",
+            jp: "彼は以前、スマホを見て夜更かしをしていたので、よく疲れ果てていたものでした。",
+            vocab: ["exhausted (疲れ果てた)", "stay up late (夜更かしする)", "smartphone (スマホ)"],
+            idioms: ["burn the midnight oil (夜遅くまで勉強や仕事をする)"],
+            synonyms: ["tired", "worn out"],
+            grammar: "過去の習慣 'used to' と、過去の傾向を表す 'would' を使用しています。"
+        },
+        {
+            top: "30%", left: "65%", width: "30%", height: "50%", color: "#f39c12",
+            title: "Morning Person",
+            eng: "Now he can wake up early with the sun and must feel refreshed every morning.",
+            jp: "今、彼は太陽と共に早起きすることができ、毎朝すっきりした気分に違いありません。",
+            vocab: ["refreshed (すっきりした)", "wake up (起きる)", "early (早く)"],
+            idioms: ["early bird (早起きの人)"],
+            synonyms: ["revitalized", "energized"],
+            grammar: "能力の 'can' と、強い確信を表す 'must' を使用しています。"
+        },
+        {
+            top: "10%", left: "70%", width: "20%", height: "15%", color: "#e67e22",
+            title: "Healthy Lifestyle",
+            eng: "Good sleep can improve productivity, so people should avoid screens before bed.",
+            jp: "良い睡眠は生産性を向上させ得るので、人々は寝る前に画面を見るのを避けるべきです。",
+            vocab: ["productivity (生産性)", "avoid (避ける)", "screen (画面)"],
+            idioms: ["hit the sack (寝る)"],
+            synonyms: ["enhance", "better"],
+            grammar: "可能性の 'can' と、提案・義務の 'should' を使用しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 526.webp: Food Preference (Hating veggies vs Loving salad)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "526.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "10%", width: "25%", height: "40%", color: "#c0392b",
+            title: "Picky Eater",
+            eng: "As a child, he used to refuse vegetables and wouldn't eat anything green.",
+            jp: "子供の頃、彼は野菜を拒否したもので、緑色のものは何も食べようとしませんでした。",
+            vocab: ["refuse (拒否する)", "vegetable (野菜)", "green (緑色の)"],
+            idioms: ["picky eater (好き嫌いの多い人)"],
+            synonyms: ["reject", "decline"],
+            grammar: "'used to' と、過去の強い拒絶を表す 'wouldn't'（would not）を使用しています。"
+        },
+        {
+            top: "35%", left: "65%", width: "30%", height: "45%", color: "#27ae60",
+            title: "Healthy Diet",
+            eng: "Now he can enjoy a big bowl of salad and realizes that vegetables may taste delicious.",
+            jp: "今では彼は大きなボウルのサラダを楽しむことができ、野菜がおいしいかもしれないと気づいています。",
+            vocab: ["delicious (美味しい)", "bowl (ボウル)", "realize (気づく)"],
+            idioms: ["acquire a taste (味を覚える・好きになる)"],
+            synonyms: ["tasty", "yummy"],
+            grammar: "能力の 'can' と、推量の 'may' を使用しています。"
+        },
+        {
+            top: "80%", left: "70%", width: "20%", height: "15%", color: "#f1c40f",
+            title: "Nutrition",
+            eng: "We should eat a balanced diet because vitamins must be essential for our bodies.",
+            jp: "ビタミンは私たちの体に不可欠に違いないので、私たちはバランスの取れた食事をすべきです。",
+            vocab: ["essential (不可欠な)", "balanced (バランスの取れた)", "vitamin (ビタミン)"],
+            idioms: ["you are what you eat (体は食べたもので作られる)"],
+            synonyms: ["necessary", "vital"],
+            grammar: "義務・提案の 'should' と、確信の 'must' を組み合わせています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 527.webp: Playtime (Marbles vs VR)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "527.webp",
+    series: "500",
+    spots: [
+        {
+            top: "55%", left: "10%", width: "35%", height: "35%", color: "#27ae60",
+            title: "Outdoor Games",
+            eng: "Children used to play outside with simple toys like marbles and could make friends easily.",
+            jp: "子供たちは以前、ビー玉のような単純なおもちゃで外遊びをし、簡単に友達を作ることができました。",
+            vocab: ["marble (ビー玉)", "outside (外で)", "toy (おもちゃ)"],
+            idioms: ["make friends (友達を作る)"],
+            synonyms: ["simple", "basic"],
+            grammar: "'used to' と、過去の能力・可能性を表す 'could' を使用しています。"
+        },
+        {
+            top: "25%", left: "60%", width: "35%", height: "45%", color: "#3498db",
+            title: "Virtual Reality",
+            eng: "Today, kids can explore virtual worlds using VR headsets without leaving their homes.",
+            jp: "今日では、子供たちは家を出ることなく、VRヘッドセットを使って仮想世界を探索できます。",
+            vocab: ["explore (探索する)", "virtual (仮想の)", "headset (ヘッドセット)"],
+            idioms: ["without leaving (～を出ることなく)"],
+            synonyms: ["discover", "investigate"],
+            grammar: "能力と可能性の 'can' を使用し、現代技術の利便性を表しています。"
+        },
+        {
+            top: "15%", left: "10%", width: "20%", height: "20%", color: "#8e44ad",
+            title: "Social Interaction",
+            eng: "Technology may change how we play, but social interaction must remain important.",
+            jp: "テクノロジーは私たちの遊び方を変えるかもしれませんが、社会的交流は重要であり続けるに違いありません。",
+            vocab: ["interaction (交流)", "remain (～のままである)", "important (重要な)"],
+            idioms: ["play a role (役割を果たす)"],
+            synonyms: ["communication", "contact"],
+            grammar: "推量の 'may'（～かもしれない）と、強い確信の 'must' を対比させています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 528.webp: Transport (Gasoline vs EV)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "528.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "15%", width: "30%", height: "40%", color: "#7f8c8d",
+            title: "Air Pollution",
+            eng: "Cars used to emit black smoke, which would pollute the air and harm the environment.",
+            jp: "車は以前、黒い煙を排出しており、それが空気を汚染し環境を害したものでした。",
+            vocab: ["emit (排出する)", "pollute (汚染する)", "harm (害する)"],
+            idioms: ["traffic jam (交通渋滞)"],
+            synonyms: ["release", "contaminate"],
+            grammar: "'used to' と、過去の結果や傾向を表す 'would' を使用しています。"
+        },
+        {
+            top: "35%", left: "60%", width: "35%", height: "40%", color: "#2ecc71",
+            title: "Electric Vehicle",
+            eng: "Electric cars can run silently and clean energy sources may reduce global warming.",
+            jp: "電気自動車は静かに走ることができ、クリーンエネルギー源は地球温暖化を減らすかもしれません。",
+            vocab: ["silently (静かに)", "reduce (減らす)", "source (源)"],
+            idioms: ["run on (～で走る・動く)"],
+            synonyms: ["quietly", "decrease"],
+            grammar: "能力の 'can' と、推量の 'may' を使用しています。"
+        },
+        {
+            top: "20%", left: "85%", width: "10%", height: "30%", color: "#16a085",
+            title: "Sustainability",
+            eng: "We should switch to renewable energy because we must protect our planet for the future.",
+            jp: "未来のために地球を守らなければならないので、私たちは再生可能エネルギーに切り替えるべきです。",
+            vocab: ["renewable (再生可能な)", "switch (切り替える)", "protect (守る)"],
+            idioms: ["eco-friendly (環境に優しい)"],
+            synonyms: ["sustainable", "green"],
+            grammar: "義務・提案の 'should' と、強い義務感の 'must' を使用しています。"
+        }
+    ]
+});
