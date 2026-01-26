@@ -527,3 +527,402 @@ window.galleryData.push({
         }
     ]
 });
+// -----------------------------------------------------------------------------
+// 515.webp: School Lunch (Fast Food vs Healthy)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "515.webp",
+    series: "500",
+    spots: [
+        {
+            top: "30%", left: "15%", width: "25%", height: "40%", color: "#e74c3c",
+            title: "Unhealthy Habits",
+            eng: "The student used to eat fast food every day, which might affect his health negatively.",
+            jp: "その生徒は以前は毎日ファストフードを食べていましたが、それは彼の健康に悪影響を及ぼすかもしれませんでした。",
+            vocab: ["negatively (否定的に)", "affect (影響する)", "habit (習慣)"],
+            idioms: ["used to (以前は～したものだ)"],
+            synonyms: ["formerly", "in the past"],
+            grammar: "助動詞 'used to' は過去の習慣を表し、'might' は推量を表します。"
+        },
+        {
+            top: "35%", left: "60%", width: "30%", height: "40%", color: "#2ecc71",
+            title: "Balanced Diet",
+            eng: "Now, he can choose a balanced diet with fresh vegetables to stay healthy and active.",
+            jp: "今では、健康で活動的でいるために、彼は新鮮な野菜を含むバランスの取れた食事を選ぶことができます。",
+            vocab: ["balanced (バランスの取れた)", "active (活動的な)", "diet (食事)"],
+            idioms: ["stay healthy (健康を保つ)"],
+            synonyms: ["select", "pick"],
+            grammar: "助動詞 'can' は能力や可能性を表し、現在の選択肢の自由を示しています。"
+        },
+        {
+            top: "70%", left: "55%", width: "40%", height: "25%", color: "#f1c40f",
+            title: "Nutritional Value",
+            eng: "Students should eat nutritious meals because a good diet can improve their concentration in class.",
+            jp: "良い食事は授業中の集中力を高めることができるので、生徒たちは栄養のある食事をとるべきです。",
+            vocab: ["nutritious (栄養のある)", "concentration (集中力)", "improve (向上させる)"],
+            idioms: ["focus on (～に集中する)"],
+            synonyms: ["enhance", "boost"],
+            grammar: "助動詞 'should'（～すべきだ）による提案と、'can'（～しうる）による可能性の表現です。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 516.webp: Classroom (Self-study vs Presentation)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "516.webp",
+    series: "500",
+    spots: [
+        {
+            top: "30%", left: "10%", width: "30%", height: "40%", color: "#3498db",
+            title: "Struggling Alone",
+            eng: "He used to study alone with a difficult textbook and would often feel confused by the content.",
+            jp: "彼は以前、難しい教科書を使って一人で勉強しており、その内容によく混乱してしまったものでした。",
+            vocab: ["confused (混乱した)", "textbook (教科書)", "content (内容)"],
+            idioms: ["figure out (理解する)"],
+            synonyms: ["puzzled", "perplexed"],
+            grammar: "助動詞 'would' は過去の不規則な習慣や傾向（よく～したものだ）を表すのによく使われます。"
+        },
+        {
+            top: "20%", left: "65%", width: "25%", height: "50%", color: "#9b59b6",
+            title: "Effective Teaching",
+            eng: "The teacher can explain complex topics clearly using visual aids, so students must understand better.",
+            jp: "先生は視覚教材を使って複雑なトピックを明確に説明できるので、生徒たちはよりよく理解できるに違いありません。",
+            vocab: ["complex (複雑な)", "visual aids (視覚教材)", "clearly (明確に)"],
+            idioms: ["make sense (理にかなう・理解できる)"],
+            synonyms: ["complicated", "intricate"],
+            grammar: "能力の 'can' と、強い確信や推量を表す助動詞 'must'（～に違いない）を使用しています。"
+        },
+        {
+            top: "25%", left: "88%", width: "12%", height: "20%", color: "#f39c12",
+            title: "Data Presentation",
+            eng: "Graphs and charts may help students grasp the information more quickly than reading text alone.",
+            jp: "グラフや図表は、生徒たちがテキストを読むだけよりも早く情報を把握するのに役立つかもしれません。",
+            vocab: ["grasp (把握する)", "chart (図表)", "quickly (素早く)"],
+            idioms: ["at a glance (一目で)"],
+            synonyms: ["understand", "comprehend"],
+            grammar: "推量の助動詞 'may'（～かもしれない）を使い、可能性を示唆しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 517.webp: Hobbies (Gaming vs Band)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "517.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "15%", width: "25%", height: "40%", color: "#34495e",
+            title: "Isolated Gamer",
+            eng: "He used to play video games alone in a dark room and might have felt lonely sometimes.",
+            jp: "彼は以前、暗い部屋で一人でテレビゲームをしていて、時々孤独を感じていたかもしれません。",
+            vocab: ["lonely (孤独な)", "isolated (孤立した)", "dark (暗い)"],
+            idioms: ["by oneself (一人で)"],
+            synonyms: ["solitary", "alone"],
+            grammar: "'used to'（過去の習慣）と 'might have + p.p.'（過去の推量：～だったかもしれない）の組み合わせです。"
+        },
+        {
+            top: "30%", left: "60%", width: "25%", height: "50%", color: "#e67e22",
+            title: "Band Performance",
+            eng: "Now he can play the guitar confidently and must enjoy performing with his bandmates.",
+            jp: "今、彼は自信を持ってギターを弾くことができ、バンド仲間と演奏することを楽しんでいるに違いありません。",
+            vocab: ["confidently (自信を持って)", "perform (演奏する)", "bandmates (バンド仲間)"],
+            idioms: ["have a good time (楽しむ)"],
+            synonyms: ["play", "act"],
+            grammar: "能力の 'can' と、現在の強い確信を表す 'must'（～に違いない）を使用しています。"
+        },
+        {
+            top: "50%", left: "85%", width: "15%", height: "30%", color: "#e74c3c",
+            title: "Teamwork",
+            eng: "Playing in a band can teach young people how to collaborate and communicate effectively.",
+            jp: "バンドで演奏することは、若者たちに効果的に協力しコミュニケーションをとる方法を教えることができます。",
+            vocab: ["collaborate (協力する)", "communicate (意思疎通する)", "effectively (効果的に)"],
+            idioms: ["work together (協力する)"],
+            synonyms: ["cooperate", "team up"],
+            grammar: "可能性や一般論を表す 'can'（～しうる、～することがある）を使っています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 518.webp: Study (Books vs Tablet)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "518.webp",
+    series: "500",
+    spots: [
+        {
+            top: "55%", left: "5%", width: "20%", height: "35%", color: "#8e44ad",
+            title: "Heavy Burden",
+            eng: "Students used to carry heavy piles of dictionaries, which must have been tiring for them.",
+            jp: "生徒たちは以前、重い辞書の山を持ち運んでいましたが、それは彼らにとって疲れることに違いありませんでした。",
+            vocab: ["pile (山・積み重ね)", "tiring (疲れる)", "dictionary (辞書)"],
+            idioms: ["carry around (持ち歩く)"],
+            synonyms: ["stack", "heap"],
+            grammar: "'used to' と、過去の確信を表す 'must have + p.p.'（～だったに違いない）を使用しています。"
+        },
+        {
+            top: "35%", left: "70%", width: "20%", height: "30%", color: "#2980b9",
+            title: "Digital Access",
+            eng: "With a tablet, he can access thousands of books instantly and doesn't have to carry weight.",
+            jp: "タブレットがあれば、彼は何千冊もの本に即座にアクセスでき、重い荷物を運ぶ必要がありません。",
+            vocab: ["access (アクセスする)", "instantly (即座に)", "weight (重さ)"],
+            idioms: ["don't have to (～する必要がない)"],
+            synonyms: ["reach", "connect"],
+            grammar: "能力の 'can' と、不必要を表す助動詞的表現 'don't have to' を使っています。"
+        },
+        {
+            top: "80%", left: "65%", width: "30%", height: "15%", color: "#16a085",
+            title: "Smart Learning",
+            eng: "Technology can make learning more efficient, but students should still take notes carefully.",
+            jp: "テクノロジーは学習をより効率的にし得ますが、生徒たちは依然として注意深くノートを取るべきです。",
+            vocab: ["efficient (効率的な)", "technology (科学技術)", "carefully (注意深く)"],
+            idioms: ["take notes (メモを取る)"],
+            synonyms: ["productive", "effective"],
+            grammar: "可能性の 'can' と、義務・助言の 'should' を対比させています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 519.webp: Lifestyle (Unfit vs Fit)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "519.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "10%", width: "30%", height: "45%", color: "#c0392b",
+            title: "Sedentary Life",
+            eng: "He used to lead a sedentary lifestyle and would eat too much junk food on the couch.",
+            jp: "彼は以前、座りっぱなしの生活を送っており、ソファでジャンクフードを食べ過ぎてしまうことがありました。",
+            vocab: ["sedentary (座りっぱなしの)", "lifestyle (生活様式)", "couch (ソファ)"],
+            idioms: ["lead a life (生活を送る)"],
+            synonyms: ["inactive", "lazy"],
+            grammar: "'used to'（以前の状態）と 'would'（過去の頻繁な行動）を使用しています。"
+        },
+        {
+            top: "25%", left: "65%", width: "30%", height: "55%", color: "#27ae60",
+            title: "Strength Training",
+            eng: "Now he can lift heavy dumbbells easily and must feel much stronger and more energetic.",
+            jp: "今、彼は重いダンベルを簡単に持ち上げることができ、以前よりずっと強く、エネルギッシュに感じているに違いありません。",
+            vocab: ["dumbbell (ダンベル)", "energetic (精力的な)", "easily (簡単に)"],
+            idioms: ["work out (運動する)"],
+            synonyms: ["raise", "hoist"],
+            grammar: "能力を表す 'can' と、現在の状態を推測する 'must' を使用しています。"
+        },
+        {
+            top: "55%", left: "55%", width: "15%", height: "25%", color: "#7f8c8d",
+            title: "Equipment",
+            eng: "Using gym equipment properly can prevent injuries, so beginners should ask for advice.",
+            jp: "ジムの器具を正しく使うことは怪我を防ぐことができるので、初心者はアドバイスを求めるべきです。",
+            vocab: ["prevent (防ぐ)", "injury (怪我)", "properly (適切に)"],
+            idioms: ["ask for (～を求める)"],
+            synonyms: ["avoid", "stop"],
+            grammar: "可能性の 'can' と、提案の 'should' を組み合わせた文です。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 520.webp: Piano (Struggle vs Success)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "520.webp",
+    series: "500",
+    spots: [
+        {
+            top: "45%", left: "15%", width: "25%", height: "35%", color: "#d35400",
+            title: "Frustration",
+            eng: "She used to get frustrated because she couldn't read the music notes well.",
+            jp: "彼女は以前、音符をうまく読むことができなかったため、イライラしたものでした。",
+            vocab: ["frustrated (イライラした)", "music notes (音符)", "well (上手に)"],
+            idioms: ["give up (あきらめる)"],
+            synonyms: ["upset", "annoyed"],
+            grammar: "'used to' と、過去の能力の欠如を表す 'couldn't'（could not）を使っています。"
+        },
+        {
+            top: "40%", left: "60%", width: "25%", height: "40%", color: "#8e44ad",
+            title: "Recital",
+            eng: "Now she can play complex pieces smoothly and may even become a professional pianist.",
+            jp: "今では彼女は複雑な曲を滑らかに弾くことができ、プロのピアニストにさえなるかもしれません。",
+            vocab: ["smoothly (滑らかに)", "piece (楽曲)", "professional (プロの)"],
+            idioms: ["become a pro (プロになる)"],
+            synonyms: ["perform", "execute"],
+            grammar: "能力の 'can' と、将来の可能性を表す 'may' を使用しています。"
+        },
+        {
+            top: "85%", left: "80%", width: "15%", height: "15%", color: "#f1c40f",
+            title: "Audience",
+            eng: "The audience must be impressed by her performance and should give her a big applause.",
+            jp: "観客は彼女の演奏に感動しているに違いなく、彼女に大きな拍手を送るはずです。",
+            vocab: ["impressed (感動した)", "applause (拍手喝采)", "audience (聴衆)"],
+            idioms: ["give a hand (拍手する／手伝う)"],
+            synonyms: ["crowd", "spectators"],
+            grammar: "強い確信の 'must' と、当然の期待を表す 'should' を使っています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 521.webp: TV (Old vs New Tablet)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "521.webp",
+    series: "500",
+    spots: [
+        {
+            top: "35%", left: "10%", width: "30%", height: "40%", color: "#7f8c8d",
+            title: "Static Noise",
+            eng: "We used to watch analog TV with static noise, and we had to rewind the tapes manually.",
+            jp: "私たちは以前、砂嵐の出るアナログテレビを見ていましたし、テープを手動で巻き戻さなければなりませんでした。",
+            vocab: ["static noise (砂嵐・雑音)", "rewind (巻き戻す)", "manually (手動で)"],
+            idioms: ["have to (～しなければならない)"],
+            synonyms: ["fuzzy", "unclear"],
+            grammar: "'used to' と、過去の義務・必要性を表す 'had to' を使用しています。"
+        },
+        {
+            top: "30%", left: "60%", width: "35%", height: "45%", color: "#3498db",
+            title: "Streaming",
+            eng: "Today, we can stream high-definition videos anywhere and don't need to worry about schedules.",
+            jp: "今日では、どこでも高画質の動画をストリーミング再生でき、放送時間を気にする必要がありません。",
+            vocab: ["stream (ストリーミング再生する)", "definition (解像度)", "schedule (予定・時間割)"],
+            idioms: ["worry about (～を心配する)"],
+            synonyms: ["broadcast", "transmit"],
+            grammar: "可能の 'can' と、不必要を表す 'don't need to' を使用しています。"
+        },
+        {
+            top: "15%", left: "80%", width: "15%", height: "25%", color: "#2ecc71",
+            title: "Portable Device",
+            eng: "Tablets can be carried easily, so entertainment may be enjoyed even while traveling.",
+            jp: "タブレットは簡単に持ち運べるため、旅行中でさえエンターテイメントを楽しむことができるかもしれません。",
+            vocab: ["portable (持ち運びできる)", "entertainment (娯楽)", "traveling (旅行中)"],
+            idioms: ["on the go (出先で)"],
+            synonyms: ["moveable", "compact"],
+            grammar: "受動態と共に、可能性の 'can' と 'may' を使用しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 522.webp: Art (Drawing vs Digital)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "522.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "10%", width: "30%", height: "50%", color: "#e67e22",
+            title: "Paper and Crayons",
+            eng: "Children used to draw simple pictures on paper and would often make a mess with crayons.",
+            jp: "子供たちは以前、紙に単純な絵を描いていて、よくクレヨンで散らかしてしまったものでした。",
+            vocab: ["simple (単純な)", "mess (散らかった状態)", "crayon (クレヨン)"],
+            idioms: ["make a mess (散らかす)"],
+            synonyms: ["sketch", "scribble"],
+            grammar: "過去の習慣 'used to' と、過去の傾向 'would' を使用しています。"
+        },
+        {
+            top: "25%", left: "75%", width: "22%", height: "35%", color: "#2980b9",
+            title: "Digital Art",
+            eng: "With digital tools, artists can create detailed illustrations and can undo mistakes instantly.",
+            jp: "デジタルツールを使えば、アーティストは詳細なイラストを作成でき、間違いを即座に取り消すことができます。",
+            vocab: ["detailed (詳細な)", "undo (元に戻す)", "mistake (間違い)"],
+            idioms: ["fix a mistake (間違いを直す)"],
+            synonyms: ["create", "generate"],
+            grammar: "能力の 'can' を繰り返し使い、デジタルツールの利便性を強調しています。"
+        },
+        {
+            top: "75%", left: "68%", width: "25%", height: "20%", color: "#34495e",
+            title: "Graphic Tablet",
+            eng: "He must be skilled to use a graphic tablet effectively, as it may require practice.",
+            jp: "ペンタブレットを効果的に使うには練習が必要かもしれないので、彼は熟練しているに違いありません。",
+            vocab: ["skilled (熟練した)", "require (必要とする)", "effectively (効果的に)"],
+            idioms: ["be good at (～が得意だ)"],
+            synonyms: ["talented", "proficient"],
+            grammar: "確信の 'must' と、可能性の 'may' を組み合わせています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 523.webp: Phone (Old Mobile vs Video Call)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "523.webp",
+    series: "500",
+    spots: [
+        {
+            top: "40%", left: "8%", width: "15%", height: "40%", color: "#2c3e50",
+            title: "Voice Only",
+            eng: "People used to only hear voices on the phone and couldn't see the other person's face.",
+            jp: "人々は以前、電話では声を聞くことしかできず、相手の顔を見ることはできませんでした。",
+            vocab: ["voice (声)", "face (顔)", "person (人)"],
+            idioms: ["hear from (～から連絡をもらう)"],
+            synonyms: ["sound", "audio"],
+            grammar: "'used to' と、過去の不可能性 'couldn't' を対比させています。"
+        },
+        {
+            top: "35%", left: "80%", width: "15%", height: "45%", color: "#e74c3c",
+            title: "Video Call",
+            eng: "Now we can see our friends in real-time, which must make long-distance relationships easier.",
+            jp: "今ではリアルタイムで友人の姿を見ることができ、それは遠距離恋愛をより容易にしているに違いありません。",
+            vocab: ["real-time (リアルタイム)", "relationship (関係)", "distance (距離)"],
+            idioms: ["keep in touch (連絡を取り合う)"],
+            synonyms: ["connection", "bond"],
+            grammar: "能力の 'can' と、論理的帰結・確信の 'must' を使っています。"
+        },
+        {
+            top: "55%", left: "83%", width: "12%", height: "15%", color: "#f39c12",
+            title: "Group Chat",
+            eng: "Smartphones allow us to connect with many people, so we can hold group meetings anywhere.",
+            jp: "スマートフォンは多くの人とつながることを可能にするので、私たちはどこでもグループ会議を開くことができます。",
+            vocab: ["connect (つながる)", "meeting (会議)", "allow (可能にする)"],
+            idioms: ["hold a meeting (会議を開く)"],
+            synonyms: ["link", "join"],
+            grammar: "可能の意味を含む 'allow' と、能力・可能性の 'can' を使用しています。"
+        }
+    ]
+});
+
+// -----------------------------------------------------------------------------
+// 524.webp: Camera (Film vs Digital)
+// -----------------------------------------------------------------------------
+window.galleryData.push({
+    imageFile: "524.webp",
+    series: "500",
+    spots: [
+        {
+            top: "50%", left: "20%", width: "20%", height: "30%", color: "#95a5a6",
+            title: "Printed Photos",
+            eng: "We used to wait for days to develop photos and couldn't check the results immediately.",
+            jp: "私たちは以前、写真を現像するのに何日も待ったもので、結果をすぐに確認することはできませんでした。",
+            vocab: ["develop (現像する)", "result (結果)", "immediately (すぐに)"],
+            idioms: ["wait for (～を待つ)"],
+            synonyms: ["picture", "photograph"],
+            grammar: "'used to'（過去の習慣）と 'couldn't'（過去の能力の欠如）を使用しています。"
+        },
+        {
+            top: "35%", left: "70%", width: "25%", height: "35%", color: "#2c3e50",
+            title: "Digital Screen",
+            eng: "Now photographers can preview the image instantly on the screen and can retake it if necessary.",
+            jp: "今では写真家は画面ですぐに画像をプレビューでき、必要であれば撮り直すことができます。",
+            vocab: ["preview (プレビューする)", "retake (撮り直す)", "necessary (必要な)"],
+            idioms: ["take a photo (写真を撮る)"],
+            synonyms: ["display", "monitor"],
+            grammar: "能力と可能性の 'can' を2回使い、デジタルの利点を強調しています。"
+        },
+        {
+            top: "20%", left: "75%", width: "20%", height: "15%", color: "#8e44ad",
+            title: "High Quality",
+            eng: "Modern cameras can capture amazing details, so you may take professional-looking photos easily.",
+            jp: "現代のカメラは驚くべき詳細を捉えることができるので、簡単にプロのような写真を撮れるかもしれません。",
+            vocab: ["capture (捉える)", "amazing (驚くべき)", "detail (詳細)"],
+            idioms: ["look like (～のように見える)"],
+            synonyms: ["modern", "contemporary"],
+            grammar: "能力の 'can' と、可能性の 'may' を使用した文です。"
+        }
+    ]
+});
