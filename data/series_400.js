@@ -1396,3 +1396,78 @@ window.galleryData.push({
         }
     ]
 });
+// 439.webp - Classroom height comparison
+window.galleryData.push({
+    imageFile: "439.webp",
+    series: "800",
+    spots: [
+        {
+            top: "15%", left: "75%", width: "20%", height: "85%", color: "#e67e22",
+            title: "The Tallest Student",
+            eng: "The boy who is standing on the right is the tallest in the class.",
+            jp: "右側に立っている少年は、クラスで一番背が高いです。",
+            vocab: ["tallest (一番背が高い)", "class (クラス)", "stand (立つ)"],
+            idioms: ["stand out (目立つ)"],
+            synonyms: ["student", "pupil"],
+            grammar: "最上級 'the tallest' の説明を加えるために、'who is standing...' で人物を特定しています。"
+        },
+        {
+            top: "40%", left: "42%", width: "15%", height: "45%", color: "#3498db",
+            title: "Surprised Girl",
+            eng: "The girl who is looking up at him seems surprised by his height.",
+            jp: "彼を見上げている少女は、彼の背の高さに驚いているようです。",
+            vocab: ["look up (見上げる)", "surprised (驚いた)", "height (身長)"],
+            idioms: ["wide-eyed (目を丸くして)"],
+            synonyms: ["classmate", "peer"],
+            grammar: "動作 'is looking up' を行っている人物を 'who' で描写しています。"
+        },
+        {
+            top: "25%", left: "5%", width: "20%", height: "50%", color: "#9b59b6",
+            title: "The Teacher",
+            eng: "The teacher who is holding a clipboard is checking their growth.",
+            jp: "バインダーを持っている先生は、彼らの成長を確認しています。",
+            vocab: ["check (確認する)", "growth (成長)", "clipboard (バインダー)"],
+            idioms: ["keep an eye on (～を見守る)"],
+            synonyms: ["instructor", "supervisor"],
+            grammar: "持っている物（clipboard）を 'who' 節で示し、先生を説明しています。"
+        }
+    ]
+});
+
+// 440.webp - Group photo session
+window.galleryData.push({
+    imageFile: "440.webp",
+    series: "800",
+    spots: [
+        {
+            top: "12%", left: "45%", width: "15%", height: "40%", color: "#e67e22",
+            title: "The Tallest Boy",
+            eng: "The student who stands in the back row is the tallest of all.",
+            jp: "後列に立っている生徒は、全員の中で一番背が高いです。",
+            vocab: ["back row (後列)", "all (全員)", "tallest (一番背が高い)"],
+            idioms: ["head and shoulders above (～より抜きん出て/背が高くて)"],
+            synonyms: ["boy", "teenager"],
+            grammar: "位置 'in the back row' を関係詞節に入れ、特定の一人を指しています。"
+        },
+        {
+            top: "35%", left: "73%", width: "25%", height: "60%", color: "#3498db",
+            title: "The Photographer",
+            eng: "The man who is taking the photo is crouching down.",
+            jp: "写真を撮っているその男性は、しゃがんでいます。",
+            vocab: ["take a photo (写真を撮る)", "crouch down (しゃがむ)", "man (男性)"],
+            idioms: ["get the picture (状況を理解する/写真を撮る)"],
+            synonyms: ["cameraman", "professional"],
+            grammar: "現在進行形 'is taking...' を伴う関係代名詞 'who' の節です。"
+        },
+        {
+            top: "45%", left: "18%", width: "50%", height: "40%", color: "#2ecc71",
+            title: "Front Row Girls",
+            eng: "The girls who are sitting on the chairs look very happy.",
+            jp: "椅子に座っている少女たちは、とても幸せそうに見えます。",
+            vocab: ["sit (座る)", "chair (椅子)", "happy (幸せな)"],
+            idioms: ["all smiles (満面の笑みで)"],
+            synonyms: ["students", "group"],
+            grammar: "複数形の先行詞 'The girls' に合わせ、関係詞節内も 'are sitting' となっています。"
+        }
+    ]
+});
