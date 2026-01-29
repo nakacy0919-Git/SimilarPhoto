@@ -691,3 +691,382 @@ window.galleryData.push({
         }
     ]
 });
+// 819.webp - Classroom cleaning, boy erasing board
+window.galleryData.push({
+    imageFile: "819.webp",
+    series: "800",
+    spots: [
+        {
+            top: "15%", left: "57%", width: "40%", height: "85%", color: "#e67e22",
+            title: "Boy at Blackboard",
+            eng: "The student who is erasing the blackboard is tall.",
+            jp: "黒板を消しているその生徒は背が高いです。",
+            vocab: ["erase (消す)", "blackboard (黒板)", "tall (背が高い)"],
+            idioms: ["clean up (掃除する/片付ける)"],
+            synonyms: ["pupil", "cleaner"],
+            grammar: "先行詞 'The student' を関係代名詞 'who' の節が修飾しています。"
+        },
+        {
+            top: "45%", left: "28%", width: "15%", height: "50%", color: "#3498db",
+            title: "Girl Cleaning Desk",
+            eng: "The girl who is wiping the desk works very hard.",
+            jp: "机を拭いているその少女は、とても一生懸命働いています。",
+            vocab: ["wipe (拭く)", "desk (机)", "hard (一生懸命に)"],
+            idioms: ["work hard (一生懸命働く)"],
+            synonyms: ["student", "helper"],
+            grammar: "進行形 'is wiping' を使った関係詞節で、人物を特定しています。"
+        },
+        {
+            top: "43%", left: "43%", width: "12%", height: "45%", color: "#9b59b6",
+            title: "Boy in Background",
+            eng: "The boy who is moving the desk is in the background.",
+            jp: "机を動かしている少年は、背景にいます。",
+            vocab: ["move (動かす)", "background (背景)", "boy (少年)"],
+            idioms: ["lend a hand (手を貸す)"],
+            synonyms: ["lad", "male student"],
+            grammar: "どの少年かを説明するために 'who is moving...' を使っています。"
+        }
+    ]
+});
+
+// 820.webp - Girl sweeping floor
+window.galleryData.push({
+    imageFile: "820.webp",
+    series: "800",
+    spots: [
+        {
+            top: "18%", left: "22%", width: "25%", height: "80%", color: "#e67e22",
+            title: "Girl Sweeping",
+            eng: "The girl who is holding a broom is cleaning the floor.",
+            jp: "ほうきを持っているその少女は、床を掃除しています。",
+            vocab: ["hold (持つ)", "broom (ほうき)", "floor (床)"],
+            idioms: ["sweep away (掃き捨てる)"],
+            synonyms: ["sweeper", "student"],
+            grammar: "道具を持っている状態 'is holding' を関係詞節で記述しています。"
+        },
+        {
+            top: "84%", left: "42%", width: "20%", height: "15%", color: "#f1c40f",
+            title: "The Dust",
+            eng: "The dust which she has gathered is near her feet.",
+            jp: "彼女が集めたゴミ（ちり）は、足元にあります。",
+            vocab: ["dust (ちり/ほこり)", "gather (集める)", "feet (足)"],
+            idioms: ["make a pile (山を作る)"],
+            synonyms: ["dirt", "trash"],
+            grammar: "物質名詞 dust を先行詞とし、'which' で説明を加えています。"
+        },
+        {
+            top: "38%", left: "65%", width: "15%", height: "40%", color: "#3498db",
+            title: "Student Arranging",
+            eng: "The student who is arranging the chairs is near the window.",
+            jp: "椅子を整頓している生徒は、窓の近くにいます。",
+            vocab: ["arrange (整頓する/並べる)", "chair (椅子)", "window (窓)"],
+            idioms: ["put in order (整頓する)"],
+            synonyms: ["organizer", "classmate"],
+            grammar: "動作 'arranging' を行っている人を 'who' で特定しています。"
+        }
+    ]
+});
+
+// 821.webp - Conversation on a train
+window.galleryData.push({
+    imageFile: "821.webp",
+    series: "800",
+    spots: [
+        {
+            top: "28%", left: "20%", width: "35%", height: "70%", color: "#e67e22",
+            title: "The Man Talking",
+            eng: "The man who is talking to the woman looks friendly.",
+            jp: "女性に話しかけているその男性は、親しみやすそうに見えます。",
+            vocab: ["talk to (～に話しかける)", "friendly (親しみやすい)", "look (～に見える)"],
+            idioms: ["strike up a conversation (会話を始める)"],
+            synonyms: ["guy", "passenger"],
+            grammar: "現在進行形 'is talking' を関係詞節内で使っています。"
+        },
+        {
+            top: "33%", left: "50%", width: "25%", height: "65%", color: "#3498db",
+            title: "The Listener",
+            eng: "The woman who is listening to his story is smiling.",
+            jp: "彼の話を聞いているその女性は、微笑んでいます。",
+            vocab: ["listen to (～を聞く)", "story (話)", "smile (微笑む)"],
+            idioms: ["all ears (熱心に聞く)"],
+            synonyms: ["lady", "companion"],
+            grammar: "先行詞 'The woman' の動作を関係代名詞 'who' で説明しています。"
+        },
+        {
+            top: "10%", left: "0%", width: "50%", height: "40%", color: "#2ecc71",
+            title: "Scenery Outside",
+            eng: "The scenery which can be seen from the window is countryside.",
+            jp: "窓から見える景色は、田舎の風景です。",
+            vocab: ["scenery (景色)", "seen (見られる)", "countryside (田舎)"],
+            idioms: ["enjoy the view (景色を楽しむ)"],
+            synonyms: ["landscape", "view"],
+            grammar: "受動態 'can be seen' を含む関係代名詞 'which' の節です。"
+        }
+    ]
+});
+
+// 822.webp - Shaking hands on train
+window.galleryData.push({
+    imageFile: "822.webp",
+    series: "800",
+    spots: [
+        {
+            top: "65%", left: "45%", width: "20%", height: "20%", color: "#e67e22",
+            title: "Handshake",
+            eng: "The handshake that they are exchanging shows their agreement.",
+            jp: "彼らが交わしている握手は、合意を示しています。",
+            vocab: ["handshake (握手)", "exchange (交わす/交換する)", "agreement (合意)"],
+            idioms: ["shake on it (握手で決める)"],
+            synonyms: ["greeting", "deal"],
+            grammar: "目的格の 'that' です。they are exchanging [the handshake]."
+        },
+        {
+            top: "25%", left: "13%", width: "35%", height: "75%", color: "#3498db",
+            title: "Man in Blue",
+            eng: "The man who is wearing a blue jacket initiates the handshake.",
+            jp: "青いジャケットを着ている男性が、握手を求めています。",
+            vocab: ["initiate (始める/口火を切る)", "jacket (ジャケット)", "blue (青い)"],
+            idioms: ["reach out (手を差し伸べる)"],
+            synonyms: ["gentleman", "partner"],
+            grammar: "服装の特徴を 'who' 節で記述し、人物を特定しています。"
+        },
+        {
+            top: "20%", left: "38%", width: "30%", height: "25%", color: "#95a5a6",
+            title: "City View",
+            eng: "The buildings which stand in the distance are tall.",
+            jp: "遠くに建っているビル群は背が高いです。",
+            vocab: ["building (建物/ビル)", "distance (遠く/距離)", "tall (高い)"],
+            idioms: ["in the distance (遠くに)"],
+            synonyms: ["skyscrapers", "structures"],
+            grammar: "無生物（buildings）を先行詞とする関係代名詞 'which' です。"
+        }
+    ]
+});
+
+// 823.webp - Reading about Marie Curie
+window.galleryData.push({
+    imageFile: "823.webp",
+    series: "800",
+    spots: [
+        {
+            top: "55%", left: "15%", width: "45%", height: "45%", color: "#e67e22",
+            title: "The Biography",
+            eng: "The book which she is reading is about a famous scientist.",
+            jp: "彼女が読んでいるその本は、有名な科学者についてのものです。",
+            vocab: ["famous (有名な)", "scientist (科学者)", "about (～について)"],
+            idioms: ["read up on (～について調べる)"],
+            synonyms: ["biography", "volume"],
+            grammar: "読んでいる対象（book）を 'which' で説明しています。"
+        },
+        {
+            top: "65%", left: "42%", width: "15%", height: "30%", color: "#f1c40f",
+            title: "Marie Curie",
+            eng: "The woman who is pictured on the cover is Marie Curie.",
+            jp: "表紙に描かれている女性は、マリー・キュリーです。",
+            vocab: ["picture (描く/写真に撮る)", "cover (表紙)", "woman (女性)"],
+            idioms: ["role model (手本となる人)"],
+            synonyms: ["figure", "person"],
+            grammar: "受動態 'is pictured' を伴う関係詞節で人物を説明しています。"
+        },
+        {
+            top: "18%", left: "40%", width: "45%", height: "80%", color: "#3498db",
+            title: "Admiring Reader",
+            eng: "The student who admires this scientist studies very hard.",
+            jp: "この科学者を尊敬しているその生徒は、とても熱心に勉強します。",
+            vocab: ["admire (尊敬する)", "study (勉強する)", "hard (熱心に)"],
+            idioms: ["look up to (～を尊敬する)"],
+            synonyms: ["learner", "fan"],
+            grammar: "心理状態 'admires' を表す動詞を使った関係詞節です。"
+        }
+    ]
+});
+
+// 824.webp - Concert scene
+window.galleryData.push({
+    imageFile: "824.webp",
+    series: "800",
+    spots: [
+        {
+            top: "20%", left: "62%", width: "25%", height: "55%", color: "#e67e22",
+            title: "The Guitarist",
+            eng: "The musician who is playing the electric guitar is a rock star.",
+            jp: "エレキギターを弾いているそのミュージシャンは、ロックスターです。",
+            vocab: ["musician (音楽家)", "electric guitar (エレキギター)", "star (スター)"],
+            idioms: ["put on a show (ショーを行う)"],
+            synonyms: ["performer", "artist"],
+            grammar: "ステージ上の人物を動作 'is playing' で特定しています。"
+        },
+        {
+            top: "26%", left: "5%", width: "35%", height: "74%", color: "#3498db",
+            title: "The Fan",
+            eng: "The boy who is watching the performance looks amazed.",
+            jp: "演奏を見ているその少年は、感銘を受けているようです。",
+            vocab: ["performance (演奏/演技)", "amazed (驚嘆した)", "watch (見る)"],
+            idioms: ["blown away (圧倒される)"],
+            synonyms: ["audience", "spectator"],
+            grammar: "主語の関係代名詞 'who' が先行詞 'The boy' を修飾しています。"
+        },
+        {
+            top: "0%", left: "50%", width: "50%", height: "30%", color: "#f1c40f",
+            title: "Stage Lights",
+            eng: "The lights that shine on the stage are colorful and bright.",
+            jp: "ステージを照らす照明は、カラフルで明るいです。",
+            vocab: ["shine (照らす/輝く)", "stage (ステージ)", "bright (明るい)"],
+            idioms: ["in the spotlight (注目を浴びて)"],
+            synonyms: ["illumination", "beams"],
+            grammar: "物（lights）が主語のため 'that'（またはwhich）を使用しています。"
+        }
+    ]
+});
+
+// 825.webp - Eating a hamburger
+window.galleryData.push({
+    imageFile: "825.webp",
+    series: "800",
+    spots: [
+        {
+            top: "50%", left: "25%", width: "30%", height: "40%", color: "#e67e22",
+            title: "The Hamburger",
+            eng: "The hamburger that he is holding looks very delicious.",
+            jp: "彼が持っているハンバーガーは、とても美味しそうです。",
+            vocab: ["hamburger (ハンバーガー)", "delicious (美味しい)", "look (～に見える)"],
+            idioms: ["mouth-watering (よだれが出るほど美味しい)"],
+            synonyms: ["burger", "meal"],
+            grammar: "目的格の関係代名詞 'that' です。he is holding [the hamburger]."
+        },
+        {
+            top: "15%", left: "45%", width: "50%", height: "85%", color: "#3498db",
+            title: "Hungry Boy",
+            eng: "The boy who is about to take a bite is very hungry.",
+            jp: "かぶりつこうとしているその少年は、とてもお腹が空いています。",
+            vocab: ["bite (一口/かじる)", "hungry (空腹な)", "about to (～しようとしている)"],
+            idioms: ["dig in (食べ始める)"],
+            synonyms: ["eater", "lad"],
+            grammar: "未来に近い動作 'is about to...' を関係詞節内で使っています。"
+        },
+        {
+            top: "68%", left: "30%", width: "20%", height: "10%", color: "#f1c40f",
+            title: "The Cheese",
+            eng: "The cheese which is melted inside adds flavor.",
+            jp: "中で溶けているチーズが、風味を加えています。",
+            vocab: ["melt (溶ける)", "add (加える)", "flavor (風味)"],
+            idioms: ["rich taste (濃厚な味)"],
+            synonyms: ["cheddar", "topping"],
+            grammar: "食材（cheese）の状態を 'which is melted' で説明しています。"
+        }
+    ]
+});
+
+// 826.webp - Eating a parfait
+window.galleryData.push({
+    imageFile: "826.webp",
+    series: "800",
+    spots: [
+        {
+            top: "35%", left: "20%", width: "25%", height: "60%", color: "#e67e22",
+            title: "The Parfait",
+            eng: "The dessert which sits on the table is a fruit parfait.",
+            jp: "テーブルに置かれているデザートは、フルーツパフェです。",
+            vocab: ["dessert (デザート)", "table (テーブル)", "fruit (果物)"],
+            idioms: ["sweet tooth (甘党)"],
+            synonyms: ["sweets", "treat"],
+            grammar: "物の位置を説明する動詞 'sits' を関係詞節で使っています。"
+        },
+        {
+            top: "15%", left: "50%", width: "45%", height: "85%", color: "#3498db",
+            title: "Happy Girl",
+            eng: "The girl who is holding a spoon looks delighted.",
+            jp: "スプーンを持っているその少女は、嬉しそうに見えます。",
+            vocab: ["spoon (スプーン)", "delighted (喜んでいる)", "hold (持つ)"],
+            idioms: ["look forward to (～を楽しみにする)"],
+            synonyms: ["female", "student"],
+            grammar: "感情の原因となる動作を関係詞節で描写しています。"
+        },
+        {
+            top: "32%", left: "28%", width: "10%", height: "10%", color: "#e74c3c",
+            title: "Strawberry",
+            eng: "The strawberry that tops the parfait is red and ripe.",
+            jp: "パフェの頂上にあるイチゴは、赤くて熟しています。",
+            vocab: ["top (～の上にのる)", "ripe (熟した)", "red (赤い)"],
+            idioms: ["cherry on top (最後の仕上げ/おまけ)"],
+            synonyms: ["berry", "fruit"],
+            grammar: "関係代名詞 'that' が主語となり、動詞 'tops' に繋がります。"
+        }
+    ]
+});
+
+// 827.webp - Studying history/geography
+window.galleryData.push({
+    imageFile: "827.webp",
+    series: "800",
+    spots: [
+        {
+            top: "70%", left: "15%", width: "55%", height: "30%", color: "#f1c40f",
+            title: "The Old Map",
+            eng: "The map that is spread on the desk shows ancient lands.",
+            jp: "机に広げられた地図は、古代の土地を示しています。",
+            vocab: ["spread (広げる/広がる)", "ancient (古代の)", "land (土地/国)"],
+            idioms: ["map out (計画する)"],
+            synonyms: ["chart", "atlas"],
+            grammar: "受動態 'is spread' を含む関係詞節で、地図の状態を説明しています。"
+        },
+        {
+            top: "30%", left: "80%", width: "20%", height: "50%", color: "#e67e22",
+            title: "Stacked Books",
+            eng: "The books which are stacked on the right are heavy.",
+            jp: "右側に積み上げられている本は重いです。",
+            vocab: ["stack (積み上げる)", "heavy (重い)", "right (右)"],
+            idioms: ["hit the books (勉強する)"],
+            synonyms: ["volumes", "textbooks"],
+            grammar: "位置 'on the right' を関係詞節内に含めて特定しています。"
+        },
+        {
+            top: "20%", left: "32%", width: "35%", height: "55%", color: "#3498db",
+            title: "Studious Girl",
+            eng: "The student who is studying history seems very focused.",
+            jp: "歴史を勉強しているその生徒は、とても集中しているようです。",
+            vocab: ["history (歴史)", "focused (集中した)", "seem (～のように見える)"],
+            idioms: ["deep in thought (物思いにふける)"],
+            synonyms: ["scholar", "learner"],
+            grammar: "学んでいる科目 'history' を関係詞節 'who is studying...' に含めています。"
+        }
+    ]
+});
+
+// 828.webp - Math subject
+window.galleryData.push({
+    imageFile: "828.webp",
+    series: "800",
+    spots: [
+        {
+            top: "20%", left: "22%", width: "50%", height: "80%", color: "#e67e22",
+            title: "Math Teacher",
+            eng: "The teacher who is standing in front of the board teaches math.",
+            jp: "黒板の前に立っているその先生は、数学を教えています。",
+            vocab: ["teach (教える)", "math (数学)", "front (前)"],
+            idioms: ["figure out (解明する/計算する)"],
+            synonyms: ["instructor", "professor"],
+            grammar: "場所 'in front of...' を関係詞節で使い、人物を特定しています。"
+        },
+        {
+            top: "10%", left: "0%", width: "20%", height: "80%", color: "#3498db",
+            title: "Math Problems",
+            eng: "The formulas that are written on the blackboard are complex.",
+            jp: "黒板に書かれている公式は複雑です。",
+            vocab: ["formula (公式)", "written (書かれた)", "complex (複雑な)"],
+            idioms: ["do the math (計算する/つじつまを合わせる)"],
+            synonyms: ["equations", "calculations"],
+            grammar: "受動態 'are written' を使った関係代名詞 'that' の節です。"
+        },
+        {
+            top: "42%", left: "23%", width: "8%", height: "15%", color: "#ecf0f1",
+            title: "The Chalk",
+            eng: "The chalk which she holds in her hand is white.",
+            jp: "彼女が手に持っているチョークは白いです。",
+            vocab: ["chalk (チョーク)", "hold (持つ)", "white (白い)"],
+            idioms: ["chalk up (記録する)"],
+            synonyms: ["writing tool", "marker"],
+            grammar: "手に持っている小さな物（chalk）を 'which' で特定しています。"
+        }
+    ]
+});
