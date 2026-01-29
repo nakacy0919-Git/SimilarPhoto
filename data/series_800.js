@@ -1070,3 +1070,382 @@ window.galleryData.push({
         }
     ]
 });
+// 829.webp - Boy reading manga
+window.galleryData.push({
+    imageFile: "829.webp",
+    series: "800",
+    spots: [
+        {
+            top: "35%", left: "30%", width: "40%", height: "65%", color: "#e67e22",
+            title: "Manga Reader",
+            eng: "The boy who is reading the comic book looks very focused.",
+            jp: "漫画を読んでいるその少年は、とても集中しているように見えます。",
+            vocab: ["comic book (漫画)", "focused (集中した)", "look (～に見える)"],
+            idioms: ["lost in a book (本に没頭して)"],
+            synonyms: ["reader", "student"],
+            grammar: "進行形 'is reading' を伴う関係代名詞 'who' の節です。"
+        },
+        {
+            top: "58%", left: "35%", width: "30%", height: "35%", color: "#3498db",
+            title: "The Comic Book",
+            eng: "The book which he is holding in his hands is a popular manga.",
+            jp: "彼が手に持っている本は、人気のある漫画です。",
+            vocab: ["hold (持つ)", "popular (人気のある)", "manga (漫画)"],
+            idioms: ["page-turner (読み出したら止まらない本)"],
+            synonyms: ["graphic novel", "comic"],
+            grammar: "物（book）を先行詞とする関係代名詞 'which' を使っています。"
+        },
+        {
+            top: "65%", left: "70%", width: "30%", height: "35%", color: "#9b59b6",
+            title: "Stacked Books",
+            eng: "The books that are stacked on the table are colorful.",
+            jp: "テーブルに積み上げられている本はカラフルです。",
+            vocab: ["stack (積み上げる)", "table (テーブル)", "colorful (カラフルな)"],
+            idioms: ["pile up (積み上がる)"],
+            synonyms: ["collection", "volumes"],
+            grammar: "受動態 'are stacked' を含む関係詞節で、本の状態を説明しています。"
+        }
+    ]
+});
+
+// 830.webp - Girl drawing digitally
+window.galleryData.push({
+    imageFile: "830.webp",
+    series: "800",
+    spots: [
+        {
+            top: "18%", left: "45%", width: "45%", height: "82%", color: "#e67e22",
+            title: "Digital Artist",
+            eng: "The girl who is drawing on the tablet enjoys digital art.",
+            jp: "タブレットで絵を描いているその少女は、デジタルアートを楽しんでいます。",
+            vocab: ["draw (描く)", "tablet (タブレット)", "enjoy (楽しむ)"],
+            idioms: ["creative juices (創作意欲)"],
+            synonyms: ["artist", "illustrator"],
+            grammar: "動作 'is drawing' を使って人物を特定しています。"
+        },
+        {
+            top: "35%", left: "12%", width: "35%", height: "45%", color: "#3498db",
+            title: "Cat Drawing",
+            eng: "The picture that she has created shows a cute cat.",
+            jp: "彼女が作成した絵は、可愛い猫を表しています。",
+            vocab: ["create (創造する/描く)", "show (見せる/表す)", "cute (可愛い)"],
+            idioms: ["bring to life (生き生きと描く/命を吹き込む)"],
+            synonyms: ["sketch", "illustration"],
+            grammar: "完了形 'has created' を使った関係代名詞 'that' の節です。"
+        },
+        {
+            top: "43%", left: "36%", width: "15%", height: "10%", color: "#f1c40f",
+            title: "Stylus Pen",
+            eng: "The pen which she uses is designed for digital drawing.",
+            jp: "彼女が使っているペンは、デジタル描画用に設計されています。",
+            vocab: ["pen (ペン)", "design (設計する)", "digital (デジタルの)"],
+            idioms: ["state-of-the-art (最新鋭の)"],
+            synonyms: ["stylus", "tool"],
+            grammar: "道具（pen）の用途を説明するために 'which' を使っています。"
+        }
+    ]
+});
+
+// 831.webp - Friend whose father is a lawyer
+window.galleryData.push({
+    imageFile: "831.webp",
+    series: "800",
+    spots: [
+        {
+            top: "38%", left: "58%", width: "18%", height: "62%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose father works as a lawyer.",
+            jp: "私には、父親が弁護士として働いている友人がいます。",
+            vocab: ["lawyer (弁護士)", "father (父親)", "work (働く)"],
+            idioms: ["follow in someone's footsteps (誰かの跡を継ぐ)"],
+            synonyms: ["buddy", "classmate"],
+            grammar: "所有格の関係代名詞 'whose' を使い、友人の家族について説明しています。"
+        },
+        {
+            top: "5%", left: "65%", width: "35%", height: "45%", color: "#9b59b6",
+            title: "The Lawyer",
+            eng: "The man who is arguing the case looks very serious.",
+            jp: "その事件を弁論している男性は、とても深刻そうに見えます。",
+            vocab: ["argue (議論する/弁論する)", "case (事件/訴訟)", "serious (深刻な/真剣な)"],
+            idioms: ["make a point (主張する)"],
+            synonyms: ["attorney", "counsel"],
+            grammar: "想像上の人物（吹き出しの中）を 'who' で描写しています。"
+        },
+        {
+            top: "40%", left: "27%", width: "18%", height: "60%", color: "#3498db",
+            title: "Talking Girl",
+            eng: "The girl who is introducing her friend looks proud.",
+            jp: "友人を紹介しているその少女は、誇らしげに見えます。",
+            vocab: ["introduce (紹介する)", "proud (誇らしい)", "look (見える)"],
+            idioms: ["sing someone's praises (誰かを褒め称える)"],
+            synonyms: ["speaker", "narrator"],
+            grammar: "話している人物を特定する 'who is introducing...' の節です。"
+        }
+    ]
+});
+
+// 832.webp - Friend whose mother is a doctor
+window.galleryData.push({
+    imageFile: "832.webp",
+    series: "800",
+    spots: [
+        {
+            top: "38%", left: "57%", width: "18%", height: "62%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose mother is a doctor at the hospital.",
+            jp: "私には、母親が病院で医者をしている友人がいます。",
+            vocab: ["doctor (医者)", "mother (母親)", "hospital (病院)"],
+            idioms: ["save lives (命を救う)"],
+            synonyms: ["pal", "peer"],
+            grammar: "所有格 'whose mother' を使い、友人との関係性を示しています。"
+        },
+        {
+            top: "5%", left: "65%", width: "35%", height: "45%", color: "#2ecc71",
+            title: "The Doctor",
+            eng: "The woman who is examining the patient is kind.",
+            jp: "患者を診察しているその女性は親切です。",
+            vocab: ["examine (診察する)", "patient (患者)", "kind (親切な)"],
+            idioms: ["bedside manner (患者への接し方)"],
+            synonyms: ["physician", "medic"],
+            grammar: "動作主 'who' を使って、吹き出しの中の人物を説明しています。"
+        },
+        {
+            top: "15%", left: "75%", width: "10%", height: "15%", color: "#e74c3c",
+            title: "Stethoscope",
+            eng: "The stethoscope which hangs around her neck is essential.",
+            jp: "彼女の首にかかっている聴診器は不可欠です。",
+            vocab: ["stethoscope (聴診器)", "hang (かかる/吊るす)", "essential (不可欠な)"],
+            idioms: ["tool of the trade (商売道具)"],
+            synonyms: ["medical instrument", "device"],
+            grammar: "物を説明する 'which' です。"
+        }
+    ]
+});
+
+// 833.webp - Friend whose mother is a pastry chef
+window.galleryData.push({
+    imageFile: "833.webp",
+    series: "800",
+    spots: [
+        {
+            top: "40%", left: "57%", width: "18%", height: "60%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose mother makes delicious cakes.",
+            jp: "私には、母親が美味しいケーキを作る友人がいます。",
+            vocab: ["delicious (美味しい)", "cake (ケーキ)", "make (作る)"],
+            idioms: ["sweet tooth (甘党)"],
+            synonyms: ["companion", "schoolmate"],
+            grammar: "所有格 'whose mother' が、ケーキを作る人物を紹介しています。"
+        },
+        {
+            top: "10%", left: "65%", width: "35%", height: "45%", color: "#f1c40f",
+            title: "Pastry Chef",
+            eng: "The chef who is decorating the cake wears a white hat.",
+            jp: "ケーキをデコレーションしているそのシェフは、白い帽子をかぶっています。",
+            vocab: ["decorate (デコレーションする)", "chef (シェフ)", "hat (帽子)"],
+            idioms: ["icing on the cake (さらに良いこと/最後の仕上げ)"],
+            synonyms: ["baker", "cook"],
+            grammar: "服装や動作を 'who' 節で説明し、人物を描写しています。"
+        },
+        {
+            top: "25%", left: "68%", width: "15%", height: "20%", color: "#e74c3c",
+            title: "The Cake",
+            eng: "The cake that she is making looks like a wedding cake.",
+            jp: "彼女が作っているケーキは、ウェディングケーキのように見えます。",
+            vocab: ["wedding (結婚式)", "look like (～のように見える)", "make (作る)"],
+            idioms: ["piece of cake (とても簡単なこと)"],
+            synonyms: ["dessert", "pastry"],
+            grammar: "目的格の 'that' です。she is making [the cake]."
+        }
+    ]
+});
+
+// 834.webp - Friend whose brother is a guitarist
+window.galleryData.push({
+    imageFile: "834.webp",
+    series: "800",
+    spots: [
+        {
+            top: "40%", left: "58%", width: "18%", height: "60%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose brother plays the electric guitar.",
+            jp: "私には、兄弟がエレキギターを弾く友人がいます。",
+            vocab: ["brother (兄弟)", "play (弾く)", "electric guitar (エレキギター)"],
+            idioms: ["rock out (ロックを演奏する)"],
+            synonyms: ["friend", "buddy"],
+            grammar: "家族の才能や職業を紹介するために 'whose' を使っています。"
+        },
+        {
+            top: "10%", left: "75%", width: "20%", height: "40%", color: "#3498db",
+            title: "Guitarist",
+            eng: "The man who is standing on stage is a musician.",
+            jp: "ステージに立っているその男性は、ミュージシャンです。",
+            vocab: ["stage (ステージ)", "musician (音楽家)", "stand (立つ)"],
+            idioms: ["take the stage (ステージに上がる)"],
+            synonyms: ["performer", "artist"],
+            grammar: "場所 'on stage' を関係詞節に含め、人物を特定しています。"
+        },
+        {
+            top: "22%", left: "76%", width: "15%", height: "15%", color: "#e74c3c",
+            title: "The Guitar",
+            eng: "The guitar which he plays is red and white.",
+            jp: "彼が弾いているギターは、赤と白です。",
+            vocab: ["red (赤い)", "white (白い)", "guitar (ギター)"],
+            idioms: ["strum a guitar (ギターをかき鳴らす)"],
+            synonyms: ["instrument", "axe (スラングでギター)"],
+            grammar: "楽器（guitar）を先行詞とする関係代名詞 'which' です。"
+        }
+    ]
+});
+
+// 835.webp - Friend whose sister is in Paris
+window.galleryData.push({
+    imageFile: "835.webp",
+    series: "800",
+    spots: [
+        {
+            top: "38%", left: "50%", width: "20%", height: "62%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose sister lives in Paris.",
+            jp: "私には、姉（妹）がパリに住んでいる友人がいます。",
+            vocab: ["sister (姉妹)", "live (住む)", "Paris (パリ)"],
+            idioms: ["dream destination (夢の旅行先)"],
+            synonyms: ["pal", "mate"],
+            grammar: "所有格 'whose sister' を使い、友人の家族の居住地を説明しています。"
+        },
+        {
+            top: "12%", left: "80%", width: "15%", height: "40%", color: "#9b59b6",
+            title: "Woman in Paris",
+            eng: "The woman who is posing for the photo looks stylish.",
+            jp: "写真のためにポーズをとっているその女性は、おしゃれに見えます。",
+            vocab: ["pose (ポーズをとる)", "stylish (おしゃれな)", "photo (写真)"],
+            idioms: ["strike a pose (ポーズを決める)"],
+            synonyms: ["lady", "traveler"],
+            grammar: "動作 'is posing' を行う人物を 'who' で描写しています。"
+        },
+        {
+            top: "5%", left: "72%", width: "10%", height: "35%", color: "#3498db",
+            title: "Eiffel Tower",
+            eng: "The tower that stands behind her is a famous landmark.",
+            jp: "彼女の後ろに立っている塔は、有名なランドマークです。",
+            vocab: ["tower (塔)", "landmark (ランドマーク)", "behind (後ろに)"],
+            idioms: ["sightseeing spot (観光名所)"],
+            synonyms: ["monument", "structure"],
+            grammar: "建造物（tower）を先行詞とする関係代名詞 'that' または 'which' です。"
+        }
+    ]
+});
+
+// 836.webp - Friend whose sister is an artist
+window.galleryData.push({
+    imageFile: "836.webp",
+    series: "800",
+    spots: [
+        {
+            top: "40%", left: "52%", width: "18%", height: "60%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose sister is a manga artist.",
+            jp: "私には、姉（妹）が漫画家である友人がいます。",
+            vocab: ["manga artist (漫画家)", "sister (姉妹)", "friend (友人)"],
+            idioms: ["creative mind (創造的な精神)"],
+            synonyms: ["companion", "classmate"],
+            grammar: "職業を持つ家族を紹介する際に 'whose' を使用しています。"
+        },
+        {
+            top: "10%", left: "75%", width: "20%", height: "35%", color: "#3498db",
+            title: "The Artist",
+            eng: "The woman who is working at the desk is drawing.",
+            jp: "机で作業をしているその女性は、絵を描いています。",
+            vocab: ["work (働く/作業する)", "desk (机)", "draw (描く)"],
+            idioms: ["hard at work (仕事に没頭して)"],
+            synonyms: ["illustrator", "creator"],
+            grammar: "場所 'at the desk' を含む関係詞節で人物を特定しています。"
+        },
+        {
+            top: "35%", left: "70%", width: "15%", height: "15%", color: "#f1c40f",
+            title: "Tablet",
+            eng: "The tablet which she is using helps her draw digitally.",
+            jp: "彼女が使っているタブレットは、デジタルで描くのを助けます。",
+            vocab: ["tablet (タブレット)", "help (助ける)", "digitally (デジタルで)"],
+            idioms: ["cutting edge (最先端の)"],
+            synonyms: ["device", "tool"],
+            grammar: "道具（tablet）を説明するために 'which' を使っています。"
+        }
+    ]
+});
+
+// 837.webp - Friend whose father is a pilot
+window.galleryData.push({
+    imageFile: "837.webp",
+    series: "800",
+    spots: [
+        {
+            top: "40%", left: "52%", width: "18%", height: "60%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose father is an airline pilot.",
+            jp: "私には、父親が航空会社のパイロットである友人がいます。",
+            vocab: ["airline (航空会社)", "pilot (パイロット)", "father (父親)"],
+            idioms: ["fly high (成功する/高く飛ぶ)"],
+            synonyms: ["buddy", "peer"],
+            grammar: "家族の職業 'pilot' を 'whose father' で紹介しています。"
+        },
+        {
+            top: "15%", left: "82%", width: "15%", height: "30%", color: "#3498db",
+            title: "The Pilot",
+            eng: "The man who is controlling the plane wears a uniform.",
+            jp: "飛行機を操縦しているその男性は、制服を着ています。",
+            vocab: ["control (操縦する/制御する)", "plane (飛行機)", "uniform (制服)"],
+            idioms: ["in the driver's seat (主導権を握って)"],
+            synonyms: ["captain", "aviator"],
+            grammar: "職業的な動作 'controlling the plane' を関係詞節で表しています。"
+        },
+        {
+            top: "20%", left: "65%", width: "35%", height: "30%", color: "#95a5a6",
+            title: "The Cockpit",
+            eng: "The cockpit where he sits is full of switches.",
+            jp: "彼が座っているコックピットは、スイッチでいっぱいです。",
+            vocab: ["cockpit (コックピット)", "switch (スイッチ)", "sit (座る)"],
+            idioms: ["full of (～でいっぱいの)"],
+            synonyms: ["flight deck", "cabin"],
+            grammar: "場所を表す関係副詞 'where'（または in which）を使っています。"
+        }
+    ]
+});
+
+// 838.webp - Friend whose mother is a scientist
+window.galleryData.push({
+    imageFile: "838.webp",
+    series: "800",
+    spots: [
+        {
+            top: "40%", left: "55%", width: "18%", height: "60%", color: "#e67e22",
+            title: "The Friend",
+            eng: "I have a friend whose mother is a scientist.",
+            jp: "私には、母親が科学者である友人がいます。",
+            vocab: ["scientist (科学者)", "mother (母親)", "friend (友人)"],
+            idioms: ["break new ground (新境地を開く)"],
+            synonyms: ["classmate", "partner"],
+            grammar: "所有格 'whose' を使い、友人の母親の職業を説明しています。"
+        },
+        {
+            top: "15%", left: "82%", width: "15%", height: "35%", color: "#3498db",
+            title: "The Scientist",
+            eng: "The woman who is looking into the microscope is researching.",
+            jp: "顕微鏡を覗き込んでいるその女性は、研究をしています。",
+            vocab: ["look into (～を覗き込む)", "microscope (顕微鏡)", "research (研究する)"],
+            idioms: ["under the microscope (厳しく精査されて)"],
+            synonyms: ["researcher", "expert"],
+            grammar: "研究中の動作を 'who' 節で記述し、人物を特定しています。"
+        },
+        {
+            top: "30%", left: "75%", width: "10%", height: "20%", color: "#95a5a6",
+            title: "Lab Equipment",
+            eng: "The equipment that sits on the table is for experiments.",
+            jp: "テーブルに置いてあるその機器は、実験用です。",
+            vocab: ["equipment (機器/装置)", "experiment (実験)", "table (テーブル)"],
+            idioms: ["trial and error (試行錯誤)"],
+            synonyms: ["apparatus", "gear"],
+            grammar: "不可算名詞 equipment を先行詞とする関係代名詞 'that' です。"
+        }
+    ]
+});
