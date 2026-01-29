@@ -312,3 +312,382 @@ window.galleryData.push({
         }
     ]
 });
+// 809.webp - Girl running in park with women walking behind
+window.galleryData.push({
+    imageFile: "809.webp",
+    series: "800",
+    spots: [
+        {
+            top: "15%", left: "38%", width: "25%", height: "80%", color: "#e67e22",
+            title: "The Running Girl",
+            eng: "The girl who is running in the park holds a water bottle in her hand.",
+            jp: "公園を走っているその少女は、手にペットボトルを持っています。",
+            vocab: ["hold (持つ)", "water bottle (水筒/ペットボトル)", "park (公園)"],
+            idioms: ["keep fit (健康を保つ)"],
+            synonyms: ["jogger", "runner"],
+            grammar: "先行詞 'The girl' を関係代名詞 'who' が修飾し、どの少女かを説明しています。"
+        },
+        {
+            top: "26%", left: "5%", width: "25%", height: "50%", color: "#3498db",
+            title: "Walking Women",
+            eng: "The two women who are walking behind her seem to be enjoying a conversation.",
+            jp: "彼女の後ろを歩いている二人の女性は、会話を楽しんでいるようです。",
+            vocab: ["behind (～の後ろに)", "conversation (会話)", "seem (～のように見える)"],
+            idioms: ["catch up (近況を話し合う/追いつく)"],
+            synonyms: ["ladies", "pedestrians"],
+            grammar: "先行詞 'The two women' を 'who are walking...' の節が説明しています。"
+        },
+        {
+            top: "58%", left: "25%", width: "12%", height: "18%", color: "#9b59b6",
+            title: "The Brown Dog",
+            eng: "The brown dog which is being walked on a leash looks very energetic.",
+            jp: "リードにつないで散歩されているその茶色い犬は、とても元気そうに見えます。",
+            vocab: ["leash (リード/紐)", "energetic (活動的な)", "brown (茶色の)"],
+            idioms: ["full of energy (元気いっぱいの)"],
+            synonyms: ["canine", "pet"],
+            grammar: "動物（dog）なので関係代名詞 'which'（またはthat）を使用しています。"
+        }
+    ]
+});
+
+// 810.webp - Girl in red shirt running, couple on bench
+window.galleryData.push({
+    imageFile: "810.webp",
+    series: "800",
+    spots: [
+        {
+            top: "14%", left: "38%", width: "22%", height: "82%", color: "#e67e22",
+            title: "Girl in Red",
+            eng: "The girl who is wearing a bright red T-shirt is jogging on the path.",
+            jp: "明るい赤のTシャツを着ているその少女は、小道をジョギングしています。",
+            vocab: ["wear (着ている)", "bright (明るい)", "path (小道)"],
+            idioms: ["stand out (目立つ)"],
+            synonyms: ["female runner", "athlete"],
+            grammar: "主格の関係代名詞 'who' を使い、'is wearing...' という動作で人を特定しています。"
+        },
+        {
+            top: "38%", left: "62%", width: "25%", height: "45%", color: "#3498db",
+            title: "Couple on Bench",
+            eng: "The elderly couple who are sitting on the bench are watching the runner.",
+            jp: "ベンチに座っている年配の夫婦は、そのランナーを見ています。",
+            vocab: ["elderly (年配の)", "couple (夫婦/カップル)", "watch (見る)"],
+            idioms: ["take a break (休憩する)"],
+            synonyms: ["senior citizens", "pair"],
+            grammar: "先行詞が複数形（couple/people）なので、関係詞節内の動詞も 'are' になります。"
+        },
+        {
+            top: "5%", left: "5%", width: "90%", height: "35%", color: "#2ecc71",
+            title: "Park Atmosphere",
+            eng: "The trees that surround the park provide pleasant shade for the visitors.",
+            jp: "公園を囲む木々は、訪問者に心地よい日陰を提供しています。",
+            vocab: ["surround (囲む)", "provide (提供する)", "shade (日陰)"],
+            idioms: ["fresh air (新鮮な空気)"],
+            synonyms: ["woods", "nature"],
+            grammar: "人間以外（trees）を先行詞とするため、関係代名詞 'that' または 'which' を使います。"
+        }
+    ]
+});
+
+// 811.webp - School scene, girl looking back
+window.galleryData.push({
+    imageFile: "811.webp",
+    series: "800",
+    spots: [
+        {
+            top: "16%", left: "39%", width: "25%", height: "84%", color: "#e67e22",
+            title: "Girl with Backpack",
+            eng: "The student who is carrying a large blue backpack is looking back at something.",
+            jp: "大きな青いリュックを背負っているその生徒は、何かを振り返って見ています。",
+            vocab: ["carry (運ぶ/持つ)", "backpack (リュックサック)", "look back (振り返る)"],
+            idioms: ["on one's way to (～へ行く途中で)"],
+            synonyms: ["pupil", "learner"],
+            grammar: "現在進行形を含む関係詞節 'who is carrying...' で人物を描写しています。"
+        },
+        {
+            top: "28%", left: "69%", width: "18%", height: "55%", color: "#3498db",
+            title: "Walking Students",
+            eng: "The boy and girl who are walking together are wearing white school uniforms.",
+            jp: "一緒に歩いている少年と少女は、白い学校の制服を着ています。",
+            vocab: ["together (一緒に)", "uniform (制服)", "white (白い)"],
+            idioms: ["chat away (おしゃべりする)"],
+            synonyms: ["classmates", "students"],
+            grammar: "先行詞が 'The boy and girl' と複数なので、関係詞節内は 'are walking' です。"
+        },
+        {
+            top: "0%", left: "15%", width: "70%", height: "30%", color: "#95a5a6",
+            title: "School Building",
+            eng: "The building which stands in the background looks like a modern high school.",
+            jp: "背景に建っているその建物は、近代的な高校のように見えます。",
+            vocab: ["stand (建っている/立つ)", "background (背景)", "modern (近代的な)"],
+            idioms: ["look like (～のように見える)"],
+            synonyms: ["structure", "campus"],
+            grammar: "建物（building）が先行詞のため、'which' を使って説明を加えています。"
+        }
+    ]
+});
+
+// 812.webp - Male teacher/professional with clipboard
+window.galleryData.push({
+    imageFile: "812.webp",
+    series: "800",
+    spots: [
+        {
+            top: "14%", left: "33%", width: "35%", height: "85%", color: "#e67e22",
+            title: "Man with Clipboard",
+            eng: "The man who is wearing glasses and a tie looks like a teacher.",
+            jp: "眼鏡とネクタイを着用しているその男性は、先生のように見えます。",
+            vocab: ["glasses (眼鏡)", "tie (ネクタイ)", "teacher (教師)"],
+            idioms: ["look professional (プロらしく見える)"],
+            synonyms: ["instructor", "supervisor"],
+            grammar: "'who is wearing...' という節が、どの男性かを具体的に説明しています。"
+        },
+        {
+            top: "53%", left: "40%", width: "15%", height: "25%", color: "#f1c40f",
+            title: "The Clipboard",
+            eng: "The clipboard that he is holding tightly contains important documents.",
+            jp: "彼がしっかりと持っているバインダーには、重要な書類が含まれています。",
+            vocab: ["tightly (しっかりと)", "contain (含む)", "document (書類)"],
+            idioms: ["keep track of (～を記録する/把握する)"],
+            synonyms: ["folder", "file"],
+            grammar: "物が先行詞の場合の 'that' です。'that he is holding' は形容詞節として機能します。"
+        },
+        {
+            top: "35%", left: "15%", width: "12%", height: "45%", color: "#3498db",
+            title: "Student Walking Away",
+            eng: "The student who is walking away from the camera has a blue bag.",
+            jp: "カメラから遠ざかるように歩いている生徒は、青い鞄を持っています。",
+            vocab: ["walk away (立ち去る/遠ざかる)", "camera (カメラ/視点)", "bag (鞄)"],
+            idioms: ["head to (～に向かう)"],
+            synonyms: ["boy", "teenager"],
+            grammar: "関係代名詞 'who' を使い、後ろ姿の人物について説明しています。"
+        }
+    ]
+});
+
+// 813.webp - Boy playing guitar in park
+window.galleryData.push({
+    imageFile: "813.webp",
+    series: "800",
+    spots: [
+        {
+            top: "22%", left: "28%", width: "45%", height: "75%", color: "#e67e22",
+            title: "Guitar Player",
+            eng: "The boy who is playing the acoustic guitar is sitting on the grass.",
+            jp: "アコースティックギターを弾いているその少年は、草の上に座っています。",
+            vocab: ["acoustic guitar (アコースティックギター)", "grass (草/芝生)", "play (演奏する)"],
+            idioms: ["play a tune (曲を演奏する)"],
+            synonyms: ["musician", "guitarist"],
+            grammar: "進行形 'is playing' を伴う関係詞節で、少年の動作を強調しています。"
+        },
+        {
+            top: "40%", left: "73%", width: "23%", height: "35%", color: "#3498db",
+            title: "The Audience",
+            eng: "The friends who are listening to his music seem very relaxed.",
+            jp: "彼の音楽を聴いている友人たちは、とてもリラックスしているようです。",
+            vocab: ["listen to (～を聴く)", "music (音楽)", "relaxed (リラックスした)"],
+            idioms: ["chill out (くつろぐ)"],
+            synonyms: ["companions", "group"],
+            grammar: "複数形の先行詞 'The friends' に合わせ、関係詞節内の動詞も 'are' になっています。"
+        },
+        {
+            top: "55%", left: "28%", width: "45%", height: "30%", color: "#f1c40f",
+            title: "The Guitar",
+            eng: "The instrument which he is holding is essential for the performance.",
+            jp: "彼が持っているその楽器は、演奏にとって不可欠です。",
+            vocab: ["instrument (楽器)", "essential (不可欠な)", "performance (演奏)"],
+            idioms: ["strike a chord (共感を呼ぶ/弦を弾く)"],
+            synonyms: ["guitar", "gear"],
+            grammar: "物（instrument）が先行詞なので、関係代名詞 'which' を使用しています。"
+        }
+    ]
+});
+
+// 814.webp - Girl reading on bench
+window.galleryData.push({
+    imageFile: "814.webp",
+    series: "800",
+    spots: [
+        {
+            top: "18%", left: "50%", width: "40%", height: "82%", color: "#e67e22",
+            title: "The Reader",
+            eng: "The woman who is sitting on the bench is reading a hardcover book.",
+            jp: "ベンチに座っているその女性は、ハードカバーの本を読んでいます。",
+            vocab: ["bench (ベンチ)", "hardcover (ハードカバー)", "read (読む)"],
+            idioms: ["get lost in a book (本に夢中になる)"],
+            synonyms: ["reader", "lady"],
+            grammar: "場所を説明する副詞句 'on the bench' を含んだ関係詞節です。"
+        },
+        {
+            top: "30%", left: "11%", width: "18%", height: "48%", color: "#3498db",
+            title: "Walking Couple",
+            eng: "The couple who are walking hand in hand are enjoying a date.",
+            jp: "手をつないで歩いているカップルは、デートを楽しんでいます。",
+            vocab: ["hand in hand (手をつないで)", "enjoy (楽しむ)", "date (デート)"],
+            idioms: ["spend time together (一緒に時間を過ごす)"],
+            synonyms: ["partners", "lovers"],
+            grammar: "動作の様態 'hand in hand' を関係詞節内で使っています。"
+        },
+        {
+            top: "58%", left: "52%", width: "18%", height: "18%", color: "#2ecc71",
+            title: "The Green Book",
+            eng: "The book that she is reading has a green cover.",
+            jp: "彼女が読んでいる本は、緑色の表紙をしています。",
+            vocab: ["cover (表紙)", "green (緑色の)", "book (本)"],
+            idioms: ["judge a book by its cover (外見で判断する)"],
+            synonyms: ["novel", "publication"],
+            grammar: "目的格の関係代名詞としての 'that' です（readの目的語がbook）。"
+        }
+    ]
+});
+
+// 815.webp - Market scene, selling vegetables
+window.galleryData.push({
+    imageFile: "815.webp",
+    series: "800",
+    spots: [
+        {
+            top: "19%", left: "22%", width: "35%", height: "65%", color: "#e67e22",
+            title: "The Seller",
+            eng: "The woman who is wearing an apron works at the vegetable stand.",
+            jp: "エプロンを着けているその女性は、野菜売り場で働いています。",
+            vocab: ["apron (エプロン)", "stand (屋台/売り場)", "vegetable (野菜)"],
+            idioms: ["serve a customer (客に応対する)"],
+            synonyms: ["vendor", "shopkeeper"],
+            grammar: "職業や役割を説明するために、服装（apron）を 'who' で説明しています。"
+        },
+        {
+            top: "23%", left: "62%", width: "25%", height: "77%", color: "#3498db",
+            title: "The Customer",
+            eng: "The customer who is buying fresh produce looks happy with the quality.",
+            jp: "新鮮な農産物を買っているその客は、品質に満足しているようです。",
+            vocab: ["customer (客)", "produce (農産物)", "quality (品質)"],
+            idioms: ["good deal (良い買い物)", "make a purchase (購入する)"],
+            synonyms: ["buyer", "shopper"],
+            grammar: "関係詞節 'who is buying...' が主語 'The customer' を修飾しています。"
+        },
+        {
+            top: "72%", left: "20%", width: "45%", height: "28%", color: "#2ecc71",
+            title: "Fresh Vegetables",
+            eng: "The vegetables which are displayed in the baskets are very colorful.",
+            jp: "カゴに陳列されている野菜は、とても色鮮やかです。",
+            vocab: ["display (陳列する)", "basket (カゴ)", "colorful (色鮮やかな)"],
+            idioms: ["fresh from the farm (産地直送の)"],
+            synonyms: ["greens", "crops"],
+            grammar: "受動態 'are displayed' を含む関係代名詞 'which' の節です。"
+        }
+    ]
+});
+
+// 816.webp - Man eating corn dog
+window.galleryData.push({
+    imageFile: "816.webp",
+    series: "800",
+    spots: [
+        {
+            top: "14%", left: "30%", width: "50%", height: "85%", color: "#e67e22",
+            title: "Man Eating",
+            eng: "The man who is eating a corn dog seems to be very hungry.",
+            jp: "アメリカンドッグを食べているその男性は、とてもお腹が空いているようです。",
+            vocab: ["corn dog (アメリカンドッグ)", "hungry (空腹な)", "eat (食べる)"],
+            idioms: ["bite into (～にかぶりつく)"],
+            synonyms: ["guy", "male"],
+            grammar: "現在進行形 'is eating' を使い、特定の行動をしている人物を描写しています。"
+        },
+        {
+            top: "40%", left: "42%", width: "25%", height: "15%", color: "#f1c40f",
+            title: "The Snack",
+            eng: "The snack that he is holding is popular at festivals.",
+            jp: "彼が持っているそのスナックは、お祭りで人気があります。",
+            vocab: ["snack (軽食/スナック)", "popular (人気がある)", "festival (祭り)"],
+            idioms: ["grab a bite (軽く食べる)"],
+            synonyms: ["fast food", "treat"],
+            grammar: "目的格の 'that' です。he is holding [the snack] という関係です。"
+        },
+        {
+            top: "39%", left: "78%", width: "15%", height: "40%", color: "#3498db",
+            title: "Background Person",
+            eng: "The woman who is standing in the background is holding a bag.",
+            jp: "背景に立っている女性は、バッグを持っています。",
+            vocab: ["background (背景)", "hold (持つ)", "bag (バッグ)"],
+            idioms: ["wait in line (列に並ぶ)"],
+            synonyms: ["bystander", "attendee"],
+            grammar: "位置関係 'in the background' を関係詞節内で示しています。"
+        }
+    ]
+});
+
+// 817.webp - Library scene, taking book
+window.galleryData.push({
+    imageFile: "817.webp",
+    series: "800",
+    spots: [
+        {
+            top: "21%", left: "55%", width: "25%", height: "79%", color: "#e67e22",
+            title: "Man at Bookshelf",
+            eng: "The man who is reaching for a book is wearing a blue shirt.",
+            jp: "本に手を伸ばしているその男性は、青いシャツを着ています。",
+            vocab: ["reach for (～に手を伸ばす)", "wear (着ている)", "shirt (シャツ)"],
+            idioms: ["pick out (選び出す)"],
+            synonyms: ["library user", "browser"],
+            grammar: "動作 'reaching for' を使って、どの男性かを特定（限定用法）しています。"
+        },
+        {
+            top: "52%", left: "15%", width: "18%", height: "45%", color: "#3498db",
+            title: "Studying Student",
+            eng: "The student who is sitting at the desk is studying quietly.",
+            jp: "机に向かって座っている生徒は、静かに勉強しています。",
+            vocab: ["sit (座る)", "desk (机)", "quietly (静かに)"],
+            idioms: ["hit the books (猛勉強する)"],
+            synonyms: ["pupil", "learner"],
+            grammar: "関係代名詞 'who' が導く節が、主語 'The student' を修飾しています。"
+        },
+        {
+            top: "8%", left: "65%", width: "35%", height: "90%", color: "#8e44ad",
+            title: "The Bookshelves",
+            eng: "The shelves which are full of books cover the entire wall.",
+            jp: "本でいっぱいのその棚は、壁一面を覆っています。",
+            vocab: ["shelf (棚)", "full of (～でいっぱいの)", "wall (壁)"],
+            idioms: ["wall-to-wall (壁一面の)"],
+            synonyms: ["bookcase", "rack"],
+            grammar: "物（shelves）の状態を説明するために 'which are full of...' を使っています。"
+        }
+    ]
+});
+
+// 818.webp - Boy with headphones and laptop
+window.galleryData.push({
+    imageFile: "818.webp",
+    series: "800",
+    spots: [
+        {
+            top: "19%", left: "53%", width: "42%", height: "78%", color: "#e67e22",
+            title: "Boy with Headphones",
+            eng: "The boy who is wearing headphones is typing on his laptop.",
+            jp: "ヘッドホンをつけているその少年は、ノートパソコンでタイピングをしています。",
+            vocab: ["headphones (ヘッドホン)", "type (タイピングする)", "laptop (ノートパソコン)"],
+            idioms: ["zoned out (没頭している/ボーっとしている)"],
+            synonyms: ["user", "student"],
+            grammar: "身につけている物（headphones）を 'who' 節で示し、人物を特定しています。"
+        },
+        {
+            top: "53%", left: "32%", width: "25%", height: "30%", color: "#f1c40f",
+            title: "The Laptop",
+            eng: "The computer that sits on the desk displays a document.",
+            jp: "机の上に置いてあるそのコンピュータは、ドキュメントを表示しています。",
+            vocab: ["sit (ある/置いてある)", "display (表示する)", "document (文書)"],
+            idioms: ["work on (～に取り組む)"],
+            synonyms: ["PC", "machine"],
+            grammar: "無生物主語の computer を 'that'（またはwhich）で修飾しています。"
+        },
+        {
+            top: "36%", left: "88%", width: "12%", height: "35%", color: "#95a5a6",
+            title: "Background Student",
+            eng: "The student who is sitting in the back is also using a computer.",
+            jp: "後ろに座っている生徒もまた、コンピュータを使っています。",
+            vocab: ["back (後ろ)", "also (～もまた)", "use (使う)"],
+            idioms: ["hard at work (仕事に熱心で)"],
+            synonyms: ["peer", "classmate"],
+            grammar: "場所 'in the back' を関係詞節に入れ、遠くの人物を説明しています。"
+        }
+    ]
+});
