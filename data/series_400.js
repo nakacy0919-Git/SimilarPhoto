@@ -222,3 +222,761 @@ window.galleryData.push({
         }
     ]
 });
+// 408.webp: Writing vs Speaking (easier)
+window.galleryData.push({
+    imageFile: "408.webp",
+    series: "400",
+    spots: [
+        {
+            top: "25%", left: "55%", width: "40%", height: "60%", color: "#e67e22",
+            title: "Speaking is Easier",
+            eng: "For this student, speaking in public is easier than writing quietly.",
+            jp: "この生徒にとって、人前で話すことは静かに書くことよりも簡単です。",
+            vocab: ["public (公衆)", "quietly (静かに)", "student (生徒)"],
+            idioms: ["piece of cake (朝飯前)"],
+            synonyms: ["simpler", "less difficult"],
+            grammar: "比較級 easier than A (Aより簡単だ)"
+        },
+        {
+            top: "25%", left: "5%", width: "40%", height: "60%", color: "#3498db",
+            title: "Writing is Harder",
+            eng: "Writing complex characters looks more difficult than speaking for him.",
+            jp: "複雑な文字を書くことは、彼にとって話すことよりも難しそうに見えます。",
+            vocab: ["complex (複雑な)", "character (文字)", "difficult (難しい)"],
+            idioms: ["hard time (苦労)"],
+            synonyms: ["tougher", "more challenging"],
+            grammar: "比較級 more difficult than A (Aより難しい)"
+        },
+        {
+            top: "40%", left: "42%", width: "16%", height: "20%", color: "#95a5a6",
+            title: "Comparison",
+            eng: "He feels much more confident when he is holding a microphone.",
+            jp: "マイクを持っている時の方が、彼ははるかに自信を感じています。",
+            vocab: ["confident (自信がある)", "hold (持つ)", "microphone (マイク)"],
+            idioms: ["feel at home (くつろぐ・慣れ親しむ)"],
+            synonyms: ["surer", "more positive"],
+            grammar: "比較級の強調 much more ～"
+        }
+    ]
+});
+
+// 409.webp: Blue vs Red Backpack (bigger)
+window.galleryData.push({
+    imageFile: "409.webp",
+    series: "400",
+    spots: [
+        {
+            top: "25%", left: "15%", width: "35%", height: "65%", color: "#3498db",
+            title: "The Blue Backpack",
+            eng: "The blue backpack is bigger and fuller than the red one.",
+            jp: "青いリュックサックは、赤いものより大きく、中身が詰まっています。",
+            vocab: ["backpack (リュック)", "full (詰まった)", "one (代名詞)"],
+            idioms: ["packed like sardines (すし詰め状態)"],
+            synonyms: ["larger", "heavier"],
+            grammar: "比較級 bigger / fuller"
+        },
+        {
+            top: "30%", left: "55%", width: "35%", height: "55%", color: "#e74c3c",
+            title: "The Red Backpack",
+            eng: "This red bag looks slightly smaller than the blue bag next to it.",
+            jp: "この赤いバッグは、隣にある青いバッグよりも少し小さく見えます。",
+            vocab: ["slightly (わずかに)", "bag (カバン)", "next to (～の隣に)"],
+            idioms: ["light as a feather (羽のように軽い)"],
+            synonyms: ["tinier", "more compact"],
+            grammar: "比較級 smaller"
+        },
+        {
+            top: "5%", left: "30%", width: "40%", height: "20%", color: "#2c3e50",
+            title: "Size Comparison",
+            eng: "The text indicates that the object on the left is the bigger of the two.",
+            jp: "テキストは、左側の物体が2つのうちでより大きいことを示しています。",
+            vocab: ["indicate (示す)", "object (物体)", "text (テキスト)"],
+            idioms: ["stand out (目立つ)"],
+            synonyms: ["huge", "massive"],
+            grammar: "the bigger of the two (2つのうち大きい方)"
+        }
+    ]
+});
+
+// 410.webp: Blue vs Red Backpack with Notebook (bigger)
+window.galleryData.push({
+    imageFile: "410.webp",
+    series: "400",
+    spots: [
+        {
+            top: "25%", left: "15%", width: "35%", height: "65%", color: "#3498db",
+            title: "Stuffed Backpack",
+            eng: "The blue backpack contains more books, so it looks bigger.",
+            jp: "青いリュックにはより多くの本が入っているため、大きく見えます。",
+            vocab: ["contain (含む)", "look (～に見える)", "book (本)"],
+            idioms: ["full of (～で一杯の)"],
+            synonyms: ["larger", "wider"],
+            grammar: "比較級 more / bigger"
+        },
+        {
+            top: "50%", left: "75%", width: "20%", height: "30%", color: "#2ecc71",
+            title: "Green Notebook",
+            eng: "A green notebook is leaning against the red backpack.",
+            jp: "緑色のノートが赤いリュックサックに立てかけられています。",
+            vocab: ["lean (寄りかかる)", "against (～に対して)", "notebook (ノート)"],
+            idioms: ["take notes (メモを取る)"],
+            synonyms: ["pad", "journal"],
+            grammar: "現在進行形 is leaning"
+        },
+        {
+            top: "30%", left: "55%", width: "35%", height: "55%", color: "#e74c3c",
+            title: "Red Backpack",
+            eng: "Even with the notebook, the red bag is smaller than the blue one.",
+            jp: "ノートがあっても、赤いバッグは青いものより小さいです。",
+            vocab: ["even (～でさえ)", "smaller (より小さい)", "red (赤)"],
+            idioms: ["in comparison (比較して)"],
+            synonyms: ["less big", "compact"],
+            grammar: "比較級 smaller than"
+        }
+    ]
+});
+
+// 411.webp: Skyscraper vs House (tall / small)
+window.galleryData.push({
+    imageFile: "411.webp",
+    series: "400",
+    spots: [
+        {
+            top: "5%", left: "10%", width: "50%", height: "90%", color: "#3498db",
+            title: "Tall Building",
+            eng: "The glass skyscraper is much taller than the wooden house.",
+            jp: "ガラス張りの超高層ビルは、木造の家よりもはるかに高いです。",
+            vocab: ["skyscraper (超高層ビル)", "glass (ガラス)", "wooden (木製の)"],
+            idioms: ["sky's the limit (限界はない)"],
+            synonyms: ["higher", "towering"],
+            grammar: "比較級 taller than"
+        },
+        {
+            top: "45%", left: "65%", width: "30%", height: "50%", color: "#e67e22",
+            title: "Small House",
+            eng: "The small house looks tiny next to the modern building.",
+            jp: "その小さな家は、近代的なビルの隣ではちっぽけに見えます。",
+            vocab: ["tiny (ちっぽけな)", "modern (現代的な)", "next to (隣に)"],
+            idioms: ["home sweet home (愛しの我が家)"],
+            synonyms: ["little", "miniature"],
+            grammar: "形容詞 tiny / small"
+        },
+        {
+            top: "5%", left: "65%", width: "30%", height: "20%", color: "#2c3e50",
+            title: "Contrast",
+            eng: "There is a huge difference in size between these two structures.",
+            jp: "これら2つの建物の間には、サイズに大きな違いがあります。",
+            vocab: ["huge (巨大な)", "difference (違い)", "structure (建造物)"],
+            idioms: ["big deal (大したこと)"],
+            synonyms: ["gap", "contrast"],
+            grammar: "There is構文 / 名詞 difference"
+        }
+    ]
+});
+
+// 412.webp: Window Cleaners (tall / small)
+window.galleryData.push({
+    imageFile: "412.webp",
+    series: "400",
+    spots: [
+        {
+            top: "35%", left: "25%", width: "25%", height: "15%", color: "#f1c40f",
+            title: "Window Cleaners",
+            eng: "The workers look small because they are high up on the tall building.",
+            jp: "作業員たちは高いビルの上にいるため、小さく見えます。",
+            vocab: ["worker (作業員)", "high up (高いところに)", "because (なぜなら)"],
+            idioms: ["work hard (一生懸命働く)"],
+            synonyms: ["tiny", "distant"],
+            grammar: "接続詞 because / 形容詞 small"
+        },
+        {
+            top: "5%", left: "10%", width: "50%", height: "90%", color: "#3498db",
+            title: "Tall Structure",
+            eng: "This building is taller than any other building in the neighborhood.",
+            jp: "このビルは、近所の他のどの建物よりも高いです。",
+            vocab: ["neighborhood (近所)", "any other (他のどの～)", "structure (建物)"],
+            idioms: ["stand tall (堂々と立つ)"],
+            synonyms: ["gigantic", "lofty"],
+            grammar: "比較級 taller than any other"
+        },
+        {
+            top: "45%", left: "65%", width: "30%", height: "50%", color: "#e67e22",
+            title: "Traditional House",
+            eng: "The traditional house is much smaller than the office tower.",
+            jp: "その伝統的な家は、オフィスタワーよりもはるかに小さいです。",
+            vocab: ["traditional (伝統的な)", "office (事務所)", "tower (塔)"],
+            idioms: ["old school (古風な)"],
+            synonyms: ["residence", "cottage"],
+            grammar: "比較級 smaller than"
+        }
+    ]
+});
+
+// 413.webp: Barbell vs Balloon (heavier / lighter)
+window.galleryData.push({
+    imageFile: "413.webp",
+    series: "400",
+    spots: [
+        {
+            top: "40%", left: "10%", width: "55%", height: "55%", color: "#7f8c8d",
+            title: "Heavy Barbell",
+            eng: "The metal barbell is much heavier than the red balloon.",
+            jp: "金属製のバーベルは、赤い風船よりもはるかに重いです。",
+            vocab: ["metal (金属)", "barbell (バーベル)", "much (はるかに)"],
+            idioms: ["heavy lifting (重労働・困難な仕事)"],
+            synonyms: ["weighty", "massive"],
+            grammar: "比較級 heavier than"
+        },
+        {
+            top: "5%", left: "75%", width: "20%", height: "40%", color: "#e74c3c",
+            title: "Light Balloon",
+            eng: "The balloon is lighter than air, so it floats upwards.",
+            jp: "風船は空気より軽いため、上の方へ浮かびます。",
+            vocab: ["air (空気)", "float (浮かぶ)", "upwards (上方へ)"],
+            idioms: ["light as air (とても軽い)"],
+            synonyms: ["weightless", "buoyant"],
+            grammar: "比較級 lighter than"
+        },
+        {
+            top: "75%", left: "20%", width: "30%", height: "20%", color: "#2c3e50",
+            title: "Strain on Ground",
+            eng: "The ground is cracking because the weights are extremely heavy.",
+            jp: "重りが極端に重いため、地面がひび割れています。",
+            vocab: ["crack (ひび割れる)", "extremely (極端に)", "ground (地面)"],
+            idioms: ["under pressure (重圧を受けて)"],
+            synonyms: ["breaking", "splitting"],
+            grammar: "接続詞 because / 形容詞 heavy"
+        }
+    ]
+});
+
+// 414.webp: Bird on Barbell (heavier / lighter)
+window.galleryData.push({
+    imageFile: "414.webp",
+    series: "400",
+    spots: [
+        {
+            top: "28%", left: "20%", width: "15%", height: "15%", color: "#f39c12",
+            title: "Small Bird",
+            eng: "A small bird is sitting on the heavier object.",
+            jp: "小さな鳥が、より重い物体の上に座っています。",
+            vocab: ["sit (座る)", "object (物体)", "small (小さな)"],
+            idioms: ["early bird (早起きの人)"],
+            synonyms: ["tiny", "little"],
+            grammar: "比較級 heavier"
+        },
+        {
+            top: "40%", left: "10%", width: "55%", height: "55%", color: "#7f8c8d",
+            title: "Still Heavier",
+            eng: "Even with the bird, the weights are still heavier than the balloon.",
+            jp: "鳥が乗っていても、重りは依然として風船より重いです。",
+            vocab: ["still (依然として)", "weight (重り)", "even (～でさえ)"],
+            idioms: ["carry weight (重要である・影響力がある)"],
+            synonyms: ["more heavy", "weightier"],
+            grammar: "比較級 heavier than"
+        },
+        {
+            top: "5%", left: "75%", width: "20%", height: "40%", color: "#e74c3c",
+            title: "Floating Balloon",
+            eng: "The red balloon remains lighter and stays in the air.",
+            jp: "赤い風船は軽いまま、空中に留まっています。",
+            vocab: ["remain (～のままである)", "stay (留まる)", "air (空気)"],
+            idioms: ["up in the air (未定である)"],
+            synonyms: ["hovering", "drifting"],
+            grammar: "比較級 lighter"
+        }
+    ]
+});
+
+// 415.webp: Hiker on Highest Peak (highest)
+window.galleryData.push({
+    imageFile: "415.webp",
+    series: "400",
+    spots: [
+        {
+            top: "25%", left: "48%", width: "5%", height: "10%", color: "#2c3e50",
+            title: "The Hiker",
+            eng: "A hiker is standing on the highest point of the mountain.",
+            jp: "ハイカーが山の最も高い地点に立っています。",
+            vocab: ["hiker (ハイカー)", "point (地点)", "stand (立つ)"],
+            idioms: ["on top of the world (最高の気分)"],
+            synonyms: ["climber", "mountaineer"],
+            grammar: "最上級 the highest"
+        },
+        {
+            top: "30%", left: "30%", width: "40%", height: "70%", color: "#ecf0f1",
+            title: "Highest Peak",
+            eng: "This peak is higher than the other mountains in the distance.",
+            jp: "この頂上は、遠くにある他の山々よりも高いです。",
+            vocab: ["peak (頂上)", "distance (遠方)", "mountain (山)"],
+            idioms: ["reach the peak (頂点を極める)"],
+            synonyms: ["summit", "top"],
+            grammar: "比較級 higher than"
+        },
+        {
+            top: "55%", left: "80%", width: "20%", height: "30%", color: "#95a5a6",
+            title: "Lower Mountains",
+            eng: "The mountains on the right are smaller than the central one.",
+            jp: "右側の山々は、中央のものよりも小さいです。",
+            vocab: ["central (中央の)", "right (右)", "one (代名詞)"],
+            idioms: ["mountain to climb (困難な課題)"],
+            synonyms: ["lower", "shorter"],
+            grammar: "比較級 smaller than"
+        }
+    ]
+});
+
+// 416.webp: Mountain Range (highest)
+window.galleryData.push({
+    imageFile: "416.webp",
+    series: "400",
+    spots: [
+        {
+            top: "25%", left: "35%", width: "30%", height: "75%", color: "#7f8c8d",
+            title: "The Highest Mountain",
+            eng: "The central mountain is the highest one in this range.",
+            jp: "中央の山が、この山脈の中で最も高いものです。",
+            vocab: ["range (山脈・範囲)", "central (中央の)", "mountain (山)"],
+            idioms: ["high hopes (大きな期待)"],
+            synonyms: ["tallest", "biggest"],
+            grammar: "最上級 the highest"
+        },
+        {
+            top: "35%", left: "35%", width: "30%", height: "15%", color: "#ecf0f1",
+            title: "Clouds",
+            eng: "Clouds are floating near the peak of the highest mountain.",
+            jp: "雲が、最も高い山の頂上付近を漂っています。",
+            vocab: ["cloud (雲)", "near (近くに)", "float (漂う)"],
+            idioms: ["head in the clouds (空想にふけって)"],
+            synonyms: ["mist", "fog"],
+            grammar: "最上級 the highest"
+        },
+        {
+            top: "55%", left: "5%", width: "25%", height: "45%", color: "#95a5a6",
+            title: "Lower Peak",
+            eng: "This peak is steep, but it is not the highest one here.",
+            jp: "この頂上は険しいですが、ここで一番高いものではありません。",
+            vocab: ["steep (険しい)", "here (ここで)", "peak (頂上)"],
+            idioms: ["not quite (完全に～ではない)"],
+            synonyms: ["sharp", "rugged"],
+            grammar: "最上級 the highest"
+        }
+    ]
+});
+
+// 417.webp: Sea Creatures (largest)
+window.galleryData.push({
+    imageFile: "417.webp",
+    series: "400",
+    spots: [
+        {
+            top: "30%", left: "10%", width: "80%", height: "50%", color: "#2980b9",
+            title: "The Blue Whale",
+            eng: "The blue whale is the largest animal in the ocean.",
+            jp: "シロナガスクジラは、海の中で最も大きな動物です。",
+            vocab: ["whale (クジラ)", "ocean (海)", "animal (動物)"],
+            idioms: ["have a whale of a time (とても楽しい時間を過ごす)"],
+            synonyms: ["biggest", "mammoth"],
+            grammar: "最上級 the largest"
+        },
+        {
+            top: "70%", left: "5%", width: "25%", height: "20%", color: "#bdc3c7",
+            title: "The Dolphin",
+            eng: "The dolphin is much smaller than the giant whale.",
+            jp: "イルカは、巨大なクジラよりもはるかに小さいです。",
+            vocab: ["dolphin (イルカ)", "giant (巨大な)", "small (小さい)"],
+            idioms: ["smart as a whip (とても賢い)"],
+            synonyms: ["tinier", "littler"],
+            grammar: "比較級 smaller than"
+        },
+        {
+            top: "72%", left: "75%", width: "20%", height: "15%", color: "#95a5a6",
+            title: "The Shark",
+            eng: "Although the shark is scary, it is not the largest creature here.",
+            jp: "サメは怖いですが、ここで最も大きな生き物ではありません。",
+            vocab: ["shark (サメ)", "scary (怖い)", "creature (生き物)"],
+            idioms: ["big fish (大物・重要人物)"],
+            synonyms: ["frightening", "predator"],
+            grammar: "最上級 the largest"
+        }
+    ]
+});
+// 418.webp: Blue Whale (largest)
+window.galleryData.push({
+    imageFile: "418.webp",
+    series: "400",
+    spots: [
+        {
+            top: "30%", left: "20%", width: "70%", height: "50%", color: "#2980b9",
+            title: "The Largest Animal",
+            eng: "The blue whale is the largest animal that has ever lived.",
+            jp: "シロナガスクジラは、これまでに生息した中で最も大きな動物です。",
+            vocab: ["largest (最大の)", "ever (これまでに)", "live (生きる)"],
+            idioms: ["big deal (大ごと)"],
+            synonyms: ["mammoth", "gigantic"],
+            grammar: "最上級 the largest"
+        },
+        {
+            top: "10%", left: "65%", width: "15%", height: "25%", color: "#3498db",
+            title: "Water Spout",
+            eng: "The water spout shoots higher than the small dolphin.",
+            jp: "潮吹きは、小さなイルカよりも高く吹き上がっています。",
+            vocab: ["spout (噴出)", "shoot (噴き出す)", "high (高い)"],
+            idioms: ["blow off steam (ストレスを発散する)"],
+            synonyms: ["spray", "jet"],
+            grammar: "比較級 higher than"
+        },
+        {
+            top: "70%", left: "75%", width: "20%", height: "15%", color: "#7f8c8d",
+            title: "Shark",
+            eng: "The shark is dangerous, but it is smaller than the whale.",
+            jp: "サメは危険ですが、クジラよりは小さいです。",
+            vocab: ["dangerous (危険な)", "shark (サメ)", "small (小さい)"],
+            idioms: ["shark in the water (危険人物)"],
+            synonyms: ["predator", "hunter"],
+            grammar: "比較級 smaller than"
+        }
+    ]
+});
+
+// 419.webp: Fruits on Table (biggest)
+window.galleryData.push({
+    imageFile: "419.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "33%", width: "34%", height: "60%", color: "#2ecc71",
+            title: "Big Watermelon",
+            eng: "The watermelon is the biggest fruit on the wooden table.",
+            jp: "スイカは、木のテーブルの上で最も大きな果物です。",
+            vocab: ["watermelon (スイカ)", "wooden (木製の)", "table (テーブル)"],
+            idioms: ["go bananas (熱狂する)"],
+            synonyms: ["huge", "bulky"],
+            grammar: "最上級 the biggest"
+        },
+        {
+            top: "60%", left: "20%", width: "15%", height: "20%", color: "#e74c3c",
+            title: "Red Apple",
+            eng: "The red apple is smaller than the watermelon but bigger than a grape.",
+            jp: "赤いリンゴはスイカより小さいですが、ブドウの粒よりは大きいです。",
+            vocab: ["grape (ブドウ)", "red (赤い)", "fruit (果物)"],
+            idioms: ["apple of one's eye (目に入れても痛くない存在)"],
+            synonyms: ["moderate", "round"],
+            grammar: "比較級 smaller / bigger"
+        },
+        {
+            top: "60%", left: "70%", width: "15%", height: "20%", color: "#8e44ad",
+            title: "Grapes",
+            eng: "These purple grapes are the smallest items in this group.",
+            jp: "これらの紫色のブドウは、このグループの中で最も小さい品目です。",
+            vocab: ["purple (紫の)", "item (品目)", "group (グループ)"],
+            idioms: ["sour grapes (負け惜しみ)"],
+            synonyms: ["tiny", "cluster"],
+            grammar: "最上級 the smallest"
+        }
+    ]
+});
+
+// 420.webp: Overhead Fruits (biggest)
+window.galleryData.push({
+    imageFile: "420.webp",
+    series: "400",
+    spots: [
+        {
+            top: "10%", left: "20%", width: "60%", height: "80%", color: "#27ae60",
+            title: "Overhead View",
+            eng: "From this angle, the watermelon looks even bigger.",
+            jp: "この角度から見ると、スイカはさらに大きく見えます。",
+            vocab: ["angle (角度)", "even (さらに・いっそう)", "look (見える)"],
+            idioms: ["larger than life (偉大な・伝説的な)"],
+            synonyms: ["massive", "enormous"],
+            grammar: "比較級の強調 even bigger"
+        },
+        {
+            top: "60%", left: "10%", width: "15%", height: "20%", color: "#c0392b",
+            title: "Comparison",
+            eng: "The apple is much lighter than the heavy watermelon.",
+            jp: "リンゴは、重いスイカよりもはるかに軽いです。",
+            vocab: ["light (軽い)", "heavy (重い)", "much (はるかに)"],
+            idioms: ["compare apples and oranges (比較できないものを比べる)"],
+            synonyms: ["less heavy", "portable"],
+            grammar: "比較級 lighter than"
+        },
+        {
+            top: "50%", left: "75%", width: "20%", height: "30%", color: "#9b59b6",
+            title: "Sweet Grapes",
+            eng: "Grapes are often sweeter than other fruits.",
+            jp: "ブドウはしばしば他の果物よりも甘いです。",
+            vocab: ["often (よく)", "sweet (甘い)", "other (他の)"],
+            idioms: ["sweet tooth (甘党)"],
+            synonyms: ["sugary", "tasty"],
+            grammar: "比較級 sweeter than"
+        }
+    ]
+});
+
+// 421.webp: Animal Race (fastest)
+window.galleryData.push({
+    imageFile: "421.webp",
+    series: "400",
+    spots: [
+        {
+            top: "35%", left: "10%", width: "50%", height: "40%", color: "#f1c40f",
+            title: "The Cheetah",
+            eng: "The cheetah is the fastest runner among these three animals.",
+            jp: "チーターはこれら3匹の動物の中で最も速い走者です。",
+            vocab: ["runner (走者)", "among (～の中で)", "animal (動物)"],
+            idioms: ["fast track (出世街道)"],
+            synonyms: ["quickest", "swiftest"],
+            grammar: "最上級 the fastest"
+        },
+        {
+            top: "65%", left: "75%", width: "15%", height: "15%", color: "#27ae60",
+            title: "The Tortoise",
+            eng: "The tortoise is the slowest, so it is far behind.",
+            jp: "カメは最も遅いため、はるか後ろにいます。",
+            vocab: ["tortoise (リクガメ)", "slow (遅い)", "behind (後ろに)"],
+            idioms: ["slow and steady (着実な)"],
+            synonyms: ["lagging", "leisurely"],
+            grammar: "最上級 the slowest"
+        },
+        {
+            top: "25%", left: "70%", width: "25%", height: "30%", color: "#d35400",
+            title: "The Horse",
+            eng: "The brown horse is faster than the turtle but slower than the cat.",
+            jp: "茶色の馬はカメより速いですが、そのネコ科動物よりは遅いです。",
+            vocab: ["brown (茶色の)", "turtle (カメ)", "cat (ネコ科動物)"],
+            idioms: ["hold your horses (落ち着いて)"],
+            synonyms: ["mare", "stallion"],
+            grammar: "比較級 faster / slower"
+        }
+    ]
+});
+
+// 422.webp: Running Cheetah (fastest)
+window.galleryData.push({
+    imageFile: "422.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "30%", width: "25%", height: "30%", color: "#e67e22",
+            title: "Focused Face",
+            eng: "The cheetah looks more focused than usual as it chases prey.",
+            jp: "獲物を追うチーターは、普段よりも集中しているように見えます。",
+            vocab: ["focused (集中した)", "usual (普段の)", "chase (追う)"],
+            idioms: ["cut to the chase (本題に入る)"],
+            synonyms: ["determined", "serious"],
+            grammar: "比較級 more focused"
+        },
+        {
+            top: "10%", left: "60%", width: "30%", height: "80%", color: "#f39c12",
+            title: "Speedy Body",
+            eng: "Its body is designed to be faster than any other land animal.",
+            jp: "その体は、他のどの陸上動物よりも速くなるように設計されています。",
+            vocab: ["design (設計する)", "land (陸)", "any other (他のどの～)"],
+            idioms: ["breakneck speed (猛スピード)"],
+            synonyms: ["rapid", "speedy"],
+            grammar: "比較級 faster than any other"
+        },
+        {
+            top: "5%", left: "5%", width: "20%", height: "90%", color: "#95a5a6",
+            title: "Blurry Background",
+            eng: "The background is blurry because the speed is extremely high.",
+            jp: "スピードが極めて速いため、背景がぼやけています。",
+            vocab: ["blurry (ぼやけた)", "speed (速度)", "extremely (極めて)"],
+            idioms: ["in the blink of an eye (瞬きする間に)"],
+            synonyms: ["unclear", "fast-moving"],
+            grammar: "形容詞 high / blurry"
+        }
+    ]
+});
+
+// 423.webp: Trains Racing (fastest)
+window.galleryData.push({
+    imageFile: "423.webp",
+    series: "400",
+    spots: [
+        {
+            top: "30%", left: "35%", width: "60%", height: "50%", color: "#ecf0f1",
+            title: "The Bullet Train",
+            eng: "The white bullet train is much faster than the local train.",
+            jp: "白い新幹線は、各駅停車よりもはるかに速いです。",
+            vocab: ["bullet train (新幹線)", "local train (各駅停車)", "much (はるかに)"],
+            idioms: ["on the right track (正しい方向に進んで)"],
+            synonyms: ["express", "high-speed"],
+            grammar: "比較級 faster than"
+        },
+        {
+            top: "25%", left: "10%", width: "30%", height: "45%", color: "#27ae60",
+            title: "Local Train",
+            eng: "The green train is older and slower than the modern one.",
+            jp: "緑色の電車は、現代的なものよりも古くて遅いです。",
+            vocab: ["old (古い)", "modern (現代的な)", "one (代名詞)"],
+            idioms: ["run out of steam (勢いがなくなる)"],
+            synonyms: ["aging", "classic"],
+            grammar: "比較級 older / slower"
+        },
+        {
+            top: "10%", left: "70%", width: "20%", height: "20%", color: "#3498db",
+            title: "Technology",
+            eng: "Newer trains are generally quieter and more comfortable.",
+            jp: "より新しい列車は一般的に、より静かで快適です。",
+            vocab: ["generally (一般的に)", "quiet (静かな)", "comfortable (快適な)"],
+            idioms: ["state of the art (最新鋭の)"],
+            synonyms: ["advanced", "smooth"],
+            grammar: "比較級 quiet -> quieter / more comfortable"
+        }
+    ]
+});
+
+// 424.webp: Shinkansen & Fuji (fastest)
+window.galleryData.push({
+    imageFile: "424.webp",
+    series: "400",
+    spots: [
+        {
+            top: "55%", left: "20%", width: "60%", height: "30%", color: "#ecf0f1",
+            title: "Fastest Train",
+            eng: "This is one of the fastest trains in the world.",
+            jp: "これは世界で最も速い列車の一つです。",
+            vocab: ["world (世界)", "one of (～の一つ)", "train (列車)"],
+            idioms: ["full steam ahead (全速前進)"],
+            synonyms: ["rapid", "express"],
+            grammar: "最上級 one of the fastest"
+        },
+        {
+            top: "15%", left: "30%", width: "40%", height: "30%", color: "#34495e",
+            title: "Highest Mountain",
+            eng: "The train runs past the highest mountain in Japan.",
+            jp: "その列車は、日本で最も高い山のそばを走ります。",
+            vocab: ["past (～を過ぎて)", "mountain (山)", "Japan (日本)"],
+            idioms: ["move mountains (奇跡を起こす・最善を尽くす)"],
+            synonyms: ["tallest", "peak"],
+            grammar: "最上級 the highest"
+        },
+        {
+            top: "5%", left: "5%", width: "30%", height: "40%", color: "#ff9ff3",
+            title: "Beautiful Scenery",
+            eng: "The scenery is more beautiful in spring than in winter.",
+            jp: "景色は冬よりも春の方が美しいです。",
+            vocab: ["scenery (景色)", "spring (春)", "winter (冬)"],
+            idioms: ["fresh start (新たな始まり)"],
+            synonyms: ["lovelier", "prettier"],
+            grammar: "比較級 more beautiful"
+        }
+    ]
+});
+
+// 425.webp: Royal Crown (most expensive)
+window.galleryData.push({
+    imageFile: "425.webp",
+    series: "400",
+    spots: [
+        {
+            top: "35%", left: "35%", width: "30%", height: "35%", color: "#3498db",
+            title: "Huge Gem",
+            eng: "The blue gem in the center is the most expensive part.",
+            jp: "中央にある青い宝石は、最も高価な部分です。",
+            vocab: ["gem (宝石)", "center (中央)", "part (部分)"],
+            idioms: ["diamond in the rough (磨けば光る原石)"],
+            synonyms: ["precious stone", "jewel"],
+            grammar: "最上級 the most expensive"
+        },
+        {
+            top: "20%", left: "15%", width: "70%", height: "60%", color: "#f1c40f",
+            title: "Gold Crown",
+            eng: "This gold crown is more valuable than a silver one.",
+            jp: "この金の王冠は、銀のものよりも価値があります。",
+            vocab: ["valuable (価値がある)", "silver (銀)", "crown (王冠)"],
+            idioms: ["crowning achievement (最高傑作)"],
+            synonyms: ["worth more", "costlier"],
+            grammar: "比較級 more valuable"
+        },
+        {
+            top: "80%", left: "20%", width: "60%", height: "15%", color: "#bdc3c7",
+            title: "Luxury Item",
+            eng: "This is the most luxurious item in the king's collection.",
+            jp: "これは王様のコレクションの中で最も豪華な品です。",
+            vocab: ["luxurious (豪華な)", "king (王様)", "collection (コレクション)"],
+            idioms: ["live like a king (王様のような暮らしをする)"],
+            synonyms: ["fanciest", "grandest"],
+            grammar: "最上級 the most luxurious"
+        }
+    ]
+});
+
+// 426.webp: Jewels in Case (most expensive)
+window.galleryData.push({
+    imageFile: "426.webp",
+    series: "400",
+    spots: [
+        {
+            top: "30%", left: "35%", width: "30%", height: "35%", color: "#3498db",
+            title: "The Diamond",
+            eng: "The large diamond is the most expensive jewel in the case.",
+            jp: "その大きなダイヤモンドは、ケースの中で最も高価な宝石です。",
+            vocab: ["diamond (ダイヤモンド)", "case (ケース)", "jewel (宝石)"],
+            idioms: ["shine bright (輝く)"],
+            synonyms: ["priciest", "dearest"],
+            grammar: "最上級 the most expensive"
+        },
+        {
+            top: "55%", left: "15%", width: "15%", height: "20%", color: "#e74c3c",
+            title: "The Ruby",
+            eng: "The ruby is beautiful, but it is less expensive than the diamond.",
+            jp: "ルビーは美しいですが、ダイヤモンドほど高価ではありません。",
+            vocab: ["ruby (ルビー)", "less (より少なく)", "beautiful (美しい)"],
+            idioms: ["cost a fortune (大金がかかる)"],
+            synonyms: ["cheaper", "lower priced"],
+            grammar: "比較級 less expensive"
+        },
+        {
+            top: "55%", left: "70%", width: "15%", height: "20%", color: "#2ecc71",
+            title: "The Emerald",
+            eng: "The green emerald is as shiny as the red ruby.",
+            jp: "緑のエメラルドは、赤いルビーと同じくらい輝いています。",
+            vocab: ["emerald (エメラルド)", "shiny (輝く)", "green (緑の)"],
+            idioms: ["green with envy (とても羨ましがる)"],
+            synonyms: ["bright", "sparkling"],
+            grammar: "原級比較 as ... as"
+        }
+    ]
+});
+
+// 427.webp: Bright Star (brightest)
+window.galleryData.push({
+    imageFile: "427.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "40%", width: "20%", height: "30%", color: "#f1c40f",
+            title: "Brightest Star",
+            eng: "That star is the brightest object in the night sky.",
+            jp: "あの星は、夜空の中で最も明るい物体です。",
+            vocab: ["bright (明るい)", "object (物体)", "sky (空)"],
+            idioms: ["shooting star (流れ星)"],
+            synonyms: ["shiniest", "most radiant"],
+            grammar: "最上級 the brightest"
+        },
+        {
+            top: "10%", left: "10%", width: "80%", height: "50%", color: "#34495e",
+            title: "Dimmer Stars",
+            eng: "The surrounding stars are much dimmer than the central one.",
+            jp: "周囲の星々は、中央の星よりもはるかに薄暗いです。",
+            vocab: ["surrounding (周囲の)", "dim (薄暗い)", "central (中央の)"],
+            idioms: ["reach for the stars (高望みをする)"],
+            synonyms: ["fainter", "darker"],
+            grammar: "比較級 dimmer"
+        },
+        {
+            top: "70%", left: "5%", width: "90%", height: "25%", color: "#2c3e50",
+            title: "Dark Mountains",
+            eng: "The mountains are darker than the starry sky above.",
+            jp: "山々は、上の星空よりも暗いです。",
+            vocab: ["dark (暗い)", "starry (星の多い)", "above (上の)"],
+            idioms: ["in the dark (何も知らない)"],
+            synonyms: ["blacker", "shadowy"],
+            grammar: "比較級 darker than"
+        }
+    ]
+});
