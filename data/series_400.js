@@ -980,3 +980,419 @@ window.galleryData.push({
         }
     ]
 });
+// 428.webp: Brightest Star in Forest (brightest)
+window.galleryData.push({
+    imageFile: "428.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "45%", width: "10%", height: "15%", color: "#f1c40f",
+            title: "The Brightest Star",
+            eng: "This star is the brightest light in the dark night sky.",
+            jp: "この星は、暗い夜空の中で最も明るい光です。",
+            vocab: ["bright (明るい)", "sky (空)", "light (光)"],
+            idioms: ["reach for the stars (高望みする)"],
+            synonyms: ["shining", "radiant"],
+            grammar: "最上級 the brightest"
+        },
+        {
+            top: "70%", left: "65%", width: "25%", height: "25%", color: "#e67e22",
+            title: "Cabin Window",
+            eng: "The light from the window is much dimmer than the star.",
+            jp: "窓からの光は、その星よりもはるかに薄暗いです。",
+            vocab: ["dim (薄暗い)", "window (窓)", "much (はるかに)"],
+            idioms: ["window of opportunity (好機)"],
+            synonyms: ["fainter", "softer"],
+            grammar: "比較級 dimmer than"
+        },
+        {
+            top: "50%", left: "5%", width: "30%", height: "50%", color: "#2c3e50",
+            title: "Dark Trees",
+            eng: "The trees are darker than the sky, creating a silhouette.",
+            jp: "木々は空よりも暗く、シルエットを作り出しています。",
+            vocab: ["dark (暗い)", "create (作る)", "silhouette (シルエット)"],
+            idioms: ["out of the woods (危機を脱して)"],
+            synonyms: ["shadowy", "black"],
+            grammar: "比較級 darker than"
+        }
+    ]
+});
+
+// 429.webp: Spicy Chili Pepper (spiciest)
+window.galleryData.push({
+    imageFile: "429.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "30%", width: "40%", height: "60%", color: "#c0392b",
+            title: "The Spiciest Pepper",
+            eng: "This red pepper looks like the spiciest ingredient in the world.",
+            jp: "この赤い唐辛子は、世界で最も辛い食材のように見えます。",
+            vocab: ["ingredient (食材)", "world (世界)", "look like (～のように見える)"],
+            idioms: ["variety is the spice of life (変化は人生のスパイスだ)"],
+            synonyms: ["hottest", "fiery"],
+            grammar: "最上級 the spiciest"
+        },
+        {
+            top: "10%", left: "10%", width: "80%", height: "80%", color: "#f39c12",
+            title: "Flames",
+            eng: "The background flames are hot, but the pepper is hotter.",
+            jp: "背景の炎は熱いですが、唐辛子はもっと辛（熱）いです。",
+            vocab: ["flame (炎)", "background (背景)", "hot (熱い/辛い)"],
+            idioms: ["add fuel to the fire (火に油を注ぐ)"],
+            synonyms: ["burning", "blazing"],
+            grammar: "比較級 hotter"
+        },
+        {
+            top: "40%", left: "75%", width: "15%", height: "15%", color: "#ecf0f1",
+            title: "Skull Symbol",
+            eng: "The skulls indicate that this food is more dangerous than others.",
+            jp: "ドクロは、この食べ物が他のものより危険であることを示しています。",
+            vocab: ["indicate (示す)", "food (食べ物)", "dangerous (危険な)"],
+            idioms: ["risk it all (すべてを賭ける)"],
+            synonyms: ["warning", "hazard"],
+            grammar: "比較級 more dangerous"
+        }
+    ]
+});
+
+// 430.webp: Man Eating Chili (spiciest)
+window.galleryData.push({
+    imageFile: "430.webp",
+    series: "400",
+    spots: [
+        {
+            top: "55%", left: "45%", width: "50%", height: "30%", color: "#e74c3c",
+            title: "Fire Breath",
+            eng: "His breath is hotter than fire because of the spicy chili.",
+            jp: "辛い唐辛子のせいで、彼の吐く息は火よりも熱くなっています。",
+            vocab: ["breath (息)", "because of (～のせいで)", "spicy (辛い)"],
+            idioms: ["play with fire (危険なことをする)"],
+            synonyms: ["scorching", "burning"],
+            grammar: "比較級 hotter than"
+        },
+        {
+            top: "20%", left: "25%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Red Face",
+            eng: "His face is becoming redder than a tomato.",
+            jp: "彼の顔はトマトよりも赤くなっています。",
+            vocab: ["become (なる)", "tomato (トマト)", "face (顔)"],
+            idioms: ["red in the face (恥ずかしい/怒っている)"],
+            synonyms: ["flushed", "blushing"],
+            grammar: "比較級 redder than"
+        },
+        {
+            top: "40%", left: "5%", width: "20%", height: "20%", color: "#bdc3c7",
+            title: "Steam from Ears",
+            eng: "The steam shows that he is feeling the strongest heat imaginable.",
+            jp: "蒸気は、彼が想像できる限り最も強い熱を感じていることを示しています。",
+            vocab: ["steam (蒸気)", "feel (感じる)", "imaginable (想像できる)"],
+            idioms: ["let off steam (うっぷんを晴らす)"],
+            synonyms: ["smoke", "vapor"],
+            grammar: "最上級 the strongest"
+        }
+    ]
+});
+
+// 431.webp: Research Station in Snow (coldest)
+window.galleryData.push({
+    imageFile: "431.webp",
+    series: "400",
+    spots: [
+        {
+            top: "45%", left: "50%", width: "40%", height: "30%", color: "#c0392b",
+            title: "Research Station",
+            eng: "This station is built in the coldest place on Earth.",
+            jp: "この基地は、地球上で最も寒い場所に建てられています。",
+            vocab: ["built (建てられた)", "place (場所)", "earth (地球)"],
+            idioms: ["break the ice (場を和ませる)"],
+            synonyms: ["base", "outpost"],
+            grammar: "最上級 the coldest"
+        },
+        {
+            top: "10%", left: "10%", width: "80%", height: "40%", color: "#ecf0f1",
+            title: "Blizzard",
+            eng: "The wind here is stronger and colder than in the city.",
+            jp: "ここの風は、都会よりも強く、そして冷たいです。",
+            vocab: ["wind (風)", "strong (強い)", "city (都会)"],
+            idioms: ["throw caution to the wind (思い切ったことをする)"],
+            synonyms: ["gale", "storm"],
+            grammar: "比較級 stronger / colder"
+        },
+        {
+            top: "80%", left: "10%", width: "80%", height: "20%", color: "#bdc3c7",
+            title: "Frozen Ground",
+            eng: "The ground is harder than rock because of the ice.",
+            jp: "氷のせいで、地面は岩よりも硬くなっています。",
+            vocab: ["ground (地面)", "hard (硬い)", "rock (岩)"],
+            idioms: ["solid as a rock (盤石な)"],
+            synonyms: ["frozen", "icy"],
+            grammar: "比較級 harder than"
+        }
+    ]
+});
+
+// 432.webp: Village vs Antarctica (coldest)
+window.galleryData.push({
+    imageFile: "432.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "55%", width: "40%", height: "70%", color: "#3498db",
+            title: "Antarctica",
+            eng: "The landscape on the right is the coldest environment shown.",
+            jp: "右側の風景は、表示されている中で最も寒い環境です。",
+            vocab: ["landscape (風景)", "environment (環境)", "shown (表示された)"],
+            idioms: ["tip of the iceberg (氷山の一角)"],
+            synonyms: ["glacier", "ice field"],
+            grammar: "最上級 the coldest"
+        },
+        {
+            top: "40%", left: "5%", width: "40%", height: "50%", color: "#95a5a6",
+            title: "Snowy Village",
+            eng: "The village is cold, but it is warmer than the South Pole.",
+            jp: "村は寒いですが、南極よりは暖かいです。",
+            vocab: ["village (村)", "warm (暖かい)", "South Pole (南極点)"],
+            idioms: ["left out in the cold (仲間外れにされる)"],
+            synonyms: ["town", "settlement"],
+            grammar: "比較級 warmer than"
+        },
+        {
+            top: "70%", left: "80%", width: "15%", height: "20%", color: "#2c3e50",
+            title: "Penguins",
+            eng: "Penguins can survive in much lower temperatures than humans.",
+            jp: "ペンギンは人間よりもはるかに低い気温で生き延びることができます。",
+            vocab: ["survive (生き延びる)", "temperature (気温)", "human (人間)"],
+            idioms: ["cool as a cucumber (とても冷静な)"],
+            synonyms: ["endure", "live"],
+            grammar: "比較級 lower temperatures"
+        }
+    ]
+});
+
+// 433.webp: Lion on Rock (strongest)
+window.galleryData.push({
+    imageFile: "433.webp",
+    series: "400",
+    spots: [
+        {
+            top: "10%", left: "65%", width: "25%", height: "40%", color: "#f1c40f",
+            title: "The Lion King",
+            eng: "The lion stands highest, looking like the strongest leader.",
+            jp: "ライオンは最も高い場所に立ち、最強のリーダーのように見えます。",
+            vocab: ["leader (リーダー)", "stand (立つ)", "high (高い)"],
+            idioms: ["lion's share (最大の取り分)"],
+            synonyms: ["ruler", "king"],
+            grammar: "最上級 highest / strongest"
+        },
+        {
+            top: "50%", left: "5%", width: "30%", height: "40%", color: "#7f8c8d",
+            title: "The Elephant",
+            eng: "The elephant is actually bigger and physically stronger than the lion.",
+            jp: "象は実際には、ライオンよりも大きく、肉体的には強いです。",
+            vocab: ["actually (実際には)", "physical (肉体的な)", "big (大きい)"],
+            idioms: ["elephant in the room (見て見ぬふりをされている問題)"],
+            synonyms: ["powerful", "massive"],
+            grammar: "比較級 bigger / stronger"
+        },
+        {
+            top: "40%", left: "35%", width: "15%", height: "40%", color: "#e67e22",
+            title: "The Giraffe",
+            eng: "The giraffe is the tallest animal, but not the strongest.",
+            jp: "キリンは最も背が高い動物ですが、最強ではありません。",
+            vocab: ["tall (背が高い)", "animal (動物)", "but (しかし)"],
+            idioms: ["stick one's neck out (危険を冒す)"],
+            synonyms: ["highest", "towering"],
+            grammar: "最上級 the tallest"
+        }
+    ]
+});
+
+// 434.webp: Lifting Contest (strongest)
+window.galleryData.push({
+    imageFile: "434.webp",
+    series: "400",
+    spots: [
+        {
+            top: "40%", left: "5%", width: "30%", height: "50%", color: "#f1c40f",
+            title: "Strong Lion",
+            eng: "The lion is lifting the heaviest rock of all.",
+            jp: "ライオンは、すべての中で最も重い岩を持ち上げています。",
+            vocab: ["lift (持ち上げる)", "rock (岩)", "all (すべて)"],
+            idioms: ["heavy lifting (困難な仕事)"],
+            synonyms: ["raising", "hoisting"],
+            grammar: "最上級 the heaviest"
+        },
+        {
+            top: "50%", left: "40%", width: "25%", height: "40%", color: "#8e44ad",
+            title: "Struggling Bear",
+            eng: "The bear is lifting a smaller rock than the lion.",
+            jp: "クマはライオンよりも小さな岩を持ち上げています。",
+            vocab: ["bear (クマ)", "small (小さい)", "struggle (苦戦する)"],
+            idioms: ["bear with me (少々お待ちください)"],
+            synonyms: ["lighter", "tinier"],
+            grammar: "比較級 smaller ... than"
+        },
+        {
+            top: "40%", left: "70%", width: "25%", height: "50%", color: "#2c3e50",
+            title: "Gorilla with Log",
+            eng: "The gorilla is holding a log, which looks lighter than the rocks.",
+            jp: "ゴリラは丸太を持っており、それは岩よりも軽く見えます。",
+            vocab: ["hold (持つ)", "log (丸太)", "light (軽い)"],
+            idioms: ["sleep like a log (ぐっすり眠る)"],
+            synonyms: ["wood", "timber"],
+            grammar: "比較級 lighter than"
+        }
+    ]
+});
+
+// 435.webp: Shark Cage Attack (most dangerous)
+window.galleryData.push({
+    imageFile: "435.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "10%", width: "60%", height: "70%", color: "#2980b9",
+            title: "Great White Shark",
+            eng: "The shark is one of the most dangerous predators in the sea.",
+            jp: "サメは、海の中で最も危険な捕食者の一つです。",
+            vocab: ["predator (捕食者)", "sea (海)", "one of (～の一つ)"],
+            idioms: ["swim with sharks (危険な連中と付き合う)"],
+            synonyms: ["hunter", "killer"],
+            grammar: "最上級 the most dangerous"
+        },
+        {
+            top: "30%", left: "70%", width: "25%", height: "50%", color: "#95a5a6",
+            title: "Diver in Cage",
+            eng: "The diver is safer inside the metal cage than outside.",
+            jp: "ダイバーは、外にいるよりも金属製の檻の中にいる方が安全です。",
+            vocab: ["safe (安全な)", "metal (金属の)", "cage (檻)"],
+            idioms: ["better safe than sorry (転ばぬ先の杖)"],
+            synonyms: ["protected", "secure"],
+            grammar: "比較級 safer ... than"
+        },
+        {
+            top: "45%", left: "45%", width: "20%", height: "20%", color: "#c0392b",
+            title: "Sharp Teeth",
+            eng: "Its sharp teeth look scarier from this close distance.",
+            jp: "その鋭い歯は、この至近距離から見るとより恐ろしく見えます。",
+            vocab: ["sharp (鋭い)", "teeth (歯)", "distance (距離)"],
+            idioms: ["by the skin of one's teeth (間一髪で)"],
+            synonyms: ["frightening", "terrifying"],
+            grammar: "比較級 scarier"
+        }
+    ]
+});
+
+// 436.webp: Shark Breach (most dangerous)
+window.galleryData.push({
+    imageFile: "436.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "20%", width: "50%", height: "70%", color: "#2c3e50",
+            title: "The Attacker",
+            eng: "This shark is larger and more aggressive than the seal.",
+            jp: "このサメはアザラシよりも大きく、攻撃的です。",
+            vocab: ["aggressive (攻撃的な)", "large (大きい)", "seal (アザラシ)"],
+            idioms: ["big fish in a small pond (井の中の蛙)"],
+            synonyms: ["fierce", "hostile"],
+            grammar: "比較級 more aggressive"
+        },
+        {
+            top: "10%", left: "70%", width: "20%", height: "20%", color: "#7f8c8d",
+            title: "The Seal",
+            eng: "The seal is trying to escape from the most dangerous hunter.",
+            jp: "アザラシは、最も危険なハンターから逃げようとしています。",
+            vocab: ["escape (逃げる)", "try (試みる)", "hunter (ハンター)"],
+            idioms: ["seal the deal (取引を成立させる)"],
+            synonyms: ["flee", "avoid"],
+            grammar: "最上級 the most dangerous"
+        },
+        {
+            top: "60%", left: "60%", width: "30%", height: "30%", color: "#3498db",
+            title: "Big Splash",
+            eng: "The splash is huge because the shark is extremely heavy.",
+            jp: "サメが極めて重いため、水しぶきが巨大です。",
+            vocab: ["splash (水しぶき)", "huge (巨大な)", "heavy (重い)"],
+            idioms: ["make a splash (評判になる・注目を集める)"],
+            synonyms: ["spray", "surge"],
+            grammar: "形容詞 huge / heavy"
+        }
+    ]
+});
+
+// 437.webp: Elephant, Lion, Giraffe (heaviest)
+window.galleryData.push({
+    imageFile: "437.webp",
+    series: "400",
+    spots: [
+        {
+            top: "20%", left: "30%", width: "40%", height: "70%", color: "#7f8c8d",
+            title: "The Elephant",
+            eng: "The elephant is the heaviest land animal in this group.",
+            jp: "象は、このグループの中で最も重い陸上動物です。",
+            vocab: ["heavy (重い)", "land (陸)", "group (グループ)"],
+            idioms: ["heavy heart (沈んだ気持ち)"],
+            synonyms: ["weightiest", "massive"],
+            grammar: "最上級 the heaviest"
+        },
+        {
+            top: "5%", left: "70%", width: "25%", height: "90%", color: "#e67e22",
+            title: "The Giraffe",
+            eng: "The giraffe is taller than the elephant but much lighter.",
+            jp: "キリンは象よりも背が高いですが、はるかに軽いです。",
+            vocab: ["tall (高い)", "light (軽い)", "but (しかし)"],
+            idioms: ["head and shoulders above (～より抜きん出て)"],
+            synonyms: ["slender", "thin"],
+            grammar: "比較級 taller / lighter"
+        },
+        {
+            top: "55%", left: "5%", width: "25%", height: "40%", color: "#f1c40f",
+            title: "The Lion",
+            eng: "The lion is the lightest and smallest of the three animals.",
+            jp: "ライオンは、3匹の動物の中で最も軽く、最も小さいです。",
+            vocab: ["light (軽い)", "small (小さい)", "three (3つ)"],
+            idioms: ["lion's den (危険な場所)"],
+            synonyms: ["least heavy", "compact"],
+            grammar: "最上級 the lightest / smallest"
+        }
+    ]
+});
+// 438.webp: Elephant on Scale (heaviest)
+window.galleryData.push({
+    imageFile: "438.webp",
+    series: "400",
+    spots: [
+        {
+            top: "22%", left: "8%", width: "26%", height: "20%", color: "#c0392b",
+            title: "The Display",
+            eng: "The screen shows that this animal is the heaviest one here.",
+            jp: "画面は、この動物がここで最も重いものであることを示しています。",
+            vocab: ["screen (画面)", "show (示す)", "animal (動物)"],
+            idioms: ["tip the scales (局面を変える・重さが偏る)"],
+            synonyms: ["monitor", "readout"],
+            grammar: "最上級 the heaviest"
+        },
+        {
+            top: "15%", left: "40%", width: "55%", height: "70%", color: "#7f8c8d",
+            title: "The Elephant",
+            eng: "An elephant is much heavier than a car or a truck.",
+            jp: "象は、車やトラックよりもはるかに重いです。",
+            vocab: ["truck (トラック)", "car (車)", "much (はるかに)"],
+            idioms: ["throw one's weight around (権力を振りかざす)"],
+            synonyms: ["weightier", "massive"],
+            grammar: "比較級 heavier than"
+        },
+        {
+            top: "78%", left: "10%", width: "80%", height: "15%", color: "#2c3e50",
+            title: "Huge Scale",
+            eng: "This platform is strong enough to weigh the heaviest loads.",
+            jp: "この台は、最も重い積荷を計量できるほど丈夫です。",
+            vocab: ["platform (台)", "strong (丈夫な)", "load (積荷)"],
+            idioms: ["carry the weight of the world (重責を負う)"],
+            synonyms: ["base", "stand"],
+            grammar: "最上級 the heaviest"
+        }
+    ]
+});
