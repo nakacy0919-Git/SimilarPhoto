@@ -20,6 +20,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            overflow-x: hidden; /* アニメーション時の横揺れ防止 */
         }
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
@@ -38,6 +39,8 @@
             max-width: 1000px;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
         }
         .title-wrapper { display: flex; align-items: center; gap: 15px; }
         .title-image { height: 60px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
@@ -51,23 +54,41 @@
         }
         .home-btn:hover { background: #34495e; transform: translateY(-2px); }
 
+        /* =========================================
+           ★ Animation Styles (Transition)
+           ========================================= */
+        /* 画面要素に適用する共通クラス */
+        .fade-transition {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            opacity: 1;
+            transform: scale(1);
+        }
+        /* 非表示状態のクラス */
+        .fade-out {
+            opacity: 0;
+            transform: scale(0.95);
+            pointer-events: none; /* アニメーション中の誤クリック防止 */
+        }
+
         /* --- Mode Selection Screen --- */
         #mode-screen {
-            display: flex; gap: 30px; margin-top: 50px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px;
+            display: flex; gap: 40px; margin-top: 60px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px;
         }
         .mode-card {
-            background: rgba(255, 255, 255, 0.9); width: 340px; padding: 40px 20px; border-radius: 15px;
-            text-align: center; cursor: pointer; transition: 0.2s;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); border: 3px solid transparent;
+            background: rgba(255, 255, 255, 0.95); width: 340px; padding: 50px 30px; border-radius: 20px;
+            text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 4px solid transparent;
         }
-        .mode-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .mode-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
         .mode-review:hover { border-color: #3498db; }
         .mode-quiz:hover { border-color: #e74c3c; }
-        .mode-icon { font-size: 12rem; display: block; margin-bottom: 15px; }
-        .mode-card h2 { color: #2c3e50; margin-bottom: 10px; }
-        .mode-card p { color: #777; font-size: 0.9rem; }
+
+        .mode-icon { font-size: 12rem; display: block; margin-bottom: 25px; line-height: 1; }
+        .mode-card h2 { color: #2c3e50; margin-bottom: 15px; font-size: 2.4rem; font-weight: 800; }
+        .mode-card p { color: #666; font-size: 1.2rem; line-height: 1.6; font-weight: bold; }
 
         /* --- App Content Wrapper --- */
+        /* 初期状態は非表示(display:none)だが、JSでflexにしてからfade-outクラスを外す運用 */
         #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; }
 
         /* --- Controls --- */
@@ -105,14 +126,20 @@
         .quiz-main-image { max-width: 100%; max-height: 50vh; display: block; }
         .quiz-question-area { padding: 30px; text-align: center; }
         .quiz-sentence { font-size: 1.4rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; line-height: 1.5; }
-        .blank { border-bottom: 3px solid #3498db; color: transparent; padding: 0 8px; display: inline-block; min-width: 60px; }
+        
+        /* 下線を一本線に修正 */
+        .blank { border-bottom: 2px solid #3498db; color: transparent; padding: 0 8px; display: inline-block; min-width: 60px; }
+        
         .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
         .option-btn { background: #fff; border: 2px solid #ddd; padding: 15px; border-radius: 10px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: 0.2s; }
         .option-btn:hover { border-color: #3498db; background: #f0f8ff; }
         .option-btn.correct { background: #27ae60; color: white; border-color: #27ae60; }
         .option-btn.wrong { background: #e74c3c; color: white; border-color: #e74c3c; opacity: 0.6; }
-        .target-spot { position: absolute; border: 4px solid #e74c3c; animation: pulse 2s infinite; border-radius: 4px; }
+        
+        /* ★重要: クイズの赤枠（target-spot）をCSSでも念のため非表示にしておく設定（JSで生成しないようにしますが念のため） */
+        .target-spot { position: absolute; border: 4px solid #e74c3c; animation: pulse 2s infinite; border-radius: 4px; display: none; } 
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(231,76,60,0.7); } 70% { box-shadow: 0 0 0 10px rgba(0,0,0,0); } }
+        
         .quiz-controls { margin-top: 20px; height: 50px; display: flex; justify-content: center; align-items: center; gap: 15px; visibility: hidden; }
         .next-btn { background: #2c3e50; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
 
@@ -156,16 +183,16 @@
     <header>
         <div class="title-wrapper">
             <img src="title.png" alt="App Icon" class="title-image" onerror="this.style.display='none'">
-            <h1>Similar Photos Reviewer</h1>
+            <h1>Similar Photos</h1>
         </div>
         <button class="home-btn" id="btn-home" onclick="goHome()">🏠 Home</button>
     </header>
 
-    <div id="mode-screen">
+    <div id="mode-screen" class="fade-transition">
         <div class="mode-card mode-review" onclick="startApp('review')">
             <span class="mode-icon">📖</span>
             <h2>Review Mode</h2>
-            <p>じっくりモード<br>一覧表示で画像と表現を確認</p>
+            <p>じっくりモード<br>グリッド表示で画像を確認</p>
         </div>
         <div class="mode-card mode-quiz" onclick="startApp('quiz')">
             <span class="mode-icon">🎮</span>
@@ -174,7 +201,7 @@
         </div>
     </div>
 
-    <div id="app-content">
+    <div id="app-content" class="fade-transition fade-out">
         <div class="top-controls">
             <div class="lang-switch">
                 <button class="lang-btn active" id="btn-en" onclick="changeLanguage('en')">English</button>
@@ -271,37 +298,67 @@
         };
 
         // ============================================
-        // 1. アプリ起動・モード制御
+        // 1. アプリ起動・モード制御 (アニメーション付き)
         // ============================================
         function startApp(mode) {
             currentMode = mode;
-            document.getElementById('mode-screen').style.display = 'none';
-            document.getElementById('app-content').style.display = 'flex';
-            document.getElementById('btn-home').style.display = 'block';
+            
+            // 1. モード選択画面をフェードアウト
+            const modeScreen = document.getElementById('mode-screen');
+            modeScreen.classList.add('fade-out');
 
-            // UI切り替え
-            if(mode === 'review') {
-                document.getElementById('search-section').style.display = 'flex';
-                document.getElementById('gallery-list').style.display = 'grid';
-                document.getElementById('quiz-container').style.display = 'none';
-            } else {
-                document.getElementById('search-section').style.display = 'none';
-                document.getElementById('gallery-list').style.display = 'none';
-                document.getElementById('quiz-container').style.display = 'flex';
-            }
-            selectCategory(0);
+            // 2. アニメーション完了後(0.4秒後)に画面切り替え
+            setTimeout(() => {
+                modeScreen.style.display = 'none';
+                
+                // アプリ画面を準備 (最初は透明)
+                const appContent = document.getElementById('app-content');
+                appContent.style.display = 'flex';
+                // 少しだけ待ってからフェードインさせる（スムーズな遷移のため）
+                setTimeout(() => {
+                    appContent.classList.remove('fade-out');
+                }, 50);
+
+                document.getElementById('btn-home').style.display = 'block';
+
+                // UI切り替え
+                if(mode === 'review') {
+                    document.getElementById('search-section').style.display = 'flex';
+                    document.getElementById('gallery-list').style.display = 'grid';
+                    document.getElementById('quiz-container').style.display = 'none';
+                } else {
+                    document.getElementById('search-section').style.display = 'none';
+                    document.getElementById('gallery-list').style.display = 'none';
+                    document.getElementById('quiz-container').style.display = 'flex';
+                }
+                selectCategory(0);
+            }, 400); // CSS transitionと同じ時間
         }
 
         function goHome() {
             currentMode = null;
-            document.getElementById('mode-screen').style.display = 'flex';
-            document.getElementById('app-content').style.display = 'none';
-            document.getElementById('btn-home').style.display = 'none';
             
-            // クリーンアップ
-            document.getElementById('gallery-list').innerHTML = '';
-            document.getElementById('quiz-container').style.display = 'none';
-            closeModalDirect();
+            // 1. アプリ画面をフェードアウト
+            const appContent = document.getElementById('app-content');
+            appContent.classList.add('fade-out');
+            document.getElementById('btn-home').style.display = 'none';
+
+            // 2. アニメーション完了後にホーム画面を表示
+            setTimeout(() => {
+                appContent.style.display = 'none';
+                
+                const modeScreen = document.getElementById('mode-screen');
+                modeScreen.style.display = 'flex';
+                // 少し待ってからフェードイン
+                setTimeout(() => {
+                    modeScreen.classList.remove('fade-out');
+                }, 50);
+
+                // クリーンアップ
+                document.getElementById('gallery-list').innerHTML = '';
+                document.getElementById('quiz-container').style.display = 'none';
+                closeModalDirect();
+            }, 400);
         }
 
         // ============================================
@@ -323,7 +380,6 @@
             document.getElementById('about-content-en').style.display = (lang === 'en') ? 'block' : 'none';
             document.getElementById('about-content-jp').style.display = (lang === 'jp') ? 'block' : 'none';
 
-            // モーダルが開いていれば更新、そうでなければ再描画
             if(document.getElementById('lesson-modal').style.display === 'flex') {
                 closeModalDirect(); 
             }
@@ -331,9 +387,7 @@
         }
 
         function handleEnter(e) { if(e.key === 'Enter') performSearch(); }
-
-        // ★★★ 日本語除去用関数 ★★★
-        // "apple (りんご)" => "apple" に変換します
+        
         function cleanVocab(str) {
             return str.replace(/\s*\(.*?\)/g, '').trim();
         }
@@ -345,7 +399,6 @@
             currentCategoryIndex = cat;
             document.getElementById('img-search-input').value = '';
 
-            // タブのアクティブ化
             document.querySelectorAll('.genre-btn').forEach(btn => {
                 const onclickVal = btn.getAttribute('onclick');
                 let btnArg = onclickVal.match(/selectCategory\(([^)]+)\)/)[1].replace(/['"]/g, '');
@@ -353,7 +406,6 @@
                 if(btnArg === cat) btn.classList.add('active'); else btn.classList.remove('active');
             });
 
-            // データのフィルタリング
             const list = window.galleryData.filter(item => {
                 if (cat === 'cnn') return item.imageFile.toLowerCase().includes('cnn');
                 const match = item.imageFile.match(/(\d+)/);
@@ -361,7 +413,6 @@
                 return Math.floor(num / 100) === cat;
             });
 
-            // ソート
             list.sort((a, b) => {
                 const getNum = s => {
                     const m = s.imageFile.match(/(\d+)/);
@@ -370,7 +421,6 @@
                 return getNum(a) - getNum(b);
             });
 
-            // モードに応じた描画
             if(currentMode === 'review') {
                 renderGalleryList(list);
             } else {
@@ -531,18 +581,15 @@
             document.getElementById('gallery-list').style.display = 'none';
             document.getElementById('quiz-container').style.display = 'flex';
             
-            // 1. 選択肢用バンクを作成（日本語を削除して登録）
             wordBank = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(s => {
                     if (s.vocab && s.vocab.length > 0) {
                         s.vocab.forEach(v => {
-                            // ★変更点：ここで cleanVocab を使って日本語を消します
                             const cleaned = cleanVocab(v); 
                             if(cleaned.length > 0) wordBank.push(cleaned);
                         });
                     } else {
-                        // vocabがない場合は英文から単語を抽出
                         const words = s.eng.replace(/[.,?!"]/g, '').split(/\s+/);
                         words.forEach(w => { if(w.length > 3) wordBank.push(w); });
                     }
@@ -550,26 +597,22 @@
             });
             if (wordBank.length === 0) wordBank = ["apple", "pen", "this", "that"]; 
 
-            // 2. クイズを作成
             quizPool = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(spot => {
                     const words = spot.eng.split(' ');
                     let candidates = [];
                     
-                    // Vocabマッチング (日本語削除後の単語と比較)
                     if (spot.vocab && spot.vocab.length > 0) {
                         words.forEach((w, i) => {
                             const cleanW = w.toLowerCase().replace(/[.,?!"]/g, '');
                             const isVocabMatch = spot.vocab.some(v => {
                                 const cleanV = cleanVocab(v).toLowerCase(); 
-                                // 2文字以上かつ、文中の単語と一致または包含
                                 return cleanV.length > 1 && (cleanW.includes(cleanV) || cleanV.includes(cleanW));
                             });
                             if (isVocabMatch) candidates.push(i);
                         });
                     }
-                    // フォールバック
                     if (candidates.length === 0) {
                         words.forEach((w, i) => { if(w.replace(/[.,?!"]/g,'').length >= 4) candidates.push(i); });
                     }
@@ -606,10 +649,8 @@
             const wrap = document.getElementById('quiz-img-wrapper');
             Array.from(wrap.children).forEach(c => { if(c.tagName !== 'IMG') wrap.removeChild(c); });
             
-            const spotDiv = document.createElement('div');
-            spotDiv.className = 'target-spot';
-            Object.assign(spotDiv.style, { top:q.spot.top, left:q.spot.left, width:q.spot.width, height:q.spot.height });
-            wrap.appendChild(spotDiv);
+            // ★変更点: クイズモードでのフレーム生成(spotDiv)コードを削除しました。
+            // 画像全体を見て解答することになります。
 
             document.getElementById('q-jp-hint').textContent = q.spot.jp;
             
@@ -660,8 +701,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
