@@ -20,7 +20,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden; /* アニメーション時の横揺れ防止 */
+            overflow-x: hidden;
         }
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
@@ -57,17 +57,15 @@
         /* =========================================
            ★ Animation Styles (Transition)
            ========================================= */
-        /* 画面要素に適用する共通クラス */
         .fade-transition {
             transition: opacity 0.4s ease, transform 0.4s ease;
             opacity: 1;
             transform: scale(1);
         }
-        /* 非表示状態のクラス */
         .fade-out {
             opacity: 0;
             transform: scale(0.95);
-            pointer-events: none; /* アニメーション中の誤クリック防止 */
+            pointer-events: none;
         }
 
         /* --- Mode Selection Screen --- */
@@ -83,12 +81,11 @@
         .mode-review:hover { border-color: #3498db; }
         .mode-quiz:hover { border-color: #e74c3c; }
 
-        .mode-icon { font-size: 12rem; display: block; margin-bottom: 25px; line-height: 1; }
+        .mode-icon { font-size: 8rem; display: block; margin-bottom: 25px; line-height: 1; }
         .mode-card h2 { color: #2c3e50; margin-bottom: 15px; font-size: 2.4rem; font-weight: 800; }
         .mode-card p { color: #666; font-size: 1.2rem; line-height: 1.6; font-weight: bold; }
 
         /* --- App Content Wrapper --- */
-        /* 初期状態は非表示(display:none)だが、JSでflexにしてからfade-outクラスを外す運用 */
         #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; }
 
         /* --- Controls --- */
@@ -127,7 +124,7 @@
         .quiz-question-area { padding: 30px; text-align: center; }
         .quiz-sentence { font-size: 1.4rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; line-height: 1.5; }
         
-        /* 下線を一本線に修正 */
+        /* 下線を一本線に修正 (透明文字 + ボーダー) */
         .blank { border-bottom: 2px solid #3498db; color: transparent; padding: 0 8px; display: inline-block; min-width: 60px; }
         
         .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
@@ -136,7 +133,6 @@
         .option-btn.correct { background: #27ae60; color: white; border-color: #27ae60; }
         .option-btn.wrong { background: #e74c3c; color: white; border-color: #e74c3c; opacity: 0.6; }
         
-        /* ★重要: クイズの赤枠（target-spot）をCSSでも念のため非表示にしておく設定（JSで生成しないようにしますが念のため） */
         .target-spot { position: absolute; border: 4px solid #e74c3c; animation: pulse 2s infinite; border-radius: 4px; display: none; } 
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(231,76,60,0.7); } 70% { box-shadow: 0 0 0 10px rgba(0,0,0,0); } }
         
@@ -302,26 +298,17 @@
         // ============================================
         function startApp(mode) {
             currentMode = mode;
-            
-            // 1. モード選択画面をフェードアウト
             const modeScreen = document.getElementById('mode-screen');
             modeScreen.classList.add('fade-out');
 
-            // 2. アニメーション完了後(0.4秒後)に画面切り替え
             setTimeout(() => {
                 modeScreen.style.display = 'none';
-                
-                // アプリ画面を準備 (最初は透明)
                 const appContent = document.getElementById('app-content');
                 appContent.style.display = 'flex';
-                // 少しだけ待ってからフェードインさせる（スムーズな遷移のため）
-                setTimeout(() => {
-                    appContent.classList.remove('fade-out');
-                }, 50);
+                setTimeout(() => { appContent.classList.remove('fade-out'); }, 50);
 
                 document.getElementById('btn-home').style.display = 'block';
 
-                // UI切り替え
                 if(mode === 'review') {
                     document.getElementById('search-section').style.display = 'flex';
                     document.getElementById('gallery-list').style.display = 'grid';
@@ -332,29 +319,21 @@
                     document.getElementById('quiz-container').style.display = 'flex';
                 }
                 selectCategory(0);
-            }, 400); // CSS transitionと同じ時間
+            }, 400); 
         }
 
         function goHome() {
             currentMode = null;
-            
-            // 1. アプリ画面をフェードアウト
             const appContent = document.getElementById('app-content');
             appContent.classList.add('fade-out');
             document.getElementById('btn-home').style.display = 'none';
 
-            // 2. アニメーション完了後にホーム画面を表示
             setTimeout(() => {
                 appContent.style.display = 'none';
-                
                 const modeScreen = document.getElementById('mode-screen');
                 modeScreen.style.display = 'flex';
-                // 少し待ってからフェードイン
-                setTimeout(() => {
-                    modeScreen.classList.remove('fade-out');
-                }, 50);
+                setTimeout(() => { modeScreen.classList.remove('fade-out'); }, 50);
 
-                // クリーンアップ
                 document.getElementById('gallery-list').innerHTML = '';
                 document.getElementById('quiz-container').style.display = 'none';
                 closeModalDirect();
@@ -380,14 +359,13 @@
             document.getElementById('about-content-en').style.display = (lang === 'en') ? 'block' : 'none';
             document.getElementById('about-content-jp').style.display = (lang === 'jp') ? 'block' : 'none';
 
-            if(document.getElementById('lesson-modal').style.display === 'flex') {
-                closeModalDirect(); 
-            }
+            if(document.getElementById('lesson-modal').style.display === 'flex') closeModalDirect(); 
             if(currentMode) selectCategory(currentCategoryIndex);
         }
 
         function handleEnter(e) { if(e.key === 'Enter') performSearch(); }
         
+        // 日本語除去用関数 ( "apple (りんご)" -> "apple" )
         function cleanVocab(str) {
             return str.replace(/\s*\(.*?\)/g, '').trim();
         }
@@ -421,11 +399,8 @@
                 return getNum(a) - getNum(b);
             });
 
-            if(currentMode === 'review') {
-                renderGalleryList(list);
-            } else {
-                initQuiz(list);
-            }
+            if(currentMode === 'review') renderGalleryList(list);
+            else initQuiz(list);
         }
 
         // ============================================
@@ -575,12 +550,13 @@
         }
 
         // ============================================
-        // 5. Quiz Mode (Vocab優先 & 日本語削除版)
+        // 5. Quiz Mode (厳密Vocabのみ & 日本語削除 & 誤判定防止)
         // ============================================
         function initQuiz(list) {
             document.getElementById('gallery-list').style.display = 'none';
             document.getElementById('quiz-container').style.display = 'flex';
             
+            // 1. 選択肢用バンク (Vocabのみから作成)
             wordBank = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(s => {
@@ -589,14 +565,14 @@
                             const cleaned = cleanVocab(v); 
                             if(cleaned.length > 0) wordBank.push(cleaned);
                         });
-                    } else {
-                        const words = s.eng.replace(/[.,?!"]/g, '').split(/\s+/);
-                        words.forEach(w => { if(w.length > 3) wordBank.push(w); });
                     }
+                    // ★修正点: 英文からの自動抽出（fallback）を削除しました。
+                    // これで vocab にない "a" や "an" が選択肢に入るのを防ぎます。
                 });
             });
             if (wordBank.length === 0) wordBank = ["apple", "pen", "this", "that"]; 
 
+            // 2. クイズを作成 (Vocabのみ対象)
             quizPool = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(spot => {
@@ -606,16 +582,28 @@
                     if (spot.vocab && spot.vocab.length > 0) {
                         words.forEach((w, i) => {
                             const cleanW = w.toLowerCase().replace(/[.,?!"]/g, '');
+                            
+                            // ★判定ロジックの修正: 「短い単語の誤判定」を防ぐ
                             const isVocabMatch = spot.vocab.some(v => {
                                 const cleanV = cleanVocab(v).toLowerCase(); 
-                                return cleanV.length > 1 && (cleanW.includes(cleanV) || cleanV.includes(cleanW));
+                                if (cleanV.length < 2) return false; // 1文字のVocabは無視（念のため）
+
+                                // パターン1: 完全一致
+                                if (cleanW === cleanV) return true;
+                                // パターン2: 英文の単語がVocabを含んでいる (例: holding -> hold)
+                                if (cleanW.includes(cleanV)) return true;
+                                // パターン3: Vocabが英文の単語を含んでいる (稀だが念のため) 
+                                // ただし、英文の単語が3文字以上ある場合に限る (これで "a" -> "apple" の誤爆を防ぐ)
+                                if (cleanV.includes(cleanW) && cleanW.length >= 3) return true;
+
+                                return false;
                             });
+                            
                             if (isVocabMatch) candidates.push(i);
                         });
                     }
-                    if (candidates.length === 0) {
-                        words.forEach((w, i) => { if(w.replace(/[.,?!"]/g,'').length >= 4) candidates.push(i); });
-                    }
+                    
+                    // ★修正点: 英文からの自動抽出（fallback）を削除しました。
                     
                     if(candidates.length > 0) {
                         const targetIdx = candidates[Math.floor(Math.random() * candidates.length)];
@@ -629,7 +617,7 @@
             });
 
             if(quizPool.length === 0) {
-                document.getElementById('q-sentence').textContent = "No quiz data available.";
+                document.getElementById('q-sentence').textContent = "No valid vocab found for quiz.";
                 return;
             }
             quizPool.sort(() => Math.random() - 0.5);
@@ -649,8 +637,7 @@
             const wrap = document.getElementById('quiz-img-wrapper');
             Array.from(wrap.children).forEach(c => { if(c.tagName !== 'IMG') wrap.removeChild(c); });
             
-            // ★変更点: クイズモードでのフレーム生成(spotDiv)コードを削除しました。
-            // 画像全体を見て解答することになります。
+            // フレーム生成(spotDiv)コードは削除済み
 
             document.getElementById('q-jp-hint').textContent = q.spot.jp;
             
