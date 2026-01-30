@@ -139,7 +139,26 @@
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(231,76,60,0.7); } 70% { box-shadow: 0 0 0 10px rgba(0,0,0,0); } }
         
         .quiz-controls { margin-top: 20px; height: 50px; display: flex; justify-content: center; align-items: center; gap: 15px; visibility: hidden; }
-        .next-btn { background: #2c3e50; color: white; border: none; padding: 15px 60px; border-radius: 50px; cursor: pointer; }
+        /* Nextボタンのデザイン修正 */
+        .next-btn { 
+            background: #2c3e50; 
+            color: white; 
+            border: none; 
+            padding: 15px 60px; /* ボタンの大きさ（縦 横） */
+            border-radius: 50px; /* 角丸を強く */
+            cursor: pointer; 
+            font-size: 1.5rem; /* ★ここが文字サイズ（大きくしました） */
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* 影をつけて目立たせる */
+            transition: all 0.2s;
+        }
+        .next-btn:hover { 
+            background: #34495e; 
+            transform: translateY(-3px); /* マウスを乗せると少し浮く */
+        }
+        .next-btn:active {
+            transform: translateY(1px); /* クリック時の動き */
+        }
 
         /* --- Modal Styles --- */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; backdrop-filter: blur(5px); }
@@ -730,6 +749,7 @@
     </script>
 </body>
 </html>
+
 
 
 
