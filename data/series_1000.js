@@ -2,7 +2,7 @@
 // Image 1001: Car Littering
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1001.webp",
+    imageFile: "images/1000/1001.webp",
     series: "1000",
     spots: [
         {
@@ -42,7 +42,7 @@ window.galleryData.push({
 // Image 1002: Beach Party Litter
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1002.webp",
+    imageFile: "images/1000/1002.webp",
     series: "1000",
     spots: [
         {
@@ -82,7 +82,7 @@ window.galleryData.push({
 // Image 1003: Deforestation
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1003.webp",
+    imageFile: "images/1000/1003.webp",
     series: "1000",
     spots: [
         {
@@ -122,7 +122,7 @@ window.galleryData.push({
 // Image 1004: Slash and Burn
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1004.webp",
+    imageFile: "images/1000/1004.webp",
     series: "1000",
     spots: [
         {
@@ -162,7 +162,7 @@ window.galleryData.push({
 // Image 1005: River Pollution
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1005.webp",
+    imageFile: "images/1000/1005.webp",
     series: "1000",
     spots: [
         {
@@ -202,7 +202,7 @@ window.galleryData.push({
 // Image 1006: Illegal Dumping
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1006.webp",
+    imageFile: "images/1000/1006.webp",
     series: "1000",
     spots: [
         {
@@ -242,7 +242,7 @@ window.galleryData.push({
 // Image 1007: Air Pollution
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1007.webp",
+    imageFile: "images/1000/1007.webp",
     series: "1000",
     spots: [
         {
@@ -282,7 +282,7 @@ window.galleryData.push({
 // Image 1008: Traffic Pollution
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1008.webp",
+    imageFile: "images/1000/1008.webp",
     series: "1000",
     spots: [
         {
@@ -322,7 +322,7 @@ window.galleryData.push({
 // Image 1009: Global Warming
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1009.webp",
+    imageFile: "images/1000/1009.webp",
     series: "1000",
     spots: [
         {
@@ -361,7 +361,7 @@ window.galleryData.push({
 // Image 1010: Landslide due to Climate Change
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1010.webp",
+    imageFile: "images/1000/1010.webp",
     series: "1000",
     spots: [
         {
@@ -401,7 +401,7 @@ window.galleryData.push({
 // Image 1011: Food Waste at Buffet
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1011.webp",
+    imageFile: "images/1000/1011.webp",
     series: "1000",
     spots: [
         {
@@ -441,7 +441,7 @@ window.galleryData.push({
 // Image 1012: Ugly Vegetables (Food Loss)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1012.webp",
+    imageFile: "images/1000/1012.webp",
     series: "1000",
     spots: [
         {
@@ -481,7 +481,7 @@ window.galleryData.push({
 // Image 1013: Fossil Fuel Dependency
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1013.webp",
+    imageFile: "images/1000/1013.webp",
     series: "1000",
     spots: [
         {
@@ -521,7 +521,7 @@ window.galleryData.push({
 // Image 1014: Energy Crisis & Heating
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1014.webp",
+    imageFile: "images/1000/1014.webp",
     series: "1000",
     spots: [
         {
@@ -561,7 +561,7 @@ window.galleryData.push({
 // Image 1015: Overtourism
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1015.webp",
+    imageFile: "images/1000/1015.webp",
     series: "1000",
     spots: [
         {
@@ -601,7 +601,7 @@ window.galleryData.push({
 // Image 1016: Ride-hailing & Congestion
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1016.webp",
+    imageFile: "images/1000/1016.webp",
     series: "1000",
     spots: [
         {
@@ -641,7 +641,7 @@ window.galleryData.push({
 // Image 1017: Social Media vs Nature
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1017.webp",
+    imageFile: "images/1000/1017.webp",
     series: "1000",
     spots: [
         {
@@ -681,7 +681,7 @@ window.galleryData.push({
 // Image 1019: Inflation (Logistics & Food Price)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1019.webp",
+    imageFile: "images/1000/1019.webp",
     series: "1000",
     spots: [
         {
@@ -721,7 +721,7 @@ window.galleryData.push({
 // Image 1020: Inflation (Restaurant Prices)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1020.webp",
+    imageFile: "images/1000/1020.webp",
     series: "1000",
     spots: [
         {
@@ -760,7 +760,7 @@ window.galleryData.push({
 // Image 1021: Labor Shortage & Aging Workforce
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1021.webp",
+    imageFile: "images/1000/1021.webp",
     series: "1000",
     spots: [
         {
@@ -800,7 +800,7 @@ window.galleryData.push({
 // Image 1022: Aging Society Burden
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1022.webp",
+    imageFile: "images/1000/1022.webp",
     series: "1000",
     spots: [
         {
@@ -840,7 +840,7 @@ window.galleryData.push({
 // Image 1023: Work-Life Balance Issues
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1023.webp",
+    imageFile: "images/1000/1023.webp",
     series: "1000",
     spots: [
         {
@@ -880,7 +880,7 @@ window.galleryData.push({
 // Image 1024: Economic Hardship
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1024.webp",
+    imageFile: "images/1000/1024.webp",
     series: "1000",
     spots: [
         {
@@ -920,7 +920,7 @@ window.galleryData.push({
 // Image 1025: Distracted Walking (Smombie)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1025.webp",
+    imageFile: "images/1000/1025.webp",
     series: "1000",
     spots: [
         {
@@ -960,7 +960,7 @@ window.galleryData.push({
 // Image 1026: Digital Addiction in Family
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "1026.webp",
+    imageFile: "images/1000/1026.webp",
     series: "1000",
     spots: [
         {

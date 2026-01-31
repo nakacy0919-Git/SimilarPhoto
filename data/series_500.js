@@ -8,7 +8,7 @@ window.galleryData = window.galleryData || [];
 // 配列にデータを追加
 window.galleryData.push(
     {
-        imageFile: "501.webp",
+        imageFile: "images/500/501.webp",
         spots: [
             {
                 top: "5%", left: "5%", width: "28%", height: "80%", color: "#e67e22",
@@ -43,7 +43,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "502.webp",
+        imageFile: "images/500/502.webp",
         spots: [
             {
                 top: "5%", left: "5%", width: "90%", height: "30%", color: "#f39c12",
@@ -78,7 +78,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "503.webp",
+        imageFile: "images/500/503.webp",
         spots: [
             {
                 top: "3%", left: "18%", width: "70%", height: "95%", color: "#95a5a6",
@@ -113,7 +113,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "504.webp",
+        imageFile: "images/500/504.webp",
         spots: [
             {
                 top: "3%", left: "25%", width: "30%", height: "80%", color: "#e67e22",
@@ -148,7 +148,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "505.webp",
+        imageFile: "images/500/505.webp",
         spots: [
             {
                 top: "15%", left: "30%", width: "30%", height: "50%", color: "#34495e",
@@ -183,7 +183,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "506.webp",
+        imageFile: "images/500/506.webp",
         spots: [
             {
                 top: "5%", left: "45%", width: "20%", height: "80%", color: "#2263e6",
@@ -218,7 +218,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "507.webp",
+        imageFile: "images/500/507.webp",
         spots: [
             {
                 top: "20%", left: "50%", width: "10%", height: "10%", color: "#2c3e50",
@@ -253,7 +253,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "508.webp",
+        imageFile: "images/500/508.webp",
         spots: [
             {
                 top: "50%", left: "30%", width: "10%", height: "10%", color: "#2980b9",
@@ -292,7 +292,7 @@ window.galleryData.push(
 // Image 509: Museum Rules (May / Can)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "509.webp",
+    imageFile: "images/500/509.webp",
     series: "500",
     spots: [
         {
@@ -332,7 +332,7 @@ window.galleryData.push({
 // Image 510: Phone Call in Museum (May / Can)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "510.webp",
+    imageFile: "images/500/510.webp",
     series: "500",
     spots: [
         {
@@ -372,7 +372,7 @@ window.galleryData.push({
 // Image 511: Optional Ties (Must / Don't have to)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "511.webp",
+    imageFile: "images/500/511.webp",
     series: "500",
     spots: [
         {
@@ -412,7 +412,7 @@ window.galleryData.push({
 // Image 512: Casual Wear Day (Must / Don't have to)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "512.webp",
+    imageFile: "images/500/512.webp",
     series: "500",
     spots: [
         {
@@ -452,7 +452,7 @@ window.galleryData.push({
 // Image 513: Refusing to Smoke (Will / Won't)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "513.webp",
+    imageFile: "images/500/513.webp",
     series: "500",
     spots: [
         {
@@ -492,7 +492,7 @@ window.galleryData.push({
 // Image 514: Studying for Exam (Will / Won't)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "514.webp",
+    imageFile: "images/500/514.webp",
     series: "500",
     spots: [
         {
@@ -531,7 +531,7 @@ window.galleryData.push({
 // 515.webp: School Lunch (Fast Food vs Healthy)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "515.webp",
+    imageFile: "images/500/515.webp",
     series: "500",
     spots: [
         {
@@ -571,7 +571,7 @@ window.galleryData.push({
 // 516.webp: Classroom (Self-study vs Presentation)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "516.webp",
+    imageFile: "images/500/516.webp",
     series: "500",
     spots: [
         {
@@ -611,7 +611,7 @@ window.galleryData.push({
 // 517.webp: Hobbies (Gaming vs Band)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "517.webp",
+    imageFile: "images/500/517.webp",
     series: "500",
     spots: [
         {
@@ -651,7 +651,7 @@ window.galleryData.push({
 // 518.webp: Study (Books vs Tablet)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "518.webp",
+    imageFile: "images/500/518.webp",
     series: "500",
     spots: [
         {
@@ -691,7 +691,7 @@ window.galleryData.push({
 // 519.webp: Lifestyle (Unfit vs Fit)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "519.webp",
+    imageFile: "images/500/519.webp",
     series: "500",
     spots: [
         {
@@ -731,7 +731,7 @@ window.galleryData.push({
 // 520.webp: Piano (Struggle vs Success)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "520.webp",
+    imageFile: "images/500/520.webp",
     series: "500",
     spots: [
         {
@@ -771,7 +771,7 @@ window.galleryData.push({
 // 521.webp: TV (Old vs New Tablet)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "521.webp",
+    imageFile: "images/500/521.webp",
     series: "500",
     spots: [
         {
@@ -811,7 +811,7 @@ window.galleryData.push({
 // 522.webp: Art (Drawing vs Digital)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "522.webp",
+    imageFile: "images/500/522.webp",
     series: "500",
     spots: [
         {
@@ -851,7 +851,7 @@ window.galleryData.push({
 // 523.webp: Phone (Old Mobile vs Video Call)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "523.webp",
+    imageFile: "images/500/523.webp",
     series: "500",
     spots: [
         {
@@ -891,7 +891,7 @@ window.galleryData.push({
 // 524.webp: Camera (Film vs Digital)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "524.webp",
+    imageFile: "images/500/524.webp",
     series: "500",
     spots: [
         {
@@ -930,7 +930,7 @@ window.galleryData.push({
 // 525.webp: Sleep Habits (Night owl vs Early bird)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "525.webp",
+    imageFile: "images/500/525.webp",
     series: "500",
     spots: [
         {
@@ -970,7 +970,7 @@ window.galleryData.push({
 // 526.webp: Food Preference (Hating veggies vs Loving salad)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "526.webp",
+    imageFile: "images/500/526.webp",
     series: "500",
     spots: [
         {
@@ -1010,7 +1010,7 @@ window.galleryData.push({
 // 527.webp: Playtime (Marbles vs VR)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "527.webp",
+    imageFile: "images/500/527.webp",
     series: "500",
     spots: [
         {
@@ -1050,7 +1050,7 @@ window.galleryData.push({
 // 528.webp: Transport (Gasoline vs EV)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "528.webp",
+    imageFile: "images/500/528.webp",
     series: "500",
     spots: [
         {

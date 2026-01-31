@@ -4,7 +4,7 @@ window.galleryData = window.galleryData || [];
 window.galleryData.push(
     // 901.webp: Proposal (Walking on air)
     {
-        imageFile: "901.webp",
+        imageFile: "images/900/901.webp",
         series: "900",
         spots: [
             {
@@ -41,7 +41,7 @@ window.galleryData.push(
     },
     // 902.webp: Lottery (Walking on air)
     {
-        imageFile: "902.webp",
+        imageFile: "images/900/902.webp",
         series: "900",
         spots: [
             {
@@ -78,7 +78,7 @@ window.galleryData.push(
     },
     // 903.webp: Broken Heart (Turn back the clock)
     {
-        imageFile: "903.webp",
+        imageFile: "images/900/903.webp",
         series: "900",
         spots: [
             {
@@ -115,7 +115,7 @@ window.galleryData.push(
     },
     // 904.webp: Bad Grade (Turn back the clock)
     {
-        imageFile: "904.webp",
+        imageFile: "images/900/904.webp",
         series: "900",
         spots: [
             {
@@ -152,7 +152,7 @@ window.galleryData.push(
     },
     // 905.webp: Secret Meeting (Fly on the wall)
     {
-        imageFile: "905.webp",
+        imageFile: "images/900/905.webp",
         series: "900",
         spots: [
             {
@@ -189,7 +189,7 @@ window.galleryData.push(
     },
     // 906.webp: Party Gossip (Fly on the wall)
     {
-        imageFile: "906.webp",
+        imageFile: "images/900/906.webp",
         series: "900",
         spots: [
             {
@@ -226,7 +226,7 @@ window.galleryData.push(
     },
     // 907.webp: Quantum Physics (Fish out of water)
     {
-        imageFile: "907.webp",
+        imageFile: "images/900/907.webp",
         series: "900",
         spots: [
             {
@@ -263,7 +263,7 @@ window.galleryData.push(
     },
     // 908.webp: Gym (Fish out of water)
     {
-        imageFile: "908.webp",
+        imageFile: "images/900/908.webp",
         series: "900",
         spots: [
             {
@@ -300,7 +300,7 @@ window.galleryData.push(
     },
     // 909.webp: Boring Office (High time we left)
     {
-        imageFile: "909.webp",
+        imageFile: "images/900/909.webp",
         series: "900",
         spots: [
             {
@@ -337,7 +337,7 @@ window.galleryData.push(
     },
     // 910.webp: Boring Party (It's high time)
     {
-        imageFile: "910.webp",
+        imageFile: "images/900/910.webp",
         series: "900",
         spots: [
             {
@@ -374,7 +374,7 @@ window.galleryData.push(
     },
     // 911.webp: Comforting Friend (In your shoes)
     {
-        imageFile: "911.webp",
+        imageFile: "images/900/911.webp",
         series: "900",
         spots: [
             {
@@ -411,7 +411,7 @@ window.galleryData.push(
     },
     // 912.webp: Comforting Child (In your shoes)
     {
-        imageFile: "912.webp",
+        imageFile: "images/900/912.webp",
         series: "900",
         spots: [
             {
@@ -448,7 +448,7 @@ window.galleryData.push(
     },
     // 913.webp: Failed Exam (Should have studied)
     {
-        imageFile: "913.webp",
+        imageFile: "images/900/913.webp",
         series: "900",
         spots: [
             {
@@ -485,7 +485,7 @@ window.galleryData.push(
     },
     // 914.webp: Presentation Fail (Should have studied)
     {
-        imageFile: "914.webp",
+        imageFile: "images/900/914.webp",
         series: "900",
         spots: [
             {
