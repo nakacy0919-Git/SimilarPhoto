@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Similar Photos Review</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
@@ -43,7 +43,7 @@
             text-transform: uppercase; letter-spacing: 1px; font-weight: 800;
             white-space: nowrap; /* 折り返し禁止 */
         }
-        /* スマホ向け調整 */
+        /* スマホ向け調整: サイズを落として1行に収める */
         @media (max-width: 600px) { 
             h1 { font-size: 1.4rem; letter-spacing: 0px; white-space: normal; line-height: 1.2; } 
             .title-image { height: 40px; }
@@ -176,14 +176,17 @@
             .iq-image-phase { 
                 grid-template-columns: 1fr; /* 縦一列 */
                 gap: 8px; 
+                /* 画面高さに収めるための工夫 */
+                height: calc(100vh - 180px); /* ヘッダー等を引いた残り */
+                max-height: 600px;
             }
             .iq-img-card {
-                /* 高さを抑えて4つ収める (21:9程度の比率) */
-                aspect-ratio: auto !important; 
-                height: 120px; /* 高さを固定 */
+                aspect-ratio: auto !important; /* PC比率を解除 */
+                height: 100%; /* 親グリッドに合わせて伸縮 */
+                min-height: 0; /* Flexバグ防止 */
             }
             .iq-img-card img {
-                object-fit: cover;
+                object-fit: cover; /* 切り抜いて埋める */
                 object-position: center;
             }
         }
