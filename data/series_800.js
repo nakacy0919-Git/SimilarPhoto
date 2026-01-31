@@ -5,7 +5,7 @@ window.galleryData = window.galleryData || [];
 // 804.webp: Paris Cafe (Waiter serving croissant)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "804.webp",
+    imageFile: "images/800/804.webp",
     spots: [
         {
             top: "28%", left: "58%", width: "22%", height: "55%", color: "#e67e22",
@@ -44,7 +44,7 @@ window.galleryData.push({
 // 807.webp: Nepal/India Temple (Applying Tika)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "807.webp",
+    imageFile: "images/800/807.webp",
     spots: [
         {
             top: "30%", left: "50%", width: "40%", height: "65%", color: "#c0392b",
@@ -83,7 +83,7 @@ window.galleryData.push({
 // 805.webp: Japanese Tea Ceremony
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "805.webp",
+    imageFile: "images/800/805.webp",
     spots: [
         {
             top: "18%", left: "58%", width: "30%", height: "65%", color: "#27ae60",
@@ -122,7 +122,7 @@ window.galleryData.push({
 // 801.webp: NYC Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "801.webp",
+    imageFile: "images/800/801.webp",
     spots: [
         {
             top: "20%", left: "55%", width: "35%", height: "70%", color: "#d35400",
@@ -161,7 +161,7 @@ window.galleryData.push({
 // 806.webp: Middle Eastern Souk
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "806.webp",
+    imageFile: "images/800/806.webp",
     spots: [
         {
             top: "18%", left: "32%", width: "38%", height: "80%", color: "#e74c3c",
@@ -200,7 +200,7 @@ window.galleryData.push({
 // 802.webp: Vancouver Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "802.webp",
+    imageFile: "images/800/802.webp",
     spots: [
         {
             top: "20%", left: "58%", width: "30%", height: "60%", color: "#d35400",
@@ -239,7 +239,7 @@ window.galleryData.push({
 // 808.webp: Peru/Machu Picchu
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "808.webp",
+    imageFile: "images/800/808.webp",
     spots: [
         {
             top: "35%", left: "62%", width: "35%", height: "65%", color: "#e74c3c",
@@ -278,7 +278,7 @@ window.galleryData.push({
 // 803.webp: Tokyo Coffee Shop
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "803.webp",
+    imageFile: "images/800/803.webp",
     spots: [
         {
             top: "25%", left: "55%", width: "30%", height: "70%", color: "#8e44ad",
@@ -314,7 +314,7 @@ window.galleryData.push({
 });
 // 809.webp - Girl running in park with women walking behind
 window.galleryData.push({
-    imageFile: "809.webp",
+    imageFile: "images/800/809.webp",
     series: "800",
     spots: [
         {
@@ -352,7 +352,7 @@ window.galleryData.push({
 
 // 810.webp - Girl in red shirt running, couple on bench
 window.galleryData.push({
-    imageFile: "810.webp",
+    imageFile: "images/800/810.webp",
     series: "800",
     spots: [
         {
@@ -390,7 +390,7 @@ window.galleryData.push({
 
 // 811.webp - School scene, girl looking back
 window.galleryData.push({
-    imageFile: "811.webp",
+    imageFile: "images/800/811.webp",
     series: "800",
     spots: [
         {
@@ -428,7 +428,7 @@ window.galleryData.push({
 
 // 812.webp - Male teacher/professional with clipboard
 window.galleryData.push({
-    imageFile: "812.webp",
+    imageFile: "images/800/812.webp",
     series: "800",
     spots: [
         {
@@ -466,7 +466,7 @@ window.galleryData.push({
 
 // 813.webp - Boy playing guitar in park
 window.galleryData.push({
-    imageFile: "813.webp",
+    imageFile: "images/800/813.webp",
     series: "800",
     spots: [
         {
@@ -504,7 +504,7 @@ window.galleryData.push({
 
 // 814.webp - Girl reading on bench
 window.galleryData.push({
-    imageFile: "814.webp",
+    imageFile: "images/800/814.webp",
     series: "800",
     spots: [
         {
@@ -542,7 +542,7 @@ window.galleryData.push({
 
 // 815.webp - Market scene, selling vegetables
 window.galleryData.push({
-    imageFile: "815.webp",
+    imageFile: "images/800/815.webp",
     series: "800",
     spots: [
         {
@@ -580,7 +580,7 @@ window.galleryData.push({
 
 // 816.webp - Man eating corn dog
 window.galleryData.push({
-    imageFile: "816.webp",
+    imageFile: "images/800/816.webp",
     series: "800",
     spots: [
         {
@@ -618,7 +618,7 @@ window.galleryData.push({
 
 // 817.webp - Library scene, taking book
 window.galleryData.push({
-    imageFile: "817.webp",
+    imageFile: "images/800/817.webp",
     series: "800",
     spots: [
         {
@@ -656,7 +656,7 @@ window.galleryData.push({
 
 // 818.webp - Boy with headphones and laptop
 window.galleryData.push({
-    imageFile: "818.webp",
+    imageFile: "images/800/818.webp",
     series: "800",
     spots: [
         {
@@ -693,7 +693,7 @@ window.galleryData.push({
 });
 // 819.webp - Classroom cleaning, boy erasing board
 window.galleryData.push({
-    imageFile: "819.webp",
+    imageFile: "images/800/819.webp",
     series: "800",
     spots: [
         {
@@ -731,7 +731,7 @@ window.galleryData.push({
 
 // 820.webp - Girl sweeping floor
 window.galleryData.push({
-    imageFile: "820.webp",
+    imageFile: "images/800/820.webp",
     series: "800",
     spots: [
         {
@@ -769,7 +769,7 @@ window.galleryData.push({
 
 // 821.webp - Conversation on a train
 window.galleryData.push({
-    imageFile: "821.webp",
+    imageFile: "images/800/821.webp",
     series: "800",
     spots: [
         {
@@ -807,7 +807,7 @@ window.galleryData.push({
 
 // 822.webp - Shaking hands on train
 window.galleryData.push({
-    imageFile: "822.webp",
+    imageFile: "images/800/822.webp",
     series: "800",
     spots: [
         {
@@ -845,7 +845,7 @@ window.galleryData.push({
 
 // 823.webp - Reading about Marie Curie
 window.galleryData.push({
-    imageFile: "823.webp",
+    imageFile: "images/800/823.webp",
     series: "800",
     spots: [
         {
@@ -883,7 +883,7 @@ window.galleryData.push({
 
 // 824.webp - Concert scene
 window.galleryData.push({
-    imageFile: "824.webp",
+    imageFile: "images/800/824.webp",
     series: "800",
     spots: [
         {
@@ -921,7 +921,7 @@ window.galleryData.push({
 
 // 825.webp - Eating a hamburger
 window.galleryData.push({
-    imageFile: "825.webp",
+    imageFile: "images/800/825.webp",
     series: "800",
     spots: [
         {
@@ -959,7 +959,7 @@ window.galleryData.push({
 
 // 826.webp - Eating a parfait
 window.galleryData.push({
-    imageFile: "826.webp",
+    imageFile: "images/800/826.webp",
     series: "800",
     spots: [
         {
@@ -997,7 +997,7 @@ window.galleryData.push({
 
 // 827.webp - Studying history/geography
 window.galleryData.push({
-    imageFile: "827.webp",
+    imageFile: "images/800/827.webp",
     series: "800",
     spots: [
         {
@@ -1035,7 +1035,7 @@ window.galleryData.push({
 
 // 828.webp - Math subject
 window.galleryData.push({
-    imageFile: "828.webp",
+    imageFile: "images/800/828.webp",
     series: "800",
     spots: [
         {
@@ -1072,7 +1072,7 @@ window.galleryData.push({
 });
 // 829.webp - Boy reading manga
 window.galleryData.push({
-    imageFile: "829.webp",
+    imageFile: "images/800/829.webp",
     series: "800",
     spots: [
         {
@@ -1110,7 +1110,7 @@ window.galleryData.push({
 
 // 830.webp - Girl drawing digitally
 window.galleryData.push({
-    imageFile: "830.webp",
+    imageFile: "images/800/830.webp",
     series: "800",
     spots: [
         {
@@ -1148,7 +1148,7 @@ window.galleryData.push({
 
 // 831.webp - Friend whose father is a lawyer
 window.galleryData.push({
-    imageFile: "831.webp",
+    imageFile: "images/800/831.webp",
     series: "800",
     spots: [
         {
@@ -1186,7 +1186,7 @@ window.galleryData.push({
 
 // 832.webp - Friend whose mother is a doctor
 window.galleryData.push({
-    imageFile: "832.webp",
+    imageFile: "images/800/832.webp",
     series: "800",
     spots: [
         {
@@ -1224,7 +1224,7 @@ window.galleryData.push({
 
 // 833.webp - Friend whose mother is a pastry chef
 window.galleryData.push({
-    imageFile: "833.webp",
+    imageFile: "images/800/833.webp",
     series: "800",
     spots: [
         {
@@ -1262,7 +1262,7 @@ window.galleryData.push({
 
 // 834.webp - Friend whose brother is a guitarist
 window.galleryData.push({
-    imageFile: "834.webp",
+    imageFile: "images/800/834.webp",
     series: "800",
     spots: [
         {
@@ -1300,7 +1300,7 @@ window.galleryData.push({
 
 // 835.webp - Friend whose sister is in Paris
 window.galleryData.push({
-    imageFile: "835.webp",
+    imageFile: "images/800/835.webp",
     series: "800",
     spots: [
         {
@@ -1338,7 +1338,7 @@ window.galleryData.push({
 
 // 836.webp - Friend whose sister is an artist
 window.galleryData.push({
-    imageFile: "836.webp",
+    imageFile: "images/800/836.webp",
     series: "800",
     spots: [
         {
@@ -1376,7 +1376,7 @@ window.galleryData.push({
 
 // 837.webp - Friend whose father is a pilot
 window.galleryData.push({
-    imageFile: "837.webp",
+    imageFile: "images/800/837.webp",
     series: "800",
     spots: [
         {
@@ -1414,7 +1414,7 @@ window.galleryData.push({
 
 // 838.webp - Friend whose mother is a scientist
 window.galleryData.push({
-    imageFile: "838.webp",
+    imageFile: "images/800/838.webp",
     series: "800",
     spots: [
         {

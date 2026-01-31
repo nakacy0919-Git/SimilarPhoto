@@ -5,7 +5,7 @@ window.galleryData = window.galleryData || [];
 // Image 601: Window broken by storm (Process/Action)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "601.webp",
+    imageFile: "images/600/601.webp",
     series: "600",
     spots: [
         {
@@ -45,7 +45,7 @@ window.galleryData.push({
 // Image 602: Window broken by tree (Cause detailed)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "602.webp",
+    imageFile: "images/600/602.webp",
     series: "600",
     spots: [
         {
@@ -85,7 +85,7 @@ window.galleryData.push({
 // Image 603: Cake eaten by dog (Discovery)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "603.webp",
+    imageFile: "images/600/603.webp",
     series: "600",
     spots: [
         {
@@ -125,7 +125,7 @@ window.galleryData.push({
 // Image 604: Cake eaten by dog (Evidence focus)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "604.webp",
+    imageFile: "images/600/604.webp",
     series: "600",
     spots: [
         {
@@ -165,7 +165,7 @@ window.galleryData.push({
 // Image 605: Car washed by man (Action in progress)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "605.webp",
+    imageFile: "images/600/605.webp",
     series: "600",
     spots: [
         {
@@ -205,7 +205,7 @@ window.galleryData.push({
 // Image 606: Car washed by man (Finished state)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "606.webp",
+    imageFile: "images/600/606.webp",
     series: "600",
     spots: [
         {
@@ -245,7 +245,7 @@ window.galleryData.push({
 // Image 607: Cooking stew (Process/Action)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "607.webp",
+    imageFile: "images/600/607.webp",
     series: "600",
     spots: [
         {
@@ -285,7 +285,7 @@ window.galleryData.push({
 // Image 608: Family eating (Consumption/Result)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "608.webp",
+    imageFile: "images/600/608.webp",
     series: "600",
     spots: [
         {
@@ -325,7 +325,7 @@ window.galleryData.push({
 // Image 609: Painting landscape (Process/Action)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "609.webp",
+    imageFile: "images/600/609.webp",
     series: "600",
     spots: [
         {
@@ -365,7 +365,7 @@ window.galleryData.push({
 // Image 610: Painting landscape (Artist focus)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "610.webp",
+    imageFile: "images/600/610.webp",
     series: "600",
     spots: [
         {
@@ -404,7 +404,7 @@ window.galleryData.push({
 // Image 611: Boy showing photo (Result/Evidence)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "611.webp",
+    imageFile: "images/600/611.webp",
     series: "600",
     spots: [
         {
@@ -444,7 +444,7 @@ window.galleryData.push({
 // Image 612: Boy taking photo (Action in progress)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "612.webp",
+    imageFile: "images/600/612.webp",
     series: "600",
     spots: [
         {
@@ -484,7 +484,7 @@ window.galleryData.push({
 // Image 613: Girl mailing letter (Action/Purpose)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "613.webp",
+    imageFile: "images/600/613.webp",
     series: "600",
     spots: [
         {
@@ -524,7 +524,7 @@ window.galleryData.push({
 // Image 614: Girl writing letter (Process/Action)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "614.webp",
+    imageFile: "images/600/614.webp",
     series: "600",
     spots: [
         {

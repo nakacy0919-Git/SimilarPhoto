@@ -4,7 +4,7 @@ window.galleryData = window.galleryData || [];
 // Image 1: 103.webp - Station to Hospital Route
 window.galleryData.push(
     {
-        imageFile: "103.webp",
+        imageFile: "images/100/103.webp",
         spots: [
             {
                 top: "52%", left: "68%", width: "25%", height: "25%", color: "#3498db",
@@ -43,7 +43,7 @@ window.galleryData.push(
 // Image 2: 102.webp - Arriving at the Hospital
 window.galleryData.push(
     {
-        imageFile: "102.webp",
+        imageFile: "images/100/102.webp",
         spots: [
             {
                 top: "8%", left: "42%", width: "20%", height: "20%", color: "#e67e22",
@@ -82,7 +82,7 @@ window.galleryData.push(
 // 1. Line Graph - Upward Trend
 window.galleryData.push(
     {
-        imageFile: "103.webp",
+        imageFile: "images/100/103.webp",
         series: "100",
         spots: [
             {
@@ -122,7 +122,7 @@ window.galleryData.push(
 // 2. Line Graph - Downward Trend
 window.galleryData.push(
     {
-        imageFile: "104.webp",
+        imageFile: "images/100/104.webp",
         series: "100",
         spots: [
             {
@@ -162,7 +162,7 @@ window.galleryData.push(
 // 3. Bar Chart - Steady Growth
 window.galleryData.push(
     {
-        imageFile: "105.webp",
+        imageFile: "images/100/105.webp",
         series: "100",
         spots: [
             {
@@ -202,7 +202,7 @@ window.galleryData.push(
 // 4. Bar Chart - Seasonal Fluctuation
 window.galleryData.push(
     {
-        imageFile: "106.webp",
+        imageFile: "images/100/106.webp",
         series: "100",
         spots: [
             {
@@ -242,7 +242,7 @@ window.galleryData.push(
 // 5. Navigation - Fast Route
 window.galleryData.push(
     {
-        imageFile: "107.webp",
+        imageFile: "images/100/107.webp",
         series: "100",
         spots: [
             {
@@ -282,7 +282,7 @@ window.galleryData.push(
 // 6. Navigation - Traffic
 window.galleryData.push(
     {
-        imageFile: "108.webp",
+        imageFile: "images/100/108.webp",
         series: "100",
         spots: [
             {
@@ -322,7 +322,7 @@ window.galleryData.push(
 // 7. Floor Map - 1st Floor Focus
 window.galleryData.push(
     {
-        imageFile: "109.webp",
+        imageFile: "images/100/109.webp",
         series: "100",
         spots: [
             {
@@ -362,7 +362,7 @@ window.galleryData.push(
 // 8. Floor Map - 2nd Floor Focus
 window.galleryData.push(
     {
-        imageFile: "110.webp",
+        imageFile: "images/100/110.webp",
         series: "100",
         spots: [
             {
@@ -402,7 +402,7 @@ window.galleryData.push(
 // 9. Pie Chart - Production A
 window.galleryData.push(
     {
-        imageFile: "111.webp",
+        imageFile: "images/100/111.webp",
         series: "100",
         spots: [
             {
@@ -442,7 +442,7 @@ window.galleryData.push(
 // 10. Pie Chart - Production B (Comparison)
 window.galleryData.push(
     {
-        imageFile: "112.webp",
+        imageFile: "images/100/112.webp",
         series: "100",
         spots: [
             {
@@ -481,7 +481,7 @@ window.galleryData.push(
 // 1. Potato Production Share (80%)
 window.galleryData.push(
     {
-        imageFile: "113.webp",
+        imageFile: "images/100/113.webp",
         series: "100",
         spots: [
             {
@@ -521,7 +521,7 @@ window.galleryData.push(
 // 2. Potato Production Share (82%)
 window.galleryData.push(
     {
-        imageFile: "114.webp",
+        imageFile: "images/100/114.webp",
         series: "100",
         spots: [
             {
@@ -561,7 +561,7 @@ window.galleryData.push(
 // 3. Cabbage Production Share (Aichi 22%)
 window.galleryData.push(
     {
-        imageFile: "115.webp",
+        imageFile: "images/100/115.webp",
         series: "100",
         spots: [
             {
@@ -601,7 +601,7 @@ window.galleryData.push(
 // 4. Cabbage Production Share (Aichi 25%)
 window.galleryData.push(
     {
-        imageFile: "116.webp",
+        imageFile: "images/100/116.webp",
         series: "100",
         spots: [
             {
@@ -641,7 +641,7 @@ window.galleryData.push(
 // 5. Eggplant Production Share (A)
 window.galleryData.push(
     {
-        imageFile: "117.webp",
+        imageFile: "images/100/117.webp",
         series: "100",
         spots: [
             {
@@ -681,7 +681,7 @@ window.galleryData.push(
 // 6. Eggplant Production Share (B)
 window.galleryData.push(
     {
-        imageFile: "118.webp",
+        imageFile: "images/100/118.webp",
         series: "100",
         spots: [
             {
@@ -721,7 +721,7 @@ window.galleryData.push(
 // 7. Carrot Production Share (Hokkaido 28%)
 window.galleryData.push(
     {
-        imageFile: "119.webp",
+        imageFile: "images/100/119.webp",
         series: "100",
         spots: [
             {
@@ -761,7 +761,7 @@ window.galleryData.push(
 // 8. Carrot Production Share (Detailed)
 window.galleryData.push(
     {
-        imageFile: "120.webp",
+        imageFile: "images/100/120.webp",
         series: "100",
         spots: [
             {
@@ -801,7 +801,7 @@ window.galleryData.push(
 // 9. Okra Production Share (Kagoshima 27%)
 window.galleryData.push(
     {
-        imageFile: "121.webp",
+        imageFile: "images/100/121.webp",
         series: "100",
         spots: [
             {
@@ -841,7 +841,7 @@ window.galleryData.push(
 // 10. Okra Production Share (Kagoshima 28%)
 window.galleryData.push(
     {
-        imageFile: "122.webp",
+        imageFile: "images/100/122.webp",
         series: "100",
         spots: [
             {
@@ -880,7 +880,7 @@ window.galleryData.push(
 // 1. Daikon Radish Production Share (A)
 window.galleryData.push(
     {
-        imageFile: "123.webp",
+        imageFile: "images/100/123.webp",
         series: "100",
         spots: [
             {
@@ -920,7 +920,7 @@ window.galleryData.push(
 // 2. Daikon Radish Production Share (B)
 window.galleryData.push(
     {
-        imageFile: "124.webp",
+        imageFile: "images/100/124.webp",
         series: "100",
         spots: [
             {
@@ -960,7 +960,7 @@ window.galleryData.push(
 // 3. Spinach Production Share (A)
 window.galleryData.push(
     {
-        imageFile: "125.webp",
+        imageFile: "images/100/125.webp",
         series: "100",
         spots: [
             {
@@ -1000,7 +1000,7 @@ window.galleryData.push(
 // 4. Spinach Production Share (B)
 window.galleryData.push(
     {
-        imageFile: "126.webp",
+        imageFile: "images/100/126.webp",
         series: "100",
         spots: [
             {
@@ -1040,7 +1040,7 @@ window.galleryData.push(
 // 5. Onion Production Share (A)
 window.galleryData.push(
     {
-        imageFile: "127.webp",
+        imageFile: "images/100/127.webp",
         series: "100",
         spots: [
             {
@@ -1080,7 +1080,7 @@ window.galleryData.push(
 // 6. Onion Production Share (B)
 window.galleryData.push(
     {
-        imageFile: "128.webp",
+        imageFile: "images/100/128.webp",
         series: "100",
         spots: [
             {

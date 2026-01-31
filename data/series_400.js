@@ -3,7 +3,7 @@ window.galleryData = window.galleryData || [];
 
 // Image: 401.webp (Two Girls Comparison)
 window.galleryData.push({
-    imageFile: "401.webp",
+    imageFile: "images/400/401.webp",
     spots: [
         {
             top: "20%", left: "25%", width: "22%", height: "75%", color: "#34495e",
@@ -40,7 +40,7 @@ window.galleryData.push({
 
 // Image: 402.webp (Anime Boy and Girl)
 window.galleryData.push({
-    imageFile: "402.webp",
+    imageFile: "images/400/402.webp",
     spots: [
         {
             top: "10%", left: "33%", width: "16%", height: "85%", color: "#2980b9",
@@ -77,7 +77,7 @@ window.galleryData.push({
 
 // Image: 403.webp (Sad Boy and Happy Girl)
 window.galleryData.push({
-    imageFile: "403.webp",
+    imageFile: "images/400/403.webp",
     spots: [
         {
             top: "15%", left: "5%", width: "35%", height: "85%", color: "#5dade2",
@@ -114,7 +114,7 @@ window.galleryData.push({
 
 // Image: 404.webp (Classroom Scene)
 window.galleryData.push({
-    imageFile: "404.webp",
+    imageFile: "images/400/404.webp",
     spots: [
         {
             top: "15%", left: "38%", width: "24%", height: "80%", color: "#3498db",
@@ -151,7 +151,7 @@ window.galleryData.push({
 
 // Image: 405.webp (Tutoring / Conversation)
 window.galleryData.push({
-    imageFile: "405.webp",
+    imageFile: "images/400/405.webp",
     spots: [
         {
             top: "18%", left: "10%", width: "40%", height: "70%", color: "#e74c3c",
@@ -188,7 +188,7 @@ window.galleryData.push({
 
 // Image: 406.webp (Elephant Infographic)
 window.galleryData.push({
-    imageFile: "406.webp",
+    imageFile: "images/400/406.webp",
     spots: [
         {
             top: "15%", left: "5%", width: "45%", height: "80%", color: "#7f8c8d",
@@ -224,7 +224,7 @@ window.galleryData.push({
 });
 // 408.webp: Writing vs Speaking (easier)
 window.galleryData.push({
-    imageFile: "408.webp",
+    imageFile: "images/400/408.webp",
     series: "400",
     spots: [
         {
@@ -262,7 +262,7 @@ window.galleryData.push({
 
 // 409.webp: Blue vs Red Backpack (bigger)
 window.galleryData.push({
-    imageFile: "409.webp",
+    imageFile: "images/400/409.webp",
     series: "400",
     spots: [
         {
@@ -300,7 +300,7 @@ window.galleryData.push({
 
 // 410.webp: Blue vs Red Backpack with Notebook (bigger)
 window.galleryData.push({
-    imageFile: "410.webp",
+    imageFile: "images/400/410.webp",
     series: "400",
     spots: [
         {
@@ -338,7 +338,7 @@ window.galleryData.push({
 
 // 411.webp: Skyscraper vs House (tall / small)
 window.galleryData.push({
-    imageFile: "411.webp",
+    imageFile: "images/400/411.webp",
     series: "400",
     spots: [
         {
@@ -376,7 +376,7 @@ window.galleryData.push({
 
 // 412.webp: Window Cleaners (tall / small)
 window.galleryData.push({
-    imageFile: "412.webp",
+    imageFile: "images/400/412.webp",
     series: "400",
     spots: [
         {
@@ -414,7 +414,7 @@ window.galleryData.push({
 
 // 413.webp: Barbell vs Balloon (heavier / lighter)
 window.galleryData.push({
-    imageFile: "413.webp",
+    imageFile: "images/400/413.webp",
     series: "400",
     spots: [
         {
@@ -452,7 +452,7 @@ window.galleryData.push({
 
 // 414.webp: Bird on Barbell (heavier / lighter)
 window.galleryData.push({
-    imageFile: "414.webp",
+    imageFile: "images/400/414.webp",
     series: "400",
     spots: [
         {
@@ -490,7 +490,7 @@ window.galleryData.push({
 
 // 415.webp: Hiker on Highest Peak (highest)
 window.galleryData.push({
-    imageFile: "415.webp",
+    imageFile: "images/400/415.webp",
     series: "400",
     spots: [
         {
@@ -528,7 +528,7 @@ window.galleryData.push({
 
 // 416.webp: Mountain Range (highest)
 window.galleryData.push({
-    imageFile: "416.webp",
+    imageFile: "images/400/416.webp",
     series: "400",
     spots: [
         {
@@ -566,7 +566,7 @@ window.galleryData.push({
 
 // 417.webp: Sea Creatures (largest)
 window.galleryData.push({
-    imageFile: "417.webp",
+    imageFile: "images/400/417.webp",
     series: "400",
     spots: [
         {
@@ -603,7 +603,7 @@ window.galleryData.push({
 });
 // 418.webp: Blue Whale (largest)
 window.galleryData.push({
-    imageFile: "418.webp",
+    imageFile: "images/400/418.webp",
     series: "400",
     spots: [
         {
@@ -641,7 +641,7 @@ window.galleryData.push({
 
 // 419.webp: Fruits on Table (biggest)
 window.galleryData.push({
-    imageFile: "419.webp",
+    imageFile: "images/400/419.webp",
     series: "400",
     spots: [
         {
@@ -679,7 +679,7 @@ window.galleryData.push({
 
 // 420.webp: Overhead Fruits (biggest)
 window.galleryData.push({
-    imageFile: "420.webp",
+    imageFile: "images/400/420.webp",
     series: "400",
     spots: [
         {
@@ -717,7 +717,7 @@ window.galleryData.push({
 
 // 421.webp: Animal Race (fastest)
 window.galleryData.push({
-    imageFile: "421.webp",
+    imageFile: "images/400/421.webp",
     series: "400",
     spots: [
         {
@@ -755,7 +755,7 @@ window.galleryData.push({
 
 // 422.webp: Running Cheetah (fastest)
 window.galleryData.push({
-    imageFile: "422.webp",
+    imageFile: "images/400/422.webp",
     series: "400",
     spots: [
         {
@@ -793,7 +793,7 @@ window.galleryData.push({
 
 // 423.webp: Trains Racing (fastest)
 window.galleryData.push({
-    imageFile: "423.webp",
+    imageFile: "images/400/423.webp",
     series: "400",
     spots: [
         {
@@ -831,7 +831,7 @@ window.galleryData.push({
 
 // 424.webp: Shinkansen & Fuji (fastest)
 window.galleryData.push({
-    imageFile: "424.webp",
+    imageFile: "images/400/424.webp",
     series: "400",
     spots: [
         {
@@ -869,7 +869,7 @@ window.galleryData.push({
 
 // 425.webp: Royal Crown (most expensive)
 window.galleryData.push({
-    imageFile: "425.webp",
+    imageFile: "images/400/425.webp",
     series: "400",
     spots: [
         {
@@ -907,7 +907,7 @@ window.galleryData.push({
 
 // 426.webp: Jewels in Case (most expensive)
 window.galleryData.push({
-    imageFile: "426.webp",
+    imageFile: "images/400/426.webp",
     series: "400",
     spots: [
         {
@@ -945,7 +945,7 @@ window.galleryData.push({
 
 // 427.webp: Bright Star (brightest)
 window.galleryData.push({
-    imageFile: "427.webp",
+    imageFile: "images/400/427.webp",
     series: "400",
     spots: [
         {
@@ -982,7 +982,7 @@ window.galleryData.push({
 });
 // 428.webp: Brightest Star in Forest (brightest)
 window.galleryData.push({
-    imageFile: "428.webp",
+    imageFile: "images/400/428.webp",
     series: "400",
     spots: [
         {
@@ -1020,7 +1020,7 @@ window.galleryData.push({
 
 // 429.webp: Spicy Chili Pepper (spiciest)
 window.galleryData.push({
-    imageFile: "429.webp",
+    imageFile: "images/400/429.webp",
     series: "400",
     spots: [
         {
@@ -1058,7 +1058,7 @@ window.galleryData.push({
 
 // 430.webp: Man Eating Chili (spiciest)
 window.galleryData.push({
-    imageFile: "430.webp",
+    imageFile: "images/400/430.webp",
     series: "400",
     spots: [
         {
@@ -1096,7 +1096,7 @@ window.galleryData.push({
 
 // 431.webp: Research Station in Snow (coldest)
 window.galleryData.push({
-    imageFile: "431.webp",
+    imageFile: "images/400/431.webp",
     series: "400",
     spots: [
         {
@@ -1134,7 +1134,7 @@ window.galleryData.push({
 
 // 432.webp: Village vs Antarctica (coldest)
 window.galleryData.push({
-    imageFile: "432.webp",
+    imageFile: "images/400/432.webp",
     series: "400",
     spots: [
         {
@@ -1172,7 +1172,7 @@ window.galleryData.push({
 
 // 433.webp: Lion on Rock (strongest)
 window.galleryData.push({
-    imageFile: "433.webp",
+    imageFile: "images/400/433.webp",
     series: "400",
     spots: [
         {
@@ -1210,7 +1210,7 @@ window.galleryData.push({
 
 // 434.webp: Lifting Contest (strongest)
 window.galleryData.push({
-    imageFile: "434.webp",
+    imageFile: "images/400/434.webp",
     series: "400",
     spots: [
         {
@@ -1248,7 +1248,7 @@ window.galleryData.push({
 
 // 435.webp: Shark Cage Attack (most dangerous)
 window.galleryData.push({
-    imageFile: "435.webp",
+    imageFile: "images/400/435.webp",
     series: "400",
     spots: [
         {
@@ -1286,7 +1286,7 @@ window.galleryData.push({
 
 // 436.webp: Shark Breach (most dangerous)
 window.galleryData.push({
-    imageFile: "436.webp",
+    imageFile: "images/400/436.webp",
     series: "400",
     spots: [
         {
@@ -1324,7 +1324,7 @@ window.galleryData.push({
 
 // 437.webp: Elephant, Lion, Giraffe (heaviest)
 window.galleryData.push({
-    imageFile: "437.webp",
+    imageFile: "images/400/437.webp",
     series: "400",
     spots: [
         {
@@ -1361,7 +1361,7 @@ window.galleryData.push({
 });
 // 438.webp: Elephant on Scale (heaviest)
 window.galleryData.push({
-    imageFile: "438.webp",
+    imageFile: "images/400/438.webp",
     series: "400",
     spots: [
         {
@@ -1398,7 +1398,7 @@ window.galleryData.push({
 });
 // 439.webp - Classroom height comparison
 window.galleryData.push({
-    imageFile: "439.webp",
+    imageFile: "images/400/439.webp",
     series: "800",
     spots: [
         {
@@ -1436,7 +1436,7 @@ window.galleryData.push({
 
 // 440.webp - Group photo session
 window.galleryData.push({
-    imageFile: "440.webp",
+    imageFile: "images/400/440.webp",
     series: "800",
     spots: [
         {

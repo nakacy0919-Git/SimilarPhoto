@@ -9,7 +9,7 @@ window.galleryData = window.galleryData || [];
 // --------------------------------------------
 window.galleryData.push(
     {
-        imageFile: "001.webp",
+        imageFile: "images/000/001.webp",
         series: "000",
         spots: [
             {
@@ -35,7 +35,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "002.webp",
+        imageFile: "images/000/002.webp",
         series: "000",
         spots: [
             {
@@ -71,7 +71,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "003.webp",
+        imageFile: "images/000/003.webp",
         series: "000",
         spots: [
             {
@@ -107,7 +107,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "004.webp",
+        imageFile: "images/000/004.webp",
         series: "000",
         spots: [
             {
@@ -143,7 +143,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "005.webp",
+        imageFile: "images/000/005.webp",
         series: "000",
         spots: [
             {
@@ -179,7 +179,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "006.webp",
+        imageFile: "images/000/006.webp",
         series: "000",
         spots: [
             {
@@ -215,7 +215,7 @@ window.galleryData.push(
         ]
     },
     {
-        imageFile: "007.webp",
+        imageFile: "images/000/007.webp",
         series: "000",
         spots: [
             {
@@ -258,7 +258,7 @@ window.galleryData.push(
 window.galleryData.push(
     // 008.webp: Cat on table, Dog under table
     {
-        imageFile: "008.webp",
+        imageFile: "images/000/008.webp",
         series: "000",
         spots: [
             {
@@ -295,7 +295,7 @@ window.galleryData.push(
     },
     // 009.webp: Calico cat, Bulldog
     {
-        imageFile: "009.webp",
+        imageFile: "images/000/009.webp",
         series: "000",
         spots: [
             {
@@ -332,7 +332,7 @@ window.galleryData.push(
     },
     // 010.webp: Boy behind sofa, Girl in front
     {
-        imageFile: "010.webp",
+        imageFile: "images/000/010.webp",
         series: "000",
         spots: [
             {
@@ -369,7 +369,7 @@ window.galleryData.push(
     },
     // 011.webp: Boy behind sofa (visible), Girl with doll
     {
-        imageFile: "011.webp",
+        imageFile: "images/000/011.webp",
         series: "000",
         spots: [
             {
@@ -406,7 +406,7 @@ window.galleryData.push(
     },
     // 012.webp: Wire basket, Rotten bananas
     {
-        imageFile: "012.webp",
+        imageFile: "images/000/012.webp",
         series: "000",
         spots: [
             {
@@ -443,7 +443,7 @@ window.galleryData.push(
     },
     // 013.webp: Wicker basket, Fresh bananas
     {
-        imageFile: "013.webp",
+        imageFile: "images/000/013.webp",
         series: "000",
         spots: [
             {
@@ -480,7 +480,7 @@ window.galleryData.push(
     },
     // 014.webp: Soccer ball, Boxes, Bear
     {
-        imageFile: "014.webp",
+        imageFile: "images/000/014.webp",
         series: "000",
         spots: [
             {
@@ -517,7 +517,7 @@ window.galleryData.push(
     },
     // 015.webp: Cuckoo clock, Cacti
     {
-        imageFile: "015.webp",
+        imageFile: "images/000/015.webp",
         series: "000",
         spots: [
             {
@@ -554,7 +554,7 @@ window.galleryData.push(
     },
     // 016.webp: Red clock, Plant, Sunset
     {
-        imageFile: "016.webp",
+        imageFile: "images/000/016.webp",
         series: "000",
         spots: [
             {
@@ -591,7 +591,7 @@ window.galleryData.push(
     },
     // 017.webp: Classroom Map, Backpack
     {
-        imageFile: "017.webp",
+        imageFile: "images/000/017.webp",
         series: "000",
         spots: [
             {
@@ -628,7 +628,7 @@ window.galleryData.push(
     },
     // 018.webp: Laptop on desk, Book under desk (Daytime)
     {
-        imageFile: "018.webp",
+        imageFile: "images/000/018.webp",
         series: "000",
         spots: [
             {
@@ -665,7 +665,7 @@ window.galleryData.push(
     },
     // 019.webp: Laptop on desk, Books under desk (Nighttime)
     {
-        imageFile: "019.webp",
+        imageFile: "images/000/019.webp",
         series: "000",
         spots: [
             {
@@ -702,7 +702,7 @@ window.galleryData.push(
     },
     // 020.webp: Birdcage on tree, Cat under tree (Sunset)
     {
-        imageFile: "020.webp",
+        imageFile: "images/000/020.webp",
         series: "000",
         spots: [
             {
@@ -739,7 +739,7 @@ window.galleryData.push(
     },
     // 021.webp: Birdcage on tree, Sleeping cat (Daytime)
     {
-        imageFile: "021.webp",
+        imageFile: "images/000/021.webp",
         series: "000",
         spots: [
             {
@@ -776,7 +776,7 @@ window.galleryData.push(
     },
     // 022.webp: Bedroom, Sneakers under bed, T-shirts
     {
-        imageFile: "022.webp",
+        imageFile: "images/000/022.webp",
         series: "000",
         spots: [
             {
@@ -813,7 +813,7 @@ window.galleryData.push(
     },
     // 023.webp: Bedroom, Rain boots, Winter clothes
     {
-        imageFile: "023.webp",
+        imageFile: "images/000/023.webp",
         series: "000",
         spots: [
             {

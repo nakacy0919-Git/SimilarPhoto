@@ -7,7 +7,7 @@ window.galleryData = window.galleryData || [];
 
 // Image 301: Woman reading in cafe (Blue book)
 window.galleryData.push({
-    imageFile: "301.webp",
+    imageFile: "images/300/301.webp",
     spots: [
         {
             top: "20%", left: "55%", width: "40%", height: "70%", color: "#2ecc71",
@@ -44,7 +44,7 @@ window.galleryData.push({
 
 // Image 302: Woman reading in cafe (Red book + Man outside)
 window.galleryData.push({
-    imageFile: "302.webp",
+    imageFile: "images/300/302.webp",
     spots: [
         {
             top: "15%", left: "50%", width: "45%", height: "80%", color: "#e74c3c",
@@ -81,7 +81,7 @@ window.galleryData.push({
 
 // Image 303: Parents watching soccer (Sitting)
 window.galleryData.push({
-    imageFile: "303.webp",
+    imageFile: "images/300/303.webp",
     spots: [
         {
             top: "25%", left: "12%", width: "35%", height: "65%", color: "#34495e",
@@ -118,7 +118,7 @@ window.galleryData.push({
 
 // Image 304: Parents watching soccer (Standing/Photo)
 window.galleryData.push({
-    imageFile: "304.webp",
+    imageFile: "images/300/304.webp",
     spots: [
         {
             top: "15%", left: "42%", width: "18%", height: "65%", color: "#e67e22",
@@ -155,7 +155,7 @@ window.galleryData.push({
 
 // Image 305: Classroom Scene (No laptops)
 window.galleryData.push({
-    imageFile: "305.webp",
+    imageFile: "images/300/305.webp",
     spots: [
         {
             top: "40%", left: "55%", width: "20%", height: "35%", color: "#e74c3c",
@@ -192,7 +192,7 @@ window.galleryData.push({
 
 // Image 306: Classroom Scene (With laptop)
 window.galleryData.push({
-    imageFile: "306.webp",
+    imageFile: "images/300/306.webp",
     spots: [
         {
             top: "40%", left: "58%", width: "20%", height: "35%", color: "#2980b9",
@@ -229,7 +229,7 @@ window.galleryData.push({
 
 // Image 307: Kids Soccer (Dog on left)
 window.galleryData.push({
-    imageFile: "307.webp",
+    imageFile: "images/300/307.webp",
     spots: [
         {
             top: "35%", left: "35%", width: "15%", height: "50%", color: "#3498db",
@@ -266,7 +266,7 @@ window.galleryData.push({
 
 // Image 308: Kids Soccer (Kite)
 window.galleryData.push({
-    imageFile: "308.webp",
+    imageFile: "images/300/308.webp",
     spots: [
         {
             top: "5%", left: "25%", width: "15%", height: "25%", color: "#e67e22",
@@ -303,7 +303,7 @@ window.galleryData.push({
 
 // Image 309: Men Tennis (Doubles/Singles)
 window.galleryData.push({
-    imageFile: "309.webp",
+    imageFile: "images/300/309.webp",
     spots: [
         {
             top: "10%", left: "15%", width: "40%", height: "85%", color: "#2c3e50",
@@ -340,7 +340,7 @@ window.galleryData.push({
 
 // Image 310: Mixed Tennis (Singles/Doubles)
 window.galleryData.push({
-    imageFile: "310.webp",
+    imageFile: "images/300/310.webp",
     spots: [
         {
             top: "8%", left: "48%", width: "35%", height: "85%", color: "#27ae60",
@@ -381,7 +381,7 @@ window.galleryData.push({
 
 // Image 311: Woman sick at home (Coughing)
 window.galleryData.push({
-    imageFile: "311.webp",
+    imageFile: "images/300/311.webp",
     spots: [
         {
             top: "15%", left: "38%", width: "28%", height: "60%", color: "#e67e22",
@@ -418,7 +418,7 @@ window.galleryData.push({
 
 // Image 312: Woman sick at office (Mask & Humidifier)
 window.galleryData.push({
-    imageFile: "312.webp",
+    imageFile: "images/300/312.webp",
     spots: [
         {
             top: "18%", left: "35%", width: "30%", height: "60%", color: "#e74c3c",
@@ -459,7 +459,7 @@ window.galleryData.push({
 
 // Image 313: Cooking Breakfast (Red Apron / Spices)
 window.galleryData.push({
-    imageFile: "313.webp",
+    imageFile: "images/300/313.webp",
     spots: [
         {
             top: "55%", left: "38%", width: "15%", height: "20%", color: "#e74c3c",
@@ -496,7 +496,7 @@ window.galleryData.push({
 
 // Image 314: Cooking Breakfast (Blue Apron / Stirring)
 window.galleryData.push({
-    imageFile: "314.webp",
+    imageFile: "images/300/314.webp",
     spots: [
         {
             top: "70%", left: "38%", width: "20%", height: "15%", color: "#e67e22",
@@ -533,7 +533,7 @@ window.galleryData.push({
 
 // Image 315: Watching TV (Night / News)
 window.galleryData.push({
-    imageFile: "315.webp",
+    imageFile: "images/300/315.webp",
     spots: [
         {
             top: "38%", left: "5%", width: "22%", height: "30%", color: "#8e44ad",
@@ -570,7 +570,7 @@ window.galleryData.push({
 
 // Image 316: Watching TV (Day / Cartoon)
 window.galleryData.push({
-    imageFile: "316.webp",
+    imageFile: "images/300/316.webp",
     spots: [
         {
             top: "38%", left: "5%", width: "22%", height: "30%", color: "#27ae60",
@@ -607,7 +607,7 @@ window.galleryData.push({
 
 // Image 317: Classroom Cleaning (Sunny / Erasing)
 window.galleryData.push({
-    imageFile: "317.webp",
+    imageFile: "images/300/317.webp",
     spots: [
         {
             top: "20%", left: "15%", width: "25%", height: "30%", color: "#16a085",
@@ -644,7 +644,7 @@ window.galleryData.push({
 
 // Image 318: Classroom Cleaning (Cloudy / Mopping)
 window.galleryData.push({
-    imageFile: "318.webp",
+    imageFile: "images/300/318.webp",
     spots: [
         {
             top: "60%", left: "18%", width: "15%", height: "10%", color: "#7f8c8d",
@@ -681,7 +681,7 @@ window.galleryData.push({
 
 // Image 319: Art Class (Abstract / Rainy)
 window.galleryData.push({
-    imageFile: "319.webp",
+    imageFile: "images/300/319.webp",
     spots: [
         {
             top: "25%", left: "12%", width: "18%", height: "30%", color: "#9b59b6",
@@ -718,7 +718,7 @@ window.galleryData.push({
 
 // Image 320: Art Class (Landscape / Sunny)
 window.galleryData.push({
-    imageFile: "320.webp",
+    imageFile: "images/300/320.webp",
     spots: [
         {
             top: "30%", left: "13%", width: "18%", height: "25%", color: "#2ecc71",

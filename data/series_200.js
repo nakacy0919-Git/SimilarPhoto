@@ -5,7 +5,7 @@ window.galleryData = window.galleryData || [];
 // Image: 201.webp (Boy with bike and dog)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "201.webp",
+    imageFile: "images/200/201.webp",
     series: "200",
     spots: [
         {
@@ -45,7 +45,7 @@ window.galleryData.push({
 // Image: 202.webp (Boy laughing with bike in park)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "202.webp",
+    imageFile: "images/200/202.webp",
     series: "200",
     spots: [
         {
@@ -85,7 +85,7 @@ window.galleryData.push({
 // Image: 203.webp (Boy juggling soccer ball)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "203.webp",
+    imageFile: "images/200/203.webp",
     series: "200",
     spots: [
         {
@@ -125,7 +125,7 @@ window.galleryData.push({
 // Image: 204.webp (Boy walking with soccer ball at sunset)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "204.webp",
+    imageFile: "images/200/204.webp",
     series: "200",
     spots: [
         {
@@ -165,7 +165,7 @@ window.galleryData.push({
 // Image: 205.webp (Woman picking apples)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "205.webp",
+    imageFile: "images/200/205.webp",
     series: "200",
     spots: [
         {
@@ -205,7 +205,7 @@ window.galleryData.push({
 // Image: 206.webp (Woman paying at register)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "206.webp",
+    imageFile: "images/200/206.webp",
     series: "200",
     spots: [
         {
@@ -244,7 +244,7 @@ window.galleryData.push({
 // Image 255: Okinawa Castle Memory
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "255.webp",
+    imageFile: "images/200/255.webp",
     series: "200",
     spots: [
         {
@@ -284,7 +284,7 @@ window.galleryData.push({
 // Image 256: Aquarium Whale Shark
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "256.webp",
+    imageFile: "images/200/256.webp",
     series: "200",
     spots: [
         {
@@ -324,7 +324,7 @@ window.galleryData.push({
 // Image 257: Doctor and Child
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "257.webp",
+    imageFile: "images/200/257.webp",
     series: "200",
     spots: [
         {
@@ -364,7 +364,7 @@ window.galleryData.push({
 // Image 258: Studying for Medical School
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "258.webp",
+    imageFile: "images/200/258.webp",
     series: "200",
     spots: [
         {
@@ -404,7 +404,7 @@ window.galleryData.push({
 // Image 259: Planning World Travel
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "259.webp",
+    imageFile: "images/200/259.webp",
     series: "200",
     spots: [
         {
@@ -444,7 +444,7 @@ window.galleryData.push({
 // Image 260: Bookstore and Piggy Bank
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "260.webp",
+    imageFile: "images/200/260.webp",
     series: "200",
     spots: [
         {
@@ -484,7 +484,7 @@ window.galleryData.push({
 // Image 261: Science Museum
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "261.webp",
+    imageFile: "images/200/261.webp",
     series: "200",
     spots: [
         {
@@ -524,7 +524,7 @@ window.galleryData.push({
 // Image 262: Lab Experiment
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "262.webp",
+    imageFile: "images/200/262.webp",
     series: "200",
     spots: [
         {
@@ -564,7 +564,7 @@ window.galleryData.push({
 // Image 263: Studying on the Train
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "263.webp",
+    imageFile: "images/200/263.webp",
     series: "200",
     spots: [
         {
@@ -604,7 +604,7 @@ window.galleryData.push({
 // Image 264: Late Night Study
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "264.webp",
+    imageFile: "images/200/264.webp",
     series: "200",
     spots: [
         {
@@ -643,7 +643,7 @@ window.galleryData.push({
 // Image 207: Reading on Tablet
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "207.webp",
+    imageFile: "images/200/207.webp",
     series: "200",
     spots: [
         {
@@ -683,7 +683,7 @@ window.galleryData.push({
 // Image 208: Reading Comics
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "208.webp",
+    imageFile: "images/200/208.webp",
     series: "200",
     spots: [
         {
@@ -723,7 +723,7 @@ window.galleryData.push({
 // Image 209: Roasting Chicken
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "209.webp",
+    imageFile: "images/200/209.webp",
     series: "200",
     spots: [
         {
@@ -763,7 +763,7 @@ window.galleryData.push({
 // Image 210: Cooking Healthy Food
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "210.webp",
+    imageFile: "images/200/210.webp",
     series: "200",
     spots: [
         {
@@ -803,7 +803,7 @@ window.galleryData.push({
 // Image 211: Soccer Ball Control
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "211.webp",
+    imageFile: "images/200/211.webp",
     series: "200",
     spots: [
         {
@@ -843,7 +843,7 @@ window.galleryData.push({
 // Image 212: Soccer Dribbling
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "212.webp",
+    imageFile: "images/200/212.webp",
     series: "200",
     spots: [
         {
@@ -883,7 +883,7 @@ window.galleryData.push({
 // Image 213: Visiting Kyoto (Old Man)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "213.webp",
+    imageFile: "images/200/213.webp",
     series: "200",
     spots: [
         {
@@ -923,7 +923,7 @@ window.galleryData.push({
 // Image 214: Visiting Kyoto (Torii Gates)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "214.webp",
+    imageFile: "images/200/214.webp",
     series: "200",
     spots: [
         {
@@ -963,7 +963,7 @@ window.galleryData.push({
 // Image 215: Video Games with Friends
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "215.webp",
+    imageFile: "images/200/215.webp",
     series: "200",
     spots: [
         {
@@ -1003,7 +1003,7 @@ window.galleryData.push({
 // Image 216: Coffee with Friends
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "216.webp",
+    imageFile: "images/200/216.webp",
     series: "200",
     spots: [
         {
@@ -1042,7 +1042,7 @@ window.galleryData.push({
 // Image 217: Man Wanting to Quit Smoking
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "217.webp",
+    imageFile: "images/200/217.webp",
     series: "200",
     spots: [
         {
@@ -1082,7 +1082,7 @@ window.galleryData.push({
 // Image 218: Doctor's Advice
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "218.webp",
+    imageFile: "images/200/218.webp",
     series: "200",
     spots: [
         {
@@ -1122,7 +1122,7 @@ window.galleryData.push({
 // Image 219: Start Cleaning (Boy)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "219.webp",
+    imageFile: "images/200/219.webp",
     series: "200",
     spots: [
         {
@@ -1162,7 +1162,7 @@ window.galleryData.push({
 // Image 220: Vacuuming (Boy)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "220.webp",
+    imageFile: "images/200/220.webp",
     series: "200",
     spots: [
         {
@@ -1202,7 +1202,7 @@ window.galleryData.push({
 // Image 221: Looking Forward (Texting)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "221.webp",
+    imageFile: "images/200/221.webp",
     series: "200",
     spots: [
         {
@@ -1242,7 +1242,7 @@ window.galleryData.push({
 // Image 222: Welcome at Airport
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "222.webp",
+    imageFile: "images/200/222.webp",
     series: "200",
     spots: [
         {
@@ -1282,7 +1282,7 @@ window.galleryData.push({
 // Image 223: Tired of Shopping
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "223.webp",
+    imageFile: "images/200/223.webp",
     series: "200",
     spots: [
         {
@@ -1322,7 +1322,7 @@ window.galleryData.push({
 // Image 224: Tired of Hiking
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "224.webp",
+    imageFile: "images/200/224.webp",
     series: "200",
     spots: [
         {
@@ -1362,7 +1362,7 @@ window.galleryData.push({
 // Image 225: Interested in Speaking (Group)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "225.webp",
+    imageFile: "images/200/225.webp",
     series: "200",
     spots: [
         {
@@ -1402,7 +1402,7 @@ window.galleryData.push({
 // Image 226: Interested in Speaking (Street)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "226.webp",
+    imageFile: "images/200/226.webp",
     series: "200",
     spots: [
         {
@@ -1441,7 +1441,7 @@ window.galleryData.push({
 // Image 227: Poor at Drawing (Stick Figure)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "227.webp",
+    imageFile: "images/200/227.webp",
     series: "200",
     spots: [
         {
@@ -1481,7 +1481,7 @@ window.galleryData.push({
 // Image 228: Poor at Drawing (Comparison)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "228.webp",
+    imageFile: "images/200/228.webp",
     series: "200",
     spots: [
         {
@@ -1521,7 +1521,7 @@ window.galleryData.push({
 // Image 229: Finished Homework (Library)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "229.webp",
+    imageFile: "images/200/229.webp",
     series: "200",
     spots: [
         {
@@ -1561,7 +1561,7 @@ window.galleryData.push({
 // Image 230: Finished Homework (Art)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "230.webp",
+    imageFile: "images/200/230.webp",
     series: "200",
     spots: [
         {
@@ -1601,7 +1601,7 @@ window.galleryData.push({
 // Image 231: Stopped Talking (Strict Teacher)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "231.webp",
+    imageFile: "images/200/231.webp",
     series: "200",
     spots: [
         {
@@ -1641,7 +1641,7 @@ window.galleryData.push({
 // Image 232: Stopped Talking (Nice Teacher)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "232.webp",
+    imageFile: "images/200/232.webp",
     series: "200",
     spots: [
         {
@@ -1681,7 +1681,7 @@ window.galleryData.push({
 // Image 233: Thank You (Dishes)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "233.webp",
+    imageFile: "images/200/233.webp",
     series: "200",
     spots: [
         {
@@ -1721,7 +1721,7 @@ window.galleryData.push({
 // Image 234: Thank You (Moving)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "234.webp",
+    imageFile: "images/200/234.webp",
     series: "200",
     spots: [
         {
@@ -1761,7 +1761,7 @@ window.galleryData.push({
 // Image 235: Afraid of Mistakes (Basketball)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "235.webp",
+    imageFile: "images/200/235.webp",
     series: "200",
     spots: [
         {
@@ -1801,7 +1801,7 @@ window.galleryData.push({
 // Image 236: Afraid of Mistakes (Speech)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "236.webp",
+    imageFile: "images/200/236.webp",
     series: "200",
     spots: [
         {
@@ -1840,7 +1840,7 @@ window.galleryData.push({
 // Image 237: Looking Forward to Traveling (Camera)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "237.webp",
+    imageFile: "images/200/237.webp",
     series: "200",
     spots: [
         {
@@ -1880,7 +1880,7 @@ window.galleryData.push({
 // Image 238: Looking Forward to Traveling (Packing)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "238.webp",
+    imageFile: "images/200/238.webp",
     series: "200",
     spots: [
         {
@@ -1920,7 +1920,7 @@ window.galleryData.push({
 // Image 239: Likes Studying (Online)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "239.webp",
+    imageFile: "images/200/239.webp",
     series: "200",
     spots: [
         {
@@ -1960,7 +1960,7 @@ window.galleryData.push({
 // Image 240: Likes Studying (Tablet)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "240.webp",
+    imageFile: "images/200/240.webp",
     series: "200",
     spots: [
         {
@@ -2000,7 +2000,7 @@ window.galleryData.push({
 // Image 241: Good at Cooking (Group)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "241.webp",
+    imageFile: "images/200/241.webp",
     series: "200",
     spots: [
         {
@@ -2040,7 +2040,7 @@ window.galleryData.push({
 // Image 242: Good at Cooking (Solo)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "242.webp",
+    imageFile: "images/200/242.webp",
     series: "200",
     spots: [
         {
@@ -2080,7 +2080,7 @@ window.galleryData.push({
 // Image 243: Thank You for Waiting (Clinic)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "243.webp",
+    imageFile: "images/200/243.webp",
     series: "200",
     spots: [
         {
@@ -2120,7 +2120,7 @@ window.galleryData.push({
 // Image 244: Thank You for Waiting (Station)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "244.webp",
+    imageFile: "images/200/244.webp",
     series: "200",
     spots: [
         {
@@ -2160,7 +2160,7 @@ window.galleryData.push({
 // Image 245: Thinking About Joining (Soccer)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "245.webp",
+    imageFile: "images/200/245.webp",
     series: "200",
     spots: [
         {
@@ -2200,7 +2200,7 @@ window.galleryData.push({
 // Image 246: Thinking About Joining (Music)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "246.webp",
+    imageFile: "images/200/246.webp",
     series: "200",
     spots: [
         {
@@ -2239,7 +2239,7 @@ window.galleryData.push({
 // Image 247: Tennis Invitation (Classroom)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "247.webp",
+    imageFile: "images/200/247.webp",
     series: "200",
     spots: [
         {
@@ -2279,7 +2279,7 @@ window.galleryData.push({
 // Image 248: Tennis Invitation (Park)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "248.webp",
+    imageFile: "images/200/248.webp",
     series: "200",
     spots: [
         {
@@ -2319,7 +2319,7 @@ window.galleryData.push({
 // Image 249: Watching Movies (Home)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "249.webp",
+    imageFile: "images/200/249.webp",
     series: "200",
     spots: [
         {
@@ -2359,7 +2359,7 @@ window.galleryData.push({
 // Image 250: Watching Movies (Cinema)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "250.webp",
+    imageFile: "images/200/250.webp",
     series: "200",
     spots: [
         {
@@ -2399,7 +2399,7 @@ window.galleryData.push({
 // Image 251: Remembering Grandparents (Album)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "251.webp",
+    imageFile: "images/200/251.webp",
     series: "200",
     spots: [
         {
@@ -2439,7 +2439,7 @@ window.galleryData.push({
 // Image 252: Remembering Grandparents (Cooking)
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "252.webp",
+    imageFile: "images/200/252.webp",
     series: "200",
     spots: [
         {
@@ -2479,7 +2479,7 @@ window.galleryData.push({
 // Image 253: Playing in Tree
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "253.webp",
+    imageFile: "images/200/253.webp",
     series: "200",
     spots: [
         {
@@ -2519,7 +2519,7 @@ window.galleryData.push({
 // Image 254: Playing in Mud
 // -----------------------------------------------------------------------------
 window.galleryData.push({
-    imageFile: "254.webp",
+    imageFile: "images/200/254.webp",
     series: "200",
     spots: [
         {

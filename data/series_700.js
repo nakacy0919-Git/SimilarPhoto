@@ -3,7 +3,7 @@ window.galleryData = window.galleryData || [];
 
 // 701.webp - Clean Room (Completion/Result)
 window.galleryData.push({
-    imageFile: "701.webp",
+    imageFile: "images/700/701.webp",
     series: "700",
     spots: [
         {
@@ -41,7 +41,7 @@ window.galleryData.push({
 
 // 702.webp - Clean Room with Cloth (Completion/Evidence)
 window.galleryData.push({
-    imageFile: "702.webp",
+    imageFile: "images/700/702.webp",
     series: "700",
     spots: [
         {
@@ -79,7 +79,7 @@ window.galleryData.push({
 
 // 703.webp - Kyoto Experience (Experience)
 window.galleryData.push({
-    imageFile: "703.webp",
+    imageFile: "images/700/703.webp",
     series: "700",
     spots: [
         {
@@ -117,7 +117,7 @@ window.galleryData.push({
 
 // 704.webp - London Experience (Experience)
 window.galleryData.push({
-    imageFile: "704.webp",
+    imageFile: "images/700/704.webp",
     series: "700",
     spots: [
         {
@@ -155,7 +155,7 @@ window.galleryData.push({
 
 // 705.webp - Dog Photo Boy (Continuation)
 window.galleryData.push({
-    imageFile: "705.webp",
+    imageFile: "images/700/705.webp",
     series: "700",
     spots: [
         {
@@ -193,7 +193,7 @@ window.galleryData.push({
 
 // 706.webp - Dog Photo Girl (Continuation)
 window.galleryData.push({
-    imageFile: "706.webp",
+    imageFile: "images/700/706.webp",
     series: "700",
     spots: [
         {
@@ -231,7 +231,7 @@ window.galleryData.push({
 
 // 707.webp - Tokyo Living (Continuation)
 window.galleryData.push({
-    imageFile: "707.webp",
+    imageFile: "images/700/707.webp",
     series: "700",
     spots: [
         {
@@ -269,7 +269,7 @@ window.galleryData.push({
 
 // 708.webp - Shibuya Crossing (Experience/Continuation)
 window.galleryData.push({
-    imageFile: "708.webp",
+    imageFile: "images/700/708.webp",
     series: "700",
     spots: [
         {
@@ -307,7 +307,7 @@ window.galleryData.push({
 
 // 709.webp - Game Boy (Completion)
 window.galleryData.push({
-    imageFile: "709.webp",
+    imageFile: "images/700/709.webp",
     series: "700",
     spots: [
         {
@@ -345,7 +345,7 @@ window.galleryData.push({
 
 // 710.webp - Comic Boy (Completion)
 window.galleryData.push({
-    imageFile: "710.webp",
+    imageFile: "images/700/710.webp",
     series: "700",
     spots: [
         {
@@ -384,7 +384,7 @@ window.galleryData.push({
 
 // 711.webp - Lost Keys (Outside)
 window.galleryData.push({
-    imageFile: "711.webp",
+    imageFile: "images/700/711.webp",
     series: "700",
     spots: [
         {
@@ -422,7 +422,7 @@ window.galleryData.push({
 
 // 712.webp - Lost Keys (Inside/Coat)
 window.galleryData.push({
-    imageFile: "712.webp",
+    imageFile: "images/700/712.webp",
     series: "700",
     spots: [
         {
@@ -460,7 +460,7 @@ window.galleryData.push({
 
 // 713.webp - Sushi Experience (Girl)
 window.galleryData.push({
-    imageFile: "713.webp",
+    imageFile: "images/700/713.webp",
     series: "700",
     spots: [
         {
@@ -498,7 +498,7 @@ window.galleryData.push({
 
 // 714.webp - Sushi Experience (Grandma)
 window.galleryData.push({
-    imageFile: "714.webp",
+    imageFile: "images/700/714.webp",
     series: "700",
     spots: [
         {
@@ -536,7 +536,7 @@ window.galleryData.push({
 
 // 715.webp - Sci-Fi Movie (Boy)
 window.galleryData.push({
-    imageFile: "715.webp",
+    imageFile: "images/700/715.webp",
     series: "700",
     spots: [
         {
@@ -574,7 +574,7 @@ window.galleryData.push({
 
 // 716.webp - Sci-Fi Movie (Grandpa)
 window.galleryData.push({
-    imageFile: "716.webp",
+    imageFile: "images/700/716.webp",
     series: "700",
     spots: [
         {
@@ -612,7 +612,7 @@ window.galleryData.push({
 
 // 717.webp - Read Book (Man)
 window.galleryData.push({
-    imageFile: "717.webp",
+    imageFile: "images/700/717.webp",
     series: "700",
     spots: [
         {
@@ -650,7 +650,7 @@ window.galleryData.push({
 
 // 718.webp - Read Book (Woman)
 window.galleryData.push({
-    imageFile: "718.webp",
+    imageFile: "images/700/718.webp",
     series: "700",
     spots: [
         {
@@ -688,7 +688,7 @@ window.galleryData.push({
 
 // 719.webp - Haircut (Mirror)
 window.galleryData.push({
-    imageFile: "719.webp",
+    imageFile: "images/700/719.webp",
     series: "700",
     spots: [
         {
@@ -726,7 +726,7 @@ window.galleryData.push({
 
 // 720.webp - Haircut (School)
 window.galleryData.push({
-    imageFile: "720.webp",
+    imageFile: "images/700/720.webp",
     series: "700",
     spots: [
         {
@@ -765,7 +765,7 @@ window.galleryData.push({
 
 // 721.webp - Broken Leg (Home)
 window.galleryData.push({
-    imageFile: "721.webp",
+    imageFile: "images/700/721.webp",
     series: "700",
     spots: [
         {
@@ -803,7 +803,7 @@ window.galleryData.push({
 
 // 722.webp - Broken Leg (School)
 window.galleryData.push({
-    imageFile: "722.webp",
+    imageFile: "images/700/722.webp",
     series: "700",
     spots: [
         {
@@ -842,7 +842,7 @@ window.galleryData.push({
 
 // 723.webp - Mt. Fuji Presentation (Experience)
 window.galleryData.push({
-    imageFile: "723.webp",
+    imageFile: "images/700/723.webp",
     series: "700",
     spots: [
         {
@@ -880,7 +880,7 @@ window.galleryData.push({
 
 // 724.webp - Hiker Presentation (Experience)
 window.galleryData.push({
-    imageFile: "724.webp",
+    imageFile: "images/700/724.webp",
     series: "700",
     spots: [
         {
@@ -918,7 +918,7 @@ window.galleryData.push({
 
 // 725.webp - Concert Finished (Result)
 window.galleryData.push({
-    imageFile: "725.webp",
+    imageFile: "images/700/725.webp",
     series: "700",
     spots: [
         {
@@ -956,7 +956,7 @@ window.galleryData.push({
 
 // 726.webp - Concert Pack Up (Result)
 window.galleryData.push({
-    imageFile: "726.webp",
+    imageFile: "images/700/726.webp",
     series: "700",
     spots: [
         {
@@ -994,7 +994,7 @@ window.galleryData.push({
 
 // 727.webp - Movie Started (Result)
 window.galleryData.push({
-    imageFile: "727.webp",
+    imageFile: "images/700/727.webp",
     series: "700",
     spots: [
         {
@@ -1032,7 +1032,7 @@ window.galleryData.push({
 
 // 728.webp - Senior Couple Movie (Result)
 window.galleryData.push({
-    imageFile: "728.webp",
+    imageFile: "images/700/728.webp",
     series: "700",
     spots: [
         {
@@ -1070,7 +1070,7 @@ window.galleryData.push({
 
 // 729.webp - Missed Train (Boy) (Result)
 window.galleryData.push({
-    imageFile: "729.webp",
+    imageFile: "images/700/729.webp",
     series: "700",
     spots: [
         {
@@ -1108,7 +1108,7 @@ window.galleryData.push({
 
 // 730.webp - Missed Train (Girl) (Result)
 window.galleryData.push({
-    imageFile: "730.webp",
+    imageFile: "images/700/730.webp",
     series: "700",
     spots: [
         {
@@ -1146,7 +1146,7 @@ window.galleryData.push({
 
 // 731.webp - Sold Out Bread (Man) (Result)
 window.galleryData.push({
-    imageFile: "731.webp",
+    imageFile: "images/700/731.webp",
     series: "700",
     spots: [
         {
@@ -1184,7 +1184,7 @@ window.galleryData.push({
 
 // 732.webp - Sold Out Bread (Boy) (Result)
 window.galleryData.push({
-    imageFile: "732.webp",
+    imageFile: "images/700/732.webp",
     series: "700",
     spots: [
         {
@@ -1224,7 +1224,7 @@ window.galleryData.push({
 
 // 733.webp - Meeting Started (Woman)
 window.galleryData.push({
-    imageFile: "733.webp",
+    imageFile: "images/700/733.webp",
     series: "700",
     spots: [
         {
@@ -1262,7 +1262,7 @@ window.galleryData.push({
 
 // 734.webp - Meeting Started (Man)
 window.galleryData.push({
-    imageFile: "734.webp",
+    imageFile: "images/700/734.webp",
     series: "700",
     spots: [
         {
@@ -1300,7 +1300,7 @@ window.galleryData.push({
 
 // 735.webp - Rain Stopped (Old Man)
 window.galleryData.push({
-    imageFile: "735.webp",
+    imageFile: "images/700/735.webp",
     series: "700",
     spots: [
         {
@@ -1338,7 +1338,7 @@ window.galleryData.push({
 
 // 736.webp - Rain Stopped (Couple)
 window.galleryData.push({
-    imageFile: "736.webp",
+    imageFile: "images/700/736.webp",
     series: "700",
     spots: [
         {
@@ -1376,7 +1376,7 @@ window.galleryData.push({
 
 // 737.webp - Store Closed (Father & Son)
 window.galleryData.push({
-    imageFile: "737.webp",
+    imageFile: "images/700/737.webp",
     series: "700",
     spots: [
         {
@@ -1414,7 +1414,7 @@ window.galleryData.push({
 
 // 738.webp - Store Closed (Couple)
 window.galleryData.push({
-    imageFile: "738.webp",
+    imageFile: "images/700/738.webp",
     series: "700",
     spots: [
         {
@@ -1452,7 +1452,7 @@ window.galleryData.push({
 
 // 739.webp - Homework Done (Boy PC)
 window.galleryData.push({
-    imageFile: "739.webp",
+    imageFile: "images/700/739.webp",
     series: "700",
     spots: [
         {
@@ -1490,7 +1490,7 @@ window.galleryData.push({
 
 // 740.webp - Homework Done (Boy Desk)
 window.galleryData.push({
-    imageFile: "740.webp",
+    imageFile: "images/700/740.webp",
     series: "700",
     spots: [
         {
@@ -1528,7 +1528,7 @@ window.galleryData.push({
 
 // 741.webp - Missed Bus (Man)
 window.galleryData.push({
-    imageFile: "741.webp",
+    imageFile: "images/700/741.webp",
     series: "700",
     spots: [
         {
@@ -1566,7 +1566,7 @@ window.galleryData.push({
 
 // 742.webp - Missed Bus (Woman)
 window.galleryData.push({
-    imageFile: "742.webp",
+    imageFile: "images/700/742.webp",
     series: "700",
     spots: [
         {
@@ -1607,7 +1607,7 @@ window.galleryData.push({
 
 // 743.webp - Reading Goal (Woman)
 window.galleryData.push({
-    imageFile: "743.webp",
+    imageFile: "images/700/743.webp",
     series: "700",
     spots: [
         {
@@ -1645,7 +1645,7 @@ window.galleryData.push({
 
 // 744.webp - Reading Goal (Older Woman)
 window.galleryData.push({
-    imageFile: "744.webp",
+    imageFile: "images/700/744.webp",
     series: "700",
     spots: [
         {
@@ -1683,7 +1683,7 @@ window.galleryData.push({
 
 // 745.webp - Train Departed (Woman)
 window.galleryData.push({
-    imageFile: "745.webp",
+    imageFile: "images/700/745.webp",
     series: "700",
     spots: [
         {
@@ -1721,7 +1721,7 @@ window.galleryData.push({
 
 // 746.webp - Train Leaving (Boy)
 window.galleryData.push({
-    imageFile: "746.webp",
+    imageFile: "images/700/746.webp",
     series: "700",
     spots: [
         {
@@ -1759,7 +1759,7 @@ window.galleryData.push({
 
 // 747.webp - Plane Took Off (Boy)
 window.galleryData.push({
-    imageFile: "747.webp",
+    imageFile: "images/700/747.webp",
     series: "700",
     spots: [
         {
@@ -1797,7 +1797,7 @@ window.galleryData.push({
 
 // 748.webp - Flight Departed (Woman)
 window.galleryData.push({
-    imageFile: "748.webp",
+    imageFile: "images/700/748.webp",
     series: "700",
     spots: [
         {
@@ -1835,7 +1835,7 @@ window.galleryData.push({
 
 // 749.webp - Match Finished (Couple)
 window.galleryData.push({
-    imageFile: "749.webp",
+    imageFile: "images/700/749.webp",
     series: "700",
     spots: [
         {
@@ -1873,7 +1873,7 @@ window.galleryData.push({
 
 // 750.webp - Match Finished (Boy)
 window.galleryData.push({
-    imageFile: "750.webp",
+    imageFile: "images/700/750.webp",
     series: "700",
     spots: [
         {
@@ -1911,7 +1911,7 @@ window.galleryData.push({
 
 // 751.webp - Presentation Finished (Woman)
 window.galleryData.push({
-    imageFile: "751.webp",
+    imageFile: "images/700/751.webp",
     series: "700",
     spots: [
         {
@@ -1949,7 +1949,7 @@ window.galleryData.push({
 
 // 752.webp - Meeting Finished (Man)
 window.galleryData.push({
-    imageFile: "752.webp",
+    imageFile: "images/700/752.webp",
     series: "700",
     spots: [
         {
@@ -1989,7 +1989,7 @@ window.galleryData.push({
 
 // 753.webp - Saving Goal (Boy)
 window.galleryData.push({
-    imageFile: "753.webp",
+    imageFile: "images/700/753.webp",
     series: "700",
     spots: [
         {
@@ -2027,7 +2027,7 @@ window.galleryData.push({
 
 // 754.webp - Saving Goal (Woman)
 window.galleryData.push({
-    imageFile: "754.webp",
+    imageFile: "images/700/754.webp",
     series: "700",
     spots: [
         {
@@ -2065,7 +2065,7 @@ window.galleryData.push({
 
 // 755.webp - Travel Goal (Map)
 window.galleryData.push({
-    imageFile: "755.webp",
+    imageFile: "images/700/755.webp",
     series: "700",
     spots: [
         {
@@ -2103,7 +2103,7 @@ window.galleryData.push({
 
 // 756.webp - Travel Goal (Globe)
 window.galleryData.push({
-    imageFile: "756.webp",
+    imageFile: "images/700/756.webp",
     series: "700",
     spots: [
         {
