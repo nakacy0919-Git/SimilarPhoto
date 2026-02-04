@@ -16,7 +16,7 @@
             animation: gradientBG 15s ease infinite;
             color: #333;
             margin: 0;
-            padding: 10px; /* スマホ向けに余白を最小限に */
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,7 +40,6 @@
             position: relative; 
             z-index: 10;
         }
-        /* PC画面では横並び */
         @media (min-width: 601px) {
             header { flex-direction: row; justify-content: space-between; margin-bottom: 30px; }
         }
@@ -78,7 +77,7 @@
         .fade-transition { transition: opacity 0.4s ease, transform 0.4s ease; opacity: 1; transform: scale(1); }
         .fade-out { opacity: 0; transform: scale(0.95); pointer-events: none; }
 
-        /* --- Mode Selection Screen (Compact for Mobile) --- */
+        /* --- Mode Selection Screen --- */
         #mode-screen { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px; }
         .mode-card {
             background: rgba(255, 255, 255, 0.95); width: 280px; padding: 40px 20px; border-radius: 20px;
@@ -90,8 +89,8 @@
             #mode-screen { gap: 15px; margin-top: 10px; }
             .mode-card { 
                 width: 90%; 
-                padding: 15px; /* さらにコンパクトに */
-                display: flex; flex-direction: row; /* 横並びレイアウトに変更 */
+                padding: 15px; 
+                display: flex; flex-direction: row; 
                 align-items: center; justify-content: start; text-align: left;
                 gap: 15px;
             }
@@ -130,16 +129,42 @@
 
         /* Quiz Category Selection Screen */
         .quiz-category-screen {
-            display: none; /* Initially hidden */
+            display: none; 
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
-        .quiz-cat-title { font-size: 1.5rem; margin-bottom: 20px; color: #2c3e50; font-weight: bold; text-align: center; }
+        .quiz-cat-title { font-size: 1.5rem; margin-bottom: 10px; color: #2c3e50; font-weight: bold; text-align: center; }
 
-        .genre-tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; width: 100%; max-width: 1000px; }
-        .genre-btn { padding: 12px 20px; background: rgba(255, 255, 255, 0.6); border: 1px solid rgba(0,0,0,0.05); border-radius: 12px; cursor: pointer; color: #555; font-weight: bold; transition: 0.2s; font-size: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .genre-btn:hover { background: #fff; transform: translateY(-2px); }
+        /* ★ Category Buttons (Unified Grid Style) */
+        .genre-tabs { 
+            display: grid; /* グリッド表示で綺麗に並べる */
+            grid-template-columns: repeat(3, 1fr); /* 3列固定 */
+            gap: 12px; 
+            justify-content: center; 
+            margin-bottom: 30px; 
+            width: 100%; 
+            max-width: 600px; /* 広がりすぎないように */
+        }
+        @media (max-width: 400px) {
+            .genre-tabs { grid-template-columns: repeat(2, 1fr); } /* 小さい画面は2列 */
+        }
+
+        .genre-btn { 
+            padding: 18px 0; /* 高さを統一 */
+            background: rgba(255, 255, 255, 0.8); 
+            border: 1px solid rgba(0,0,0,0.1); 
+            border-radius: 12px; 
+            cursor: pointer; 
+            color: #555; 
+            font-weight: bold; 
+            transition: all 0.2s ease; 
+            font-size: 1.1rem; /* 大きく見やすく */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            text-align: center;
+            width: 100%;
+        }
+        .genre-btn:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .genre-btn.active { background: #2c3e50; color: #fff; border-color: #2c3e50; box-shadow: 0 2px 10px rgba(44, 62, 80, 0.2); transform: translateY(0); }
 
         /* Review Mode */
@@ -154,13 +179,11 @@
         #quiz-container { width: 100%; max-width: 800px; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: none; flex-direction: column; margin-bottom: 50px; }
         .quiz-progress { text-align: center; padding: 15px; font-size: 1.2rem; font-weight: bold; color: #2c3e50; background: #f9f9f9; border-bottom: 1px solid #eee; }
         
-        /* Result Screen (Common for Quiz & Image Match) */
         #quiz-final-result { display: none; text-align: center; animation: fadeIn 0.5s; padding: 40px; }
         .final-score { font-size: 4rem; font-weight: 800; color: #2c3e50; margin-bottom: 10px; }
         .final-comment { font-size: 1.5rem; color: #e67e22; margin-bottom: 40px; font-weight: bold; }
         .final-actions { display: flex; gap: 20px; justify-content: center; }
 
-        /* Quiz Main Area */
         .quiz-main-area { display: block; }
 
         .quiz-image-wrapper { position: relative; width: 100%; background: #eee; min-height: 300px; text-align: center; display: flex; align-items: center; justify-content: center; }
@@ -202,7 +225,7 @@
         .iq-sentence { font-size: 2rem; font-weight: bold; line-height: 1.4; margin-bottom: 20px; }
         @media (max-width: 600px) { .iq-sentence { font-size: 1.5rem; } }
         
-        .iq-hint-wrapper { margin-bottom: 60px; /* ★隙間をさらに広げました */ }
+        .iq-hint-wrapper { margin-bottom: 60px; }
         .iq-hint-btn { background: rgba(255,255,255,0.2); border: 1px solid white; color: white; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
         .iq-hint-btn:hover { background: rgba(255,255,255,0.4); }
         .iq-hint-box { display: none; margin-top: 15px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; font-size: 1rem; text-align: left; }
@@ -575,7 +598,7 @@
             
             const cats = [0,1,2,3,4,5,6,7,8,9,10,'cnn'];
             const container = document.createElement('div');
-            container.className = 'genre-tabs';
+            container.className = 'genre-tabs'; // Reuse the grid layout class
             
             cats.forEach(c => {
                 const btn = document.createElement('button');
