@@ -847,5 +847,383 @@ window.galleryData.push(
                 grammar: "雨が窓に当たっている様子を前置詞 'against' で表現できます。"
             }
         ]
-    }
+    },
+    // 1. 033.webp - City and Highway
+window.galleryData.push({
+    imageFile: "033.webp",
+    series: "000",
+    spots: [
+        {
+            top: "50%", left: "65%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Along the river",
+            eng: "The paved road runs along the right bank of the wide river.",
+            jp: "舗装された道路が、広い川の右岸に沿って走っています。",
+            vocab: ["run (（道などが）通っている)", "along (～に沿って)", "bank (土手・岸)"],
+            idioms: ["along with (～と一緒に)"],
+            synonyms: ["beside", "by"],
+            grammar: "前置詞 'along' は、道や川などの細長いものに「沿って」位置することを表します。"
+        },
+        {
+            top: "10%", left: "5%", width: "45%", height: "40%", color: "#3498db",
+            title: "Across the water",
+            eng: "Many tall skyscrapers are standing across the water from the road.",
+            jp: "多くの高い超高層ビルが、道路から見て水の向こう側に建っています。",
+            vocab: ["skyscraper (超高層ビル)", "stand (建っている)", "across (～の向こう側に)"],
+            idioms: ["across the board (全面的に)"],
+            synonyms: ["opposite", "on the other side"],
+            grammar: "前置詞 'across' は、川や通りなどを「横切った向こう側」にある状態を示します。"
+        },
+        {
+            top: "55%", left: "5%", width: "50%", height: "30%", color: "#2ecc71",
+            title: "Between the areas",
+            eng: "The calm blue river flows between the city and the green hills.",
+            jp: "穏やかな青い川が、街と緑の丘の間を流れています。",
+            vocab: ["flow (流れる)", "between (～の間に)", "calm (穏やかな)"],
+            idioms: ["between you and me (ここだけの話)"],
+            synonyms: ["amidst", "among"],
+            grammar: "前置詞 'between' は、2つのものや場所の「間」に位置することを表します。"
+        }
+    ]
+});
+
+// 2. 024.jpg - Hiker Girl by River
+window.galleryData.push({
+    imageFile: "024.jpg",
+    series: "000",
+    spots: [
+        {
+            top: "20%", left: "28%", width: "15%", height: "25%", color: "#e67e22",
+            title: "On her back",
+            eng: "She has a large beige backpack on her back while hiking.",
+            jp: "彼女はハイキング中、背中に大きなベージュのバックパックを背負っています。",
+            vocab: ["backpack (リュックサック)", "while (～の間)", "hiking (ハイキング)"],
+            idioms: ["on one's back (仰向けに)"],
+            synonyms: ["carrying", "wearing"],
+            grammar: "接触を表す前置詞 'on' です。荷物が背中に「くっついている」状態を表します。"
+        },
+        {
+            top: "60%", left: "25%", width: "20%", height: "35%", color: "#3498db",
+            title: "On the path",
+            eng: "The woman is walking on a dirt path next to the clear river.",
+            jp: "女性は、澄んだ川の隣にある土の道を歩いています。",
+            vocab: ["dirt path (未舗装の道)", "next to (～の隣に)", "clear (澄んだ)"],
+            idioms: ["on the right track (正しい方向に進んで)"],
+            synonyms: ["beside", "by"],
+            grammar: "前置詞 'next to' は隣接している位置関係を、'on' は道の上にあることを示します。"
+        },
+        {
+            top: "5%", left: "0%", width: "30%", height: "30%", color: "#2ecc71",
+            title: "Above the trail",
+            eng: "Green palm leaves are hanging above the trail on the left side.",
+            jp: "左側では、緑のヤシの葉が小道の上に垂れ下がっています。",
+            vocab: ["hang (垂れ下がる)", "above (～の上方に)", "trail (小道)"],
+            idioms: ["above all (とりわけ)"],
+            synonyms: ["over", "overhead"],
+            grammar: "前置詞 'above' は、接触せずに「～より高い位置に」あることを表します。"
+        }
+    ]
+});
+
+// 3. 025.jpg - Girl and Waterfall
+window.galleryData.push({
+    imageFile: "025.jpg",
+    series: "000",
+    spots: [
+        {
+            top: "20%", left: "45%", width: "20%", height: "25%", color: "#e67e22",
+            title: "In front of her",
+            eng: "A beautiful waterfall is flowing down into the basin in front of her.",
+            jp: "彼女の目の前で、美しい滝が滝壺へと流れ落ちています。",
+            vocab: ["waterfall (滝)", "basin (滝壺・盆地)", "in front of (～の前に)"],
+            idioms: ["in front (前方に)"],
+            synonyms: ["before", "ahead of"],
+            grammar: "前置詞 'into' は中に入り込む動きを、'in front of' は前方にある位置関係を表します。"
+        },
+        {
+            top: "28%", left: "38%", width: "12%", height: "20%", color: "#3498db",
+            title: "On her shoulders",
+            eng: "A blue backpack sits securely on her shoulders.",
+            jp: "青いバックパックが、彼女の肩にしっかりと乗っています。",
+            vocab: ["securely (しっかりと)", "shoulder (肩)", "sit (ある・乗っている)"],
+            idioms: ["shoulder to shoulder (協力して)"],
+            synonyms: ["rest", "carry"],
+            grammar: "ここでの 'on' は、バックパックのストラップが肩に接触して支えられている状態です。"
+        },
+        {
+            top: "0%", left: "0%", width: "25%", height: "50%", color: "#2ecc71",
+            title: "Under the trees",
+            eng: "She is standing under the shade of large trees in the forest.",
+            jp: "彼女は森の中で、大きな木々の木陰の下に立っています。",
+            vocab: ["shade (日陰)", "forest (森)", "large (大きな)"],
+            idioms: ["under the weather (具合が悪い)"],
+            synonyms: ["beneath", "underneath"],
+            grammar: "前置詞 'under' は、何かの真下や覆われている範囲内にいることを示します。"
+        }
+    ]
+});
+
+// 4. 026.webp - Boy under arch
+window.galleryData.push({
+    imageFile: "026.webp",
+    series: "000",
+    spots: [
+        {
+            top: "0%", left: "0%", width: "100%", height: "40%", color: "#e67e22",
+            title: "Under the arch",
+            eng: "The boy is sitting under a stone archway near the water.",
+            jp: "少年は水辺の近くにある石のアーチの下に座っています。",
+            vocab: ["stone (石)", "archway (アーチ状の入口)", "near (～の近く)"],
+            idioms: ["under control (管理されて)"],
+            synonyms: ["below", "beneath"],
+            grammar: "前置詞 'under' を使い、アーチという構造物に覆われた位置にいることを表現しています。"
+        },
+        {
+            top: "50%", left: "68%", width: "15%", height: "25%", color: "#3498db",
+            title: "Beside the boy",
+            eng: "His blue backpack is resting on the ground beside him.",
+            jp: "彼の青いバックパックは、彼の横の地面に置かれています。",
+            vocab: ["rest (置かれている)", "ground (地面)", "beside (～のそばに)"],
+            idioms: ["beside the point (的外れで)"],
+            synonyms: ["next to", "by"],
+            grammar: "前置詞 'beside' は 'next to' と同様に、すぐ横にある位置関係を示します。"
+        },
+        {
+            top: "40%", left: "15%", width: "40%", height: "30%", color: "#2ecc71",
+            title: "Through the opening",
+            eng: "We can see a calm river and green mountains through the opening.",
+            jp: "開口部を通して、穏やかな川と緑の山々が見えます。",
+            vocab: ["calm (穏やかな)", "opening (開口部)", "mountain (山)"],
+            idioms: ["through and through (徹底的に)"],
+            synonyms: ["via", "by way of"],
+            grammar: "前置詞 'through' は、トンネルや窓などの空間を「通り抜けて」見る視線を表します。"
+        }
+    ]
+});
+
+// 5. 027.webp - Man under arch with waterfall
+window.galleryData.push({
+    imageFile: "027.webp",
+    series: "000",
+    spots: [
+        {
+            top: "45%", left: "55%", width: "25%", height: "40%", color: "#e67e22",
+            title: "On the ground",
+            eng: "A young man is sitting on the rocky ground under the bridge.",
+            jp: "若い男性が、橋の下の岩場に座っています。",
+            vocab: ["rocky (岩の多い)", "ground (地面)", "bridge (橋)"],
+            idioms: ["on shaky ground (不安定な立場で)"],
+            synonyms: ["seated", "resting"],
+            grammar: "場所を特定するために、接触の 'on' (地面) と位置の 'under' (橋) を組み合わせています。"
+        },
+        {
+            top: "25%", left: "25%", width: "20%", height: "30%", color: "#3498db",
+            title: "Across the stream",
+            eng: "There is a beautiful waterfall across the stream from the man.",
+            jp: "男性から見て小川の向こう側に、美しい滝があります。",
+            vocab: ["stream (小川)", "across (～の向こう側に)", "beautiful (美しい)"],
+            idioms: ["come across (出くわす)"],
+            synonyms: ["opposite", "facing"],
+            grammar: "前置詞 'across' は、川などを隔てた反対側の位置を示します。"
+        },
+        {
+            top: "48%", left: "68%", width: "15%", height: "25%", color: "#2ecc71",
+            title: "Next to him",
+            eng: "A large grey backpack is placed next to him on the stones.",
+            jp: "大きな灰色のバックパックが、石の上で彼の隣に置かれています。",
+            vocab: ["place (置く)", "stone (石)", "next to (～の隣に)"],
+            idioms: ["next to nothing (ほとんど～ない)"],
+            synonyms: ["beside", "nearby"],
+            grammar: "人と物の近接関係を表す基本的な前置詞 'next to' です。"
+        }
+    ]
+});
+
+// 6. 028.webp - Girl in Town
+window.galleryData.push({
+    imageFile: "028.webp",
+    series: "000",
+    spots: [
+        {
+            top: "35%", left: "35%", width: "30%", height: "60%", color: "#e67e22",
+            title: "Between buildings",
+            eng: "The girl stands on a cobblestone path between two old buildings.",
+            jp: "少女は、2つの古い建物の間にある石畳の道に立っています。",
+            vocab: ["cobblestone (石畳)", "between (～の間に)", "old (古い)"],
+            idioms: ["read between the lines (行間を読む)"],
+            synonyms: ["amid", "among"],
+            grammar: "前置詞 'between' を使い、建物の谷間に位置していることを説明しています。"
+        },
+        {
+            top: "15%", left: "40%", width: "20%", height: "20%", color: "#3498db",
+            title: "On the hill",
+            eng: "A large castle sits on top of the green hill in the distance.",
+            jp: "遠くの緑の丘の頂上に、大きな城が建っています。",
+            vocab: ["castle (城)", "distance (遠方)", "hill (丘)"],
+            idioms: ["on top of the world (最高の気分で)"],
+            synonyms: ["peak", "summit"],
+            grammar: "「～の頂上に」という位置関係を 'on top of' で表現しています。"
+        },
+        {
+            top: "65%", left: "75%", width: "20%", height: "30%", color: "#2ecc71",
+            title: "Outside the window",
+            eng: "Colorful flowers are blooming in a flower box outside the window.",
+            jp: "窓の外にあるフラワーボックスの中で、色とりどりの花が咲いています。",
+            vocab: ["bloom (咲く)", "outside (～の外で)", "colorful (色とりどりの)"],
+            idioms: ["think outside the box (既成概念にとらわれずに考える)"],
+            synonyms: ["outdoors", "exterior"],
+            grammar: "前置詞 'outside' は建物の外側を、'in' は箱の中という空間を表します。"
+        }
+    ]
+});
+
+// 7. 029.webp - Boy and City Skyline
+window.galleryData.push({
+    imageFile: "029.webp",
+    series: "000",
+    spots: [
+        {
+            top: "35%", left: "42%", width: "18%", height: "60%", color: "#e67e22",
+            title: "In the doorway",
+            eng: "A boy with a blue bag stands in a large stone doorway.",
+            jp: "青いバッグを持った少年が、大きな石の出入り口の中に立っています。",
+            vocab: ["doorway (出入り口)", "stone (石)", "stand (立つ)"],
+            idioms: ["foot in the door (きっかけをつかむ)"],
+            synonyms: ["entrance", "portal"],
+            grammar: "枠や囲まれた空間の中にいることを表す前置詞 'in' を使用しています。"
+        },
+        {
+            top: "20%", left: "20%", width: "60%", height: "30%", color: "#3498db",
+            title: "Across the water",
+            eng: "Tall modern buildings are located across the water from him.",
+            jp: "彼の位置から見て水の向こう側に、背の高い近代的なビルが位置しています。",
+            vocab: ["located (位置する)", "modern (近代的な)", "across (～を越えて)"],
+            idioms: ["get across (理解させる)"],
+            synonyms: ["opposite", "over"],
+            grammar: "水面を隔てた対岸の位置関係を 'across the water' で表します。"
+        },
+        {
+            top: "60%", left: "20%", width: "20%", height: "20%", color: "#2ecc71",
+            title: "On the water",
+            eng: "The golden sunlight is reflecting on the surface of the water.",
+            jp: "黄金色の太陽の光が、水面に反射しています。",
+            vocab: ["reflect (反射する)", "surface (表面)", "golden (黄金色の)"],
+            idioms: ["on the surface (うわべは)"],
+            synonyms: ["atop", "upon"],
+            grammar: "水面との接触を表す前置詞 'on' です。「水面に」は 'on the water' と言います。"
+        }
+    ]
+});
+
+// 8. 030.webp - Boy in Rain Forest
+window.galleryData.push({
+    imageFile: "030.webp",
+    series: "000",
+    spots: [
+        {
+            top: "5%", left: "30%", width: "40%", height: "30%", color: "#e67e22",
+            title: "Over his head",
+            eng: "He is holding a green umbrella over his head in the rain.",
+            jp: "彼は雨の中、頭上に緑の傘をさしています。",
+            vocab: ["umbrella (傘)", "hold (持つ)", "rain (雨)"],
+            idioms: ["over one's head (理解を超えて)"],
+            synonyms: ["above", "covering"],
+            grammar: "前置詞 'over' は、真上を覆うような位置関係を表すのに適しています。"
+        },
+        {
+            top: "40%", left: "38%", width: "25%", height: "45%", color: "#3498db",
+            title: "Through the woods",
+            eng: "The boy is walking through the wet forest on a rocky path.",
+            jp: "少年は、岩の多い道を通り、濡れた森の中を歩いています。",
+            vocab: ["wet (濡れた)", "woods (森)", "rocky (岩だらけの)"],
+            idioms: ["out of the woods (困難を脱して)"],
+            synonyms: ["via", "across"],
+            grammar: "立体的な空間（森）を通り抜ける動きには、前置詞 'through' を使います。"
+        },
+        {
+            top: "10%", left: "70%", width: "30%", height: "80%", color: "#2ecc71",
+            title: "Around the path",
+            eng: "Many green trees and bushes are growing around the path.",
+            jp: "多くの緑の木々や茂みが、道の周りに生えています。",
+            vocab: ["bush (茂み)", "grow (育つ)", "around (～の周りに)"],
+            idioms: ["around the corner (すぐ近くに)"],
+            synonyms: ["surrounding", "encircling"],
+            grammar: "前置詞 'around' は、中心となるものを取り囲む位置関係を表します。"
+        }
+    ]
+});
+
+// 9. 031.webp - Man in Rain City
+window.galleryData.push({
+    imageFile: "031.webp",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "40%", width: "20%", height: "50%", color: "#e67e22",
+            title: "In the street",
+            eng: "A man stands in the middle of the street on a rainy evening.",
+            jp: "雨の夕方、男性が通りの真ん中に立っています。",
+            vocab: ["middle (真ん中)", "street (通り)", "evening (夕方)"],
+            idioms: ["on the street (街頭で)"],
+            synonyms: ["road", "avenue"],
+            grammar: "通りの中というエリアを表す 'in the street' や、中央を表す 'in the middle of' を使います。"
+        },
+        {
+            top: "50%", left: "15%", width: "20%", height: "15%", color: "#3498db",
+            title: "Behind the man",
+            eng: "Car headlights are shining brightly behind the man.",
+            jp: "車のヘッドライトが、男性の後ろで明るく輝いています。",
+            vocab: ["headlight (ヘッドライト)", "brightly (明るく)", "behind (～の後ろに)"],
+            idioms: ["leave behind (置き去りにする)"],
+            synonyms: ["in back of", "rear"],
+            grammar: "前置詞 'behind' は、背後や後方の位置関係を表します。"
+        },
+        {
+            top: "10%", left: "75%", width: "25%", height: "80%", color: "#2ecc71",
+            title: "Along the road",
+            eng: "Tall buildings line up along both sides of the wet road.",
+            jp: "高い建物が、濡れた道の両側に沿って並んでいます。",
+            vocab: ["line up (並ぶ)", "both (両方の)", "side (側)"],
+            idioms: ["take sides (味方する)"],
+            synonyms: ["beside", "flanking"],
+            grammar: "道に沿って建物が続いている様子を前置詞 'along' で表現します。"
+        }
+    ]
+});
+
+// 10. 032.jpg - Scenic Road
+window.galleryData.push({
+    imageFile: "032.jpg",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "60%", width: "40%", height: "60%", color: "#e67e22",
+            title: "By the river",
+            eng: "A paved road curves gently by the river on the right side.",
+            jp: "舗装された道路が、右側の川のそばを緩やかにカーブしています。",
+            vocab: ["curve (曲がる)", "gently (緩やかに)", "right (右)"],
+            idioms: ["by the way (ところで)"],
+            synonyms: ["beside", "near"],
+            grammar: "前置詞 'by' は 'near' や 'next to' と同様に、すぐそばにあることを示します。"
+        },
+        {
+            top: "20%", left: "75%", width: "20%", height: "25%", color: "#3498db",
+            title: "On the hillside",
+            eng: "Several stone houses are built on the green hillside next to the road.",
+            jp: "いくつかの石造りの家が、道路の隣の緑の丘の中腹に建てられています。",
+            vocab: ["several (いくつかの)", "built (建てられた)", "hillside (丘の中腹)"],
+            idioms: ["on the house (店のおごりで)"],
+            synonyms: ["slope", "bank"],
+            grammar: "斜面などの表面に位置する場合、接触の 'on' を使用します。"
+        },
+        {
+            top: "25%", left: "40%", width: "15%", height: "10%", color: "#2ecc71",
+            title: "Over the water",
+            eng: "A bridge crosses over the water in the distance.",
+            jp: "遠くの方で、橋が水の上を架け渡しています。",
+            vocab: ["cross (渡る)", "bridge (橋)", "distance (遠く)"],
+            idioms: ["get over (乗り越える)"],
+            synonyms: ["span", "traverse"],
+            grammar: "前置詞 'over' は、一方から他方へ「またいで」位置すること（架かる）を表します。"
+        }
+    ]
 );
