@@ -1224,6 +1224,383 @@ window.galleryData.push({
             idioms: ["get over (乗り越える)"],
             synonyms: ["span", "traverse"],
             grammar: "前置詞 'over' は、一方から他方へ「またいで」位置すること（架かる）を表します。"
+        },
+        // 11. 034.webp - Cat under table
+window.galleryData.push({
+    imageFile: "034.webp",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "35%", width: "30%", height: "30%", color: "#e67e22",
+            title: "Under the table",
+            eng: "A cute grey cat is hiding quietly under the wooden coffee table.",
+            jp: "かわいい灰色の猫が、木製のコーヒーテーブルの下に静かに隠れています。",
+            vocab: ["hide (隠れる)", "wooden (木製の)", "quietly (静かに)"],
+            idioms: ["under one's nose (目の前で)"],
+            synonyms: ["beneath", "below"],
+            grammar: "前置詞 'under' は、何かの真下や覆われた空間にいる位置関係を表します。"
+        },
+        {
+            top: "5%", left: "10%", width: "80%", height: "20%", color: "#3498db",
+            title: "On the surface",
+            eng: "Several books and a cup are placed on the top surface of the table.",
+            jp: "数冊の本とカップが、テーブルの天板の上に置かれています。",
+            vocab: ["surface (表面)", "place (置く)", "several (いくつかの)"],
+            idioms: ["on the table (検討中で)"],
+            synonyms: ["atop", "upon"],
+            grammar: "接触して上に乗っている状態を表す基本の前置詞 'on' です。"
+        },
+        {
+            top: "45%", left: "5%", width: "25%", height: "30%", color: "#2ecc71",
+            title: "Next to the cat",
+            eng: "A woven basket sits on the shelf next to the cat.",
+            jp: "編まれたカゴが、猫の隣の棚に置かれています。",
+            vocab: ["woven (編まれた)", "basket (カゴ)", "shelf (棚)"],
+            idioms: ["next door (隣の家)"],
+            synonyms: ["beside", "by"],
+            grammar: "前置詞 'next to' は、横に並んでいる近い位置関係を示します。"
+        }
+    ]
+});
+
+// 12. 035.webp - Cat under desk
+window.galleryData.push({
+    imageFile: "035.webp",
+    series: "000",
+    spots: [
+        {
+            top: "45%", left: "30%", width: "40%", height: "40%", color: "#e67e22",
+            title: "Between the bags",
+            eng: "The cat is lying comfortably on the floor between two large backpacks.",
+            jp: "猫は、2つの大きなバックパックの間の床に心地よさそうに横たわっています。",
+            vocab: ["lie (横たわる)", "comfortably (快適に)", "floor (床)"],
+            idioms: ["read between the lines (行間を読む)"],
+            synonyms: ["amidst", "among"],
+            grammar: "前置詞 'between' は、2つのものに挟まれた位置関係を表します。"
+        },
+        {
+            top: "0%", left: "0%", width: "85%", height: "25%", color: "#3498db",
+            title: "On the desk",
+            eng: "A laptop and some plants are arranged on the light-colored desk.",
+            jp: "ノートパソコンといくつかの植物が、明るい色の机の上に配置されています。",
+            vocab: ["arrange (配置する)", "plant (植物)", "light-colored (明るい色の)"],
+            idioms: ["on the ball (有能で)"],
+            synonyms: ["positioned", "set"],
+            grammar: "机の表面にあるものを指すため、接触の 'on' を使用しています。"
+        },
+        {
+            top: "40%", left: "80%", width: "20%", height: "40%", color: "#2ecc71",
+            title: "To the right",
+            eng: "A dark backpack is leaning against the leg of the table to the right.",
+            jp: "暗い色のバックパックが、右側のテーブルの脚に寄りかかっています。",
+            vocab: ["lean (寄りかかる)", "against (～に対して)", "leg (脚)"],
+            idioms: ["right away (すぐに)"],
+            synonyms: ["on the right side"],
+            grammar: "方向を表す 'to the right' と、接触・対抗を表す 'against' を使っています。"
+        }
+    ]
+});
+
+// 13. 036.webp - Station Sunset
+window.galleryData.push({
+    imageFile: "036.webp",
+    series: "000",
+    spots: [
+        {
+            top: "10%", left: "50%", width: "40%", height: "40%", color: "#e67e22",
+            title: "In the background",
+            eng: "A large train station stands in the background under the sunset sky.",
+            jp: "夕焼け空の下、背景には大きな鉄道駅が建っています。",
+            vocab: ["background (背景)", "sunset (日没)", "stand (建つ)"],
+            idioms: ["in the background (目立たない所で)"],
+            synonyms: ["behind", "rear"],
+            grammar: "空間的な奥の位置を 'in the background'、空の下を 'under the sky' と表現します。"
+        },
+        {
+            top: "60%", left: "30%", width: "40%", height: "20%", color: "#3498db",
+            title: "Across the street",
+            eng: "People are walking across the street on the white crosswalk.",
+            jp: "人々が、白い横断歩道の上を通って通りを渡っています。",
+            vocab: ["crosswalk (横断歩道)", "street (通り)", "walk (歩く)"],
+            idioms: ["come across (出くわす)"],
+            synonyms: ["over", "through"],
+            grammar: "通りを横切る動きを 'across'、横断歩道との接触を 'on' で表します。"
+        },
+        {
+            top: "40%", left: "0%", width: "25%", height: "40%", color: "#2ecc71",
+            title: "At the corner",
+            eng: "There is a cozy cafe with outdoor seating at the corner of the street.",
+            jp: "通りの角には、屋外席のある居心地の良いカフェがあります。",
+            vocab: ["corner (角)", "cozy (居心地の良い)", "seating (座席)"],
+            idioms: ["cut corners (手抜きをする)"],
+            synonyms: ["on the corner"],
+            grammar: "地点を表す前置詞 'at' を使い、'at the corner'（角に）と表現します。"
+        }
+    ]
+});
+
+// 14. 037.webp - Station Night
+window.galleryData.push({
+    imageFile: "037.webp",
+    series: "000",
+    spots: [
+        {
+            top: "50%", left: "40%", width: "30%", height: "30%", color: "#e67e22",
+            title: "In the intersection",
+            eng: "White lines are painted on the road in the middle of the intersection.",
+            jp: "交差点の真ん中の道路に、白い線が描かれています。",
+            vocab: ["intersection (交差点)", "paint (描く)", "middle (真ん中)"],
+            idioms: ["in the middle of nowhere (人里離れた場所に)"],
+            synonyms: ["junction", "crossing"],
+            grammar: "場所の中を指す 'in' を使い、交差点内であることを示します。"
+        },
+        {
+            top: "20%", left: "60%", width: "35%", height: "40%", color: "#3498db",
+            title: "In front of the station",
+            eng: "Many people are gathering in the square in front of the station.",
+            jp: "多くの人々が、駅前の広場に集まっています。",
+            vocab: ["gather (集まる)", "square (広場)", "station (駅)"],
+            idioms: ["in front (前方に)"],
+            synonyms: ["before", "ahead of"],
+            grammar: "建物の正面にある位置関係を 'in front of' で表します。"
+        },
+        {
+            top: "30%", left: "5%", width: "35%", height: "45%", color: "#2ecc71",
+            title: "Along the sidewalk",
+            eng: "A cafe with a striped awning is located along the sidewalk.",
+            jp: "縞模様の日よけがあるカフェが、歩道に沿って位置しています。",
+            vocab: ["sidewalk (歩道)", "awning (日よけ)", "striped (縞模様の)"],
+            idioms: ["play along (調子を合わせる)"],
+            synonyms: ["beside", "by"],
+            grammar: "道などの長いものに並行して位置することを 'along' で表現します。"
+        }
+    ]
+});
+
+// 15. 038.webp - Man in box (Office)
+window.galleryData.push({
+    imageFile: "038.webp",
+    series: "000",
+    spots: [
+        {
+            top: "20%", left: "25%", width: "50%", height: "60%", color: "#e67e22",
+            title: "Inside the box",
+            eng: "A man in a blue shirt is squeezed inside a small cardboard box.",
+            jp: "青いシャツを着た男性が、小さな段ボール箱の中に押し込められています。",
+            vocab: ["squeeze (押し込む)", "cardboard (段ボール)", "inside (～の中に)"],
+            idioms: ["think inside the box (枠にはまって考える)"],
+            synonyms: ["within", "in"],
+            grammar: "囲まれた空間の内部にいることを強調する前置詞 'inside' です。"
+        },
+        {
+            top: "80%", left: "10%", width: "80%", height: "15%", color: "#3498db",
+            title: "On the carpet",
+            eng: "The box is sitting directly on the grey office carpet.",
+            jp: "その箱は、灰色のオフィスのカーペットの上に直接置かれています。",
+            vocab: ["directly (直接)", "carpet (カーペット)", "office (オフィス)"],
+            idioms: ["on the carpet (叱責されて)"],
+            synonyms: ["floor", "ground"],
+            grammar: "床面との接触を表すため、前置詞 'on' を使用します。"
+        },
+        {
+            top: "10%", left: "0%", width: "20%", height: "40%", color: "#2ecc71",
+            title: "In the corner",
+            eng: "A green potted plant stands in the corner of the room.",
+            jp: "緑の鉢植えが、部屋の隅に立っています。",
+            vocab: ["potted plant (鉢植え)", "corner (隅)", "room (部屋)"],
+            idioms: ["tight corner (窮地)"],
+            synonyms: ["nook", "recess"],
+            grammar: "部屋の内部の隅を指す場合は 'in the corner' と言います。"
+        }
+    ]
+});
+
+// 16. 039.webp - Man in box (Warehouse)
+window.galleryData.push({
+    imageFile: "039.webp",
+    series: "000",
+    spots: [
+        {
+            top: "15%", left: "25%", width: "50%", height: "70%", color: "#e67e22",
+            title: "Within the box",
+            eng: "He is holding his knees within the walls of the cardboard box.",
+            jp: "彼は段ボール箱の壁の中で、膝を抱えています。",
+            vocab: ["knee (膝)", "wall (壁)", "within (～の内部で)"],
+            idioms: ["within reach (手の届く範囲に)"],
+            synonyms: ["inside", "in"],
+            grammar: "前置詞 'within' は、特定の範囲や境界の「内側」にあることを強調します。"
+        },
+        {
+            top: "0%", left: "0%", width: "25%", height: "80%", color: "#3498db",
+            title: "On the shelves",
+            eng: "Many boxes are stored on the metal shelves to his left.",
+            jp: "多くの箱が、彼の左側にある金属製の棚に保管されています。",
+            vocab: ["store (保管する)", "shelf (棚)", "metal (金属の)"],
+            idioms: ["on the shelf (棚上げされて)"],
+            synonyms: ["rack", "storage"],
+            grammar: "棚の表面に乗っている状態なので、前置詞 'on' を使います。"
+        },
+        {
+            top: "85%", left: "20%", width: "60%", height: "15%", color: "#2ecc71",
+            title: "On the floor",
+            eng: "The box is placed on the concrete floor of the warehouse.",
+            jp: "その箱は、倉庫のコンクリートの床の上に置かれています。",
+            vocab: ["concrete (コンクリート)", "warehouse (倉庫)", "floor (床)"],
+            idioms: ["floor it (アクセル全開にする)"],
+            synonyms: ["ground", "surface"],
+            grammar: "場所（倉庫）を表す 'of' と、接触（床）を表す 'on' の組み合わせです。"
+        }
+    ]
+});
+
+// 17. 040.webp - Dog with Sunglasses (Mountain)
+window.galleryData.push({
+    imageFile: "040.webp",
+    series: "000",
+    spots: [
+        {
+            top: "5%", left: "30%", width: "40%", height: "25%", color: "#e67e22",
+            title: "On top of his head",
+            eng: "Blue sunglasses are resting on top of the dog's head.",
+            jp: "青いサングラスが、犬の頭の上に乗っています。",
+            vocab: ["sunglasses (サングラス)", "rest (乗っている)", "head (頭)"],
+            idioms: ["keep one's head (冷静を保つ)"],
+            synonyms: ["atop", "upon"],
+            grammar: "「～の頂上に」という位置を強調するために 'on top of' を使用しています。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "40%", color: "#3498db",
+            title: "Behind the dog",
+            eng: "Green trees and mountains are visible behind the dog.",
+            jp: "緑の木々と山が、犬の後ろに見えています。",
+            vocab: ["visible (見える)", "mountain (山)", "behind (～の後ろに)"],
+            idioms: ["behind the scenes (舞台裏で)"],
+            synonyms: ["in back of", "rear"],
+            grammar: "前置詞 'behind' は、対象物の背後にある位置関係を表します。"
+        },
+        {
+            top: "80%", left: "10%", width: "80%", height: "20%", color: "#2ecc71",
+            title: "In the woods",
+            eng: "The happy dog is standing on a dirt path in the woods.",
+            jp: "その幸せそうな犬は、森の中の土の道の上に立っています。",
+            vocab: ["woods (森)", "path (道)", "dirt (土)"],
+            idioms: ["babe in the woods (世間知らず)"],
+            synonyms: ["forest", "grove"],
+            grammar: "森という空間の中を 'in'、道の上を 'on' で表現しています。"
+        }
+    ]
+});
+
+// 18. 041.webp - Dog with Sunglasses (Park)
+window.galleryData.push({
+    imageFile: "041.webp",
+    series: "000",
+    spots: [
+        {
+            top: "5%", left: "30%", width: "40%", height: "25%", color: "#e67e22",
+            title: "On his forehead",
+            eng: "The golden dog has black sunglasses on his forehead.",
+            jp: "その金色の犬は、額に黒いサングラスを乗せています。",
+            vocab: ["forehead (額)", "golden (金色の)", "black (黒い)"],
+            idioms: ["high on the hog (贅沢に)"],
+            synonyms: ["brow", "front"],
+            grammar: "接触を表す前置詞 'on' を使い、サングラスの位置を説明しています。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "40%", color: "#3498db",
+            title: "In the background",
+            eng: "Blurry green trees are in the background of the photo.",
+            jp: "ぼやけた緑の木々が、写真の背景にあります。",
+            vocab: ["blurry (ぼやけた)", "photo (写真)", "background (背景)"],
+            idioms: ["fade into the background (目立たなくなる)"],
+            synonyms: ["backdrop", "setting"],
+            grammar: "写真や絵の中の位置を示す際、'in the background' という表現を使います。"
+        },
+        {
+            top: "50%", left: "0%", width: "20%", height: "50%", color: "#2ecc71",
+            title: "In the park",
+            eng: "He seems to be relaxing in a sunny park with green grass.",
+            jp: "彼は緑の芝生のある日当たりの良い公園でリラックスしているようです。",
+            vocab: ["relax (リラックスする)", "sunny (日当たりの良い)", "grass (芝生)"],
+            idioms: ["walk in the park (簡単なこと)"],
+            synonyms: ["garden", "lawn"],
+            grammar: "公園というエリアの中にいることを表すため、前置詞 'in' を使用します。"
+        }
+    ]
+});
+
+// 19. 042.webp - Orange Cat on Fridge
+window.galleryData.push({
+    imageFile: "042.webp",
+    series: "000",
+    spots: [
+        {
+            top: "15%", left: "15%", width: "70%", height: "35%", color: "#e67e22",
+            title: "On the fridge",
+            eng: "An orange cat is sleeping soundly on top of the white refrigerator.",
+            jp: "茶トラ猫が、白い冷蔵庫の上でぐっすりと眠っています。",
+            vocab: ["refrigerator (冷蔵庫)", "soundly (ぐっすりと)", "orange (オレンジ色の)"],
+            idioms: ["on top of that (さらに)"],
+            synonyms: ["fridge", "icebox"],
+            grammar: "高い場所の上面を指す際、単なる 'on' よりも 'on top of' がよく使われます。"
+        },
+        {
+            top: "0%", left: "0%", width: "40%", height: "30%", color: "#3498db",
+            title: "Above the fridge",
+            eng: "There are blue kitchen cabinets on the wall above the fridge.",
+            jp: "冷蔵庫の上の壁には、青いキッチンキャビネットがあります。",
+            vocab: ["cabinet (キャビネット)", "kitchen (台所)", "above (～の上方に)"],
+            idioms: ["rise above (超越する)"],
+            synonyms: ["over", "overhead"],
+            grammar: "前置詞 'above' は、接触せずに「～より高い位置に」あることを示します。"
+        },
+        {
+            top: "10%", left: "85%", width: "15%", height: "90%", color: "#2ecc71",
+            title: "By the window",
+            eng: "Bright light is coming from the window on the right side.",
+            jp: "右側の窓から明るい光が入ってきています。",
+            vocab: ["bright (明るい)", "light (光)", "come (来る)"],
+            idioms: ["shed light on (～を明らかにする)"],
+            synonyms: ["casement", "pane"],
+            grammar: "方向や場所を示す前置詞 'from' (起点) や 'on' (位置) を使用しています。"
+        }
+    ]
+});
+
+// 20. 043.webp - Grey Cat on Fridge
+window.galleryData.push({
+    imageFile: "043.webp",
+    series: "000",
+    spots: [
+        {
+            top: "15%", left: "15%", width: "75%", height: "35%", color: "#e67e22",
+            title: "On the appliance",
+            eng: "A grey tabby cat is resting on the silver appliance.",
+            jp: "サバトラ猫が、銀色の家電製品の上で休んでいます。",
+            vocab: ["appliance (家電製品)", "tabby (トラ猫)", "silver (銀色の)"],
+            idioms: ["silver lining (希望の光)"],
+            synonyms: ["machine", "device"],
+            grammar: "接触を表す前置詞 'on' を使い、家電の上に乗っていることを表します。"
+        },
+        {
+            top: "0%", left: "45%", width: "55%", height: "45%", color: "#3498db",
+            title: "Behind the cat",
+            eng: "We can see a window with a view of green trees behind the cat.",
+            jp: "猫の後ろには、緑の木々が見える窓があります。",
+            vocab: ["view (眺め)", "tree (木)", "behind (～の後ろに)"],
+            idioms: ["behind closed doors (密室で)"],
+            synonyms: ["rear", "back"],
+            grammar: "位置関係を示す前置詞 'behind' を使い、猫の背後にあるものを説明しています。"
+        },
+        {
+            top: "0%", left: "0%", width: "30%", height: "45%", color: "#2ecc71",
+            title: "In the kitchen",
+            eng: "Wooden cabinets are mounted on the wall in the kitchen background.",
+            jp: "キッチンの背景の壁に、木製のキャビネットが取り付けられています。",
+            vocab: ["mount (取り付ける)", "cabinet (戸棚)", "kitchen (台所)"],
+            idioms: ["if you can't stand the heat, get out of the kitchen (苦労が嫌ならやめろ)"],
+            synonyms: ["cookroom", "galley"],
+            grammar: "壁への接触を 'on'、部屋や背景の中を 'in' で使い分けています。"
         }
     ]
 );
