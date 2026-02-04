@@ -1,5 +1,5 @@
 // ============================================
-// Series 000 Data: Position & Location (001 - 023)
+// Series 000 Data: Position & Location
 // ============================================
 
 window.galleryData = window.galleryData || [];
@@ -847,10 +847,12 @@ window.galleryData.push(
                 grammar: "雨が窓に当たっている様子を前置詞 'against' で表現できます。"
             }
         ]
-    },
-    // 1. 033.webp - City and Highway
+    }
+);
+
+// 1. 033.webp - City and Highway
 window.galleryData.push({
-    imageFile: "033.webp",
+    imageFile: "images/000/033.webp",
     series: "000",
     spots: [
         {
@@ -888,7 +890,7 @@ window.galleryData.push({
 
 // 2. 024.jpg - Hiker Girl by River
 window.galleryData.push({
-    imageFile: "024.jpg",
+    imageFile: "images/000/024.jpg",
     series: "000",
     spots: [
         {
@@ -926,7 +928,7 @@ window.galleryData.push({
 
 // 3. 025.jpg - Girl and Waterfall
 window.galleryData.push({
-    imageFile: "025.jpg",
+    imageFile: "images/000/025.jpg",
     series: "000",
     spots: [
         {
@@ -964,7 +966,7 @@ window.galleryData.push({
 
 // 4. 026.webp - Boy under arch
 window.galleryData.push({
-    imageFile: "026.webp",
+    imageFile: "images/000/026.webp",
     series: "000",
     spots: [
         {
@@ -1002,7 +1004,7 @@ window.galleryData.push({
 
 // 5. 027.webp - Man under arch with waterfall
 window.galleryData.push({
-    imageFile: "027.webp",
+    imageFile: "images/000/027.webp",
     series: "000",
     spots: [
         {
@@ -1040,7 +1042,7 @@ window.galleryData.push({
 
 // 6. 028.webp - Girl in Town
 window.galleryData.push({
-    imageFile: "028.webp",
+    imageFile: "images/000/028.webp",
     series: "000",
     spots: [
         {
@@ -1078,7 +1080,7 @@ window.galleryData.push({
 
 // 7. 029.webp - Boy and City Skyline
 window.galleryData.push({
-    imageFile: "029.webp",
+    imageFile: "images/000/029.webp",
     series: "000",
     spots: [
         {
@@ -1116,7 +1118,7 @@ window.galleryData.push({
 
 // 8. 030.webp - Boy in Rain Forest
 window.galleryData.push({
-    imageFile: "030.webp",
+    imageFile: "images/000/030.webp",
     series: "000",
     spots: [
         {
@@ -1154,7 +1156,7 @@ window.galleryData.push({
 
 // 9. 031.webp - Man in Rain City
 window.galleryData.push({
-    imageFile: "031.webp",
+    imageFile: "images/000/031.webp",
     series: "000",
     spots: [
         {
@@ -1192,7 +1194,7 @@ window.galleryData.push({
 
 // 10. 032.jpg - Scenic Road
 window.galleryData.push({
-    imageFile: "032.jpg",
+    imageFile: "images/000/032.jpg",
     series: "000",
     spots: [
         {
@@ -1224,10 +1226,13 @@ window.galleryData.push({
             idioms: ["get over (乗り越える)"],
             synonyms: ["span", "traverse"],
             grammar: "前置詞 'over' は、一方から他方へ「またいで」位置すること（架かる）を表します。"
-        },
-        // 11. 034.webp - Cat under table
+        }
+    ]
+});
+
+// 11. 034.webp - Cat under table
 window.galleryData.push({
-    imageFile: "034.webp",
+    imageFile: "images/000/034.webp",
     series: "000",
     spots: [
         {
@@ -1265,7 +1270,7 @@ window.galleryData.push({
 
 // 12. 035.webp - Cat under desk
 window.galleryData.push({
-    imageFile: "035.webp",
+    imageFile: "images/000/035.webp",
     series: "000",
     spots: [
         {
@@ -1303,7 +1308,7 @@ window.galleryData.push({
 
 // 13. 036.webp - Station Sunset
 window.galleryData.push({
-    imageFile: "036.webp",
+    imageFile: "images/000/036.webp",
     series: "000",
     spots: [
         {
@@ -1341,7 +1346,7 @@ window.galleryData.push({
 
 // 14. 037.webp - Station Night
 window.galleryData.push({
-    imageFile: "037.webp",
+    imageFile: "images/000/037.webp",
     series: "000",
     spots: [
         {
@@ -1379,7 +1384,7 @@ window.galleryData.push({
 
 // 15. 038.webp - Man in box (Office)
 window.galleryData.push({
-    imageFile: "038.webp",
+    imageFile: "images/000/038.webp",
     series: "000",
     spots: [
         {
@@ -1417,7 +1422,7 @@ window.galleryData.push({
 
 // 16. 039.webp - Man in box (Warehouse)
 window.galleryData.push({
-    imageFile: "039.webp",
+    imageFile: "images/000/039.webp",
     series: "000",
     spots: [
         {
@@ -1455,7 +1460,7 @@ window.galleryData.push({
 
 // 17. 040.webp - Dog with Sunglasses (Mountain)
 window.galleryData.push({
-    imageFile: "040.webp",
+    imageFile: "images/000/040.webp",
     series: "000",
     spots: [
         {
@@ -1493,7 +1498,7 @@ window.galleryData.push({
 
 // 18. 041.webp - Dog with Sunglasses (Park)
 window.galleryData.push({
-    imageFile: "041.webp",
+    imageFile: "images/000/041.webp",
     series: "000",
     spots: [
         {
@@ -1531,7 +1536,7 @@ window.galleryData.push({
 
 // 19. 042.webp - Orange Cat on Fridge
 window.galleryData.push({
-    imageFile: "042.webp",
+    imageFile: "images/000/042.webp",
     series: "000",
     spots: [
         {
@@ -1569,7 +1574,7 @@ window.galleryData.push({
 
 // 20. 043.webp - Grey Cat on Fridge
 window.galleryData.push({
-    imageFile: "043.webp",
+    imageFile: "images/000/043.webp",
     series: "000",
     spots: [
         {
@@ -1601,10 +1606,13 @@ window.galleryData.push({
             idioms: ["if you can't stand the heat, get out of the kitchen (苦労が嫌ならやめろ)"],
             synonyms: ["cookroom", "galley"],
             grammar: "壁への接触を 'on'、部屋や背景の中を 'in' で使い分けています。"
-        },
-        // 21. 044.webp - Boy under bed
+        }
+    ]
+}); // ← 追加：ここで043番のpushを閉じていなかったので、念の為閉じる（元のコードはここがなく、次の行につながっていた可能性もありますが、安全のため）
+
+// 21. 044.webp - Boy under bed
 window.galleryData.push({
-    imageFile: "044.webp",
+    imageFile: "images/000/044.webp",
     series: "000",
     spots: [
         {
@@ -1642,7 +1650,7 @@ window.galleryData.push({
 
 // 22. 045.webp - Girl under bed
 window.galleryData.push({
-    imageFile: "045.webp",
+    imageFile: "images/000/045.webp",
     series: "000",
     spots: [
         {
@@ -1680,7 +1688,7 @@ window.galleryData.push({
 
 // 23. 046.webp - Truck in tunnel
 window.galleryData.push({
-    imageFile: "046.webp",
+    imageFile: "images/000/046.webp",
     series: "000",
     spots: [
         {
@@ -1718,7 +1726,7 @@ window.galleryData.push({
 
 // 24. 047.webp - Red car in tunnel
 window.galleryData.push({
-    imageFile: "047.webp",
+    imageFile: "images/000/047.webp",
     series: "000",
     spots: [
         {
@@ -1756,7 +1764,7 @@ window.galleryData.push({
 
 // 25. 048.webp - Couple by lake (Autumn)
 window.galleryData.push({
-    imageFile: "048.webp",
+    imageFile: "images/000/048.webp",
     series: "000",
     spots: [
         {
@@ -1794,7 +1802,7 @@ window.galleryData.push({
 
 // 26. 049.webp - Couple by lake (Mountains)
 window.galleryData.push({
-    imageFile: "049.webp",
+    imageFile: "images/000/049.webp",
     series: "000",
     spots: [
         {
@@ -1832,7 +1840,7 @@ window.galleryData.push({
 
 // 27. 050.webp - Students in Library
 window.galleryData.push({
-    imageFile: "050.webp",
+    imageFile: "images/000/050.webp",
     series: "000",
     spots: [
         {
@@ -1870,7 +1878,7 @@ window.galleryData.push({
 
 // 28. 051.webp - Two Students
 window.galleryData.push({
-    imageFile: "051.webp",
+    imageFile: "images/000/051.webp",
     series: "000",
     spots: [
         {
@@ -1905,5 +1913,3 @@ window.galleryData.push({
         }
     ]
 });
-    ]
-);
