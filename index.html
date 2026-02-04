@@ -88,7 +88,8 @@
         @media (max-width: 600px) {
             #mode-screen { gap: 15px; margin-top: 10px; }
             .mode-card { 
-                width: 90%; padding: 15px; 
+                width: 90%; 
+                padding: 15px; 
                 display: flex; flex-direction: row; 
                 align-items: center; justify-content: start; text-align: left;
                 gap: 15px;
@@ -103,6 +104,8 @@
         .mode-review:hover { border-color: #3498db; }
         .mode-quiz:hover { border-color: #e74c3c; }
         .mode-img-quiz:hover { border-color: #f1c40f; }
+        /* ★ New Party Mode Style */
+        .mode-party:hover { border-color: #e91e63; }
 
         .mode-icon { font-size: 6rem; display: block; margin-bottom: 20px; line-height: 1; }
         .mode-card h2 { color: #2c3e50; margin-bottom: 10px; font-size: 1.8rem; font-weight: 800; }
@@ -139,7 +142,7 @@
         .genre-tabs { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
-            gap: 12px; 
+            gap: 10px; /* 少し狭く */
             justify-content: center; 
             margin-bottom: 30px; 
             width: 100%; 
@@ -150,15 +153,15 @@
         }
 
         .genre-btn { 
-            padding: 18px 0; 
+            padding: 12px 0; /* ★高さを小さくしました (以前は18px) */
             background: rgba(255, 255, 255, 0.8); 
             border: 1px solid rgba(0,0,0,0.1); 
-            border-radius: 12px; 
+            border-radius: 10px; /* 角丸も少し控えめに */
             cursor: pointer; 
             color: #555; 
             font-weight: bold; 
             transition: all 0.2s ease; 
-            font-size: 1.1rem; 
+            font-size: 1rem; /* ★文字サイズを小さくしました (以前は1.1rem) */
             box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
             text-align: center;
             width: 100%;
@@ -352,6 +355,13 @@
             <div class="mode-info">
                 <h2>Image Match</h2>
                 <p>イメージマッチ<br>英文を読んで画像を当てる</p>
+            </div>
+        </div>
+        <div class="mode-card mode-party" onclick="window.location.href='https://nakacy0919-git.github.io/similar-photo-party/'">
+            <span class="mode-icon">🎉</span>
+            <div class="mode-info">
+                <h2>Similar Photo Party</h2>
+                <p>みんなでワイワイ<br>ペアやグループで楽しむ</p>
             </div>
         </div>
     </div>
@@ -699,6 +709,7 @@
                 container.appendChild(thumb);
             });
         }
+        // ... (Modal logic same as before) ...
         function openLessonModal(data) {
             const modal = document.getElementById('lesson-modal');
             const body = document.getElementById('modal-body');
@@ -781,6 +792,7 @@
         // 5. Text Quiz Mode
         // ============================================
         function initQuiz(list) {
+            // Prepare Word Bank from selected list
             wordBank = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(s => {
@@ -789,6 +801,7 @@
             });
             if (wordBank.length === 0) wordBank = ["apple", "pen", "this", "that"]; 
             
+            // Create Queue
             let fullQueue = [];
             list.forEach(item => {
                 if(item.spots) item.spots.forEach(spot => {
@@ -987,8 +1000,7 @@
                 div.onclick = (e) => checkImageAns(div, choice.isCorrect);
                 const img = document.createElement('img'); img.src = choice.img;
                 const match = choice.img.match(/(\d+)/);
-                // Corrected to use helper
-                const num = getFileNum(choice.img);
+                const num = match ? match[1] : "";
                 const numBadge = document.createElement('div');
                 numBadge.className = 'iq-file-num'; numBadge.textContent = num;
                 div.appendChild(img); div.appendChild(numBadge);
