@@ -1601,6 +1601,309 @@ window.galleryData.push({
             idioms: ["if you can't stand the heat, get out of the kitchen (苦労が嫌ならやめろ)"],
             synonyms: ["cookroom", "galley"],
             grammar: "壁への接触を 'on'、部屋や背景の中を 'in' で使い分けています。"
+        },
+        // 21. 044.webp - Boy under bed
+window.galleryData.push({
+    imageFile: "044.webp",
+    series: "000",
+    spots: [
+        {
+            top: "45%", left: "35%", width: "40%", height: "35%", color: "#e67e22",
+            title: "Under the bed",
+            eng: "A young boy is looking out from under the white bed frame.",
+            jp: "幼い少年が、白いベッドフレームの下から外を見ています。",
+            vocab: ["look out (外を見る)", "frame (枠)", "under (～の下に)"],
+            idioms: ["under the weather (具合が悪い)"],
+            synonyms: ["beneath", "below"],
+            grammar: "前置詞 'under' は、何かの真下や覆われた空間に位置することを表します。"
+        },
+        {
+            top: "60%", left: "0%", width: "20%", height: "25%", color: "#3498db",
+            title: "On the carpet",
+            eng: "A blue toy car is sitting on the grey carpet near the bed.",
+            jp: "青いおもちゃの車が、ベッドの近くの灰色のカーペットの上にあります。",
+            vocab: ["toy car (おもちゃの車)", "grey (灰色の)", "near (近くに)"],
+            idioms: ["on the road (旅に出て)"],
+            synonyms: ["atop", "upon"],
+            grammar: "床やカーペットなどの表面に接触して位置しているため、'on' を使用します。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "30%", color: "#2ecc71",
+            title: "Above the boy",
+            eng: "A blue and white checkered blanket hangs above the boy.",
+            jp: "青と白のチェック柄の毛布が、少年の上に垂れ下がっています。",
+            vocab: ["checkered (チェック柄の)", "blanket (毛布)", "hang (垂れ下がる)"],
+            idioms: ["above all (とりわけ)"],
+            synonyms: ["over", "overhead"],
+            grammar: "前置詞 'above' は、接触せずに「～より高い位置に」あることを示します。"
         }
+    ]
+});
+
+// 22. 045.webp - Girl under bed
+window.galleryData.push({
+    imageFile: "045.webp",
+    series: "000",
+    spots: [
+        {
+            top: "50%", left: "20%", width: "50%", height: "30%", color: "#e67e22",
+            title: "Under the frame",
+            eng: "A little girl is lying on her stomach under the wooden bed.",
+            jp: "小さな女の子が、木製のベッドの下でうつ伏せになっています。",
+            vocab: ["lie (横たわる)", "stomach (お腹)", "wooden (木製の)"],
+            idioms: ["go under (倒産する)"],
+            synonyms: ["beneath", "underneath"],
+            grammar: "ベッドという家具の下の空間にいることを表す基本的な前置詞 'under' です。"
+        },
+        {
+            top: "45%", left: "75%", width: "25%", height: "20%", color: "#3498db",
+            title: "Behind the girl",
+            eng: "Several stuffed animals are scattered on the floor behind the girl.",
+            jp: "いくつかのぬいぐるみが、少女の後ろの床に散らばっています。",
+            vocab: ["stuffed animal (ぬいぐるみ)", "scattered (散らばった)", "floor (床)"],
+            idioms: ["fall behind (遅れをとる)"],
+            synonyms: ["in back of", "rear"],
+            grammar: "前置詞 'behind' は、視点から見て対象物の背後にある位置関係を表します。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "35%", color: "#2ecc71",
+            title: "On the mattress",
+            eng: "A light blue comforter is placed neatly on the mattress.",
+            jp: "水色の掛け布団が、マットレスの上にきちんと置かれています。",
+            vocab: ["comforter (掛け布団)", "neatly (きちんと)", "mattress (マットレス)"],
+            idioms: ["on the dot (時間通りに)"],
+            synonyms: ["bedspread", "quilt"],
+            grammar: "ベッドの上の表面に接触している状態なので、前置詞 'on' を使います。"
+        }
+    ]
+});
+
+// 23. 046.webp - Truck in tunnel
+window.galleryData.push({
+    imageFile: "046.webp",
+    series: "000",
+    spots: [
+        {
+            top: "45%", left: "20%", width: "40%", height: "45%", color: "#e67e22",
+            title: "Inside the tunnel",
+            eng: "A dark pickup truck is driving inside a stone tunnel.",
+            jp: "暗い色のピックアップトラックが、石のトンネルの中を走っています。",
+            vocab: ["pickup truck (トラック)", "drive (運転する)", "stone (石)"],
+            idioms: ["inside out (裏返しに)"],
+            synonyms: ["within", "in"],
+            grammar: "囲まれた空間の内部を強調するため、前置詞 'inside' を使用しています。"
+        },
+        {
+            top: "30%", left: "60%", width: "20%", height: "20%", color: "#3498db",
+            title: "At the end",
+            eng: "Bright sunlight is shining at the end of the dark tunnel.",
+            jp: "暗いトンネルの出口で、明るい日差しが輝いています。",
+            vocab: ["sunlight (日光)", "shine (輝く)", "end (終わり・端)"],
+            idioms: ["at the end of the day (結局のところ)"],
+            synonyms: ["exit", "mouth"],
+            grammar: "特定の地点や場所の一点を指す場合、前置詞 'at' を使います。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "40%", color: "#2ecc71",
+            title: "On the ceiling",
+            eng: "Yellow lights are installed on the arched ceiling of the tunnel.",
+            jp: "黄色い照明が、トンネルのアーチ状の天井に取り付けられています。",
+            vocab: ["install (取り付ける)", "arched (アーチ状の)", "ceiling (天井)"],
+            idioms: ["hit the ceiling (激怒する)"],
+            synonyms: ["roof", "overhead"],
+            grammar: "天井という「面」への接触を表すため、前置詞 'on' を使用します。"
+        }
+    ]
+});
+
+// 24. 047.webp - Red car in tunnel
+window.galleryData.push({
+    imageFile: "047.webp",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "25%", width: "35%", height: "45%", color: "#e67e22",
+            title: "Through the tunnel",
+            eng: "A red car is traveling through a rocky tunnel towards the mountains.",
+            jp: "赤い車が、山に向かって岩のトンネルを通り抜けています。",
+            vocab: ["travel (移動する)", "rocky (岩の多い)", "towards (～の方へ)"],
+            idioms: ["go through (経験する)"],
+            synonyms: ["via", "across"],
+            grammar: "トンネルのような空間を通過する動きには、前置詞 'through' が適しています。"
+        },
+        {
+            top: "35%", left: "60%", width: "20%", height: "20%", color: "#3498db",
+            title: "Beyond the opening",
+            eng: "Beautiful mountains are visible beyond the opening of the tunnel.",
+            jp: "トンネルの開口部の向こうに、美しい山々が見えます。",
+            vocab: ["visible (見える)", "opening (開口部)", "beyond (～の向こうに)"],
+            idioms: ["beyond belief (信じられない)"],
+            synonyms: ["past", "further than"],
+            grammar: "ある地点（出口）を越えた更に先にあることを、前置詞 'beyond' で表します。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "80%", color: "#2ecc71",
+            title: "Around the car",
+            eng: "Rough stone walls surround the space around the car.",
+            jp: "粗い石壁が、車の周りの空間を取り囲んでいます。",
+            vocab: ["rough (粗い)", "surround (囲む)", "space (空間)"],
+            idioms: ["around the clock (24時間ぶっ通しで)"],
+            synonyms: ["encircling", "about"],
+            grammar: "前置詞 'around' は、中心にあるもの（車）を取り巻く位置関係を示します。"
+        }
+    ]
+});
+
+// 25. 048.webp - Couple by lake (Autumn)
+window.galleryData.push({
+    imageFile: "048.webp",
+    series: "000",
+    spots: [
+        {
+            top: "35%", left: "30%", width: "40%", height: "50%", color: "#e67e22",
+            title: "On the dock",
+            eng: "A couple is sitting closely together on a wooden dock.",
+            jp: "カップルが、木の桟橋の上で寄り添って座っています。",
+            vocab: ["closely (密接に)", "together (一緒に)", "dock (桟橋)"],
+            idioms: ["sittin' on the dock of the bay (のんびり過ごす)"],
+            synonyms: ["pier", "wharf"],
+            grammar: "桟橋の床面に座っているため、接触の 'on' を使用します。"
+        },
+        {
+            top: "20%", left: "0%", width: "100%", height: "30%", color: "#3498db",
+            title: "Across the lake",
+            eng: "Colorful autumn trees are standing across the lake from them.",
+            jp: "色鮮やかな秋の木々が、彼らから見て湖の向こう側に立っています。",
+            vocab: ["colorful (色鮮やかな)", "autumn (秋)", "lake (湖)"],
+            idioms: ["get across (理解させる)"],
+            synonyms: ["opposite", "over"],
+            grammar: "湖を挟んだ反対側にある位置関係を 'across the lake' で表します。"
+        },
+        {
+            top: "50%", left: "75%", width: "25%", height: "40%", color: "#2ecc71",
+            title: "In the water",
+            eng: "The scenery is reflected clearly in the calm water.",
+            jp: "その景色が、穏やかな水の中にはっきりと映り込んでいます。",
+            vocab: ["scenery (景色)", "reflect (反射する)", "clearly (はっきりと)"],
+            idioms: ["in deep water (トラブルに巻き込まれて)"],
+            synonyms: ["inside", "within"],
+            grammar: "水面下や水中に映像があるという概念で、前置詞 'in' を使います。"
+        }
+    ]
+});
+
+// 26. 049.webp - Couple by lake (Mountains)
+window.galleryData.push({
+    imageFile: "049.webp",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "25%", width: "50%", height: "50%", color: "#e67e22",
+            title: "By the lake",
+            eng: "A man and a woman are sitting side by side by the lake.",
+            jp: "男性と女性が、湖のそばに並んで座っています。",
+            vocab: ["side by side (並んで)", "lake (湖)", "woman (女性)"],
+            idioms: ["by the book (規則通りに)"],
+            synonyms: ["beside", "near"],
+            grammar: "前置詞 'by' は 'near' よりも「すぐそば」という近接感を表します。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "30%", color: "#3498db",
+            title: "In the distance",
+            eng: "Snowy mountains rise high in the distance behind the water.",
+            jp: "水面の向こう遠くに、雪山が高くそびえています。",
+            vocab: ["snowy (雪の降る・雪に覆われた)", "rise (そびえる)", "high (高く)"],
+            idioms: ["go the distance (最後までやり抜く)"],
+            synonyms: ["far away", "remote"],
+            grammar: "遠く離れた場所にあることを 'in the distance' というフレーズで表現します。"
+        },
+        {
+            top: "85%", left: "0%", width: "100%", height: "15%", color: "#2ecc71",
+            title: "On the grass",
+            eng: "They are resting on the green grass near the water's edge.",
+            jp: "彼らは、水際の近くの緑の芝生の上で休んでいます。",
+            vocab: ["rest (休む)", "grass (芝生)", "edge (端・際)"],
+            idioms: ["grass is always greener (隣の芝生は青い)"],
+            synonyms: ["lawn", "turf"],
+            grammar: "芝生の表面に座っている状態なので、接触の 'on' を使います。"
+        }
+    ]
+});
+
+// 27. 050.webp - Students in Library
+window.galleryData.push({
+    imageFile: "050.webp",
+    series: "000",
+    spots: [
+        {
+            top: "40%", left: "10%", width: "80%", height: "40%", color: "#e67e22",
+            title: "At the table",
+            eng: "Three students are studying together at a large wooden table.",
+            jp: "3人の学生が、大きな木のテーブルで一緒に勉強しています。",
+            vocab: ["student (学生)", "study (勉強する)", "together (一緒に)"],
+            idioms: ["at the table (交渉の席について)"],
+            synonyms: ["by", "beside"],
+            grammar: "テーブルを使って作業している場合、接触の 'on' ではなく地点の 'at' を使います。"
+        },
+        {
+            top: "0%", left: "0%", width: "100%", height: "30%", color: "#3498db",
+            title: "On the shelves",
+            eng: "Many books are organized on the shelves in the background.",
+            jp: "背景の棚には、多くの本が整理されています。",
+            vocab: ["organize (整理する)", "shelf (棚)", "background (背景)"],
+            idioms: ["off the shelf (既製品の)"],
+            synonyms: ["rack", "bookcase"],
+            grammar: "棚の板の上に本が乗っているため、接触を表す前置詞 'on' です。"
+        },
+        {
+            top: "80%", left: "50%", width: "40%", height: "20%", color: "#2ecc71",
+            title: "In front of her",
+            eng: "A laptop is open on the desk in front of the girl on the right.",
+            jp: "右側の女の子の前の机の上で、ノートパソコンが開かれています。",
+            vocab: ["laptop (ノートパソコン)", "open (開いている)", "right (右)"],
+            idioms: ["in front (前方に)"],
+            synonyms: ["before", "ahead"],
+            grammar: "人の正面にある位置関係を 'in front of' で表します。"
+        }
+    ]
+});
+
+// 28. 051.webp - Two Students
+window.galleryData.push({
+    imageFile: "051.webp",
+    series: "000",
+    spots: [
+        {
+            top: "20%", left: "10%", width: "40%", height: "60%", color: "#e67e22",
+            title: "Next to him",
+            eng: "A girl in a purple hoodie is sitting next to the boy.",
+            jp: "紫のパーカーを着た女の子が、少年の隣に座っています。",
+            vocab: ["purple (紫の)", "hoodie (パーカー)", "sit (座る)"],
+            idioms: ["next to nothing (タダ同然で)"],
+            synonyms: ["beside", "by"],
+            grammar: "横並びの位置関係を表す最も一般的な表現 'next to' です。"
+        },
+        {
+            top: "60%", left: "55%", width: "40%", height: "30%", color: "#3498db",
+            title: "On the desk",
+            eng: "He is typing on a laptop computer placed on the desk.",
+            jp: "彼は、机の上に置かれたノートパソコンでタイピングをしています。",
+            vocab: ["type (タイプする)", "computer (コンピュータ)", "place (置く)"],
+            idioms: ["on the ball (注意深くて)"],
+            synonyms: ["atop", "upon"],
+            grammar: "机の表面にあることを示す接触の前置詞 'on' を使用しています。"
+        },
+        {
+            top: "20%", left: "75%", width: "25%", height: "20%", color: "#2ecc71",
+            title: "In the classroom",
+            eng: "Other students are studying in the back of the classroom.",
+            jp: "他の学生たちが、教室の後ろの方で勉強しています。",
+            vocab: ["other (他の)", "classroom (教室)", "back (後ろ)"],
+            idioms: ["in the same boat (同じ境遇で)"],
+            synonyms: ["inside", "within"],
+            grammar: "部屋や建物の中という空間を表すため、前置詞 'in' を使います。"
+        }
+    ]
+});
     ]
 );
