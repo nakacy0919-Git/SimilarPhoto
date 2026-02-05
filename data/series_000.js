@@ -890,7 +890,7 @@ window.galleryData.push({
 
 // 2. 024.jpg - Hiker Girl by River
 window.galleryData.push({
-    imageFile: "images/000/024.jpg",
+    imageFile: "images/000/024.webp",
     series: "000",
     spots: [
         {
@@ -928,7 +928,7 @@ window.galleryData.push({
 
 // 3. 025.jpg - Girl and Waterfall
 window.galleryData.push({
-    imageFile: "images/000/025.jpg",
+    imageFile: "images/000/025.webp",
     series: "000",
     spots: [
         {
@@ -1194,7 +1194,7 @@ window.galleryData.push({
 
 // 10. 032.jpg - Scenic Road
 window.galleryData.push({
-    imageFile: "images/000/032.jpg",
+    imageFile: "images/000/032.webp",
     series: "000",
     spots: [
         {
