@@ -1153,7 +1153,7 @@ window.galleryData.push({
     ]
 });
 
-// 331.jpg: Tennis doubles (Volley)
+// 331.webp: Tennis doubles (Volley)
 window.galleryData.push({
     imageFile: "images/300/331.webp",
     series: "300",
