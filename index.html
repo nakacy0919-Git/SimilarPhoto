@@ -17,8 +17,18 @@
             <img src="title.png" alt="App Icon" class="title-image" onerror="this.style.display='none'">
             <h1>Similar Photos Review</h1>
         </div>
-        <button class="home-btn" id="btn-home" onclick="goHome()">🏠 Home</button>
+        <div class="header-controls">
+            <button class="home-btn" id="btn-home" onclick="goHome()">🏠 Home</button>
+        </div>
     </header>
+
+    <div id="news-section" class="news-section fade-transition">
+        <div class="news-box">
+            <div class="news-badge">NEWS</div>
+            <div id="news-list-container" class="news-list">
+                </div>
+        </div>
+    </div>
 
     <div id="mode-screen" class="fade-transition">
         <div class="mode-card mode-review" onclick="startApp('review')">
@@ -53,24 +63,21 @@
 
     <div id="app-content" class="fade-transition fade-out">
         <div class="top-controls">
-            <div class="lang-switch">
-                <button class="lang-btn active" id="btn-en" onclick="changeLanguage('en')">English</button>
-                <button class="lang-btn" id="btn-jp" onclick="changeLanguage('jp')">日本語</button>
-            </div>
-            <button class="method-btn" onclick="toggleMethod()" id="lbl-about-btn">ⓘ About This Method</button>
+            <button class="method-btn" onclick="toggleMethod()" id="lbl-about-btn">🔰 Similar Photoって何？</button>
         </div>
 
         <div id="method-box" class="methodology-box">
-            <div id="about-content-en">
-                <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;"><strong>About:</strong> Accurate description skills are key.</p>
-            </div>
-            <div id="about-content-jp" style="display:none;">
-                <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;"><strong>概要:</strong> 正確な描写力を養います。</p>
+            <div id="about-content-jp">
+                <p>
+                    Similar Photo Activityは、教育者 <a href="https://sites.google.com/view/koheinakashima/bio" target="_blank" class="bio-link">Nakashima Kohei</a> によって考案・開発されました。<br><br>
+                    このメソッドは、二重符号化理論（Dual Coding Theory）や認知言語学の科学的見地に基づき設計されています。視覚イメージと言語情報を同時に処理することで、脳の長期記憶への定着を強力に促進します。<br><br>
+                    学習者は単なる暗記ではなく、文脈の中で生きた英語を「発見」し、ゲーム感覚で楽しみながら直感的な言語感覚を養うことができます。英語運用能力を飛躍的に高める、没入型の最適な学習体験を提供します。
+                </p>
             </div>
         </div>
 
         <div class="search-area" id="search-section">
-            <input type="text" id="img-search-input" class="search-input" placeholder="検索したい番号を入力 (複数可: 123, 456)" onkeypress="handleEnter(event)" oninput="normalizeInput(this)">
+            <input type="text" id="img-search-input" class="search-input" placeholder="番号または英単語 (例: 123, apple)" onkeypress="handleEnter(event)" oninput="normalizeInput(this)">
             <button class="search-btn" id="btn-search" onclick="performSearch()">Search</button>
         </div>
 
@@ -169,6 +176,10 @@
         </div>
     </div>
 
+    <footer>
+        <p>Designed & Developed by <a href="https://sites.google.com/view/koheinakashima/bio" target="_blank">Kohei Nakashima</a>. All Rights Reserved.</p>
+    </footer>
+
     <script> window.galleryData = []; </script>
     
     <script src="data/series_000.js"></script>
@@ -184,6 +195,7 @@
     <script src="data/series_1000.js"></script>
     <script src="data/series_cnn.js"></script>
 
+    <script src="news.js"></script>
     <script src="app.js"></script>
 
 </body>

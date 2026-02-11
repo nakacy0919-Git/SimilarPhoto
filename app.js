@@ -48,7 +48,7 @@ function playSound(type) {
 }
 
 // ============================================
-// ★ Dynamic Background Initialization (ここを変更)
+// ★ Dynamic Background Initialization
 // ============================================
 function initDynamicBackground() {
     const container = document.getElementById('dynamic-bg-container');
@@ -56,7 +56,7 @@ function initDynamicBackground() {
 
     // ランダムに画像をシャッフルして、使う枚数を増やす (60 -> 150枚程度)
     const shuffled = [...window.galleryData].sort(() => 0.5 - Math.random());
-    const selectedImages = shuffled.slice(0, 150); // 細かく敷き詰めるため枚数を増加
+    const selectedImages = shuffled.slice(0, 150); 
 
     selectedImages.forEach(item => {
         const img = document.createElement('img');
@@ -64,38 +64,42 @@ function initDynamicBackground() {
         img.className = 'bg-grid-item';
         img.alt = "";
         
-        // ★追加: 各画像にランダムなアニメーション設定を適用
-        // 2秒〜7秒の間でランダムな周期
         const duration = 2 + Math.random() * 5; 
-        // 0秒〜5秒の間でランダムな開始遅延
         const delay = Math.random() * 5; 
         
         img.style.animationDuration = `${duration}s`;
-        img.style.animationDelay = `-${delay}s`; // マイナスのディレイで最初からバラバラに動かす
+        img.style.animationDelay = `-${delay}s`; 
 
         container.appendChild(img);
     });
 }
 
-// Call initialization on load
 window.addEventListener('load', () => {
     initDynamicBackground();
 });
 
 // ============================================
-// 1. App Start (以下変更なし)
+// 1. App Start
 // ============================================
 function startApp(mode) {
     currentMode = mode;
     const modeScreen = document.getElementById('mode-screen');
+    const newsSection = document.getElementById('news-section'); // ★お知らせ要素取得
+
     modeScreen.classList.add('fade-out');
+    // ★追加: アプリ開始時にお知らせもフェードアウトさせる
+    if(newsSection) newsSection.classList.add('fade-out');
 
     setTimeout(() => {
         modeScreen.style.display = 'none';
+        if(newsSection) newsSection.style.display = 'none'; // ★完全に消す
+
         const appContent = document.getElementById('app-content');
         appContent.style.display = 'flex';
         setTimeout(() => { appContent.classList.remove('fade-out'); }, 50);
-        document.getElementById('btn-home').style.display = 'block';
+        
+        // Homeボタンは常に表示（位置はCSSで制御）
+        document.getElementById('btn-home').style.display = 'inline-block';
 
         document.getElementById('search-section').style.display = 'none';
         document.getElementById('gallery-list').style.display = 'none';
@@ -129,8 +133,16 @@ function goHome() {
     setTimeout(() => {
         appContent.style.display = 'none';
         const modeScreen = document.getElementById('mode-screen');
+        const newsSection = document.getElementById('news-section'); // ★お知らせ要素取得
+
         modeScreen.style.display = 'flex';
-        setTimeout(() => { modeScreen.classList.remove('fade-out'); }, 50);
+        if(newsSection) newsSection.style.display = 'block'; // ★再表示
+
+        setTimeout(() => { 
+            modeScreen.classList.remove('fade-out'); 
+            if(newsSection) newsSection.classList.remove('fade-out'); // ★フェードイン
+        }, 50);
+        
         document.getElementById('gallery-list').innerHTML = '';
         closeModalDirect();
     }, 400);
@@ -179,23 +191,39 @@ function startQuizWithCategory(cat) {
 // ============================================
 function normalizeInput(input) {
     let val = input.value;
-    val = val.replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
-    val = val.replace(/[^0-9, ]/g, '');
+    val = val.replace(/[０-９ａ-ｚＡ-Ｚ]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
     input.value = val;
 }
 
 function performSearch() {
     const inputVal = document.getElementById('img-search-input').value;
     if (!inputVal) return;
-    const targetNums = inputVal.split(/[, ]+/).map(s => parseInt(s, 10)).filter(n => !isNaN(n));
-    if (targetNums.length === 0) return;
+
+    const searchTerms = inputVal.toLowerCase().split(/[, ]+/).filter(Boolean);
+    if (searchTerms.length === 0) return;
     
     document.querySelectorAll('.genre-btn').forEach(btn => btn.classList.remove('active'));
     
     const list = window.galleryData.filter(item => {
-        const num = parseInt(getFileNum(item.imageFile), 10);
-        return targetNums.includes(num);
+        const fileNum = getFileNum(item.imageFile); 
+        const fileNumInt = parseInt(fileNum, 10);   
+
+        let contentText = "";
+        if (item.spots) {
+            item.spots.forEach(spot => {
+                contentText += ` ${spot.eng} ${spot.jp} ${(spot.vocab || []).join(" ")}`;
+            });
+        }
+        contentText = contentText.toLowerCase();
+
+        return searchTerms.some(term => {
+            if (!isNaN(term) && parseInt(term) === fileNumInt) return true;
+            if (fileNum.includes(term)) return true;
+            if (contentText.includes(term)) return true;
+            return false;
+        });
     });
+
     renderGalleryList(list);
 }
 
@@ -323,7 +351,6 @@ function cleanVocab(str) { return str.replace(/\s*\(.*?\)/g, '').trim(); }
 // 5. Text Quiz Mode
 // ============================================
 function initQuiz(list) {
-    // Prepare Word Bank from selected list
     wordBank = [];
     list.forEach(item => {
         if(item.spots) item.spots.forEach(s => {
@@ -332,7 +359,6 @@ function initQuiz(list) {
     });
     if (wordBank.length === 0) wordBank = ["apple", "pen", "this", "that"]; 
     
-    // Create Queue
     let fullQueue = [];
     list.forEach(item => {
         if(item.spots) item.spots.forEach(spot => {
