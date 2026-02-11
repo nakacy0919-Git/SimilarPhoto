@@ -542,24 +542,36 @@ function toggleImageQuizHint() {
 function showImageSelection() {
     const imgPhase = document.getElementById('iq-image-phase');
     imgPhase.innerHTML = '';
+
+    // 正解と不正解（ダミー）を混ぜる処理
     let choices = [];
     choices.push({ img: currentImgQuiz.correctImg, isCorrect: true });
+    
+    // 他の画像をランダムに選ぶ
     let allImages = window.galleryData.map(d => d.imageFile).filter(img => img !== currentImgQuiz.correctImg);
     allImages = [...new Set(allImages)];
     allImages.sort(() => Math.random() - 0.5);
     for(let i=0; i<3; i++) { if(allImages[i]) choices.push({ img: allImages[i], isCorrect: false }); }
     choices.sort(() => Math.random() - 0.5);
 
+    // カードを生成して表示
     choices.forEach(choice => {
         const div = document.createElement('div');
         div.className = 'iq-img-card';
         div.onclick = (e) => checkImageAns(div, choice.isCorrect);
-        const img = document.createElement('img'); img.src = choice.img;
-        const match = choice.img.match(/(\d+)/);
-        const num = match ? match[1] : "";
+        
+        const img = document.createElement('img'); 
+        img.src = choice.img;
+        
+        // ★ここです！Quizモードと同じ「getFileNum」を使って番号を取得します
+        const num = getFileNum(choice.img);
+        
         const numBadge = document.createElement('div');
-        numBadge.className = 'iq-file-num'; numBadge.textContent = num;
-        div.appendChild(img); div.appendChild(numBadge);
+        numBadge.className = 'iq-file-num'; 
+        numBadge.textContent = num; // 取得した番号を表示
+        
+        div.appendChild(img); 
+        div.appendChild(numBadge);
         imgPhase.appendChild(div);
     });
 }
