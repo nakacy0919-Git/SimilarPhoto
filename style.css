@@ -19,24 +19,30 @@ body {
 /* --- 1. 動く背景層 (最背面) --- */
 #dynamic-bg-container {
     position: fixed;
-    top: -20%;
-    left: -20%;
-    width: 140%;
-    height: 140%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
-    transform: rotate(-10deg);
-    animation: bgScroll 60s linear infinite;
-    opacity: 0.6;
+    /* ★変更: より細かいグリッドに変更 (120px -> 80px) */
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    /* ★削除: 全体の回転とスクロールアニメーションを削除 */
+    /* transform: rotate(-10deg); */
+    /* animation: bgScroll 60s linear infinite; */
+    opacity: 0.4; /* 全体の透明度を少し下げる */
     pointer-events: none;
 }
 
-@keyframes bgScroll {
-    0% { transform: rotate(-10deg) translateY(0); }
-    50% { transform: rotate(-10deg) translateY(-100px); }
-    100% { transform: rotate(-10deg) translateY(0); }
+/* ★削除: 古いスクロールアニメーション */
+/* @keyframes bgScroll { ... } */
+
+/* ★新規: パタパタ動くアニメーション定義 */
+@keyframes pataPata {
+    0%, 100% { opacity: 0.3; transform: scale(0.95); }
+    50% { opacity: 1.0; transform: scale(1.05); }
 }
 
 .bg-grid-item {
@@ -45,8 +51,12 @@ body {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    filter: grayscale(80%);
-    transition: opacity 1s;
+    /* ★削除: グレースケールを削除してカラーに */
+    /* filter: grayscale(80%); */
+    /* ★変更: 新しいアニメーションを適用 (時間はJSでランダムに設定) */
+    animation-name: pataPata;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 /* --- 2. 白い膜の層 (中間) --- */
@@ -57,8 +67,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(3px);
+    /* ★変更: 背景がカラーになったので、白の透過率を上げて少し見やすく調整 */
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(5px); /* ぼかしを少し強く */
 }
 
 /* Header & Title */
@@ -67,44 +78,46 @@ header {
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    margin-bottom: 15px; 
+    margin-bottom: 20px; /* 少し広げる */
     width: 100%; 
     max-width: 1000px; 
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     border-bottom: 1px solid rgba(0,0,0,0.05); 
     position: relative; 
     z-index: 10;
 }
 @media (min-width: 601px) {
-    header { flex-direction: row; justify-content: space-between; margin-bottom: 30px; }
+    header { flex-direction: row; justify-content: space-between; margin-bottom: 40px; }
 }
 
 .title-wrapper { 
-    display: flex; align-items: center; gap: 10px; 
+    display: flex; align-items: center; gap: 15px; 
     justify-content: center;
 }
-.title-image { height: 50px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); flex-shrink: 0; }
+/* ★変更: タイトル画像も少し大きく */
+.title-image { height: 60px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); flex-shrink: 0; }
 
 h1 {
-    font-size: 2.5rem; margin: 0; 
+    /* ★変更: フォントサイズを大きく */
+    font-size: 3rem; margin: 0; 
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase; letter-spacing: 1px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 2px; font-weight: 900;
     white-space: nowrap; line-height: 1.2;
     filter: drop-shadow(0 2px 0 rgba(255,255,255,1)); 
 }
 
 @media (max-width: 600px) { 
-    h1 { font-size: 6vw; white-space: normal; text-align: center; } 
-    .title-image { height: 35px; }
-    .title-wrapper { margin-bottom: 10px; }
+    h1 { font-size: 7vw; white-space: normal; text-align: center; } 
+    .title-image { height: 45px; }
+    .title-wrapper { margin-bottom: 15px; }
 }
 
 .home-btn {
-    background: #2c3e50; color: #fff; border: none; padding: 8px 20px;
-    border-radius: 20px; cursor: pointer; display: none; 
-    font-weight: bold; transition: 0.2s; font-size: 0.9rem;
+    background: #2c3e50; color: #fff; border: none; padding: 10px 25px;
+    border-radius: 25px; cursor: pointer; display: none; 
+    font-weight: bold; transition: 0.2s; font-size: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .home-btn:hover { background: #34495e; transform: translateY(-2px); }
@@ -113,41 +126,79 @@ h1 {
 .fade-transition { transition: opacity 0.4s ease, transform 0.4s ease; opacity: 1; transform: scale(1); }
 .fade-out { opacity: 0; transform: scale(0.95); pointer-events: none; }
 
-/* --- Mode Selection Screen --- */
-#mode-screen { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px; }
+/* --- Mode Selection Screen (★大幅変更) --- */
+#mode-screen { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1100px; }
 .mode-card {
-    background: rgba(255, 255, 255, 0.9); 
-    width: 280px; padding: 40px 20px; border-radius: 20px;
-    text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 4px solid transparent;
+    /* ★変更: デザインをリッチに */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); /* グラスモーフィズム効果 */
+    width: 300px; /* 少し幅広に */
+    padding: 40px 25px; 
+    border-radius: 25px;
+    text-align: center; cursor: pointer; 
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.1),
+        inset 0 0 0 2px rgba(255,255,255,0.5); /* 内側の光沢 */
+    border: 3px solid transparent; /* 初期状態は透明な枠線 */
+    position: relative; overflow: hidden;
 }
+
+/* ホバー時のエフェクト強化 */
+.mode-card:hover { 
+    transform: translateY(-10px) scale(1.02); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* 各モードの色設定（ホバー時に枠線とアイコンに色をつける） */
+.mode-review:hover { border-color: #3498db; }
+.mode-review:hover .mode-icon { color: #3498db; transform: scale(1.1) rotate(-5deg); }
+
+.mode-quiz:hover { border-color: #e74c3c; }
+.mode-quiz:hover .mode-icon { color: #e74c3c; transform: scale(1.1) rotate(5deg); }
+
+.mode-img-quiz:hover { border-color: #f1c40f; }
+.mode-img-quiz:hover .mode-icon { color: #f1c40f; transform: scale(1.1); }
+
+.mode-party:hover { border-color: #e91e63; }
+.mode-party:hover .mode-icon { color: #e91e63; transform: scale(1.1) rotate(-10deg); }
 
 @media (max-width: 600px) {
-    #mode-screen { gap: 15px; margin-top: 10px; }
+    #mode-screen { gap: 20px; margin-top: 10px; }
     .mode-card { 
-        width: 90%; 
-        padding: 15px; 
+        width: 100%; /* スマホでは横幅いっぱい */
+        padding: 25px 20px; 
         display: flex; flex-direction: row; 
         align-items: center; justify-content: start; text-align: left;
-        gap: 15px;
+        gap: 20px;
     }
-    .mode-icon { font-size: 3rem !important; margin-bottom: 0 !important; line-height: 1; }
+    /* スマホでのアイコン・テキストサイズ調整 */
+    .mode-icon { font-size: 4rem !important; margin-bottom: 0 !important; }
     .mode-info { flex-grow: 1; }
-    .mode-card h2 { font-size: 1.2rem !important; margin-bottom: 2px !important; }
-    .mode-card p { font-size: 0.8rem !important; margin: 0; color: #777; }
+    .mode-card h2 { font-size: 1.6rem !important; margin-bottom: 5px !important; }
+    .mode-card p { font-size: 1rem !important; }
 }
 
-.mode-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); background: #fff; }
-.mode-review:hover { border-color: #3498db; }
-.mode-quiz:hover { border-color: #e74c3c; }
-.mode-img-quiz:hover { border-color: #f1c40f; }
-.mode-party:hover { border-color: #e91e63; }
+/* ★変更: アイコンとテキストを大きく */
+.mode-icon { 
+    font-size: 7rem; display: block; margin-bottom: 25px; line-height: 1; 
+    color: #aaa; /* 初期はグレー */
+    transition: all 0.3s ease;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.mode-card h2 { 
+    color: #2c3e50; margin-bottom: 15px; 
+    font-size: 2.2rem; /* 大きく */
+    font-weight: 900; letter-spacing: 1px;
+}
+.mode-card p { 
+    color: #666; 
+    font-size: 1.1rem; /* 大きく */
+    line-height: 1.6; font-weight: bold; 
+}
 
-.mode-icon { font-size: 6rem; display: block; margin-bottom: 20px; line-height: 1; }
-.mode-card h2 { color: #2c3e50; margin-bottom: 10px; font-size: 1.8rem; font-weight: 800; }
-.mode-card p { color: #666; font-size: 1rem; line-height: 1.5; font-weight: bold; }
-
-/* App Content */
+/* App Content (以下変更なし) */
 #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; padding-bottom: 50px; position: relative; z-index: 5; }
 
 /* Controls */

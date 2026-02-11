@@ -48,21 +48,31 @@ function playSound(type) {
 }
 
 // ============================================
-// ★ Dynamic Background Initialization
+// ★ Dynamic Background Initialization (ここを変更)
 // ============================================
 function initDynamicBackground() {
     const container = document.getElementById('dynamic-bg-container');
     if (!window.galleryData || window.galleryData.length === 0) return;
 
-    // ランダムに画像をシャッフルして、最初の60枚くらいを使う
+    // ランダムに画像をシャッフルして、使う枚数を増やす (60 -> 150枚程度)
     const shuffled = [...window.galleryData].sort(() => 0.5 - Math.random());
-    const selectedImages = shuffled.slice(0, 60);
+    const selectedImages = shuffled.slice(0, 150); // 細かく敷き詰めるため枚数を増加
 
     selectedImages.forEach(item => {
         const img = document.createElement('img');
         img.src = item.imageFile;
         img.className = 'bg-grid-item';
         img.alt = "";
+        
+        // ★追加: 各画像にランダムなアニメーション設定を適用
+        // 2秒〜7秒の間でランダムな周期
+        const duration = 2 + Math.random() * 5; 
+        // 0秒〜5秒の間でランダムな開始遅延
+        const delay = Math.random() * 5; 
+        
+        img.style.animationDuration = `${duration}s`;
+        img.style.animationDelay = `-${delay}s`; // マイナスのディレイで最初からバラバラに動かす
+
         container.appendChild(img);
     });
 }
@@ -73,7 +83,7 @@ window.addEventListener('load', () => {
 });
 
 // ============================================
-// 1. App Start
+// 1. App Start (以下変更なし)
 // ============================================
 function startApp(mode) {
     currentMode = mode;
