@@ -7,24 +7,67 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         /* =========================================
-           Base Design
+           Base Design & Dynamic Background
            ========================================= */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background: linear-gradient(-45deg, #fdfbfb, #ebedee, #f3e7e9, #e3eeff);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: #333;
             margin: 0;
             padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden;
+            overflow-x: hidden; /* 横スクロール防止 */
             box-sizing: border-box;
+            background-color: #f0f2f5; /* 画像読み込み前のベース色 */
         }
-        @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+        /* --- 1. 動く背景層 (最背面) --- */
+        #dynamic-bg-container {
+            position: fixed;
+            top: -20%;
+            left: -20%;
+            width: 140%;
+            height: 140%;
+            z-index: -2; /* 一番後ろ */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            transform: rotate(-10deg); /* 少し斜めにする */
+            animation: bgScroll 60s linear infinite;
+            opacity: 0.6; /* 画像自体の透明度 */
+            pointer-events: none; /* クリックを邪魔しないように */
+        }
+
+        /* 背景のアニメーション定義 */
+        @keyframes bgScroll {
+            0% { transform: rotate(-10deg) translateY(0); }
+            50% { transform: rotate(-10deg) translateY(-100px); }
+            100% { transform: rotate(-10deg) translateY(0); }
+        }
+
+        /* 背景用の画像スタイル */
+        .bg-grid-item {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            filter: grayscale(80%); /* 少しモノクロにしてうるささを抑える */
+            transition: opacity 1s;
+        }
+
+        /* --- 2. 白い膜の層 (中間) --- */
+        #white-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* 背景より手前、コンテンツより奥 */
+            background: rgba(255, 255, 255, 0.85); /* 白の透過率85% */
+            backdrop-filter: blur(3px); /* すりガラス効果 */
+        }
 
         /* Header & Title */
         header {
@@ -57,6 +100,8 @@
             -webkit-text-fill-color: transparent;
             text-transform: uppercase; letter-spacing: 1px; font-weight: 800;
             white-space: nowrap; line-height: 1.2;
+            /* タイトルの視認性を上げるためにドロップシャドウを追加 */
+            filter: drop-shadow(0 2px 0 rgba(255,255,255,1)); 
         }
 
         @media (max-width: 600px) { 
@@ -80,7 +125,9 @@
         /* --- Mode Selection Screen --- */
         #mode-screen { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px; }
         .mode-card {
-            background: rgba(255, 255, 255, 0.95); width: 280px; padding: 40px 20px; border-radius: 20px;
+            /* 背景を少し透過させておしゃれに */
+            background: rgba(255, 255, 255, 0.9); 
+            width: 280px; padding: 40px 20px; border-radius: 20px;
             text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 4px solid transparent;
         }
@@ -100,11 +147,10 @@
             .mode-card p { font-size: 0.8rem !important; margin: 0; color: #777; }
         }
 
-        .mode-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .mode-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); background: #fff; }
         .mode-review:hover { border-color: #3498db; }
         .mode-quiz:hover { border-color: #e74c3c; }
         .mode-img-quiz:hover { border-color: #f1c40f; }
-        /* ★ New Party Mode Style */
         .mode-party:hover { border-color: #e91e63; }
 
         .mode-icon { font-size: 6rem; display: block; margin-bottom: 20px; line-height: 1; }
@@ -112,7 +158,7 @@
         .mode-card p { color: #666; font-size: 1rem; line-height: 1.5; font-weight: bold; }
 
         /* App Content */
-        #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; padding-bottom: 50px; }
+        #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; padding-bottom: 50px; position: relative; z-index: 5; }
 
         /* Controls */
         .top-controls { width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
@@ -138,11 +184,11 @@
         }
         .quiz-cat-title { font-size: 1.5rem; margin-bottom: 10px; color: #2c3e50; font-weight: bold; text-align: center; }
 
-        /* Category Buttons (Unified Grid Style) */
+        /* Category Buttons */
         .genre-tabs { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
-            gap: 10px; /* 少し狭く */
+            gap: 10px; 
             justify-content: center; 
             margin-bottom: 30px; 
             width: 100%; 
@@ -153,15 +199,15 @@
         }
 
         .genre-btn { 
-            padding: 12px 0; /* ★高さを小さくしました (以前は18px) */
+            padding: 12px 0;
             background: rgba(255, 255, 255, 0.8); 
             border: 1px solid rgba(0,0,0,0.1); 
-            border-radius: 10px; /* 角丸も少し控えめに */
+            border-radius: 10px; 
             cursor: pointer; 
             color: #555; 
             font-weight: bold; 
             transition: all 0.2s ease; 
-            font-size: 1rem; /* ★文字サイズを小さくしました (以前は1.1rem) */
+            font-size: 1rem; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
             text-align: center;
             width: 100%;
@@ -327,6 +373,9 @@
 </head>
 <body>
 
+    <div id="dynamic-bg-container"></div>
+    <div id="white-overlay"></div>
+
     <header>
         <div class="title-wrapper">
             <img src="title.png" alt="App Icon" class="title-image" onerror="this.style.display='none'">
@@ -391,7 +440,7 @@
 
         <div class="quiz-category-screen" id="quiz-cat-screen">
             <p class="quiz-cat-title">Select a Category to Start Quiz<br><span style="font-size:0.9rem; color:#666;">（学習したいシリーズを選択してください）</span></p>
-            </div>
+        </div>
 
         <div class="genre-tabs" id="review-cat-tabs">
             <button class="genre-btn" onclick="selectCategory(0)">000</button>
@@ -548,6 +597,32 @@
                 osc.start(); osc.stop(audioCtx.currentTime + 0.3);
             }
         }
+
+        // ============================================
+        // ★ NEW: Dynamic Background Initialization
+        // ============================================
+        function initDynamicBackground() {
+            const container = document.getElementById('dynamic-bg-container');
+            if (!window.galleryData || window.galleryData.length === 0) return;
+
+            // ランダムに画像をシャッフルして、最初の60枚くらいを使う
+            // (全部使うと重すぎるため)
+            const shuffled = [...window.galleryData].sort(() => 0.5 - Math.random());
+            const selectedImages = shuffled.slice(0, 60);
+
+            selectedImages.forEach(item => {
+                const img = document.createElement('img');
+                img.src = item.imageFile;
+                img.className = 'bg-grid-item';
+                img.alt = "";
+                container.appendChild(img);
+            });
+        }
+
+        // Call initialization on load
+        window.addEventListener('load', () => {
+            initDynamicBackground();
+        });
 
         // ============================================
         // 1. App Start
@@ -709,7 +784,7 @@
                 container.appendChild(thumb);
             });
         }
-        // ... (Modal logic same as before) ...
+        
         function openLessonModal(data) {
             const modal = document.getElementById('lesson-modal');
             const body = document.getElementById('modal-body');
