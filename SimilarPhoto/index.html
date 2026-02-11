@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Similar Photos Review</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        /* =========================================
+           Base Design
+           ========================================= */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: linear-gradient(-45deg, #fdfbfb, #ebedee, #f3e7e9, #e3eeff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+        /* Header & Title */
+        header {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            margin-bottom: 15px; 
+            width: 100%; 
+            max-width: 1000px; 
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+            position: relative; 
+            z-index: 10;
+        }
+        @media (min-width: 601px) {
+            header { flex-direction: row; justify-content: space-between; margin-bottom: 30px; }
+        }
+
+        .title-wrapper { 
+            display: flex; align-items: center; gap: 10px; 
+            justify-content: center;
+        }
+        .title-image { height: 50px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); flex-shrink: 0; }
+        
+        h1 {
+            font-size: 2.5rem; margin: 0; 
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase; letter-spacing: 1px; font-weight: 800;
+            white-space: nowrap; line-height: 1.2;
+        }
+
+        @media (max-width: 600px) { 
+            h1 { font-size: 6vw; white-space: normal; text-align: center; } 
+            .title-image { height: 35px; }
+            .title-wrapper { margin-bottom: 10px; }
+        }
+
+        .home-btn {
+            background: #2c3e50; color: #fff; border: none; padding: 8px 20px;
+            border-radius: 20px; cursor: pointer; display: none; 
+            font-weight: bold; transition: 0.2s; font-size: 0.9rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .home-btn:hover { background: #34495e; transform: translateY(-2px); }
+
+        /* Animations */
+        .fade-transition { transition: opacity 0.4s ease, transform 0.4s ease; opacity: 1; transform: scale(1); }
+        .fade-out { opacity: 0; transform: scale(0.95); pointer-events: none; }
+
+        /* --- Mode Selection Screen --- */
+        #mode-screen { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1000px; }
+        .mode-card {
+            background: rgba(255, 255, 255, 0.95); width: 280px; padding: 40px 20px; border-radius: 20px;
+            text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 4px solid transparent;
+        }
+        
+        @media (max-width: 600px) {
+            #mode-screen { gap: 15px; margin-top: 10px; }
+            .mode-card { 
+                width: 90%; 
+                padding: 15px; 
+                display: flex; flex-direction: row; 
+                align-items: center; justify-content: start; text-align: left;
+                gap: 15px;
+            }
+            .mode-icon { font-size: 3rem !important; margin-bottom: 0 !important; line-height: 1; }
+            .mode-info { flex-grow: 1; }
+            .mode-card h2 { font-size: 1.2rem !important; margin-bottom: 2px !important; }
+            .mode-card p { font-size: 0.8rem !important; margin: 0; color: #777; }
+        }
+
+        .mode-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .mode-review:hover { border-color: #3498db; }
+        .mode-quiz:hover { border-color: #e74c3c; }
+        .mode-img-quiz:hover { border-color: #f1c40f; }
+        /* ★ New Party Mode Style */
+        .mode-party:hover { border-color: #e91e63; }
+
+        .mode-icon { font-size: 6rem; display: block; margin-bottom: 20px; line-height: 1; }
+        .mode-card h2 { color: #2c3e50; margin-bottom: 10px; font-size: 1.8rem; font-weight: 800; }
+        .mode-card p { color: #666; font-size: 1rem; line-height: 1.5; font-weight: bold; }
+
+        /* App Content */
+        #app-content { display: none; width: 100%; max-width: 1000px; flex-direction: column; align-items: center; padding-bottom: 50px; }
+
+        /* Controls */
+        .top-controls { width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+        .lang-btn { background: #fff; border: 1px solid #ddd; padding: 5px 10px; cursor: pointer; font-size: 0.85rem; border-radius: 4px; color: #777; transition: 0.2s; }
+        .lang-btn.active { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+        .method-btn { background: none; border: none; color: #777; cursor: pointer; font-size: 0.9rem; text-decoration: underline; }
+        .methodology-box { display: none; background: rgba(255, 255, 255, 0.9); padding: 20px; max-width: 800px; border-left: 4px solid #3498db; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 8px; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
+
+        /* Search & Tabs */
+        .search-area { width: 100%; max-width: 800px; display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }
+        .search-input { padding: 12px 20px; border-radius: 25px; border: 1px solid #ddd; width: 300px; font-size: 1rem; outline: none; transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .search-input:focus { border-color: #3498db; box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2); }
+        .search-btn { padding: 10px 25px; border-radius: 25px; border: none; background: #3498db; color: white; font-weight: bold; cursor: pointer; transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .search-btn:hover { background: #2980b9; }
+
+        /* Quiz Category Selection Screen */
+        .quiz-category-screen {
+            display: none; 
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .quiz-cat-title { font-size: 1.5rem; margin-bottom: 10px; color: #2c3e50; font-weight: bold; text-align: center; }
+
+        /* Category Buttons (Unified Grid Style) */
+        .genre-tabs { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; /* 少し狭く */
+            justify-content: center; 
+            margin-bottom: 30px; 
+            width: 100%; 
+            max-width: 600px; 
+        }
+        @media (max-width: 400px) {
+            .genre-tabs { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        .genre-btn { 
+            padding: 12px 0; /* ★高さを小さくしました (以前は18px) */
+            background: rgba(255, 255, 255, 0.8); 
+            border: 1px solid rgba(0,0,0,0.1); 
+            border-radius: 10px; /* 角丸も少し控えめに */
+            cursor: pointer; 
+            color: #555; 
+            font-weight: bold; 
+            transition: all 0.2s ease; 
+            font-size: 1rem; /* ★文字サイズを小さくしました (以前は1.1rem) */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            text-align: center;
+            width: 100%;
+        }
+        .genre-btn:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .genre-btn.active { background: #2c3e50; color: #fff; border-color: #2c3e50; box-shadow: 0 2px 10px rgba(44, 62, 80, 0.2); transform: translateY(0); }
+
+        /* Review Mode */
+        #gallery-list { width: 100%; max-width: 1000px; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; padding-bottom: 40px; }
+        .gallery-thumb { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; text-align: center; display: flex; flex-direction: column; }
+        .gallery-thumb:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.15); }
+        .thumb-img-wrapper { width: 100%; height: 110px; background: #f0f0f0; border-bottom: 1px solid #eee; }
+        .thumb-img { width: 100%; height: 100%; object-fit: cover; }
+        .thumb-info { padding: 8px; font-weight: bold; color: #2c3e50; font-size: 0.9rem; background: #fafafa; }
+
+        /* --- Text Quiz Mode Styles --- */
+        #quiz-container { width: 100%; max-width: 800px; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: none; flex-direction: column; margin-bottom: 50px; }
+        .quiz-progress { text-align: center; padding: 15px; font-size: 1.2rem; font-weight: bold; color: #2c3e50; background: #f9f9f9; border-bottom: 1px solid #eee; }
+        
+        #quiz-final-result { display: none; text-align: center; animation: fadeIn 0.5s; padding: 40px; }
+        .final-score { font-size: 4rem; font-weight: 800; color: #2c3e50; margin-bottom: 10px; }
+        .final-comment { font-size: 1.5rem; color: #e67e22; margin-bottom: 40px; font-weight: bold; }
+        .final-actions { display: flex; gap: 20px; justify-content: center; }
+
+        .quiz-main-area { display: block; }
+
+        .quiz-image-wrapper { position: relative; width: 100%; background: #eee; min-height: 300px; text-align: center; display: flex; align-items: center; justify-content: center; }
+        .quiz-main-image { max-width: 100%; max-height: 50vh; display: block; }
+        .quiz-question-area { padding: 30px; text-align: center; }
+        .quiz-sentence { font-size: 1.4rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; line-height: 1.5; }
+        .blank { border-bottom: 2px solid #3498db; color: transparent; padding: 0 8px; display: inline-block; min-width: 60px; }
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .option-btn { background: #fff; border: 2px solid #ddd; padding: 15px; border-radius: 10px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: 0.2s; }
+        .option-btn:hover { border-color: #3498db; background: #f0f8ff; }
+        .option-btn.correct { background: #27ae60; color: white; border-color: #27ae60; }
+        .option-btn.wrong { background: #e74c3c; color: white; border-color: #e74c3c; opacity: 0.6; }
+
+        /* Common Hint & Timer */
+        .hint-wrapper { margin-bottom: 20px; }
+        .hint-btn { background: rgba(0,0,0,0.1); border: 1px solid #ccc; color: #555; padding: 5px 15px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.2s; }
+        .hint-btn:hover { background: rgba(0,0,0,0.2); }
+        .hint-box { display: none; margin-top: 10px; background: #f9f9f9; padding: 10px 20px; border-radius: 10px; font-size: 1rem; text-align: left; color: #333; }
+        .hint-box ul { margin: 0; padding-left: 20px; }
+        .timer-bar { width: 100%; height: 6px; background: #eee; border-radius: 3px; overflow: hidden; margin-top: 10px; margin-bottom: 20px; }
+        .timer-progress { height: 100%; background: #3498db; width: 100%; transition: width 1s linear; }
+
+        /* =========================================
+           ★ Image Match Styles
+           ========================================= */
+        #image-quiz-container { width: 100%; max-width: 1000px; display: none; flex-direction: column; align-items: center; height: 100%; }
+        #iq-anchor { width: 100%; height: 1px; }
+        .iq-progress { font-size: 1.2rem; color: #2c3e50; font-weight: bold; margin-bottom: 10px; }
+
+        /* Text Phase */
+        .iq-text-phase {
+            width: 100%; max-width: 800px; min-height: 350px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px; color: white;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 40px; box-sizing: border-box; text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative;
+        }
+        .iq-sentence { font-size: 2rem; font-weight: bold; line-height: 1.4; margin-bottom: 20px; }
+        @media (max-width: 600px) { .iq-sentence { font-size: 1.5rem; } }
+        
+        .iq-hint-wrapper { margin-bottom: 60px; }
+        .iq-hint-btn { background: rgba(255,255,255,0.2); border: 1px solid white; color: white; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
+        .iq-hint-btn:hover { background: rgba(255,255,255,0.4); }
+        .iq-hint-box { display: none; margin-top: 15px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; font-size: 1rem; text-align: left; }
+        
+        .iq-ready-btn {
+            background: #f1c40f; color: #2c3e50; border: none; padding: 15px 40px;
+            border-radius: 50px; font-size: 1.5rem; font-weight: bold; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: 0.2s;
+            animation: pulseBtn 2s infinite;
+        }
+        .iq-ready-btn:hover { transform: scale(1.05); background: #f39c12; }
+        @keyframes pulseBtn { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+        .iq-timer-bar { width: 100%; height: 8px; background: rgba(255,255,255,0.3); border-radius: 4px; overflow: hidden; margin-top: 30px; }
+        .iq-timer-progress { height: 100%; background: #fff; width: 100%; transition: width 1s linear; }
+
+        /* Image Phase */
+        .iq-image-phase { 
+            width: 100%; display: none; 
+            grid-template-columns: 1fr 1fr; gap: 15px; 
+        }
+        @media (max-width: 600px) {
+            .iq-image-phase { grid-template-columns: 1fr; gap: 5px; margin-top: 5px; }
+            .iq-img-card { width: 90%; margin: 0 auto; }
+        }
+
+        .iq-img-card {
+            background: #fff; border-radius: 12px; overflow: hidden; cursor: pointer;
+            position: relative; aspect-ratio: 16/9; 
+            border: 4px solid transparent; transition: transform 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .iq-img-card:hover { transform: scale(1.02); z-index: 2; }
+        .iq-img-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
+        .iq-file-num {
+            position: absolute; top: 0; left: 0;
+            background: rgba(0,0,0,0.6); color: white;
+            font-size: 0.8rem; padding: 2px 6px;
+            border-bottom-right-radius: 6px; font-family: monospace;
+        }
+
+        .iq-img-card.correct { border-color: #27ae60; opacity: 1; }
+        .iq-img-card.wrong { border-color: #e74c3c; opacity: 0.4; }
+        .iq-img-card.disabled { pointer-events: none; }
+
+        /* Result Screen */
+        #iq-final-result { display: none; text-align: center; animation: fadeIn 0.5s; padding: 40px; }
+
+        /* Controls (Common) */
+        .quiz-controls { 
+            margin-top: 20px; min-height: 60px; width: 100%;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            gap: 20px; visibility: hidden; padding-bottom: 20px;
+        }
+        #q-result-msg, #iq-result-msg { font-size: 2rem !important; font-weight: 800 !important; display: block; }
+        
+        .next-btn { 
+            background: #2c3e50; color: white; border: none; padding: 15px 60px; 
+            border-radius: 50px; cursor: pointer; font-size: 1.5rem; font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: 0.2s;
+        }
+        .next-btn:hover { transform: translateY(-3px); background: #34495e; }
+
+        /* Modal */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; backdrop-filter: blur(5px); }
+        .modal-content { width: 100%; max-width: 800px; max-height: 90vh; overflow-y: auto; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative; animation: modalPop 0.3s ease-out; }
+        @keyframes modalPop { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .close-modal-btn { position: absolute; top: 10px; right: 15px; font-size: 2rem; color: #aaa; cursor: pointer; background: none; border: none; z-index: 10; line-height: 1; }
+        
+        /* Shared Card */
+        .photo-card { background: #fff; overflow: hidden; }
+        .card-header { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; background: #fdfdfd; border-bottom: 1px solid #eee; margin-right: 30px; }
+        .card-number { font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
+        .toggle-frame-btn { padding: 6px 12px; background: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: 0.2s; }
+        .toggle-frame-btn:hover { background: #219150; }
+        .toggle-frame-btn.active { background: #e74c3c; }
+        .image-wrapper { position: relative; width: 100%; background: #f4f4f4; text-align: center; }
+        .main-image { width: 100%; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto; }
+        .hotspot { position: absolute; cursor: pointer; border: 3px solid; background: rgba(255,255,255,0.1); border-radius: 4px; display: none; transition: 0.2s; box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+        .hotspot:hover { background: rgba(255,255,255,0.3); box-shadow: 0 0 15px rgba(255,255,255,0.8); }
+        .desc-box { padding: 25px; display: none; border-top: 3px solid #ddd; background: #fff; }
+        .desc-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; display: block; }
+        .speak-btn { background: none; border: 1px solid #eee; color: #2c3e50; cursor: pointer; font-size: 1rem; padding: 4px; border-radius: 50%; transition: all 0.2s; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-left: 8px; vertical-align: middle; }
+        .speak-btn:hover { background-color: #2c3e50; color: #fff; border-color: #2c3e50; }
+        .mini-speak-btn { background: none; border: none; cursor: pointer; font-size: 1rem; color: #bdc3c7; margin-left: 5px; padding: 0; line-height: 1; }
+        .mini-speak-btn:hover { color: #2c3e50; }
+        .eng-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 5px; }
+        .eng-text { font-size: 1.1rem; color: #222; line-height: 1.4; flex-grow: 1; }
+        .jp-text { font-size: 0.9rem; color: #666; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+        .learning-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .learning-grid { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } h1 { font-size: 1.5rem; } }
+        .learn-item h4 { margin: 0 0 5px 0; font-size: 0.8rem; color: #95a5a6; text-transform: uppercase; display: flex; align-items: center; }
+        .learn-item ul { margin: 0; padding-left: 20px; font-size: 0.9rem; }
+        .learn-item li { margin-bottom: 3px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title-wrapper">
+            <img src="title.png" alt="App Icon" class="title-image" onerror="this.style.display='none'">
+            <h1>Similar Photos Review</h1>
+        </div>
+        <button class="home-btn" id="btn-home" onclick="goHome()">🏠 Home</button>
+    </header>
+
+    <div id="mode-screen" class="fade-transition">
+        <div class="mode-card mode-review" onclick="startApp('review')">
+            <span class="mode-icon">📖</span>
+            <div class="mode-info">
+                <h2>Review Mode</h2>
+                <p>じっくりモード<br>グリッド表示で画像を確認</p>
+            </div>
+        </div>
+        <div class="mode-card mode-quiz" onclick="startApp('quiz-menu')">
+            <span class="mode-icon">🎮</span>
+            <div class="mode-info">
+                <h2>Quiz Mode</h2>
+                <p>クイズモード<br>重要単語(Vocab)を穴埋めで学習</p>
+            </div>
+        </div>
+        <div class="mode-card mode-img-quiz" onclick="startApp('image-quiz')">
+            <span class="mode-icon">🖼️</span>
+            <div class="mode-info">
+                <h2>Image Match</h2>
+                <p>イメージマッチ<br>英文を読んで画像を当てる</p>
+            </div>
+        </div>
+        <div class="mode-card mode-party" onclick="window.location.href='https://nakacy0919-git.github.io/similar-photo-party/'">
+            <span class="mode-icon">🎉</span>
+            <div class="mode-info">
+                <h2>Similar Photo Party</h2>
+                <p>みんなでワイワイ<br>ペアやグループで楽しむ</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="app-content" class="fade-transition fade-out">
+        <div class="top-controls">
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-en" onclick="changeLanguage('en')">English</button>
+                <button class="lang-btn" id="btn-jp" onclick="changeLanguage('jp')">日本語</button>
+            </div>
+            <button class="method-btn" onclick="toggleMethod()" id="lbl-about-btn">ⓘ About This Method</button>
+        </div>
+
+        <div id="method-box" class="methodology-box">
+            <div id="about-content-en">
+                <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;"><strong>About:</strong> Accurate description skills are key.</p>
+            </div>
+            <div id="about-content-jp" style="display:none;">
+                <p style="margin:0; font-size:0.95rem; line-height:1.6; color:#555;"><strong>概要:</strong> 正確な描写力を養います。</p>
+            </div>
+        </div>
+
+        <div class="search-area" id="search-section">
+            <input type="text" id="img-search-input" class="search-input" placeholder="検索したい番号を入力 (複数可: 123, 456)" onkeypress="handleEnter(event)" oninput="normalizeInput(this)">
+            <button class="search-btn" id="btn-search" onclick="performSearch()">Search</button>
+        </div>
+
+        <div class="quiz-category-screen" id="quiz-cat-screen">
+            <p class="quiz-cat-title">Select a Category to Start Quiz<br><span style="font-size:0.9rem; color:#666;">（学習したいシリーズを選択してください）</span></p>
+            </div>
+
+        <div class="genre-tabs" id="review-cat-tabs">
+            <button class="genre-btn" onclick="selectCategory(0)">000</button>
+            <button class="genre-btn" onclick="selectCategory(1)">100</button>
+            <button class="genre-btn" onclick="selectCategory(2)">200</button>
+            <button class="genre-btn" onclick="selectCategory(3)">300</button>
+            <button class="genre-btn" onclick="selectCategory(4)">400</button>
+            <button class="genre-btn" onclick="selectCategory(5)">500</button>
+            <button class="genre-btn" onclick="selectCategory(6)">600</button>
+            <button class="genre-btn" onclick="selectCategory(7)">700</button>
+            <button class="genre-btn" onclick="selectCategory(8)">800</button>
+            <button class="genre-btn" onclick="selectCategory(9)">900</button>
+            <button class="genre-btn" onclick="selectCategory(10)">1000</button>
+            <button class="genre-btn" onclick="selectCategory('cnn')">CNN</button>
+        </div>
+
+        <div id="gallery-list"></div>
+
+        <div id="quiz-container">
+            <div class="quiz-progress" id="quiz-progress">Question 1/10</div>
+            
+            <div id="quiz-final-result">
+                <div class="final-score" id="q-final-score">8/10</div>
+                <div class="final-comment" id="q-final-comment">Great Job!</div>
+                <div class="final-actions">
+                    <button class="next-btn" onclick="restartQuiz()">Try Again</button>
+                    <button class="next-btn" style="background:#7f8c8d" onclick="goHome()">Home</button>
+                </div>
+            </div>
+
+            <div class="quiz-main-area" id="quiz-main-area">
+                <div class="quiz-image-wrapper" id="quiz-img-wrapper">
+                    <div id="q-file-num" class="iq-file-num"></div>
+                    <img src="" id="q-main-img" class="quiz-main-image" alt="Quiz">
+                </div>
+                <div class="quiz-question-area">
+                    <div class="hint-wrapper">
+                        <button class="hint-btn" onclick="toggleQuizHint()">💡 Hint</button>
+                        <div id="q-hint-box" class="hint-box"></div>
+                    </div>
+                    <div class="timer-bar"><div id="q-timer-progress" class="timer-progress"></div></div>
+
+                    <div class="quiz-sentence" id="q-sentence"></div>
+                    <div class="options-grid" id="q-options"></div>
+                    
+                    <div class="quiz-controls" id="q-controls">
+                        <span id="q-result-msg"></span>
+                        <button class="next-btn" onclick="nextQuiz()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="image-quiz-container">
+            <div id="iq-anchor"></div>
+            <div class="iq-progress" id="iq-progress">Question 1/10</div>
+
+            <div id="iq-final-result">
+                <div class="final-score" id="iq-final-score">8/10</div>
+                <div class="final-comment" id="iq-final-comment">Great Job!</div>
+                <div class="final-actions">
+                    <button class="next-btn" onclick="restartImageQuiz()">Try Again</button>
+                    <button class="next-btn" style="background:#7f8c8d" onclick="goHome()">Home</button>
+                </div>
+            </div>
+
+            <div id="iq-text-phase" class="iq-text-phase">
+                <div id="iq-sentence" class="iq-sentence"></div>
+                <div class="iq-hint-wrapper">
+                    <button class="iq-hint-btn" onclick="toggleImageQuizHint()">💡 Hint</button>
+                    <div id="iq-hint-box" class="iq-hint-box"></div>
+                </div>
+                <button class="iq-ready-btn" onclick="skipTimer()">I'm READY!</button>
+                <div class="iq-timer-bar"><div id="iq-timer-progress" class="iq-timer-progress"></div></div>
+            </div>
+
+            <div id="iq-image-phase" class="iq-image-phase"></div>
+
+            <div class="quiz-controls" id="iq-controls">
+                <span id="iq-result-msg"></span>
+                <button class="next-btn" onclick="nextImageQuiz()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="lesson-modal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-modal-btn" onclick="closeModalDirect()">×</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script> window.galleryData = []; </script>
+    
+    <script src="data/series_000.js"></script>
+    <script src="data/series_100.js"></script>
+    <script src="data/series_200.js"></script>
+    <script src="data/series_300.js"></script>
+    <script src="data/series_400.js"></script>
+    <script src="data/series_500.js"></script>
+    <script src="data/series_600.js"></script>
+    <script src="data/series_700.js"></script>
+    <script src="data/series_800.js"></script>
+    <script src="data/series_900.js"></script>
+    <script src="data/series_1000.js"></script>
+    <script src="data/series_cnn.js"></script>
+
+    <script>
+        // ★重要: Helper Function to extract filename number
+        function getFileNum(path) {
+            if (!path) return "";
+            const fileName = path.split('/').pop(); 
+            const match = fileName.match(/(\d+)/);
+            // CNN001 -> 001, 001.webp -> 001, apple.jpg -> apple
+            return match ? match[1] : fileName.split('.')[0];
+        }
+
+        // === System Variables ===
+        let currentMode = null; 
+        let currentLang = 'en';
+        let currentCategoryIndex = 0;
+        let quizPool = [], wordBank = [];
+        
+        let currentQuiz = null;
+        let quizTimer = null;
+        let quizQueue = [];
+        let quizIndex = 0;
+        let quizScore = 0;
+
+        let imgQuizQueue = []; 
+        let imgQuizIndex = 0;
+        let imgQuizScore = 0;
+        let currentImgQuiz = null;
+        let imgTimer = null;
+
+        const UI_TEXT = {
+            en: { showFrame: "Show Frames", hideFrame: "Hide Frames", vocab: "Vocabulary", idioms: "Idioms", synonyms: "Synonyms", grammar: "Grammar", aboutBtn: "ⓘ About This Method", searchPlaceholder: "検索したい番号を入力 (複数可: 123, 456)", searchBtn: "Search", noResult: "No matching image found." },
+            jp: { showFrame: "枠を表示", hideFrame: "枠を隠す", vocab: "単語", idioms: "熟語", synonyms: "類義語", grammar: "文法", aboutBtn: "ⓘ このメソッドについて", searchPlaceholder: "番号を入力 (例: 123, 456)", searchBtn: "検索", noResult: "該当する画像が見つかりません。" }
+        };
+
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSound(type) {
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            if (type === 'correct') {
+                osc.type = 'sine'; osc.frequency.setValueAtTime(660, audioCtx.currentTime); osc.frequency.setValueAtTime(880, audioCtx.currentTime + 0.1);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime); gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.4);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.4);
+            } else {
+                osc.type = 'sawtooth'; osc.frequency.setValueAtTime(150, audioCtx.currentTime); osc.frequency.linearRampToValueAtTime(100, audioCtx.currentTime + 0.3);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime); gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.3);
+            }
+        }
+
+        // ============================================
+        // 1. App Start
+        // ============================================
+        function startApp(mode) {
+            currentMode = mode;
+            const modeScreen = document.getElementById('mode-screen');
+            modeScreen.classList.add('fade-out');
+
+            setTimeout(() => {
+                modeScreen.style.display = 'none';
+                const appContent = document.getElementById('app-content');
+                appContent.style.display = 'flex';
+                setTimeout(() => { appContent.classList.remove('fade-out'); }, 50);
+                document.getElementById('btn-home').style.display = 'block';
+
+                document.getElementById('search-section').style.display = 'none';
+                document.getElementById('gallery-list').style.display = 'none';
+                document.getElementById('quiz-container').style.display = 'none';
+                document.getElementById('image-quiz-container').style.display = 'none';
+                document.getElementById('review-cat-tabs').style.display = 'none';
+                document.getElementById('quiz-cat-screen').style.display = 'none';
+
+                if(mode === 'review') {
+                    document.getElementById('search-section').style.display = 'flex';
+                    document.getElementById('gallery-list').style.display = 'grid';
+                    document.getElementById('review-cat-tabs').style.display = 'grid'; // Gridに変更
+                    selectCategory(0);
+                } else if(mode === 'quiz-menu') {
+                    showQuizCategorySelection();
+                } else if(mode === 'image-quiz') {
+                    document.getElementById('image-quiz-container').style.display = 'flex';
+                    initImageQuiz();
+                }
+            }, 400); 
+        }
+
+        function goHome() {
+            currentMode = null;
+            clearInterval(imgTimer);
+            clearTimeout(quizTimer);
+            const appContent = document.getElementById('app-content');
+            appContent.classList.add('fade-out');
+            document.getElementById('btn-home').style.display = 'none';
+
+            setTimeout(() => {
+                appContent.style.display = 'none';
+                const modeScreen = document.getElementById('mode-screen');
+                modeScreen.style.display = 'flex';
+                setTimeout(() => { modeScreen.classList.remove('fade-out'); }, 50);
+                document.getElementById('gallery-list').innerHTML = '';
+                closeModalDirect();
+            }, 400);
+        }
+
+        // ============================================
+        // 2. Quiz Category Selection
+        // ============================================
+        function showQuizCategorySelection() {
+            const screen = document.getElementById('quiz-cat-screen');
+            // Clear existing buttons to avoid duplicates
+            const existingTabs = screen.querySelector('.genre-tabs');
+            if (existingTabs) existingTabs.remove();
+
+            screen.style.display = 'flex';
+            
+            const cats = [0,1,2,3,4,5,6,7,8,9,10,'cnn'];
+            const container = document.createElement('div');
+            container.className = 'genre-tabs'; // Reuses the unified grid style
+            
+            cats.forEach(c => {
+                const btn = document.createElement('button');
+                btn.className = 'genre-btn';
+                btn.textContent = (c === 'cnn') ? 'CNN' : (c * 100);
+                btn.onclick = () => startQuizWithCategory(c);
+                container.appendChild(btn);
+            });
+            screen.appendChild(container);
+        }
+
+        function startQuizWithCategory(cat) {
+            currentCategoryIndex = cat;
+            document.getElementById('quiz-cat-screen').style.display = 'none';
+            document.getElementById('quiz-container').style.display = 'flex';
+            
+            const list = window.galleryData.filter(item => {
+                if (cat === 'cnn') return item.imageFile.toLowerCase().includes('cnn');
+                // Use getFileNum logic for safe filtering
+                const num = getFileNum(item.imageFile);
+                if (isNaN(parseInt(num))) return false; // vocab etc.
+                return Math.floor(parseInt(num) / 100) === parseInt(cat);
+            });
+            initQuiz(list);
+        }
+
+        // ============================================
+        // 3. Review Mode Logic
+        // ============================================
+        function normalizeInput(input) {
+            let val = input.value;
+            val = val.replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+            val = val.replace(/[^0-9, ]/g, '');
+            input.value = val;
+        }
+
+        function performSearch() {
+            const inputVal = document.getElementById('img-search-input').value;
+            if (!inputVal) return;
+            const targetNums = inputVal.split(/[, ]+/).map(s => parseInt(s, 10)).filter(n => !isNaN(n));
+            if (targetNums.length === 0) return;
+            
+            document.querySelectorAll('.genre-btn').forEach(btn => btn.classList.remove('active'));
+            
+            const list = window.galleryData.filter(item => {
+                const num = parseInt(getFileNum(item.imageFile), 10);
+                return targetNums.includes(num);
+            });
+            renderGalleryList(list);
+        }
+
+        function selectCategory(cat) {
+            currentCategoryIndex = cat;
+            if(document.getElementById('img-search-input')) document.getElementById('img-search-input').value = '';
+            document.querySelectorAll('#review-cat-tabs .genre-btn').forEach(btn => {
+                const onclickVal = btn.getAttribute('onclick');
+                let btnArg = onclickVal.match(/selectCategory\(([^)]+)\)/)[1].replace(/['"]/g, '');
+                if (!isNaN(btnArg)) btnArg = parseInt(btnArg, 10);
+                if(btnArg === cat) btn.classList.add('active'); else btn.classList.remove('active');
+            });
+
+            const list = window.galleryData.filter(item => {
+                if (cat === 'cnn') return item.imageFile.toLowerCase().includes('cnn');
+                const num = parseInt(getFileNum(item.imageFile), 10);
+                if(isNaN(num)) return false; 
+                return Math.floor(num / 100) === cat;
+            });
+            list.sort((a, b) => {
+                const getNum = s => parseInt(getFileNum(s.imageFile), 10) || 0;
+                return getNum(a) - getNum(b);
+            });
+            renderGalleryList(list);
+        }
+
+        function renderGalleryList(list) {
+            const container = document.getElementById('gallery-list');
+            container.innerHTML = '';
+            const txt = UI_TEXT[currentLang];
+            if (list.length === 0) {
+                container.style.display = 'block'; container.innerHTML = `<p style="text-align:center; color:#999; padding:40px;">${txt.noResult}</p>`;
+                return;
+            }
+            container.style.display = 'grid';
+            list.forEach((data) => {
+                const fileNum = getFileNum(data.imageFile);
+                const thumb = document.createElement('div');
+                thumb.className = 'gallery-thumb';
+                thumb.onclick = () => openLessonModal(data);
+                thumb.innerHTML = `<div class="thumb-img-wrapper"><img src="${data.imageFile}" class="thumb-img" loading="lazy"></div><div class="thumb-info">No. ${fileNum}</div>`;
+                container.appendChild(thumb);
+            });
+        }
+        // ... (Modal logic same as before) ...
+        function openLessonModal(data) {
+            const modal = document.getElementById('lesson-modal');
+            const body = document.getElementById('modal-body');
+            const txt = UI_TEXT[currentLang];
+            const fileNum = getFileNum(data.imageFile);
+            const cardID = `card-${fileNum}`;
+            const article = document.createElement('article');
+            article.className = 'photo-card';
+            article.innerHTML = `
+                <div class="card-header"><span class="card-number">No. ${fileNum}</span><button class="toggle-frame-btn" onclick="toggleLocalFrames('${cardID}', this)">${txt.showFrame}</button></div>
+                <div class="image-wrapper" id="${cardID}-wrapper"><img src="${data.imageFile}" class="main-image" alt="Gallery Image"></div>
+                <div class="desc-box" id="${cardID}-desc">
+                    <span class="desc-title">Title</span>
+                    <div class="eng-row"><div class="eng-text"></div><button class="speak-btn main-speak">🔊</button></div>
+                    <div class="jp-text"></div>
+                    <div class="learning-grid">
+                        <div class="learn-item"><h4>${txt.vocab} <button class="mini-speak-btn vocab-speak">🔊</button></h4><ul class="l-vocab"></ul></div>
+                        <div class="learn-item"><h4>${txt.idioms} <button class="mini-speak-btn idiom-speak">🔊</button></h4><ul class="l-idiom"></ul></div>
+                        <div class="learn-item"><h4>${txt.synonyms} <button class="mini-speak-btn synonym-speak">🔊</button></h4><ul class="l-synonym"></ul></div>
+                        <div class="learn-item"><h4>${txt.grammar}</h4><div class="l-grammar" style="font-size:0.9rem; color:#444;"></div></div>
+                    </div>
+                </div>
+            `;
+            const wrapper = article.querySelector('.image-wrapper');
+            if(data.spots) {
+                data.spots.forEach(spot => {
+                    const div = document.createElement('div');
+                    div.className = 'hotspot';
+                    Object.assign(div.style, { top: spot.top, left: spot.left, width: spot.width, height: spot.height, borderColor: spot.color });
+                    div.onclick = (e) => { e.stopPropagation(); updateDescription(cardID, spot); };
+                    wrapper.appendChild(div);
+                });
+            }
+            body.innerHTML = ''; body.appendChild(article); modal.style.display = 'flex';
+        }
+        function closeModal(e) { if (e.target.id === 'lesson-modal') closeModalDirect(); }
+        function closeModalDirect() { document.getElementById('lesson-modal').style.display = 'none'; document.getElementById('modal-body').innerHTML = ''; }
+        function toggleLocalFrames(cardID, btn) {
+            const wrapper = document.getElementById(`${cardID}-wrapper`);
+            const spots = wrapper.querySelectorAll('.hotspot');
+            if (spots.length === 0) return;
+            let isHidden = (spots[0].style.display === 'none' || spots[0].style.display === '');
+            spots.forEach(s => s.style.display = isHidden ? 'block' : 'none');
+            const txt = UI_TEXT[currentLang];
+            btn.textContent = isHidden ? txt.hideFrame : txt.showFrame;
+            btn.classList.toggle('active', isHidden);
+            if(!isHidden) document.getElementById(`${cardID}-desc`).style.display = 'none'; 
+        }
+        function updateDescription(cardID, data) {
+            const box = document.getElementById(`${cardID}-desc`);
+            box.style.display = 'block'; box.style.borderTopColor = data.color;
+            box.querySelector('.desc-title').textContent = data.title;
+            box.querySelector('.desc-title').style.color = data.color;
+            box.querySelector('.eng-text').textContent = data.eng;
+            box.querySelector('.jp-text').textContent = data.jp;
+            box.querySelector('.l-grammar').textContent = data.grammar || "";
+            const fillList = (cls, items) => {
+                const ul = box.querySelector(cls); ul.innerHTML = '';
+                if(items) items.forEach(txt => { const li = document.createElement('li'); li.textContent = txt; ul.appendChild(li); });
+            };
+            fillList('.l-vocab', data.vocab); fillList('.l-idiom', data.idioms); fillList('.l-synonym', data.synonyms);
+            const setupSpeak = (sel, txt) => {
+                const btn = box.querySelector(sel); const newBtn = btn.cloneNode(true); btn.parentNode.replaceChild(newBtn, btn);
+                if(txt && txt.length > 0) { newBtn.style.display = 'inline-block'; newBtn.onclick = () => speakText(txt); } else { newBtn.style.display = 'none'; }
+            };
+            const clean = (arr) => (!arr || arr.length===0)?"":arr.map(i=>i.replace(/\s*\(.*?\)/g,'')).join(", ");
+            setupSpeak('.main-speak', data.eng); setupSpeak('.vocab-speak', clean(data.vocab));
+            setupSpeak('.idiom-speak', clean(data.idioms)); setupSpeak('.synonym-speak', clean(data.synonyms));
+        }
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; speechSynthesis.speak(u);
+            }
+        }
+        function toggleMethod() { document.getElementById('method-box').style.display = (document.getElementById('method-box').style.display === 'block') ? 'none' : 'block'; }
+        function handleEnter(e) { if(e.key === 'Enter') performSearch(); }
+        function cleanVocab(str) { return str.replace(/\s*\(.*?\)/g, '').trim(); }
+
+        // ============================================
+        // 5. Text Quiz Mode
+        // ============================================
+        function initQuiz(list) {
+            // Prepare Word Bank from selected list
+            wordBank = [];
+            list.forEach(item => {
+                if(item.spots) item.spots.forEach(s => {
+                    if (s.vocab && s.vocab.length > 0) { s.vocab.forEach(v => { const c = cleanVocab(v); if(c.length > 1) wordBank.push(c); }); }
+                });
+            });
+            if (wordBank.length === 0) wordBank = ["apple", "pen", "this", "that"]; 
+            
+            // Create Queue
+            let fullQueue = [];
+            list.forEach(item => {
+                if(item.spots) item.spots.forEach(spot => {
+                    const words = spot.eng.split(' ');
+                    let candidates = [];
+                    if (spot.vocab && spot.vocab.length > 0) {
+                        words.forEach((w, i) => {
+                            const cleanW = w.toLowerCase().replace(/[.,?!"]/g, '');
+                            const isMatch = spot.vocab.some(v => {
+                                const cleanV = cleanVocab(v).toLowerCase(); 
+                                if (cleanV.length < 2) return false;
+                                if (cleanW === cleanV) return true;
+                                if (cleanW.includes(cleanV)) return true;
+                                return false;
+                            });
+                            if (isMatch) candidates.push(i);
+                        });
+                    }
+                    if(candidates.length > 0) {
+                        const targetIdx = candidates[Math.floor(Math.random() * candidates.length)];
+                        fullQueue.push({ img: item.imageFile, spot: spot, fullEng: spot.eng, words: words, ans: words[targetIdx].replace(/[.,?!"]/g, ''), idx: targetIdx });
+                    }
+                });
+            });
+            
+            if(fullQueue.length === 0) { alert("No valid data in this category."); return; }
+            
+            fullQueue.sort(() => Math.random() - 0.5);
+            quizQueue = fullQueue.slice(0, 10);
+            
+            quizIndex = 0; quizScore = 0;
+            document.getElementById('quiz-final-result').style.display = 'none';
+            document.getElementById('quiz-main-area').style.display = 'block';
+            nextQuiz();
+        }
+
+        function nextQuiz() {
+            clearTimeout(quizTimer);
+            if(quizIndex >= quizQueue.length) { showQuizResult(); return; }
+
+            currentQuiz = quizQueue[quizIndex];
+            quizIndex++;
+            
+            document.getElementById('quiz-progress').textContent = `Question ${quizIndex} / 10`;
+            document.getElementById('q-controls').style.visibility = 'hidden';
+            document.getElementById('q-options').innerHTML = '';
+            document.getElementById('q-main-img').src = currentQuiz.img;
+            document.getElementById('q-hint-box').style.display = 'none'; 
+            
+            // ★ファイル名表示 (Update)
+            document.getElementById('q-file-num').textContent = getFileNum(currentQuiz.img);
+
+            const progressBar = document.getElementById('q-timer-progress');
+            progressBar.style.transition = 'none'; progressBar.style.width = '100%';
+            void progressBar.offsetWidth;
+            progressBar.style.transition = 'width 15s linear';
+            progressBar.style.width = '0%';
+            
+            let html = "";
+            currentQuiz.words.forEach((w, i) => {
+                if(i === currentQuiz.idx) { const p = w.match(/[.,?!"]/) ? w.match(/[.,?!"]/)[0] : ""; html += `<span class="blank">______</span>${p} `; }
+                else html += w + " ";
+            });
+            document.getElementById('q-sentence').innerHTML = html;
+            
+            let choices = new Set([currentQuiz.ans]);
+            let limit = 0;
+            while(choices.size < 4 && limit < 100) {
+                const w = wordBank[Math.floor(Math.random() * wordBank.length)];
+                if(w && w.toLowerCase() !== currentQuiz.ans.toLowerCase()) choices.add(w);
+                limit++;
+            }
+            Array.from(choices).sort(()=>Math.random()-0.5).forEach(choice => {
+                const btn = document.createElement('button'); btn.className = 'option-btn'; btn.textContent = choice;
+                btn.onclick = () => checkAns(btn, choice);
+                document.getElementById('q-options').appendChild(btn);
+            });
+        }
+
+        function checkAns(btn, val) {
+            const correct = currentQuiz.ans;
+            document.querySelectorAll('.option-btn').forEach(b => {
+                b.style.pointerEvents = 'none';
+                if(b.textContent.toLowerCase() === correct.toLowerCase()) b.classList.add('correct');
+            });
+            const msg = document.getElementById('q-result-msg');
+            const blank = document.querySelector('.blank');
+            
+            if(val.toLowerCase() === correct.toLowerCase()) {
+                quizScore++;
+                playSound('correct'); confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#27ae60', '#2ecc71', '#f1c40f'] });
+                msg.textContent = "Correct! 🎉"; msg.style.color = "#27ae60";
+                blank.textContent = correct; blank.style.color = "#27ae60"; blank.style.borderBottom = "none";
+            } else {
+                playSound('wrong'); btn.classList.add('wrong'); msg.textContent = "Try again!"; msg.style.color = "#e74c3c";
+            }
+            document.getElementById('q-controls').style.visibility = 'visible';
+            setTimeout(() => { document.getElementById('q-controls').scrollIntoView({ behavior: 'smooth', block: 'end' }); }, 300);
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-main-area').style.display = 'none';
+            document.getElementById('quiz-final-result').style.display = 'block';
+            document.getElementById('q-final-score').textContent = `${quizScore} / 10`;
+            const commentDiv = document.getElementById('q-final-comment');
+            if(quizScore === 10) commentDiv.textContent = "Perfect! Amazing! 🏆";
+            else if(quizScore >= 8) commentDiv.textContent = "Great Job! 🌟";
+            else if(quizScore >= 5) commentDiv.textContent = "Good! Keep it up! 👍";
+            else commentDiv.textContent = "Don't give up! Try again! 💪";
+        }
+        function restartQuiz() { startQuizWithCategory(currentCategoryIndex); }
+        function toggleQuizHint() {
+            const box = document.getElementById('q-hint-box');
+            if(box.style.display === 'block') { box.style.display = 'none'; } 
+            else {
+                let html = '<ul>';
+                if(currentQuiz.spot.vocab) { currentQuiz.spot.vocab.forEach(v => html += `<li>${v}</li>`); }
+                html += '</ul>'; box.innerHTML = html; box.style.display = 'block';
+            }
+        }
+
+        // ============================================
+        // 6. Image Quiz Mode
+        // ============================================
+        function initImageQuiz() {
+            imgQuizQueue = [];
+            window.galleryData.forEach(item => {
+                if(item.spots) item.spots.forEach(spot => {
+                    imgQuizQueue.push({ correctImg: item.imageFile, eng: spot.eng, jp: spot.jp, spot: spot });
+                });
+            });
+            if(imgQuizQueue.length < 4) { alert("Not enough data."); return; }
+            imgQuizQueue.sort(() => Math.random() - 0.5);
+            imgQuizQueue = imgQuizQueue.slice(0, 10);
+            
+            imgQuizIndex = 0; imgQuizScore = 0;
+            document.getElementById('iq-final-result').style.display = 'none';
+            document.getElementById('iq-text-phase').style.display = 'flex';
+            nextImageQuiz();
+        }
+
+        function nextImageQuiz() {
+            clearInterval(imgTimer);
+            if(imgQuizIndex >= imgQuizQueue.length) { showImageQuizResult(); return; }
+
+            currentImgQuiz = imgQuizQueue[imgQuizIndex];
+            imgQuizIndex++;
+
+            document.getElementById('iq-progress').textContent = `Question ${imgQuizIndex} / 10`;
+            document.getElementById('iq-text-phase').style.display = 'flex';
+            document.getElementById('iq-image-phase').style.display = 'none';
+            document.getElementById('iq-controls').style.visibility = 'hidden';
+            document.getElementById('iq-sentence').textContent = currentImgQuiz.eng;
+            document.getElementById('iq-hint-box').style.display = 'none';
+            
+            const progressBar = document.getElementById('iq-timer-progress');
+            progressBar.style.transition = 'none'; progressBar.style.width = '100%';
+            void progressBar.offsetWidth;
+            progressBar.style.transition = 'width 15s linear';
+            progressBar.style.width = '0%';
+            imgTimer = setTimeout(() => { skipTimer(); }, 15000);
+        }
+
+        function skipTimer() {
+            clearInterval(imgTimer);
+            document.getElementById('iq-text-phase').style.display = 'none';
+            document.getElementById('iq-image-phase').style.display = 'grid';
+            showImageSelection();
+            setTimeout(() => { document.getElementById('iq-anchor').scrollIntoView({ behavior: 'smooth' }); }, 100);
+        }
+
+        function toggleImageQuizHint() {
+            const box = document.getElementById('iq-hint-box');
+            if(box.style.display === 'block') { box.style.display = 'none'; } 
+            else {
+                let html = '<ul>';
+                if(currentImgQuiz.spot.vocab) { currentImgQuiz.spot.vocab.forEach(v => html += `<li>${v}</li>`); }
+                html += '</ul>'; box.innerHTML = html; box.style.display = 'block';
+            }
+        }
+
+        function showImageSelection() {
+            const imgPhase = document.getElementById('iq-image-phase');
+            imgPhase.innerHTML = '';
+            let choices = [];
+            choices.push({ img: currentImgQuiz.correctImg, isCorrect: true });
+            let allImages = window.galleryData.map(d => d.imageFile).filter(img => img !== currentImgQuiz.correctImg);
+            allImages = [...new Set(allImages)];
+            allImages.sort(() => Math.random() - 0.5);
+            for(let i=0; i<3; i++) { if(allImages[i]) choices.push({ img: allImages[i], isCorrect: false }); }
+            choices.sort(() => Math.random() - 0.5);
+
+            choices.forEach(choice => {
+                const div = document.createElement('div');
+                div.className = 'iq-img-card';
+                div.onclick = (e) => checkImageAns(div, choice.isCorrect);
+                const img = document.createElement('img'); img.src = choice.img;
+                const match = choice.img.match(/(\d+)/);
+                const num = match ? match[1] : "";
+                const numBadge = document.createElement('div');
+                numBadge.className = 'iq-file-num'; numBadge.textContent = num;
+                div.appendChild(img); div.appendChild(numBadge);
+                imgPhase.appendChild(div);
+            });
+        }
+
+        function checkImageAns(div, isCorrect) {
+            document.querySelectorAll('.iq-img-card').forEach(c => c.classList.add('disabled'));
+            const msg = document.getElementById('iq-result-msg');
+            const controls = document.getElementById('iq-controls');
+            if(isCorrect) {
+                imgQuizScore++;
+                playSound('correct'); confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#27ae60', '#2ecc71', '#f1c40f'] });
+                div.classList.add('correct'); msg.textContent = "Correct! 🎉"; msg.style.color = "#27ae60";
+            } else {
+                playSound('wrong'); div.classList.add('wrong'); msg.textContent = "Oops!"; msg.style.color = "#e74c3c";
+                document.querySelectorAll('.iq-img-card').forEach(c => { if(c.querySelector('img').src.includes(currentImgQuiz.correctImg)) c.classList.add('correct'); });
+            }
+            controls.style.visibility = 'visible';
+            setTimeout(() => { controls.scrollIntoView({ behavior: 'smooth', block: 'end' }); }, 300);
+        }
+
+        function showImageQuizResult() {
+            document.getElementById('iq-text-phase').style.display = 'none';
+            document.getElementById('iq-image-phase').style.display = 'none';
+            document.getElementById('iq-controls').style.visibility = 'hidden';
+            document.getElementById('iq-progress').textContent = "";
+            const resultDiv = document.getElementById('iq-final-result');
+            resultDiv.style.display = 'block';
+            document.getElementById('iq-final-score').textContent = `${imgQuizScore} / 10`;
+            const commentDiv = document.getElementById('iq-final-comment');
+            if(imgQuizScore === 10) commentDiv.textContent = "Perfect! Amazing! 🏆";
+            else if(imgQuizScore >= 8) commentDiv.textContent = "Great Job! 🌟";
+            else if(imgQuizScore >= 5) commentDiv.textContent = "Good! Keep it up! 👍";
+            else commentDiv.textContent = "Don't give up! Try again! 💪";
+        }
+        function restartImageQuiz() { initImageQuiz(); }
+    </script>
+</body>
+</html>
